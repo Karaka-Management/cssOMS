@@ -1,0 +1,24 @@
+.infoIcon {
+    width: 24px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        font-size: .35em;
+        display: block;
+        position: absolute;
+        right: -.75em;
+        top: -.75em;
+        width: 2.3em;
+        height: 2.2em;
+        line-height: 2.5em;
+        border-radius: 50%;
+        text-align: center;
+
+        color: #fff;
+        background: rgba(209, 96, 89, 1);
+    }
+}
+

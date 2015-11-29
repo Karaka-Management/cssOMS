@@ -1,0 +1,54 @@
+@import "mixin", "color";
+
+.ac-container{
+    width: 100%;
+    margin: 10px auto 30px auto;
+    text-align: left;
+}
+
+.ac-container > input {
+    display: none;
+}
+
+.ac-container > label {
+    display: block;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    margin-top: -1px;
+    cursor: pointer;
+    color: #777;
+    font-size: 1em;
+    border: 1px solid $content-border-color;
+    @include border-radius(3px);
+    @include gradient-top-bottom(#e0e3eb, 0, $content-background-color, 100, $content-background-color);
+}
+
+.ac-container > label:hover {
+    @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
+}
+
+.ac-container > input:checked + label {
+    @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
+    color: #000;
+}
+
+.ac-container > section {
+    background: $content-background-color;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    border-left: 1px solid $content-border-color;
+    border-right: 1px solid $content-border-color;
+    padding: 10px;
+}
+
+.ac-container > input + label + section {
+    display: none;
+}
+
+
+.ac-container > input:checked + label + section {
+    display: inherit;
+}

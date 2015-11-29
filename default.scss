@@ -1,0 +1,18 @@
+@import "mixin", "color";
+
+body {
+    background: $background-color;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.9em;
+}
+
+.clear {
+    clear: both;
+}
+
+pre {
+    background: #fff;
+    @include border-radius(3px);
+    border: 1px solid $content-border-color;
+    padding: 5px;
+}

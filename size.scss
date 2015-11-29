@@ -1,0 +1,68 @@
+.w-100 {
+    min-width: 215px;
+    width: 100%;
+    width: calc(100% - 5px);
+}
+
+.w-50 {
+    min-width: 215px;
+    width: 49%;
+    width: calc(50% - 5px);
+}
+
+.w-33 {
+    min-width: 215px;
+    width: 32%;
+    width: calc(33.33% - 5px);
+}
+
+.w-25 {
+    min-width: 215px;
+    width: 25%;
+    width: calc(25% - 5px);
+}
+
+.w-75 {
+    min-width: 215px;
+    width: 75%;
+    width: calc(75% - 5px);
+}
+
+.w-66 {
+    min-width: 215px;
+    width: 66%;
+    width: calc(66.66% - 5px);
+}
+
+.wd-100 {
+    width: 100%;
+    width: calc(100% - 105px);
+}
+
+.wf-100 {
+    width: 100%;
+}
+
+.wf-50 {
+    width: 50%;
+}
+
+.wf-33 {
+    width: 33.33%;
+}
+
+.wf-25 {
+    width: 25%;
+}
+
+.wf-75 {
+    width: 75%;
+}
+
+.wf-66 {
+    width: 66.66%;
+}
+
+.spacer {
+    padding: 5px;
+}

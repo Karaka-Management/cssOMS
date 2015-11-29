@@ -1,0 +1,32 @@
+div.alert {
+    padding: 10px;
+    font-weight: bold;
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.alertbox.ok, .alert.ok {
+    background: #aaffad;
+    border: 2px solid #81e27d;
+    color: #459442;
+}
+
+.alertbox.warning, .alert.warning {
+    background: #f8ffa8;
+    border: 2px solid #d6d949;
+    color: #94972f;
+}
+
+.alertbox.error, .alert.error{
+    background: #ff7d79;
+    border: 2px solid #ee5649;
+    color: #a5302a;
+}
+
+.alertbox.info, .alert.info{
+    background: #b6d2ff;
+    border: 2px solid #85b0ee;
+    color: #4865a5;
+}

@@ -1,0 +1,113 @@
+@import "mixin", "color";
+
+table.table {
+    @include box-sizing(border-box);
+    width: 100%;
+    font-size: 0.9em;
+
+    caption {
+        @include box-shadow-top(#ffffff);
+        @include border-top-radius(3px);
+        background: $content-background-color;
+        border-right: 1px solid $content-border-color;
+        border-left: 1px solid $content-border-color;
+        border-top: 1px solid $content-border-color;
+
+        padding: 5px;
+    }
+
+    td {
+        padding: 5px 10px 5px 10px;
+        white-space: nowrap;
+    }
+
+    tbody {
+        td:first-child {
+            border-left: 1px solid $content-border-color;
+        }
+
+        td:last-child {
+            border-right: 1px solid $content-border-color;
+        }
+
+        td {
+            border-top: 1px solid $content-border-color;
+            @include box-shadow-top(#ffffff);
+        }
+
+        tr {
+            &:nth-of-type(2n) {
+                background: #f9f9ff;
+            }
+
+            &:nth-of-type(2n+1) {
+                background: #f9fdff;
+            }
+
+            &:hover {
+                background: $content-background-color;
+            }
+        }
+
+        a {
+            display: block;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid $content-border-color;
+        }
+
+        tr:last-child td:first-child {
+            @include border-bottomleft-radius(3px);
+        }
+
+        tr:last-child td:last-child {
+            @include border-bottomright-radius(3px);
+        }
+    }
+
+    thead {
+        background: $content-background-color;
+
+        td:first-child {
+            border-left: 1px solid $content-border-color;
+        }
+
+        td:last-child {
+            border-right: 1px solid $content-border-color;
+        }
+    }
+
+    .empty {
+        text-align: center;
+        color: #d8d8d8;
+    }
+
+    tfoot {
+        label {
+            float: left;
+        }
+
+        select {
+            width: auto;
+            float: right;
+            margin: 0;
+            min-width: 0px;
+        }
+
+        td {
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+}
+
+table.list {
+    th {
+        text-align: left;
+    }
+
+    td {
+        padding: 2px 5px 2px 5px;
+    }
+}

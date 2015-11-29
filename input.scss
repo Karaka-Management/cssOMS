@@ -1,0 +1,139 @@
+@import "mixin", "color";
+
+input, select, textarea, .textarea {
+    border: 1px solid $content-border-color;
+}
+
+select {
+    cursor: pointer;
+}
+
+progress {
+    height: 20px;
+    width: 100%;
+    min-width: 150px;
+}
+
+.textarea,
+textarea,
+select,
+input[type="password"],
+input[type="text"],
+input[type="datetime"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="datetime-local"] {
+    @include border-radius(2px);
+    color: #454545;
+    background: #fff;
+    width: 100%;
+    min-width: 70px;
+    font-size: 1.0em;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 10px 0 10px;
+    border: solid 1px #dcdcdc;
+    transition: background 0.3s, border 0.3s;
+    box-shadow: inset 1px 1px 4px -2px #c5c5c5;
+}
+
+input[type="file"] {
+    border: solid 1px #dcdcdc;
+    width: 100%;
+    color: #454545;
+}
+
+input[placeholder], textarea {
+    font-family: 'FontAwesome', serif;
+}
+
+input:invalid {
+    transition: all 0.5s;
+    border: 1px solid #b85450;
+}
+
+select {
+    height: 2em;
+    line-height: 2em;
+}
+
+.textarea {
+    overflow: auto;
+    resize: both;
+}
+
+textarea, .textarea {
+    min-height: 100px;
+    @include box-sizing(border-box);
+}
+
+span.check input[type="checkbox"], span.radio input[type="radio"] {
+    position: relative;
+    vertical-align: middle;
+    bottom: 1px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    border: none;
+    width: 100%;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+}
+
+.input {
+    width: 100%;
+    min-width: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    button {
+        @include border-left-radius(2px);
+        @include border-right-radius(0px);
+        @include box-sizing(border-box);
+        display: inline-block;
+        background: #fff;
+        height: 2em;
+        font-size: 1em;
+        line-height: 2em;
+        padding: 0;
+        min-width: 40px;
+        border-left: solid 1px #dcdcdc;
+        border-top: solid 1px #dcdcdc;
+        border-bottom: solid 1px #dcdcdc;
+        border-right: none;
+
+        position: relative;
+        vertical-align: middle;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    i {
+        position: relative;
+        vertical-align: middle;
+    }
+
+    input {
+        @include border-left-radius(0px);
+        @include box-sizing(border-box);
+        font-size: 1em;
+
+        position: relative;
+        vertical-align: middle;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+

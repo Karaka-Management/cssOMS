@@ -1,0 +1,68 @@
+@import "mixin", "color";
+
+.nav-top {
+    margin: 5px 0 0 5px;
+    display: block;
+    background: $content-background-color;
+    border: 1px solid $content-border-color;
+
+    @include border-radius(3px);
+    @include box-shadow-top(#ffffff);
+
+    > li {
+        @include box-shadow-top(#ffffff);
+        text-shadow: 1px 1px 1px #ffffff;
+
+        &:first-child {
+            @include box-shadow-out(#ffffff);
+            @include border-left-radius(3px);
+        }
+    }
+}
+
+.nav-top li {
+    background: $content-background-color;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-top > li > a {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.nav-top li:hover {
+    background: #555;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+
+.nav-top li > ul {
+    padding: 0;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 150px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-top li > ul li {
+    background: #555;
+    display: block;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+
+.nav-top li > ul li:hover { background: #666; }
+.nav-top li:hover > ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
