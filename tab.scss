@@ -1,6 +1,8 @@
 @import "mixin", "color";
 
 .tabular {
+    @include box-sizing(border-box);
+
     .tab-links {
         @include box-sizing(border-box);
         padding: 5px 0 4px 0;
