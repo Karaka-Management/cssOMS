@@ -4,7 +4,7 @@
     cursor: pointer;
 }
 
-button, input[type="submit"], input[type="button"] {
+button, input[type="submit"], input[type="button"], a.button {
     @include border-radius(3px);
     border: 1px solid $content-border-color;
     cursor: pointer;

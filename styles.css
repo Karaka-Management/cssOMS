@@ -1433,7 +1433,7 @@ blockquote {
 .btn {
   cursor: pointer; }
 
-button, input[type="submit"], input[type="button"] {
+button, input[type="submit"], input[type="button"], a.button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1454,7 +1454,7 @@ button, input[type="submit"], input[type="button"] {
   -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
   box-shadow: inset 1px 1px 0px 0px #ffffff; }
-  button:hover, button :active, input[type="submit"]:hover, input[type="submit"] :active, input[type="button"]:hover, input[type="button"] :active {
+  button:hover, button :active, input[type="submit"]:hover, input[type="submit"] :active, input[type="button"]:hover, input[type="button"] :active, a.button:hover, a.button :active {
     text-shadow: -1px -1px 1px #ffffff;
     background: #d9d9d9;
     background: -moz-linear-gradient(top, #d6d6d6 0, #ededed 100);
