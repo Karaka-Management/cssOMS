@@ -207,6 +207,9 @@ pre {
 .floatRight {
   float: right; }
 
+.hidden {
+  display: none; }
+
 .ok {
   color: #5cff56; }
 
@@ -2432,5 +2435,3 @@ table.list td {
   -moz-box-shadow: inset 1px 1px 0px 0px #beddf1;
   -webkit-box-shadow: inset 1px 1px 0px 0px #beddf1;
   box-shadow: inset 1px 1px 0px 0px #beddf1; }
-
-/*# sourceMappingURL=styles.css.map */
