@@ -41,6 +41,9 @@ i {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -95,11 +98,21 @@ pre {
   border: 1px solid #b7b7b7;
   padding: 5px; }
 
+article {
+  background: #fff;
+  padding: 5px;
+  margin: 0; }
+  article p {
+    line-height: 1.5em; }
+
 .ok {
   color: #5cff56; }
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -215,6 +228,9 @@ pre {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -337,6 +353,9 @@ p + p {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -636,6 +655,9 @@ p + p {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -682,6 +704,9 @@ canvas {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -779,6 +804,9 @@ form .list {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -926,6 +954,9 @@ div.slider-1 figure {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -1101,6 +1132,9 @@ input[type="range"] {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -1235,6 +1269,9 @@ div.alert {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -1289,6 +1326,9 @@ blockquote {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -1396,6 +1436,9 @@ blockquote {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -1609,6 +1652,9 @@ article a {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -1678,6 +1724,9 @@ ul.h-list li {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -1792,6 +1841,9 @@ ul.h-list li {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -1853,6 +1905,9 @@ ul.h-list li {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -1961,6 +2016,9 @@ ul.h-list li {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -2045,6 +2103,9 @@ section h2 {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }
@@ -2205,6 +2266,9 @@ section h2 {
 .warning {
   color: #ff4b41; }
 
+.favorite {
+  color: #d16059; }
+
 .green {
   background: #c0ffb4; }
 
@@ -2321,6 +2385,9 @@ table.list td {
 
 .warning {
   color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
 
 .green {
   background: #c0ffb4; }

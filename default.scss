@@ -16,3 +16,13 @@ pre {
     border: 1px solid $content-border-color;
     padding: 5px;
 }
+
+article {
+    background: #fff;
+    padding: 5px;
+    margin: 0;
+
+    p {
+        line-height: 1.5em;
+    }
+}
