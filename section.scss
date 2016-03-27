@@ -15,7 +15,7 @@ section.box {
     padding: 10px;
 }
 
-section h1 {
+section > h1 {
     @include box-sizing(border-box);
     @include box-shadow-bottom(#f1f1f1);
     font-size: 1.3em;
@@ -24,7 +24,7 @@ section h1 {
     text-shadow: 1px 1px 1px #ffffff;
 }
 
-section h2 {
+section > h2 {
     @include box-sizing(border-box);
     font-size: 1.2em;
     margin-bottom: 5px;
