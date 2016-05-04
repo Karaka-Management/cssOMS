@@ -4061,6 +4061,34 @@ label[for="nav-trigger"] {
   opacity: 1;
   visibility: visible; }
 
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding-right: 5px;
+  background: #e7ebf3;
+  transition: all 0.2s; }
+
+.flex-container {
+  display: flex;
+  flex-directoion: row;
+  flex-wrap: wrap;
+  justify-content: flex-center;
+  align-items: flex-start;
+  align-content: flex-start; }
+
+.flex-item-static {
+  flex-grow: 0;
+  flex-shrink: 0; }
+
+.flex-item {
+  flex-grow: 1;
+  flex-basis: auto; }
+
 .ok {
   color: #5cff56; }
 
