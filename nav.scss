@@ -163,3 +163,19 @@ label[for="nav-trigger"] {
     opacity: 1;
     visibility: visible;
 }
+
+@media screen and (max-width: 600px) {
+    .nav-trigger:checked ~ main {
+        width: 100%;
+        left: 0;
+    }
+
+    .nav-trigger:not(:checked) ~ main {
+        width: 0;
+        padding-right: 0;
+    }
+
+    #nav-side {
+        width: 100%;
+    }
+}

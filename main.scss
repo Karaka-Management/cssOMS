@@ -1,3 +1,5 @@
+@import "mixin", "color";
+
 main {
     height: 100%;
     width: 100%;
@@ -15,9 +17,9 @@ main {
 
 .flex-container {
     display: flex;
-    flex-directoion: row;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-center;
+    justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
 }
