@@ -5,7 +5,6 @@
 }
 
 button, input[type="submit"], input[type="button"], a.button {
-    @include border-radius(3px);
     border: 1px solid $content-border-color;
     cursor: pointer;
     padding: 6px;
@@ -61,12 +60,7 @@ ul.btns li {
 
     @include box-shadow-out(#ffffff);
 
-    &:first-child {
-        @include border-left-radius(3px);
-    }
-
     &:last-child {
-        @include border-right-radius(3px);
         border-right: 1px solid $content-border-color;
     }
 }
@@ -90,7 +84,6 @@ ul.btns .active {
 }
 
 button.simple {
-    @include border-radius(3px);
     background: $content-background-color;
     border: 1px solid $content-border-color;
     text-shadow: -1px -1px 1px #ffffff;

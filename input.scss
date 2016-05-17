@@ -24,7 +24,6 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
-    @include border-radius(2px);
     color: #454545;
     background: #fff;
     width: 100%;
@@ -95,8 +94,6 @@ input[type="text"]:focus {
     flex-wrap: nowrap;
 
     button {
-        @include border-left-radius(2px);
-        @include border-right-radius(0px);
         @include box-sizing(border-box);
         display: inline-block;
         background: #fff;
@@ -126,7 +123,6 @@ input[type="text"]:focus {
     }
 
     input {
-        @include border-left-radius(0px);
         @include box-sizing(border-box);
         font-size: 1em;
 

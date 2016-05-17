@@ -100,10 +100,9 @@ label[for="nav-trigger"] {
 .nav-top {
     margin: 5px 0 0 5px;
     display: block;
-    background: $content-background-color;
+    background: #ffffff;
     border: 1px solid $content-border-color;
 
-    @include border-radius(3px);
     @include box-shadow-top(#ffffff);
 
     > li {
@@ -112,13 +111,12 @@ label[for="nav-trigger"] {
 
         &:first-child {
             @include box-shadow-out(#ffffff);
-            @include border-left-radius(3px);
         }
     }
 }
 
 .nav-top li {
-    background: $content-background-color;
+    background: #fff;
     display: inline-block;
     margin-right: -4px;
     position: relative;

@@ -10,11 +10,10 @@
 
     .tab-links label {
         @include box-shadow-out(#ffffff);
-        @include border-top-radius(3px);
         border-top: 1px solid $content-border-color;
         border-left: 1px solid $content-border-color;
         border-right: 1px solid $content-border-color;
-        @include gradient-top-bottom(#e0e3eb, 0, $content-background-color, 100, $content-background-color);
+        @include gradient-top-bottom(#e0e3eb, 0, #ffffff, 100, $content-background-color);
         padding: 5px 10px 5px 10px;
         text-shadow: 1px 1px 1px #ffffff;
         font-size: 0.9em;
@@ -36,11 +35,8 @@
     }
 
     .tab-content {
-        @include border-bottomleft-radius(3px);
-        @include border-bottomright-radius(3px);
-        @include border-topright-radius(3px);
         @include box-sizing(border-box);
-        background: $content-background-color;
+        background: #ffffff;
         border: 1px solid $content-border-color;
 
         padding: 10px;
@@ -66,9 +62,8 @@
 
     .tab-links label {
         @include box-shadow-out(#ffffff);
-        @include border-radius(3px);
         border: 1px solid $content-border-color;
-        @include gradient-top-bottom(#e0e3eb, 0, $content-background-color, 100, $content-background-color);
+        @include gradient-top-bottom(#e0e3eb, 0, #ffffff, 100, $content-background-color);
         padding: 5px 10px 5px 10px;
         text-shadow: 1px 1px 1px #ffffff;
         font-size: 0.9em;

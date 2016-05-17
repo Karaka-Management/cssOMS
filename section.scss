@@ -1,27 +1,31 @@
 @import "mixin", "color";
 
-section.box {
+.box {
     @include box-sizing(border-box);
     margin: 5px 0 0 5px;
     display: inline-block;
 }
 
+section.box {
+    @include box-shadow-bottom(#f1f1f1);
+    border: 1px solid $content-border-color;
+    background: #fff;
+}
+
 .box .inner {
     @include box-sizing(border-box);
-    @include border-radius(3px);
     @include box-shadow-out(#ffffff);
-    border: 1px solid $content-border-color;
-    background: $content-background-color;
     padding: 10px;
 }
 
-section > h1 {
-    @include box-sizing(border-box);
-    @include box-shadow-bottom(#f1f1f1);
-    font-size: 1.3em;
-    border-bottom: 1px solid $content-border-color;
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 1px #ffffff;
+section header {
+    > h1 {
+        margin: 10px 10px 0 10px;
+        padding-bottom: 5px;
+        font-size: 1.1em;
+        text-shadow: 1px 1px 1px #ffffff;
+        border-bottom: 1px solid #e1e1e1;
+    }
 }
 
 section > h2 {

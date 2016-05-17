@@ -7,7 +7,6 @@ table.table {
 
     caption {
         @include box-shadow-top(#ffffff);
-        @include border-top-radius(3px);
         background: $content-background-color;
         border-right: 1px solid $content-border-color;
         border-left: 1px solid $content-border-color;
@@ -55,14 +54,6 @@ table.table {
 
         tr:last-child td {
             border-bottom: 1px solid $content-border-color;
-        }
-
-        tr:last-child td:first-child {
-            @include border-bottomleft-radius(3px);
-        }
-
-        tr:last-child td:last-child {
-            @include border-bottomright-radius(3px);
         }
     }
 

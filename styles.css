@@ -3183,11 +3183,6 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  background-clip: padding-box;
   color: #454545;
   background: #fff;
   width: 100%;
@@ -3246,16 +3241,6 @@ input[type="range"] {
   flex-direction: row;
   flex-wrap: nowrap; }
   .input button {
-    -webkit-border-bottom-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    -webkit-border-top-left-radius: 2px;
-    border-top-left-radius: 2px;
-    background-clip: padding-box;
-    -webkit-border-bottom-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    -webkit-border-top-right-radius: 0px;
-    border-top-right-radius: 0px;
-    background-clip: padding-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -3280,11 +3265,6 @@ input[type="range"] {
     position: relative;
     vertical-align: middle; }
   .input input {
-    -webkit-border-bottom-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    -webkit-border-top-left-radius: 0px;
-    border-top-left-radius: 0px;
-    background-clip: padding-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -3648,11 +3628,6 @@ blockquote {
   cursor: pointer; }
 
 button, input[type="submit"], input[type="button"], a.button {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
   border: 1px solid #b7b7b7;
   cursor: pointer;
   padding: 6px;
@@ -3763,18 +3738,7 @@ ul.btns li {
   -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
   box-shadow: inset 1px 1px 0px 0px #ffffff; }
-  ul.btns li:first-child {
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    border-top-left-radius: 3px;
-    background-clip: padding-box; }
   ul.btns li:last-child {
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    background-clip: padding-box;
     border-right: 1px solid #b7b7b7; }
 
 ul.btns a {
@@ -3792,11 +3756,6 @@ ul.btns .active {
   cursor: default; }
 
 button.simple {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
   background: #f5f5ff;
   border: 1px solid #b7b7b7;
   text-shadow: -1px -1px 1px #ffffff;
@@ -3993,13 +3952,8 @@ label[for="nav-trigger"] {
 .nav-top {
   margin: 5px 0 0 5px;
   display: block;
-  background: #f5f5ff;
+  background: #ffffff;
   border: 1px solid #b7b7b7;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
   box-shadow: inset 0px 1px 0px 0px #ffffff; }
@@ -4011,15 +3965,10 @@ label[for="nav-trigger"] {
     .nav-top > li:first-child {
       -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
       -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
-      box-shadow: inset 1px 1px 0px 0px #ffffff;
-      -webkit-border-bottom-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      -webkit-border-top-left-radius: 3px;
-      border-top-left-radius: 3px;
-      background-clip: padding-box; }
+      box-shadow: inset 1px 1px 0px 0px #ffffff; }
 
 .nav-top li {
-  background: #f5f5ff;
+  background: #fff;
   display: inline-block;
   margin-right: -4px;
   position: relative;
@@ -4365,40 +4314,35 @@ main {
 .darkblue {
   background: #7ba9d1; }
 
-section.box {
+.box {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 5px 0 0 5px;
   display: inline-block; }
 
+section.box {
+  -moz-box-shadow: 0px 1px 0px 0px #f1f1f1;
+  -webkit-box-shadow: 0px 1px 0px 0px #f1f1f1;
+  box-shadow: 0px 1px 0px 0px #f1f1f1;
+  border: 1px solid #b7b7b7;
+  background: #fff; }
+
 .box .inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
   -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
   box-shadow: inset 1px 1px 0px 0px #ffffff;
-  border: 1px solid #b7b7b7;
-  background: #f5f5ff;
   padding: 10px; }
 
-section > h1 {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-box-shadow: 0px 1px 0px 0px #f1f1f1;
-  -webkit-box-shadow: 0px 1px 0px 0px #f1f1f1;
-  box-shadow: 0px 1px 0px 0px #f1f1f1;
-  font-size: 1.3em;
-  border-bottom: 1px solid #b7b7b7;
-  margin-bottom: 5px;
-  text-shadow: 1px 1px 1px #ffffff; }
+section header > h1 {
+  margin: 10px 10px 0 10px;
+  padding-bottom: 5px;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 1px #ffffff;
+  border-bottom: 1px solid #e1e1e1; }
 
 section > h2 {
   -moz-box-sizing: border-box;
@@ -4466,21 +4410,16 @@ section > h2 {
     -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
     -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
     box-shadow: inset 1px 1px 0px 0px #ffffff;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    border-top-left-radius: 3px;
-    background-clip: padding-box;
     border-top: 1px solid #b7b7b7;
     border-left: 1px solid #b7b7b7;
     border-right: 1px solid #b7b7b7;
     background: #f5f5ff;
-    background: -moz-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #f5f5ff));
-    background: -webkit-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: -o-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: -ms-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: linear-gradient(to bottom, #e0e3eb 0, #f5f5ff 100);
+    background: -moz-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #ffffff));
+    background: -webkit-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: -o-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: -ms-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: linear-gradient(to bottom, #e0e3eb 0, #ffffff 100);
     padding: 5px 10px 5px 10px;
     text-shadow: 1px 1px 1px #ffffff;
     font-size: 0.9em;
@@ -4502,19 +4441,10 @@ section > h2 {
     display: inline-block;
     margin: 0 5px 0 0; }
   .tabular .tab-content {
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background-clip: padding-box;
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-clip: padding-box;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    background-clip: padding-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: #f5f5ff;
+    background: #ffffff;
     border: 1px solid #b7b7b7;
     padding: 10px; }
     .tabular .tab-content > input {
@@ -4530,19 +4460,14 @@ section > h2 {
   -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
   box-shadow: inset 1px 1px 0px 0px #ffffff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
   border: 1px solid #b7b7b7;
   background: #f5f5ff;
-  background: -moz-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #f5f5ff));
-  background: -webkit-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: -o-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: -ms-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: linear-gradient(to bottom, #e0e3eb 0, #f5f5ff 100);
+  background: -moz-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #ffffff));
+  background: -webkit-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: -o-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: -ms-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: linear-gradient(to bottom, #e0e3eb 0, #ffffff 100);
   padding: 5px 10px 5px 10px;
   text-shadow: 1px 1px 1px #ffffff;
   font-size: 0.9em;
@@ -4625,11 +4550,6 @@ table.table {
     -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
     -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    border-top-left-radius: 3px;
-    background-clip: padding-box;
     background: #f5f5ff;
     border-right: 1px solid #b7b7b7;
     border-left: 1px solid #b7b7b7;
@@ -4657,14 +4577,6 @@ table.table {
     display: block; }
   table.table tbody tr:last-child td {
     border-bottom: 1px solid #b7b7b7; }
-  table.table tbody tr:last-child td:first-child {
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background-clip: padding-box; }
-  table.table tbody tr:last-child td:last-child {
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-clip: padding-box; }
   table.table thead {
     background: #f5f5ff; }
     table.table thead td:first-child {
