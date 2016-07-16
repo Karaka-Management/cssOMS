@@ -134,23 +134,27 @@ input[type="text"]:focus {
 }
 
 .dropdown {
-    label:hover ~ label {
+    position: relative;
+    display: inline-block;
+
+    &:hover .content{
         display: block;
     }
 
-    input:checked + label {
-        display: block;
-    }
-
-    input {
+    .content {
         display: none;
-        margin: 5px;
-        width: 100%;
+        position: absolute;
+        z-index: 2;
         background: #fff;
-    }
 
-    label {
-        display: none;
-        position: relative;
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin: 5px;
+            padding: 5px;
+        }
     }
 }

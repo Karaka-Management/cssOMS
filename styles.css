@@ -96,7 +96,20 @@ pre {
   border-radius: 3px;
   background-clip: padding-box;
   border: 1px solid #b7b7b7;
-  padding: 5px; }
+  padding: 5px;
+  overflow-x: scroll;
+  counter-reset: line; }
+  pre span {
+    display: block; }
+    pre span:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 .5em;
+      margin-right: .5em;
+      color: #888;
+      width: 30px; }
 
 article {
   background: #fff;
@@ -3285,6 +3298,23 @@ input[type="range"] {
     vertical-align: middle;
     flex-grow: 1;
     flex-shrink: 1; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown:hover .content {
+    display: block; }
+  .dropdown .content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: #fff; }
+    .dropdown .content input {
+      display: none; }
+    .dropdown .content label {
+      display: block;
+      margin: 5px;
+      padding: 5px; }
 
 .ok {
   color: #5cff56; }
