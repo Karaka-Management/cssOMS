@@ -2889,7 +2889,7 @@ p + p {
 
 canvas {
   background: #fff;
-  bordeR: 1px solid #000;
+  border: 1px solid #000;
   user-select: none; }
 
 .ok {
@@ -3315,6 +3315,21 @@ input[type="range"] {
       display: block;
       margin: 5px;
       padding: 5px; }
+
+select.plain {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  box-shadow: none; }
+  select.plain option {
+    cursor: pointer; }
 
 .ok {
   color: #5cff56; }
