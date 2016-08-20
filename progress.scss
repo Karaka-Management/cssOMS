@@ -11,18 +11,10 @@
     height: 100%;
     @include border-radius(3px);
     background-color: rgb(43,194,83);
-    background-image: -webkit-gradient(
-                    linear,
-                    left bottom,
-                    left top,
+    background-image: linear-gradient(
+                    to left top,
                     color-stop(0, rgb(43,194,83)),
-                    color-stop(1, rgb(84,240,84))
-    );
-    background-image: -moz-linear-gradient(
-                    center bottom,
-                    rgb(43,194,83) 37%,
-                    rgb(84,240,84) 69%
-    );
+                    color-stop(1, rgb(84,240,84))););
     position: relative;
     overflow: hidden;
 }
