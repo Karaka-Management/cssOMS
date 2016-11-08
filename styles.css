@@ -3328,8 +3328,6 @@ select.plain {
   appearance: none;
   cursor: pointer;
   box-shadow: none; }
-  select.plain option {
-    cursor: pointer; }
 
 .ok {
   color: #5cff56; }
@@ -4003,8 +4001,7 @@ label[for="nav-trigger"] {
 
 .nav-trigger:checked ~ main {
   width: calc(100% - 175px);
-  left: 175px;
-  box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.5); }
+  left: 175px; }
 
 .nav-top {
   margin: 5px 0 0 5px;
@@ -4276,8 +4273,7 @@ main {
   border-radius: 3px;
   background-clip: padding-box;
   background-color: #2bc253;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2bc253), color-stop(1, #54f054));
-  background-image: -moz-linear-gradient(center bottom, #2bc253 37%, #54f054 69%);
+  background-image: linear-gradient(to left top, color-stop(0, #2bc253), color-stop(1, #54f054));
   position: relative;
   overflow: hidden; }
 

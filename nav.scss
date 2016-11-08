@@ -94,7 +94,6 @@ label[for="nav-trigger"] {
 .nav-trigger:checked ~ main {
     width: calc(100% - 175px);
     left: 175px;
-    box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .nav-top {
