@@ -1,4 +1,4 @@
-@import "mixin", "color";
+@import "_mixin", "color";
 
 ul.default li {
     margin: 5px 0 5px 0;
@@ -35,4 +35,31 @@ ul.h-list li {
     display: inline-block;
 
     margin: 5px 10px 5px 10px;
+}
+
+.bullet-list {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.bullet-list td:first-child {
+    padding-right: 20px;
+}
+
+.bullet-list span {
+    margin-right: 5px;
+}
+
+.bullet {
+    width: 7px;
+    height: 7px;
+    border-radius: 30px;
+    background: #ccc;
+    display: inline-block;
+}
+
+.bullet.active {
+    background: #000;
 }

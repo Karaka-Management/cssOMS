@@ -1,4 +1,4 @@
-@import "mixin", "color";
+@import "_mixin", "color";
 
 input, select, textarea, .textarea {
     border: 1px solid $content-border-color;
