@@ -2531,6 +2531,9 @@ article {
 .darkblue {
   background: #7ba9d1; }
 
+*[draggable] {
+  cursor: pointer; }
+
 p {
   margin: 0 0 10px 0;
   line-height: 1.4em; }
@@ -3901,6 +3904,28 @@ ul.h-list li {
   display: inline-block;
   margin: 5px 10px 5px 10px; }
 
+.bullet-list {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+.bullet-list td:first-child {
+  padding-right: 20px; }
+
+.bullet-list span {
+  margin-right: 5px; }
+
+.bullet {
+  width: 7px;
+  height: 7px;
+  border-radius: 30px;
+  background: #ccc;
+  display: inline-block; }
+
+.bullet.active {
+  background: #000; }
+
 .ok {
   color: #5cff56; }
 
@@ -4321,6 +4346,106 @@ main {
 .nostripes > span > span, .nostripes > span:after {
   -webkit-animation: none;
   background-image: none; }
+
+.timeline {
+  list-style: none;
+  margin: 0 0 30px 120px;
+  padding-left: 30px;
+  border-left: 3px solid #eaeaea; }
+
+.timeline li {
+  margin: 0;
+  position: relative; }
+
+.timeline p {
+  margin: 0 0 15px; }
+
+.timeline-date {
+  margin-top: -18px;
+  top: 50%;
+  left: -150px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #ccc; }
+
+.timeline-circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -40px;
+  width: 10px;
+  height: 10px;
+  background: tomato;
+  border: 3px solid #eaeaea;
+  border-radius: 50%;
+  display: block;
+  position: absolute; }
+
+.timeline-circle-start {
+  margin-top: 0;
+  top: 0;
+  left: -45px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #eaeaea;
+  border-radius: 50%;
+  display: block;
+  position: absolute; }
+
+.timeline-circle-end {
+  margin-top: 0;
+  top: 100%;
+  left: -45px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #eaeaea;
+  border-radius: 50%;
+  display: block;
+  position: absolute; }
+
+.timeline-content {
+  padding: 50px 20px 0;
+  border-radius: 0.5em;
+  position: relative; }
+
+.timeline-content p {
+  text-align: justify; }
+
+.timeline label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  top: 20px; }
+
+.timeline-radio {
+  display: none; }
+
+.timeline-break {
+  display: none; }
+
+.progress-radial {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: tomato; }
+
+.progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 9px; }
 
 .ok {
   color: #5cff56; }
