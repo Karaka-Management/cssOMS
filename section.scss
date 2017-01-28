@@ -2,7 +2,11 @@
 
 .box {
     @include box-sizing(border-box);
-    margin: 5px 0 0 5px;
+    display: inline-block;
+    margin-top: 0.3rem;
+}
+
+.box-container {
     display: inline-block;
 }
 

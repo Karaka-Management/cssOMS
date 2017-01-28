@@ -4,6 +4,7 @@ table.table {
     @include box-sizing(border-box);
     width: 100%;
     font-size: 0.9em;
+    display: table;
 
     caption {
         @include box-shadow-top(#ffffff);
@@ -106,6 +107,7 @@ table.list {
 @media screen and (max-width: 600px) {
     table.table {
         border: 0;
+        width: 100%;
     }
 
     table.table thead {

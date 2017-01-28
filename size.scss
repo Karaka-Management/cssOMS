@@ -97,6 +97,11 @@
     margin: 5px;;
 }
 
+.resizable {
+    resize: both;
+    overflow: auto;
+}
+
 @media only screen and (min-width: 501px) and (max-width: 900px) {
     .box.w-33, .box.w-25 {
         width: 49%;

@@ -9,27 +9,6 @@ main {
     left: 0;
     z-index: 1;
 
-    padding-right: 5px;
-
     background: $background-color;
     transition: all 0.2s;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-
-.flex-item-static {
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
-.flex-item {
-    flex-grow: 1;
-    flex-basis: auto;
 }
