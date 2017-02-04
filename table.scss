@@ -1,4 +1,4 @@
-@import "_mixin", "color";
+@import "_mixins", "_vars";
 
 table.table {
     @include box-sizing(border-box);
@@ -137,4 +137,8 @@ table.list {
     table.table td:last-child {
         border-bottom: 0;
     }
+}
+
+.nobreak {
+    white-space: nowrap;
 }

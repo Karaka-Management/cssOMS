@@ -1,4 +1,4 @@
-@import "_mixin", "color";
+@import "_mixins", "_vars";
 
 blockquote {
     border: 1px solid $content-borderlight-color;

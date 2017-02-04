@@ -1,4 +1,4 @@
-@import "_mixin", "color";
+@import "_mixins", "_vars";
 
 .box {
     @include box-sizing(border-box);
