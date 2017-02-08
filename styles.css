@@ -246,6 +246,9 @@ article {
   display: table-cell;
   vertical-align: middle; }
 
+.h-overflow {
+  overflow-x: auto; }
+
 .hidden {
   display: none; }
 
