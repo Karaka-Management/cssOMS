@@ -28,19 +28,23 @@ input[type="datetime-local"] {
     background: #fff;
     width: 100%;
     min-width: 70px;
-    font-size: 1.0em;
-    height: 2em;
-    line-height: 2em;
-    padding: 0 10px 0 10px;
+    font-size: 1.0rem;
+    height: 2rem;
+    padding: 10px;
     border: solid 1px #dcdcdc;
     transition: background 0.3s, border 0.3s;
     box-shadow: inset 1px 1px 4px -2px #c5c5c5;
+
+    &:focus {
+        border-color:#0c69d6;
+    }
 }
 
 input[type="file"] {
     border: solid 1px #dcdcdc;
     width: 100%;
     color: #454545;
+    padding: 10px;
 }
 
 input[placeholder], textarea {
@@ -82,10 +86,6 @@ input[type="range"] {
     cursor: pointer;
 }
 
-input[type="password"]:focus,
-input[type="text"]:focus {
-}
-
 .input {
     width: 100%;
     min-width: 120px;
@@ -97,15 +97,14 @@ input[type="text"]:focus {
         @include box-sizing(border-box);
         display: inline-block;
         background: #fff;
-        height: 2em;
-        font-size: 1em;
-        line-height: 2em;
-        padding: 0;
+        height: 2rem;
+        font-size: 1rem;
         min-width: 40px;
         border-left: solid 1px #dcdcdc;
         border-top: solid 1px #dcdcdc;
         border-bottom: solid 1px #dcdcdc;
         border-right: none;
+        padding: 0;
 
         position: relative;
         vertical-align: middle;
