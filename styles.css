@@ -4870,33 +4870,6 @@ table.list th {
 table.list td {
   padding: 2px 5px 2px 5px; }
 
-@media screen and (max-width: 600px) {
-  table.table {
-    border: 0;
-    width: 100%; }
-
-  table.table thead {
-    display: none; }
-
-  table.table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em; }
-
-  table.table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right; }
-
-  table.table td:before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase; }
-
-  table.table td:last-child {
-    border-bottom: 0; } }
 .nobreak {
   white-space: nowrap; }
 
