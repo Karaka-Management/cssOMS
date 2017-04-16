@@ -1,6 +1,7 @@
 @import "_mixins", "_vars";
 
 #nav-side {
+    user-select: none;
     width: 175px;
     position: fixed;
     top: 75px;
@@ -123,6 +124,7 @@ label[for="nav-trigger"] {
 }
 
 .nav-top {
+    user-select: none;
     margin-top: 5px;
     display: block;
     background: #ffffff;

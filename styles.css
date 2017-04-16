@@ -4253,6 +4253,7 @@ ul.h-list li {
 /* Navigation */
 /* Colors */
 #nav-side {
+  user-select: none;
   width: 175px;
   position: fixed;
   top: 75px;
@@ -4323,6 +4324,7 @@ label[for="nav-trigger"] {
   left: 175px; }
 
 .nav-top {
+  user-select: none;
   margin-top: 5px;
   display: block;
   background: #ffffff;
