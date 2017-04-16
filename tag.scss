@@ -1,64 +1,10 @@
 @import "_mixins", "_vars";
 
 .tag {
-    text-shadow: 1px 1px 1px #ffffff;
     cursor: pointer;
     border: 1px solid $content-border-color;
-    @include border-radius(3px);
     padding: 5px 10px 5px 10px;
     font-size: 0.7em;
-}
-
-.tag.green {
-    @include box-shadow-out(#ecffea);
-}
-
-.tag.red {
-    @include box-shadow-out(#fdb7b4);
-}
-
-.tag.blue {
-    @include box-shadow-out(#dce3fd);
-}
-
-.tag.orange {
-    @include box-shadow-out(#fddfb1);
-}
-
-.tag.lightblue {
-    @include box-shadow-out(#e1fdfa);
-}
-
-.tag.yellow {
-    @include box-shadow-out(#fdfdcf);
-}
-
-.tag.purple {
-    @include box-shadow-out(#d8c8fd);
-}
-
-.tag.pink {
-    @include box-shadow-out(#fdd3f0);
-}
-
-.tag.grey {
-    @include box-shadow-out(#f5f5f5);
-}
-
-.tag.darkred {
     color: #fff;
-    text-shadow: 1px 1px 0px #000;
-    @include box-shadow-out(#f17068);
-}
-
-.tag.darkgreen {
-    color: #fff;
-    text-shadow: 1px 1px 0px #000;
-    @include box-shadow-out(#9df1ad);
-}
-
-.tag.darkblue {
-    color: #fff;
-    text-shadow: 1px 1px 0px #000;
-    @include box-shadow-out(#beddf1);
+    display: inline-block;
 }

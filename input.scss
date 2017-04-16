@@ -4,10 +4,6 @@ input, select, textarea, .textarea {
     border: 1px solid $content-border-color;
 }
 
-select {
-    cursor: pointer;
-}
-
 progress {
     height: 20px;
     width: 100%;
@@ -27,10 +23,10 @@ input[type="datetime-local"] {
     color: #454545;
     background: #fff;
     width: 100%;
-    min-width: 70px;
-    font-size: 1.0rem;
     height: 2rem;
-    padding: 10px;
+    min-width: 70px;
+    padding: 7px;
+    font-size: 0.9rem;
     border: solid 1px #dcdcdc;
     transition: background 0.3s, border 0.3s;
     box-shadow: inset 1px 1px 4px -2px #c5c5c5;
@@ -38,6 +34,15 @@ input[type="datetime-local"] {
     &:focus {
         border-color:#0c69d6;
     }
+}
+
+select {
+    cursor: pointer;
+    padding: 0 7px 0 7px; /* overwrites input padding: 7px. don't know why i have to do this! */
+}
+
+option {
+    line-height: 1rem;
 }
 
 input[type="file"] {
@@ -54,11 +59,6 @@ input[placeholder], textarea {
 input:invalid {
     transition: all 0.5s;
     border: 1px solid #b85450;
-}
-
-select {
-    height: 2em;
-    line-height: 2em;
 }
 
 .textarea {

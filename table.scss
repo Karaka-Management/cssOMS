@@ -1,5 +1,63 @@
 @import "_mixins", "_vars";
 
+.table.red {
+    caption {
+        background: #B8312F;
+        color: #fff;
+    }
+    
+    thead {
+        background: #B8312F;
+        color: #fff;
+    }
+}
+
+.table.orange {
+    caption {
+        background: #FBA026;
+        color: #fff;
+    }
+    
+    thead {
+        background: #FBA026;
+        color: #fff;
+    }
+}
+
+.table.green {
+    caption {
+        background: #41A85F;
+        color: #fff;
+    }
+    
+    thead {
+        background: #41A85F;
+        color: #fff;
+    }
+}
+
+.table.blue {
+    caption {
+        background: #2C82C9;
+        color: #fff;
+    }
+    
+    thead {
+        background: #2C82C9;
+        color: #fff;
+    }
+}
+
+.table.white {
+    caption {
+        background: #fff;
+    }
+    
+    thead {
+        background: #fff;
+    }
+}
+
 table.table {
     @include box-sizing(border-box);
     width: 100%;
@@ -7,8 +65,7 @@ table.table {
     display: table;
 
     caption {
-        @include box-shadow-top(#ffffff);
-        background: $content-background-color;
+        background: #fff;
         border-right: 1px solid $content-border-color;
         border-left: 1px solid $content-border-color;
         border-top: 1px solid $content-border-color;
@@ -36,16 +93,18 @@ table.table {
         }
 
         tr {
+            height: 2rem;
+
             &:nth-of-type(2n) {
-                background: #f9f9ff;
+                background: #f8f8f8;
             }
 
             &:nth-of-type(2n+1) {
-                background: #f9fdff;
+                background: #fff;
             }
 
             &:hover {
-                background: $content-background-color;
+                background: #f0f0f0;
             }
         }
 
@@ -59,7 +118,7 @@ table.table {
     }
 
     thead {
-        background: $content-background-color;
+        background: #fff;
 
         td:first-child {
             border-left: 1px solid $content-border-color;

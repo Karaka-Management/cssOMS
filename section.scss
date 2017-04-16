@@ -1,5 +1,25 @@
 @import "_mixins", "_vars";
 
+.box.orange {
+    border-top: 3px solid #FBA026;
+}
+
+.box.red {
+    border-top: 3px solid #B8312F;
+}
+
+.box.green {
+    border-top: 3px solid #41A85F;
+}
+
+.box.blue {
+    border-top: 3px solid #2C82C9;
+}
+
+.box.purple {
+    border-top: 3px solid #553982;
+}
+
 .box {
     @include box-sizing(border-box);
     display: inline-block;
