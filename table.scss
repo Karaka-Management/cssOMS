@@ -1,6 +1,8 @@
 @import "_mixins", "_vars";
 
 .table.red {
+    background: none;
+
     caption {
         background: #B8312F;
         color: #fff;
@@ -13,6 +15,8 @@
 }
 
 .table.orange {
+    background: none;
+
     caption {
         background: #FBA026;
         color: #fff;
@@ -25,6 +29,8 @@
 }
 
 .table.green {
+    background: none;
+    
     caption {
         background: #41A85F;
         color: #fff;
@@ -37,6 +43,8 @@
 }
 
 .table.blue {
+    background: none;
+
     caption {
         background: #2C82C9;
         color: #fff;
@@ -49,6 +57,8 @@
 }
 
 .table.white {
+    background: none;
+
     caption {
         background: #fff;
     }
@@ -160,6 +170,52 @@ table.list {
 
     td {
         padding: 2px 5px 2px 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    table.table {
+        border: 0;
+        width: 100%;
+    }
+
+    table.table thead {
+        display: none;
+    }
+
+    table.table tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table.table td {
+        border-left: 1px solid $content-border-color;
+        border-right: 1px solid $content-border-color;
+        display: block;
+        font-size: .8rem;
+        text-align: right;
+        position: relative;
+        height: 2rem;
+        line-height: 2rem;
+    }
+
+    table.table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 20px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    table.table td:last-child {
+        border-bottom: 1px solid $content-border-color;
+    }
+
+    table.table tbody tr {
+        height: auto;
     }
 }
 
