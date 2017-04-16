@@ -4282,10 +4282,10 @@ ul.h-list li {
     border-bottom: 1px solid #1a1a1a;
     color: #fff; }
     #nav-side > li li:first-child {
-      padding: 5px 0 5px 5px; }
+      padding: 7px 0 7px 7px; }
     #nav-side > li li a {
       display: block;
-      padding: 5px 0 5px 5px; }
+      padding: 7px 0 7px 7px; }
       #nav-side > li li a:hover {
         background: #3F3F3F; }
   #nav-side li:last-child li:last-child {
