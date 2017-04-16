@@ -48,8 +48,16 @@
     > li {
         li {
             border-top: 1px solid #3f3f3f;
-            border-bottom: 1px solid #1a1a1a;
+            border-bottom: 1px solid #252525;
             color: #fff;
+
+            &:not(:first-child) {
+                background: #353535;
+            }
+
+            &:first-child {
+                border-bottom: 1px solid #1a1a1a;
+            }
 
             &:first-child {
                 padding: 7px 0 7px 7px;
