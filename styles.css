@@ -3949,6 +3949,11 @@ div.alert {
   border: 2px solid #85b0ee;
   color: #4865a5; }
 
+.slider {
+  overflow-x: auto; }
+  .slider ul {
+    display: inline; }
+
 /* Global */
 /* Content Container */
 /* Content box */
@@ -4191,6 +4196,9 @@ article a {
 
 .unseen {
   font-weight: bold; }
+
+[data-href] {
+  cursor: pointer; }
 
 /* Global */
 /* Content Container */
@@ -4611,20 +4619,23 @@ main {
 /* Content box */
 /* Navigation */
 /* Colors */
-.box.orange {
+section.box.orange {
   border-top: 3px solid #FBA026; }
 
-.box.red {
+section.box.red {
   border-top: 3px solid #B8312F; }
 
-.box.green {
+section.box.green {
   border-top: 3px solid #41A85F; }
 
-.box.blue {
+section.box.blue {
   border-top: 3px solid #2C82C9; }
 
-.box.purple {
+section.box.purple {
   border-top: 3px solid #553982; }
+
+section.box.darkblue {
+  border-top: 3px solid #2969B0; }
 
 .box {
   -moz-box-sizing: border-box;
