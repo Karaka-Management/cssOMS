@@ -48,40 +48,40 @@ ul.btns {
     list-style: none;
     overflow: hidden;
     font-size: 12px;
-}
+    
+    li {
+        background: $content-background-color;
+        border-left: 1px solid $content-border-color;
+        border-top: 1px solid $content-border-color;
+        border-bottom: 1px solid $content-border-color;
+        float: left;
+        text-shadow: -1px -1px 1px #ffffff;
+        cursor: pointer;
 
-ul.btns li {
-    background: $content-background-color;
-    border-left: 1px solid $content-border-color;
-    border-top: 1px solid $content-border-color;
-    border-bottom: 1px solid $content-border-color;
-    float: left;
-    text-shadow: -1px -1px 1px #ffffff;
-    cursor: pointer;
+        @include box-shadow-out(#ffffff);
 
-    @include box-shadow-out(#ffffff);
-
-    &:last-child {
-        border-right: 1px solid $content-border-color;
+        &:last-child {
+            border-right: 1px solid $content-border-color;
+        }
+        
+        &:before {
+            border-left-color: $content-border-color;
+            margin-left: 1px;
+        }
     }
-}
-
-ul.btns a {
-    display: block;
-    padding: 10px;
-}
-
-ul.btns li:before {
-    border-left-color: $content-border-color;
-    margin-left: 1px;
-}
-
-ul.btns .active, ul.btns li:hover {
-    background: #ffffff;
-}
-
-ul.btns .active {
-    cursor: default;
+    
+    a {
+        display: block;
+        padding: 10px;
+    }
+    
+    .active {
+        cursor: default;
+    }
+    
+    .active, li:hover {
+        background: #ffffff;
+    }
 }
 
 button.simple {
