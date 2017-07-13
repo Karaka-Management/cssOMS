@@ -22,26 +22,27 @@ section.box {
     background: #fff;
     
     section.box.orange {
-    border-top: 3px solid #FBA026;
+        border-top: 3px solid #FBA026;
 
-    &.red {
-        border-top: 3px solid #B8312F;
-    }
+        &.red {
+            border-top: 3px solid #B8312F;
+        }
 
-    &.green {
-        border-top: 3px solid #41A85F;
-    }
+        &.green {
+            border-top: 3px solid #41A85F;
+        }
 
-    &.blue {
-        border-top: 3px solid #2C82C9;
-    }
+        &.blue {
+            border-top: 3px solid #2C82C9;
+        }
 
-    &.purple {
-        border-top: 3px solid #553982;
-    }
+        &.purple {
+            border-top: 3px solid #553982;
+        }
 
-    &.darkblue {
-        border-top: 3px solid #2969B0;
+        &.darkblue {
+            border-top: 3px solid #2969B0;
+        }
     }
 }
 
