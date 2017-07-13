@@ -7,26 +7,14 @@ div.alert {
     }
 }
 
-.alertbox.ok, .alert.ok {
-    background: #aaffad;
-    border: 2px solid #81e27d;
-    color: #459442;
-}
-
-.alertbox.warning, .alert.warning {
-    background: #f8ffa8;
-    border: 2px solid #d6d949;
-    color: #94972f;
-}
-
-.alertbox.error, .alert.error{
-    background: #ff7d79;
-    border: 2px solid #ee5649;
-    color: #a5302a;
-}
-
-.alertbox.info, .alert.info{
-    background: #b6d2ff;
-    border: 2px solid #85b0ee;
-    color: #4865a5;
+@each $tuple in 
+    'ok' #aaffad #81e27d #459442, 
+    'warning' #f8ffa8 #d6d949 #94972f, 
+    'error' #ff7d79 #ee5649 #a5302a, 
+    'info' #b6d2ff #85b0ee #4865a5 {
+    .alertbox.#{nth($tuple, 1)}, .alert.#{nth($tuple, 1)} {
+        background: #{nth($tuple, 2)};
+        border: 2px solid #{nth($tuple, 3)};
+        color: #{nth($tuple, 4)};
+    }
 }
