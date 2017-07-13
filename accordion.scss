@@ -4,24 +4,24 @@
     margin: 10px auto 30px auto;
     text-align: left;
     
-    & > input {
+    > input {
         display: none;
         
         &:checked + label {
             @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
             color: #000;
             
-            & + section {
+            + section {
                 display: inherit;
             }
         }
         
-        & + label + section {
+        + label + section {
             display: none;
         }
     }
     
-    & label {
+    label {
         display: block;
         padding: 5px 20px;
         position: relative;
@@ -39,7 +39,7 @@
         }
     }
     
-    & > section {
+    > section {
         background: $content-background-color;
         overflow: hidden;
         height: auto;
