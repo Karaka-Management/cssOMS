@@ -4,19 +4,19 @@
     height: 20px;  /* Can be anything */
     position: relative;
     background: none !important;
-}
-
-.meter > span {
-    display: block;
-    height: 100%;
-    @include border-radius(3px);
-    background-color: rgb(43,194,83);
-    background-image: linear-gradient(
-                    to left top,
-                    color-stop(0, rgb(43,194,83)),
-                    color-stop(1, rgb(84,240,84)));
-    position: relative;
-    overflow: hidden;
+    
+    > span {
+        display: block;
+        height: 100%;
+        @include border-radius(3px);
+        background-color: rgb(43,194,83);
+        background-image: linear-gradient(
+                        to left top,
+                        color-stop(0, rgb(43,194,83)),
+                        color-stop(1, rgb(84,240,84)));
+        position: relative;
+        overflow: hidden;
+    }
 }
 
 .meter > span:after, .animate > span > span {
@@ -94,15 +94,15 @@
     margin: 0 0 30px 120px;
     padding-left: 30px;
     border-left: 3px solid #eaeaea;
-}
 
-.timeline li {
-    margin: 0;
-    position: relative;
-}
+    li {
+        margin: 0;
+        position: relative;
+    }
 
-.timeline p {
-    margin: 0 0 15px;
+    p {
+        margin: 0 0 15px;
+    }
 }
 
 .timeline-date {
@@ -188,17 +188,17 @@
     height: 70px;
     border-radius: 50%;
     background-color: tomato;
-}
-
-.progress-radial .overlay {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-top: 5px;
-    text-align: center;
-    line-height: 60px;
-    font-size: 9px;
+    
+    .overlay {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-top: 5px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 9px;
+    }
 }

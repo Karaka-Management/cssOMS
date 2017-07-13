@@ -1,70 +1,43 @@
 @import "_mixins", "_vars";
 
-.table.red {
+.table {
     background: none;
-
     caption {
-        background: #B8312F;
         color: #fff;
     }
     
     thead {
-        background: #B8312F;
-        color: #fff;
-    }
-}
-
-.table.orange {
-    background: none;
-
-    caption {
-        background: #FBA026;
         color: #fff;
     }
     
-    thead {
-        background: #FBA026;
-        color: #fff;
-    }
-}
-
-.table.green {
-    background: none;
-    
-    caption {
-        background: #41A85F;
-        color: #fff;
+    &.red {
+        caption, thead {
+            background: #B8312F;
+        }
     }
     
-    thead {
-        background: #41A85F;
-        color: #fff;
-    }
-}
-
-.table.blue {
-    background: none;
-
-    caption {
-        background: #2C82C9;
-        color: #fff;
+    &.orange {
+        caption, thead {
+            background: #FBA026;
+        }
     }
     
-    thead {
-        background: #2C82C9;
-        color: #fff;
-    }
-}
-
-.table.white {
-    background: none;
-
-    caption {
-        background: #fff;
+    &.green {
+        caption, thead {
+            background: #41A85F;
+        }
     }
     
-    thead {
-        background: #fff;
+    &.blue {
+        caption, thead {
+            background: #2C82C9;
+        }
+    }
+    
+    &.white {
+        caption, thead {
+            background: #fff;
+        }
     }
 }
 
