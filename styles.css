@@ -3487,6 +3487,8 @@ form .inputPrefix {
   line-height: 2em;
   height: 100%;
   background: #bebebe; }
+form table.layout {
+  table-layout: fixed; }
 form .layout td + td {
   padding-left: 5px; }
 form .list {
@@ -3872,7 +3874,8 @@ div.alert {
   color: #4865a5; }
 
 .slider {
-  overflow-x: auto; }
+  overflow-x: auto;
+  white-space: nowrap; }
   .slider ul {
     display: inline; }
 
