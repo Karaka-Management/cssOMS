@@ -118,6 +118,8 @@ table.table {
     }
 
     tfoot {
+        border: none;
+
         label {
             float: left;
         }
@@ -150,45 +152,48 @@ table.list {
     table.table {
         border: 0;
         width: 100%;
-    }
 
-    table.table thead {
-        display: none;
-    }
+        thead {
+            display: none;
+        }
 
-    table.table tr {
-        display: block;
-        margin-bottom: .625em;
-    }
+        tbody {
+            tr {
+                height: auto;
+                display: block;
+                margin-bottom: .625em;
 
-    table.table td {
-        border-left: 1px solid $content-border-color;
-        border-right: 1px solid $content-border-color;
-        display: block;
-        font-size: .8rem;
-        text-align: right;
-        position: relative;
-        height: 2rem;
-        line-height: 2rem;
-    }
+                &:last-child td {
+                    border-bottom: none;
 
-    table.table td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 20px;
-        font-weight: bold;
-        display: inline-block;
-    }
+                    &:last-child {
+                        border-bottom: 1px solid $content-border-color;
+                    }
+                }
+            }
 
-    table.table td:last-child {
-        border-bottom: 1px solid $content-border-color;
-    }
+            td {
+                border-left: 1px solid $content-border-color;
+                border-right: 1px solid $content-border-color;
+                display: block;
+                font-size: .8rem;
+                text-align: right;
+                position: relative;
+                height: 2rem;
+                line-height: 2rem;
 
-    table.table tbody tr {
-        height: auto;
+                &:before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-left: 20px;
+                    font-weight: bold;
+                    display: inline-block;
+                }
+            }
+        }
     }
 }
 
