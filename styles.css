@@ -3487,8 +3487,6 @@ form .inputPrefix {
   line-height: 2em;
   height: 100%;
   background: #bebebe; }
-form table.layout {
-  table-layout: fixed; }
 form .layout td + td {
   padding-left: 5px; }
 form .list {
@@ -3640,11 +3638,13 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
+  box-sizing: border-box;
   color: #454545;
   background: #fff;
   width: 100%;
   height: 2rem;
   min-width: 70px;
+  max-width: 100%;
   padding: 7px;
   font-size: 0.9rem;
   border: solid 1px #dcdcdc;
@@ -3674,8 +3674,10 @@ option {
 input[type="file"] {
   border: solid 1px #dcdcdc;
   width: 100%;
+  max-width: 100%;
   color: #454545;
-  padding: 10px; }
+  padding: 10px;
+  box-sizing: border-box; }
 
 input[placeholder], textarea {
   font-family: 'FontAwesome', serif; }
