@@ -13,25 +13,13 @@ button, input[type="submit"], input[type="button"], a.button {
   min-width: 70px;
   height: 2rem;
   font-size: 0.9rem;
-  background: #d9d9d9;
-  background: -moz-linear-gradient(top, #f1f1f1 0, #d1d1d1 100);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f1f1f1), color-stop(100, #d1d1d1));
-  background: -webkit-linear-gradient(top, #f1f1f1 0, #d1d1d1 100);
-  background: -o-linear-gradient(top, #f1f1f1 0, #d1d1d1 100);
-  background: -ms-linear-gradient(top, #f1f1f1 0, #d1d1d1 100);
-  background: linear-gradient(to bottom, #f1f1f1 0, #d1d1d1 100);
+  background: #f1f1f1;
   -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
   box-shadow: inset 1px 1px 0px 0px #ffffff; }
   button:hover, button :active, input[type="submit"]:hover, input[type="submit"] :active, input[type="button"]:hover, input[type="button"] :active, a.button:hover, a.button :active {
     text-shadow: -1px -1px 1px #ffffff;
-    background: #d9d9d9;
-    background: -moz-linear-gradient(top, #d6d6d6 0, #ededed 100);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d6d6d6), color-stop(100, #ededed));
-    background: -webkit-linear-gradient(top, #d6d6d6 0, #ededed 100);
-    background: -o-linear-gradient(top, #d6d6d6 0, #ededed 100);
-    background: -ms-linear-gradient(top, #d6d6d6 0, #ededed 100);
-    background: linear-gradient(to bottom, #d6d6d6 0, #ededed 100); }
+    background: #d6d6d6; }
 
 button.red {
   color: #ffffff;

@@ -11,12 +11,12 @@ button, input[type="submit"], input[type="button"], a.button {
     min-width: 70px;
     height: 2rem;
     font-size: 0.9rem;
-    @include gradient-top-bottom(#f1f1f1, 0, #d1d1d1, 100, #d9d9d9);
+    background: #f1f1f1;
     @include box-shadow-out(#ffffff);
 
     &:hover, :active {
         text-shadow: -1px -1px 1px #ffffff;
-        @include gradient-top-bottom(#d6d6d6, 0, #ededed, 100, #d9d9d9);
+        background: #d6d6d6;
     }
 }
 
