@@ -11,16 +11,33 @@
 a:not([href]),
 a:[href="#"],  
 a:[href=""],  
-a[href*="javascript:void(0)"] {
+a[href*="javascript:void(0)"],
+a:empty
+a:empty[title=""],
+a:empty[aria-label=""],
+a:empty[aria-labelledby=""],
+a:empty:not([title]):not([aria-label]):not([aria-labelledby]),
+a:blank[title=""],
+a:blank[aria-label=""],
+a:blank[aria-labelledby=""],
+a:blank:not([title]):not([aria-label]):not([aria-labelledby]) {
     animation: blink .5s step-end infinite alternate;
 }
 
 img:not([alt]), 
-img[alt=""] {
+img[alt=""],
+img[alt=" "],
+[role="img"]:not([aria-label]):not([aria-labelledby]),
+svg[role="img"]:not([aria-label]):not([aria-labelledby]),
+img[src=""],
+img[src=" "],
+img[src="#"],
+img[src="/"], {
     animation: blink .5s step-end infinite alternate;
 } 
 
-html:not([lang]),  
+html:not([lang]),
+html[lang=" "],
 html[lang=""] { 
     animation: blink .5s step-end infinite alternate;
  }
@@ -37,12 +54,15 @@ meta[name="viewport"][content*="minimum-scale"] {
 } 
 
 input:not([id]),  
+input[type=""], 
 select:not([id]),  
 textarea:not([id]) {
     animation: blink .5s step-end infinite alternate;
 }
 
-label:not([for]) {
+label:not([for]),
+label[for=""],
+label[for=" "] {
     animation: blink .5s step-end infinite alternate;
 }  
 
@@ -52,12 +72,20 @@ textarea:not([name]) {
     animation: blink .5s step-end infinite alternate;
 }  
 
-form:not([name]):not([id]) {
+form:not([name]):not([id]),
+form:not([action]),
+form[action=" "],
+form[action=""] {
     animation: blink .5s step-end infinite alternate;
 }  
 
-button:empty,  
-a:empty {
+button:empty,
+button:empty:not([aria-label]):not([aria-labelledby]):not([title]), 
+button:blank:not([aria-label]):not([aria-labelledby]):not([title]),
+button[aria-label=""], 
+button[aria-labelledby=""], 
+button[title=""],
+button:not([type]):not([form]):not([formaction]):not([formtarget]) {
     animation: blink .5s step-end infinite alternate;
 }  
 
@@ -65,3 +93,86 @@ script[type="text/javascript"],
 link[rel="stylesheet"][type="text/css"] {
     animation: blink .5s step-end infinite alternate;
 }  
+
+table[role="presentation"] th,
+table[role="presentation"] thead,
+table[role="presentation"] tfoot,
+table[role="presentation"] caption,
+table[role="presentation"] colgroup,
+table[role="presentation"] [axis],
+table[role="presentation"] [scope],
+table[role="presentation"] [headers] {
+    animation: blink .5s step-end infinite alternate;
+}
+
+[onafterprint], [onbeforeprint], [onbeforeunload],
+[onerror], [onhaschange], [onload], [onmessage],
+[onoffline], [ononline], [onpagehide], [onpageshow],
+[onpopstate], [onredo], [onresize], [onstorage],
+[onundo], [onunload],
+[onblur], [onchage], [oncontextmenu], [onfocus],
+[onformchange], [onforminput], [oninput], [oninvalid],
+[onreset], [onselect], [onsubmit],
+[onkeydown], [onkeypress], [onkeyup],
+[onclick], [ondblclick], [ondrag], [ondragend],
+[ondragenter], [ondragleave], [ondragover],
+[ondragstart], [ondrop], [onmousedown], [onmousemove],
+[onmouseout], [onmouseover], [onmouseup], [onmousewheel],
+[onscroll],
+[onabort], [oncanplay], [oncanplaythrough],
+[ondurationchange], [onemptied], [onended], [onerror],
+[onloadeddata], [onloadedmetadata], [onloadstart],
+[onpause], [onplay], [onplaying], [onprogress],
+[onratechange], [onreadystatechange], [onseeked],
+[onseeking], [onstalled], [onsuspend], [ontimeupdate],
+[onvolumechange], [onwaiting] {
+    animation: blink .5s step-end infinite alternate;
+}
+
+title:empty,
+title:blank {
+    animation: blink .5s step-end infinite alternate;
+}
+
+[dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"]) {
+    animation: blink .5s step-end infinite alternate;
+}
+
+[type="radio"]:not([name]),
+[type="checkbox"]:not(:only-of-type):not([name]) {
+    animation: blink .5s step-end infinite alternate;
+}
+
+ul > :not(li),
+ol > :not(li),
+:not(ul):not(ol) > li {
+    animation: blink .5s step-end infinite alternate;
+}
+
+:not(figure) > figcaption {
+    animation: blink .5s step-end infinite alternate;
+}
+
+figure:not([role="group"]) {
+    animation: blink .5s step-end infinite alternate;
+}
+
+:not(tr) > td,
+:not(tr) > th,
+colgroup *:not(col),
+:not(colgroup) > col,
+tr > :not(td):not(th),
+optgroup > :not(option),
+:not(select) > optgroup,
+:not(fieldset) > legend,
+select > :not(option):not(optgroup),
+:not(select):not(optgroup) > option,
+table > *:not(thead):not(tfoot):not(tbody):not(tr):not(colgroup):not(caption) {
+    animation: blink .5s step-end infinite alternate;
+}
+
+[target$="blank"]:not([rel]),
+[target$="blank"]:not([rel*="noopener"]),
+[target$="blank"]:not([rel*="noreferrer"]) {
+    animation: blink .5s step-end infinite alternate;
+}

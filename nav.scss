@@ -11,8 +11,12 @@
     z-index: 0;
     overflow-y: auto;
     font-size: 0.8em;
-
     background: #2F2F2F;
+
+    span {
+         width: 20px; 
+         display: inline-block;
+    }
 
     input {
         display: none;
