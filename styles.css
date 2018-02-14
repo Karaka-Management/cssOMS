@@ -3864,28 +3864,26 @@ select.plain {
     border-right: 1px solid #b7b7b7;
     padding: 10px; }
 
-div.alert {
-  padding: 10px;
-  font-weight: bold; }
-  div.alert i {
-    margin-right: 5px; }
+.log-msg {
+  padding: 5px;
+  margin: 5px; }
 
-.alertbox.ok, .alert.ok {
+.log-msg-status-ok {
   background: #aaffad;
   border: 2px solid #81e27d;
   color: #459442; }
 
-.alertbox.warning, .alert.warning {
+.log-msg-status-warning {
   background: #f8ffa8;
   border: 2px solid #d6d949;
   color: #94972f; }
 
-.alertbox.error, .alert.error {
+.log-msg-status-error {
   background: #ff7d79;
   border: 2px solid #ee5649;
   color: #a5302a; }
 
-.alertbox.info, .alert.info {
+.log-msg-status-info {
   background: #b6d2ff;
   border: 2px solid #85b0ee;
   color: #4865a5; }
