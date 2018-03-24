@@ -66,17 +66,25 @@ input:invalid {
     border: 1px solid #b85450;
 }
 
-.textarea {
+textarea, .textarea {
     overflow: auto;
     resize: both;
-}
-
-textarea, .textarea {
     min-height: 100px;
     @include box-sizing(border-box);
 }
 
-span.check input[type="checkbox"], span.radio input[type="radio"] {
+span.checkbox, span.radio {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    label {
+        cursor: pointer;
+    }
+}
+
+span.checkbox input[type="checkbox"], span.radio input[type="radio"] {
     position: relative;
     vertical-align: middle;
     bottom: 1px;
