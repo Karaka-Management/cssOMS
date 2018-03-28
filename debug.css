@@ -8,6 +8,10 @@
     animation: blink .5s step-end infinite alternate;
 }
 
+[data-action]:not([id]), [data-action]:not([id=""]) {
+    animation: blink .5s step-end infinite alternate;
+}
+
 a:not([href]),
 a:[href="#"],  
 a:[href=""],  
@@ -45,7 +49,7 @@ html[lang=""] {
  meta[charset]:not([charset="UTF-8"]),
  meta[charset="UTF-8"]:not(:first-child) {
     animation: blink .5s step-end infinite alternate;
- }  
+ }
 
 meta[name="viewport"][content*="user-scalable=no"],  
 meta[name="viewport"][content*="maximum-scale"],  
@@ -64,20 +68,21 @@ label:not([for]),
 label[for=""],
 label[for=" "] {
     animation: blink .5s step-end infinite alternate;
-}  
+}
 
 input:not([name]),  
 select:not([name]),  
 textarea:not([name]) {
     animation: blink .5s step-end infinite alternate;
-}  
+}
 
+form:not([id]), form:not([id=""]),
 form:not([name]):not([id]),
 form:not([action]),
 form[action=" "],
 form[action=""] {
     animation: blink .5s step-end infinite alternate;
-}  
+}
 
 button:empty,
 button:empty:not([aria-label]):not([aria-labelledby]):not([title]), 
@@ -87,12 +92,12 @@ button[aria-labelledby=""],
 button[title=""],
 button:not([type]):not([form]):not([formaction]):not([formtarget]) {
     animation: blink .5s step-end infinite alternate;
-}  
+}
 
 script[type="text/javascript"],  
 link[rel="stylesheet"][type="text/css"] {
     animation: blink .5s step-end infinite alternate;
-}  
+}
 
 table[role="presentation"] th,
 table[role="presentation"] thead,
