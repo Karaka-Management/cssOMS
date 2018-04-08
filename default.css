@@ -1,0 +1,46 @@
+/* Global */
+/* Content Container */
+/* Content box */
+/* Navigation */
+/* Colors */
+body {
+  background: #e7ebf3;
+  font-family: Open Sans, sans-serif;
+  font-size: 0.9em; }
+
+.clear {
+  clear: both; }
+
+pre {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  border: 1px solid #b7b7b7;
+  padding: 5px;
+  overflow-x: scroll;
+  counter-reset: line;
+  width: 100%;
+  box-sizing: border-box; }
+  pre span {
+    display: block; }
+    pre span:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 .5em;
+      margin-right: .5em;
+      color: #888;
+      width: 30px; }
+
+article {
+  background: #fff;
+  padding: 5px;
+  margin: 0; }
+  article p {
+    line-height: 1.5em; }
+
+/*# sourceMappingURL=default.css.map */

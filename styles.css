@@ -63,7 +63,9 @@ pre {
   border: 1px solid #b7b7b7;
   padding: 5px;
   overflow-x: scroll;
-  counter-reset: line; }
+  counter-reset: line;
+  width: 100%;
+  box-sizing: border-box; }
   pre span {
     display: block; }
     pre span:before {
@@ -3701,11 +3703,9 @@ input:invalid {
   transition: all 0.5s;
   border: 1px solid #b85450; }
 
-.textarea {
-  overflow: auto;
-  resize: both; }
-
 textarea, .textarea {
+  overflow: auto;
+  resize: both;
   min-height: 100px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

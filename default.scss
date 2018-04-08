@@ -17,6 +17,8 @@ pre {
     padding: 5px;
     overflow-x: scroll;
     counter-reset: line;
+    width: 100%;
+    box-sizing: border-box;
 
     span {
         display: block;
