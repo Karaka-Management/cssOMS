@@ -84,6 +84,22 @@ article {
   margin: 0; }
   article p {
     line-height: 1.5em; }
+  article ol, article ul {
+    margin-left: 30px; }
+  article ul {
+    list-style: disc; }
+  article blockquote {
+    margin: 10px 0 10px 0; }
+    article blockquote p:last-child {
+      margin-bottom: 0; }
+  article table {
+    border-collapse: collapse;
+    border: 1px solid #999; }
+    article table th, article table td {
+      padding: 5px;
+      border: 1px solid #999; }
+    article table tr:nth-child(2n) {
+      background: #eee; }
 
 .ok {
   color: #5cff56; }
