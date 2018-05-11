@@ -3207,6 +3207,16 @@ article {
 .darkblue {
   background: #2969B0; }
 
+.ipt-wrap {
+  display: table;
+  box-sizing: border-box; }
+  .ipt-wrap .ipt-first {
+    width: 100%;
+    display: table-cell; }
+  .ipt-wrap .ipt-second {
+    padding-left: 5px;
+    display: table-cell; }
+
 *[draggable] {
   cursor: move; }
 
@@ -3518,15 +3528,6 @@ form .list {
   form .list td {
     white-space: nowrap;
     padding: 3px 5px 3px 5px; }
-form .ipt-wrap {
-  display: table;
-  box-sizing: border-box; }
-  form .ipt-wrap .ipt-first {
-    width: 100%;
-    display: table-cell; }
-  form .ipt-wrap .ipt-second {
-    padding-left: 5px;
-    display: table-cell; }
 
 .infoIcon {
   width: .9rem;
@@ -4788,7 +4789,9 @@ table.table {
       padding-top: 10px; }
 
 table.list th {
-  text-align: left; }
+  text-align: left;
+  padding: 2px 0 2px 0;
+  vertical-align: middle; }
 table.list td {
   padding: 2px 5px 2px 5px; }
 

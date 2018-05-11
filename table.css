@@ -79,7 +79,8 @@ table.table {
       padding-top: 10px; }
 
 table.list th {
-  text-align: left; }
+  text-align: left;
+  padding: 2px 0 2px 0; }
 table.list td {
   padding: 2px 5px 2px 5px; }
 
