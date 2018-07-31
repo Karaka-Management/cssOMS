@@ -588,11 +588,11 @@ article {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg); }
   88.8% {
-    -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
-    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg); } }
 @keyframes jello {
   from, 11.1%, to {
     -webkit-transform: none;
@@ -613,11 +613,11 @@ article {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg); }
   88.8% {
-    -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
-    transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg); } }
 .jello {
   -webkit-animation-name: jello;
   animation-name: jello;
@@ -3696,6 +3696,18 @@ input[type="datetime-local"] {
   input[type="number"]:focus,
   input[type="datetime-local"]:focus {
     border-color: #0c69d6; }
+  .textarea:disabled,
+  .tag-input:disabled,
+  textarea:disabled,
+  select:disabled,
+  input[type="password"]:disabled,
+  input[type="text"]:disabled,
+  input[type="datetime"]:disabled,
+  input[type="email"]:disabled,
+  input[type="date"]:disabled,
+  input[type="number"]:disabled,
+  input[type="datetime-local"]:disabled {
+    background: #efefef; }
 
 select {
   cursor: pointer;
@@ -3713,7 +3725,11 @@ input[type="file"] {
   padding: 10px;
   box-sizing: border-box; }
 
-input[placeholder], textarea {
+input::placeholder {
+  color: #cfcfcf;
+  opacity: 1; }
+
+input::placeholder, textarea {
   font-family: 'FontAwesome', serif; }
 
 input:invalid {
@@ -4790,8 +4806,7 @@ table.table {
 
 table.list th {
   text-align: left;
-  padding: 2px 0 2px 0;
-  vertical-align: middle; }
+  padding: 2px 0 2px 0; }
 table.list td {
   padding: 2px 5px 2px 5px; }
 
@@ -4848,3 +4863,5 @@ table.list td {
   color: #fff;
   display: inline-block;
   line-height: 1rem; }
+
+/*# sourceMappingURL=styles.css.map */
