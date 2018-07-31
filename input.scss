@@ -37,6 +37,10 @@ input[type="datetime-local"] {
     &:focus {
         border-color:#0c69d6;
     }
+
+    &:disabled {
+        background: #efefef;
+    }
 }
 
 select {
@@ -57,7 +61,12 @@ input[type="file"] {
     box-sizing: border-box;
 }
 
-input[placeholder], textarea {
+input::placeholder {
+        color: #cfcfcf;
+        opacity: 1;
+}
+
+input::placeholder, textarea {
     font-family: 'FontAwesome', serif;
 }
 
