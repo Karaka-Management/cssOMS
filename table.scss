@@ -1,5 +1,9 @@
 @import "_mixins", "_vars";
 
+table:not([id]) .sort-asc, table:not([id]) .sort-desc {
+    display: none;
+}
+
 table .sort-asc, table .sort-desc {
     padding-left: 5px;
     cursor: pointer;

@@ -4729,6 +4729,9 @@ section > h2 {
 /* Content box */
 /* Navigation */
 /* Colors */
+table:not([id]) .sort-asc, table:not([id]) .sort-desc {
+  display: none; }
+
 table .sort-asc, table .sort-desc {
   padding-left: 5px;
   cursor: pointer; }
