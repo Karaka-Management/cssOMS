@@ -4,26 +4,26 @@ form {
     li {
         margin: 5px 0 5px 0;
     }
-    
+
     td {
         white-space: nowrap;
         padding-bottom: 5px;
-        
+
         textarea+i {
             vertical-align: top;
         }
     }
-    
+
     label {
         font-size: 0.9em;
         color: #878787;
         text-shadow: -1px -1px 1px #ffffff;
     }
-    
+
     i+i {
         margin-left: 3px;
     }
-    
+
     .inputPrefix {
         border-left: 1px solid $content-border-color;
         border-top: 1px solid $content-border-color;
@@ -36,7 +36,7 @@ form {
     .layout td+td {
         padding-left: 5px;
     }
-    
+
     .list {
         font-size: 0.9em;
 

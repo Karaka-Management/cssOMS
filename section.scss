@@ -5,7 +5,7 @@
     display: inline-block;
     margin-top: 0.3rem;
     overflow-x: auto;
-    
+
     .inner {
         @include box-sizing(border-box);
         @include box-shadow-out(#ffffff);
@@ -57,7 +57,7 @@ section {
             border-bottom: 1px solid #e1e1e1;
         }
     }
-    
+
     > h2 {
         @include box-sizing(border-box);
         font-size: 1.2em;

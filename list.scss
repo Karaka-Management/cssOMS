@@ -42,11 +42,11 @@ ul.h-list li {
     padding: 0;
     border-spacing: 0;
     border-collapse: collapse;
-    
+
     td:first-child {
         padding-right: 20px;
     }
-    
+
     span {
         margin-right: 5px;
     }
@@ -58,7 +58,7 @@ ul.h-list li {
     border-radius: 30px;
     background: #ccc;
     display: inline-block;
-    
+
     &.active {
         background: #000;
     }

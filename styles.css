@@ -4729,6 +4729,10 @@ section > h2 {
 /* Content box */
 /* Navigation */
 /* Colors */
+table .sort-asc, table .sort-desc {
+  padding-left: 5px;
+  cursor: pointer; }
+
 .table {
   background: none; }
   .table caption {

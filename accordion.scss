@@ -3,24 +3,24 @@
 .ac-container{
     margin: 10px auto 30px auto;
     text-align: left;
-    
+
     > input {
         display: none;
-        
+
         &:checked + label {
             @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
             color: #000;
-            
+
             + section {
                 display: inherit;
             }
         }
-        
+
         + label + section {
             display: none;
         }
     }
-    
+
     label {
         display: block;
         padding: 5px 20px;
@@ -33,12 +33,12 @@
         border: 1px solid $content-border-color;
         @include border-radius(3px);
         @include gradient-top-bottom(#e0e3eb, 0, $content-background-color, 100, $content-background-color);
-        
+
         &:hover {
             @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
         }
     }
-    
+
     > section {
         background: $content-background-color;
         overflow: hidden;

@@ -3,10 +3,10 @@
     margin: 5px;
 }
 
-@each $tuple in 
-    'ok' #aaffad #81e27d #459442, 
-    'warning' #f8ffa8 #d6d949 #94972f, 
-    'error' #ff7d79 #ee5649 #a5302a, 
+@each $tuple in
+    'ok' #aaffad #81e27d #459442,
+    'warning' #f8ffa8 #d6d949 #94972f,
+    'error' #ff7d79 #ee5649 #a5302a,
     'info' #b6d2ff #85b0ee #4865a5 {
     .log-msg-status-#{nth($tuple, 1)} {
         background: #{nth($tuple, 2)};

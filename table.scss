@@ -1,39 +1,44 @@
 @import "_mixins", "_vars";
 
+table .sort-asc, table .sort-desc {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
 .table {
     background: none;
     caption {
         color: #fff;
     }
-    
+
     thead {
         color: #fff;
     }
-    
+
     &.red {
         caption, thead {
             background: #B8312F;
         }
     }
-    
+
     &.orange {
         caption, thead {
             background: #FBA026;
         }
     }
-    
+
     &.green {
         caption, thead {
             background: #41A85F;
         }
     }
-    
+
     &.blue {
         caption, thead {
             background: #2C82C9;
         }
     }
-    
+
     &.white {
         caption, thead {
             background: #fff;

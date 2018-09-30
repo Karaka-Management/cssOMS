@@ -48,7 +48,7 @@ ul.btns {
     list-style: none;
     overflow: hidden;
     font-size: 12px;
-    
+
     li {
         background: $content-background-color;
         border-left: 1px solid $content-border-color;
@@ -63,22 +63,22 @@ ul.btns {
         &:last-child {
             border-right: 1px solid $content-border-color;
         }
-        
+
         &:before {
             border-left-color: $content-border-color;
             margin-left: 1px;
         }
     }
-    
+
     a {
         display: block;
         padding: 10px;
     }
-    
+
     .active {
         cursor: default;
     }
-    
+
     .active, li:hover {
         background: #ffffff;
     }

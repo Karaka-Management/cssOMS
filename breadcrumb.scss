@@ -20,7 +20,7 @@
         &:first-child {
             @include border-left-radius(3px);
         }
-        
+
         &:not(.last):after, &:before {
             content:" ";
             display: block;
@@ -34,35 +34,35 @@
             margin-top: -18px;
             left: 100%;
         }
-        
+
         &:not(.last):after {
             z-index: 2;
         }
-        
+
         &:before {
             border-left-color: $content-border-color;
             margin-left: 1px;
             z-index: 1;
         }
-        
+
         &.active:not(.last):after, &:hover:not(.last):after  {
             border-left: 14px solid #ffffff;
         }
     }
-    
+
     .last {
         padding-right: 20px;
         @include border-right-radius(3px);
-        
+
         &:before {
             border: none;
         }
     }
-    
+
     .active {
         cursor: default;
     }
-    
+
     .active, li:hover {
         background: #ffffff;
     }
