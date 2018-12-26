@@ -1,43 +1,54 @@
 /* Global */
 $font-stack: arial, serif;
 $font-color: #000;
-$font-size: 1em;
+$reverse-font-color: #fff;
+$font-size: 1rem;
 
 $background-color: #fff;
+$background-color: #e7ebf3;
 
 $link-color: #fff;
 $link-decoration: none;
 $link-hover-color: #fff;
 $link-hover-decoration: none;
 
+$default-border: $default-border;
+$default-border-color: #000;
+$default-border-radius: $default-border-radius;
+$default-padding: 5px;
+
 /* Content Container */
-$content-container-padding: 5px;
-$content-container-color: #fff;
+$content-container-padding: $default-padding;
+$content-container-color: $reverse-font-color;
 
 /* Content box */
-$content-box-background-color: #fff;
-$content-box-border-color: #000;
-$content-box-margin: 5px;
-$content-box-padding: 5px;
-$content-box-font-size: 1em;
-$content-box-font-color: #000;
+$content-box-background-color: $background-color;
+$content-box-border-color: $default-border-color;
+$content-box-margin: $default-padding;
+$content-box-padding: $default-padding;
+$content-box-font-size: $font-size;
+$content-box-font-color: $font-color;
+
+$content-border-color: #b7b7b7;
+$content-borderlight-color: #dddddd;
+$content-background-color: #f5f5ff;
 
 /* Navigation */
 $nav-top-background-color: #000;
-$nav-top-font-color: #fff;
+$nav-top-font-color: $reverse-font-color;
 $nav-top-padding: 3px;
 
-$nav-side-background-color: #000;
-$nav-side-font-color: #fff;
-$nav-side-padding: 3px;
+$nav-side-background-color: $nav-top-background-color;
+$nav-side-font-color: $nav-top-font-color;
+$nav-side-padding: $nav-top-padding;
 
-$nav-main-background-color: #000;
-$nav-main-font-color: #fff;
-$nav-main-padding: 3px;
+$nav-main-background-color: $nav-side-background-color;
+$nav-main-font-color: $nav-side-font-color;
+$nav-main-padding: $nav-top-padding;
 
-$nav-contentside-background-color: #000;
-$nav-contentside-font-color: #fff;
-$nav-contentside-padding: 3px;
+$nav-contentside-background-color: $nav-side-background-color;
+$nav-contentside-font-color: $nav-side-font-color;
+$nav-contentside-padding: $nav-top-padding;
 
 /* Colors */
 $red: #f00;
@@ -49,7 +60,96 @@ $black: #000;
 $pink: #f0f;
 $purple: #7D26CD;
 
-$content-border-color: #b7b7b7;
-$content-borderlight-color: #dddddd;
-$background-color: #e7ebf3;
-$content-background-color: #f5f5ff;
+/* Accordion */
+$accordion-margin-top-bottom: 10px;
+$accordion-margin-left-right: 30px;
+
+$accordion-border-size: $default-border;
+$accordion-border-color: $default-border-color;
+
+// Label
+$accordion-padding-top-bottom: $default-padding;
+$accordion-padding-left-right: 20px;
+$accordion-font-size: $font-size;
+
+$accordion-inactive-color-start: #e0e3eb;
+$accordion-inactive-color-end: #f5f5ff;
+$accordion-inactive-background: #f5f5ff;
+$accordion-inactive-foreground: #777;
+
+$accordion-active-color-start: #fff;
+$accordion-active-color-end: #fff;
+$accordion-active-background: $content-box-background-color;
+$accordion-active-foreground: $font-color;
+
+$accordion-hover-color-start: #fff;
+$accordion-hover-color-end: #fff;
+$accordion-hover-background: $content-box-background-color;
+
+$accordion-border-radius: $default-border-radius;
+
+// Content
+$accordion-padding: 10px;
+
+/* Log */
+$log-padding: $default-padding;
+$log-margin: 5px;
+$log-border: 2px;
+
+/* Blockquote */
+$blockquote-padding: 10px;
+$blockquote-background: $content-box-background-color;
+
+$blockquote-border: $default-border;
+$blockquote-border-color: $default-border-color;
+$blockquote-border-radius: $default-border-radius;
+
+/* Breadcrumbs */
+$breadcrumb-font-size: 12px;
+$breadcrumb-padding: 10px;
+
+$breadcrumb-border: $default-border;
+$breadcrumb-border-radius: $default-border-radius;
+$breadcrumb-border-color: $default-border-color;
+
+$breadcrumb-inactive-background: $content-background-color;
+$breadcrumb-active-background: $content-box-background-color;
+
+/* Button */
+$button-border: $default-border;
+$button-border-color: $default-border-color;
+$button-background: #f1f1f1;
+$button-active-background: #d6d6d6;
+$button-font-size: 0.9rem;
+$button-height: 2rem;
+$button-min-width: 70px;
+$button-padding: $default-padding;
+
+// Breadcrumb buttons
+$button-crumb-font-size: 12px;
+$button-crumb-background: #f5f5ff;
+$button-crumb-active-background: $content-box-background-color;
+$button-crumb-padding: 10px;
+
+/* Canvas */
+$canvas-background: $content-box-background-color;
+$canvas-border: $default-border;
+$canvas-border-color: $default-border-color;
+
+/* Article */
+$article-background: $content-box-background-color;
+$article-padding: $default-padding;
+
+/* Form */
+$form-label-size: 0.9rem;
+
+/* Icon */
+$icon-font-color: #fff;
+$icon-font-size: 0.9rem;
+
+/* Img */
+$img-padding: $default-padding;
+$img-border: $default-border;
+$img-border-color: $default-border-color;
+$img-background: $content-box-background-color;
+$img-border-radius: $default-border-radius;

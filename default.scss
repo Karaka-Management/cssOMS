@@ -3,7 +3,7 @@
 body {
     background: $background-color;
     font-family: Open Sans, sans-serif;
-    font-size: 0.9em;
+    font-size: $font-size;
 }
 
 .clear {
@@ -32,46 +32,6 @@ pre {
             margin-right: .5em;
             color: #888;
             width: 30px;
-        }
-    }
-}
-
-article {
-    background: #fff;
-    padding: 5px;
-    margin: 0;
-
-    p {
-        line-height: 1.5em;
-    }
-
-    ol, ul {
-        margin-left: 30px;
-    }
-
-    ul {
-        list-style: disc;
-    }
-
-    blockquote {
-        margin: 10px 0 10px 0;
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    table {
-        border-collapse: collapse;
-        border: 1px solid #999;
-
-        th, td {
-            padding: 5px;
-            border: 1px solid #999;
-        }
-
-        tr:nth-child(2n) {
-            background: #eee;
         }
     }
 }

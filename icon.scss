@@ -1,5 +1,7 @@
+@import "_mixins", "_vars";
+
 .infoIcon {
-    width: .9rem;
+    width: $icon-font-size;
     text-align: center;
     vertical-align: middle;
     position: relative;
@@ -11,13 +13,13 @@
         position: absolute;
         right: -.55rem;
         top: -.45rem;
-        width: .9rem;
-        height: .9rem;
-        line-height: .9rem;
+        width: $icon-font-size;
+        height: $icon-font-size;
+        line-height: $icon-font-size;
         border-radius: 50%;
         text-align: center;
 
-        color: #fff;
+        color: $icon-font-color;
         background: rgba(209, 96, 89, 1);
     }
 }

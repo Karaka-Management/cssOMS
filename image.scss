@@ -2,24 +2,24 @@
 
 img {
     &.frame-1 {
-        padding: 5px;
-        background: $content-background-color;
-        border: 1px solid $content-border-color;
+        padding: $img-padding;
+        background: $img-background;
+        border: $img-border solid $img-border-color;
         @include box-shadow-out(#ffffff);
-        @include border-radius(3px);
+        @include border-radius($img-border-radius);
     }
 
     &.frame-2 {
-        border: 1px solid $content-border-color;
-        background: $content-background-color;
+        border: $img-border solid $img-border-color;
+        background: $img-background;
     }
 
     &.frame-3 {
-        padding: 5px;
-        background: #ffffff;
-        border: 1px solid $content-border-color;
+        padding: $img-padding;
+        background: $img-background;
+        border: $img-border solid $img-border-color;
         @include box-shadow-out(#ffffff);
-        @include border-radius(3px);
+        @include border-radius($img-border-radius);
     }
 }
 

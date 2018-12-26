@@ -1,6 +1,8 @@
+@import "_mixins", "_vars";
+
 .log-msg {
-    padding: 5px;
-    margin: 5px;
+    padding: $log-padding;
+    margin: $log-margin;
 }
 
 @each $tuple in
@@ -10,7 +12,7 @@
     'info' #b6d2ff #85b0ee #4865a5 {
     .log-msg-status-#{nth($tuple, 1)} {
         background: #{nth($tuple, 2)};
-        border: 2px solid #{nth($tuple, 3)};
+        border: $log-border solid #{nth($tuple, 3)};
         color: #{nth($tuple, 4)};
     }
 }

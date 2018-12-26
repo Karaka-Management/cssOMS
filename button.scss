@@ -5,18 +5,18 @@
 }
 
 button, input[type="submit"], input[type="button"], a.button {
-    border: 1px solid $content-border-color;
+    border: $button-border solid $button-border-color;
     cursor: pointer;
     text-shadow: 1px 1px 1px #ffffff;
-    min-width: 70px;
-    height: 2rem;
-    font-size: 0.9rem;
-    background: #f1f1f1;
+    min-width: $button-min-width;
+    height: $button-height;
+    font-size: $button-font-size;
+    background: $button-background;
     @include box-shadow-out(#ffffff);
 
     &:hover, :active {
         text-shadow: -1px -1px 1px #ffffff;
-        background: #d6d6d6;
+        background: $button-active-background;
     }
 }
 
@@ -50,10 +50,10 @@ ul.btns {
     font-size: 12px;
 
     li {
-        background: $content-background-color;
-        border-left: 1px solid $content-border-color;
-        border-top: 1px solid $content-border-color;
-        border-bottom: 1px solid $content-border-color;
+        background: $button-crumb-background;
+        border-left: $button-border solid $button-border-color;
+        border-top: $button-border solid $button-border-color;
+        border-bottom: $button-border solid $button-border-color;
         float: left;
         text-shadow: -1px -1px 1px #ffffff;
         cursor: pointer;
@@ -61,18 +61,18 @@ ul.btns {
         @include box-shadow-out(#ffffff);
 
         &:last-child {
-            border-right: 1px solid $content-border-color;
+            border-right: $button-border solid $button-border-color;
         }
 
         &:before {
-            border-left-color: $content-border-color;
+            border-left-color: $button-border-color;
             margin-left: 1px;
         }
     }
 
     a {
         display: block;
-        padding: 10px;
+        padding: $button-crumb-padding;
     }
 
     .active {
@@ -80,18 +80,18 @@ ul.btns {
     }
 
     .active, li:hover {
-        background: #ffffff;
+        background: $button-crumb-active-background;
     }
 }
 
 button.simple {
-    background: $content-background-color;
-    border: 1px solid $content-border-color;
+    background: $button-background;
+    border: $button-border solid $button-border-color;
     text-shadow: -1px -1px 1px #ffffff;
     padding: 5px;
     min-width: 40px;
 
     &:hover {
-        background: #ffffff;
+        background: $button-background;
     }
 }

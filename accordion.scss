@@ -1,15 +1,15 @@
 @import "_mixins", "_vars";
 
 .ac-container{
-    margin: 10px auto 30px auto;
+    margin: $accordion-margin-top-bottom auto $accordion-margin-left-right auto;
     text-align: left;
 
     > input {
         display: none;
 
         &:checked + label {
-            @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
-            color: #000;
+            @include gradient-top-bottom($accordion-active-color-start, 0, $accordion-active-color-end, 100, $accordion-active-background);
+            color: $accordion-active-foreground;
 
             + section {
                 display: inherit;
@@ -23,30 +23,30 @@
 
     label {
         display: block;
-        padding: 5px 20px;
+        padding: $accordion-padding-top-bottom $accordion-padding-left-right;
         position: relative;
         z-index: 20;
         margin-top: -1px;
         cursor: pointer;
-        color: #777;
-        font-size: 1em;
-        border: 1px solid $content-border-color;
-        @include border-radius(3px);
-        @include gradient-top-bottom(#e0e3eb, 0, $content-background-color, 100, $content-background-color);
+        color: $accordion-inactive-foreground;
+        font-size: $accordion-font-size;
+        border: $accordion-border-size solid $accordion-border-color;
+        @include border-radius($accordion-border-radius);
+        @include gradient-top-bottom($accordion-inactive-color-start, 0, $accordion-inactive-color-end, 100, $accordion-inactive-background);
 
         &:hover {
-            @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
+            @include gradient-top-bottom($accordion-hover-color-start, 0, $accordion-hover-color-end, 100, $accordion-hover-background);
         }
     }
 
     > section {
-        background: $content-background-color;
+        background: $content-box-background-color;
         overflow: hidden;
         height: auto;
         position: relative;
         z-index: 10;
-        border-left: 1px solid $content-border-color;
-        border-right: 1px solid $content-border-color;
-        padding: 10px;
+        border-left: $accordion-border-size solid $accordion-border-color;
+        border-right: $accordion-border-size solid $accordion-border-color;
+        padding: $accordion-padding;
     }
 }

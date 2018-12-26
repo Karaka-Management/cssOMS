@@ -1,7 +1,7 @@
 @import "_mixins", "_vars";
 
 canvas {
-    background: #fff;
-    border: 1px solid #000;
+    background: $canvas-background;
+    border: $canvas-border solid $canvas-border-color;
     user-select: none;
 }

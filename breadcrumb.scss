@@ -3,12 +3,12 @@
 .crumbs-1 {
     list-style: none;
     overflow: hidden;
-    font-size: 12px;
+    font-size: $breadcrumb-font-size;
 
     li {
-        background: $content-background-color;
-        border: 1px solid $content-border-color;
-        padding: 10px 10px 10px 20px;
+        background: $breadcrumb-inactive-background;
+        border: $breadcrumb-border solid $breadcrumb-border-color;
+        padding: $breadcrumb-padding;
         position: relative;
         display: block;
         float: left;
@@ -18,7 +18,7 @@
         @include box-shadow-out(#ffffff);
 
         &:first-child {
-            @include border-left-radius(3px);
+            @include border-left-radius($breadcrumb-border-radius);
         }
 
         &:not(.last):after, &:before {
@@ -28,7 +28,7 @@
             height: 0;
             border-top: 18px solid transparent;
             border-bottom: 17px solid transparent;
-            border-left: 14px solid $content-background-color;
+            border-left: 14px solid $breadcrumb-border-color;
             position: absolute;
             top: 50%;
             margin-top: -18px;
@@ -40,8 +40,8 @@
         }
 
         &:before {
-            border-left-color: $content-border-color;
-            margin-left: 1px;
+            border-left-color: $breadcrumb-border-color;
+            margin-left: $breadcrumb-border;
             z-index: 1;
         }
 
@@ -52,7 +52,7 @@
 
     .last {
         padding-right: 20px;
-        @include border-right-radius(3px);
+        @include border-right-radius($breadcrumb-border-radius);
 
         &:before {
             border: none;
@@ -64,6 +64,6 @@
     }
 
     .active, li:hover {
-        background: #ffffff;
+        background: $breadcrumb-active-background;
     }
 }
