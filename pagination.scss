@@ -13,8 +13,8 @@
     }
 
     .active, a:hover, a:active {
-        color: #ffffff;
-        background: #353535;
+        color: $pagination-active-color;
+        background: $pagination-active-background;
         @include box-shadow-out(#e8e8e8);
     }
 }

@@ -21,7 +21,7 @@ ul {
 }
 
 input, select, textarea, .textarea {
-    box-sizing: border-box;
+    @include box-sizing(border-box);
     appearance: none;
     box-shadow: none;
 

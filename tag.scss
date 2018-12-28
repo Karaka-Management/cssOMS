@@ -2,10 +2,10 @@
 
 .tag {
     cursor: pointer;
-    border: 1px solid $content-border-color;
+    border: $tag-border solid $tag-border-color;
     padding: 5px 10px 5px 10px;
-    font-size: 0.7rem;
-    color: #fff;
+    font-size: $tag-font-size;
+    color: $tag-color;
     display: inline-block;
     line-height: 1rem;
 }

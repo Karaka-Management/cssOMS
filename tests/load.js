@@ -42,18 +42,6 @@
             jsOMS.Uri.UriFactory.setQuery('/lang', window.location.href.substr(this.request.getBase().length).split('/')[0]);
 
             this.uiManager.bind();
-            this.setupServiceWorker();
-        };
-
-        setupServiceWorker ()
-        {
-            /** global: navigator */
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/Web/Backend/ServiceWorker.js', {scope: this.request.getBase()}).catch(function (e)
-                {
-                    jsOMS.Log.Logger.instance.warning('ServiceWorker registration failed.');
-                });
-            }
         };
 
         setResponseMessages ()
@@ -127,4 +115,57 @@ jsOMS.ready(function ()
 
     /** global: jsOMS */
     window.omsApp = new jsOMS.Application();
+
+    const inputElement = document.getElementById('input1');
+    const dataList = inputElement.getElementsByClassName('dropdown')[0].getElementsByTagName('table')[0];
+    const dataTpl = inputElement.getElementsByClassName('rowTemplate')[0];
+    const src = inputElement.getElementsByClassName('inputClass')[0].getAttribute('data-src');
+
+    document.getElementById('inputId').addEventListener('keyup', function(e) {
+        if (typeof src !== 'undefined' && src !== '') {
+            while (dataList.firstChild) {
+                dataList.removeChild(dataList.firstChild);
+            }
+            
+            const request = new jsOMS.Message.Request.Request(src);
+            request.setSuccess(function (data) {
+                data = JSON.parse(data.response);
+                const dataLength = data.length;
+
+                console.table(data);
+
+                for(let i = 0; i < dataLength; ++i) {
+                    const newRow = dataTpl.content.cloneNode(true);
+                    const fields = newRow.querySelectorAll('[data-tpl-value]');
+                    const fieldLength = fields.length;
+
+                    for (let j = 0; j < fieldLength; ++j) {
+                        console.log(jsOMS.getArray(fields[j].getAttribute('data-tpl-value'), data[i]));
+                        fields[j].appendChild(document.createTextNode(jsOMS.getArray(fields[j].getAttribute('data-tpl-name'), data[i])));
+                    }
+
+                    dataList.appendChild(newRow);
+                }
+            });
+            request.send();
+        }
+
+        // check if data-src is available 
+            // if yes load data with delay of x ms
+            // if dropdown active
+                // put data into dropdown
+                // select highest fit
+                // with enter/tab the text is completed
+                // if tags is true
+                    // move selected to tag
+                // if emptyafter select is true
+                    // remove content from input field
+                // else
+                    // autocomplete text based on selecteion
+            // else put directly into input field and/or tag list depending on settings
+        // if not check drop down for search results/data and do similar tasks as above 
+        // .... reorder ... currently strucuture sux!
+
+        // the dropdown should be a table because the data might be in tables (e.g. first name, second name, address etc. for a result)
+    });
 });

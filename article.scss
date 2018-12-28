@@ -5,6 +5,15 @@ article {
     padding: $article-padding;
     margin: 0;
 
+    a {
+        color: $article-link-color;
+        border-bottom: 1px dotted $article-link-color;
+    
+        &:hover {
+            border-bottom: none;
+        }
+    }
+
     p {
         line-height: 1.5em;
     }
@@ -27,15 +36,15 @@ article {
 
     table {
         border-collapse: collapse;
-        border: 1px solid #999;
+        border: $article-table-border solid $article-table-border-color;
 
         th, td {
             padding: 5px;
-            border: 1px solid #999;
+            border: $article-table-border solid $article-table-border-color;
         }
 
         tr:nth-child(2n) {
-            background: #eee;
+            background: $article-even-background;
         }
     }
 }

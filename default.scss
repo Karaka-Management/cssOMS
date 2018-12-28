@@ -11,14 +11,14 @@ body {
 }
 
 pre {
-    background: #fff;
-    @include border-radius(3px);
-    border: 1px solid $content-border-color;
-    padding: 5px;
+    background: $pre-background;
+    @include border-radius($pre-border-radius);
+    border: $pre-border solid $pre-border-color;
+    padding: $pre-padding;
     overflow-x: scroll;
     counter-reset: line;
     width: 100%;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 
     span {
         display: block;

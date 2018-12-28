@@ -1,22 +1,10 @@
 @import "_mixins", "_vars";
 
-ul.default li {
-    margin: 5px 0 5px 0;
-
-    &:first-child {
-        margin: 0 0 5px 0;
-    }
-
-    &:last-child {
-        margin: 5px 0 0 0;
-    }
-}
-
 ul.boxed {
-    background: #fff;
-    padding: 5px;
-    @include border-radius(3px);
-    border: 1px solid $content-border-color;
+    background: $list-background;
+    padding: $list-padding;
+    @include border-radius($list-border-radius);
+    border: $list-border solid $list-border-color;
 
     li {
         margin: 5px 0 5px 0;
@@ -33,33 +21,5 @@ ul.boxed {
 
 ul.h-list li {
     display: inline-block;
-
     margin: 5px 10px 5px 10px;
-}
-
-.bullet-list {
-    margin: 0;
-    padding: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-
-    td:first-child {
-        padding-right: 20px;
-    }
-
-    span {
-        margin-right: 5px;
-    }
-}
-
-.bullet {
-    width: 7px;
-    height: 7px;
-    border-radius: 30px;
-    background: #ccc;
-    display: inline-block;
-
-    &.active {
-        background: #000;
-    }
 }

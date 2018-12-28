@@ -3,18 +3,18 @@ $font-stack: arial, serif;
 $font-color: #000;
 $reverse-font-color: #fff;
 $font-size: 1rem;
+$font-size-smaller: 0.9rem;
 
 $background-color: #fff;
-$background-color: #e7ebf3;
 
 $link-color: #fff;
 $link-decoration: none;
 $link-hover-color: #fff;
 $link-hover-decoration: none;
 
-$default-border: $default-border;
+$default-border: 1px;
 $default-border-color: #000;
-$default-border-radius: $default-border-radius;
+$default-border-radius: 3px;
 $default-padding: 5px;
 
 /* Content Container */
@@ -23,6 +23,7 @@ $content-container-color: $reverse-font-color;
 
 /* Content box */
 $content-box-background-color: $background-color;
+$content-box-border: $default-border;
 $content-box-border-color: $default-border-color;
 $content-box-margin: $default-padding;
 $content-box-padding: $default-padding;
@@ -115,12 +116,21 @@ $breadcrumb-border-color: $default-border-color;
 $breadcrumb-inactive-background: $content-background-color;
 $breadcrumb-active-background: $content-box-background-color;
 
+/* Input */
+$input-border: $default-border;
+$input-border-color: $default-border-color;
+$input-invalid-border-color: #b85450;
+$input-background: $background-color;
+$input-font-size: $font-size;
+$input-color: $font-color;
+$input-placeholder-color: #cfcfcf;
+
 /* Button */
 $button-border: $default-border;
 $button-border-color: $default-border-color;
 $button-background: #f1f1f1;
 $button-active-background: #d6d6d6;
-$button-font-size: 0.9rem;
+$button-font-size: $font-size-smaller;
 $button-height: 2rem;
 $button-min-width: 70px;
 $button-padding: $default-padding;
@@ -139,13 +149,18 @@ $canvas-border-color: $default-border-color;
 /* Article */
 $article-background: $content-box-background-color;
 $article-padding: $default-padding;
+$article-link-color: #8ea4ff;
+
+$article-table-border: $default-border;
+$article-table-border-color: #999;
+$article-even-background: #eee;
 
 /* Form */
-$form-label-size: 0.9rem;
+$form-label-size: $font-size-smaller;
 
 /* Icon */
-$icon-font-color: #fff;
-$icon-font-size: 0.9rem;
+$icon-font-color: $reverse-font-color;
+$icon-font-size: $font-size-smaller;
 
 /* Img */
 $img-padding: $default-padding;
@@ -153,3 +168,29 @@ $img-border: $default-border;
 $img-border-color: $default-border-color;
 $img-background: $content-box-background-color;
 $img-border-radius: $default-border-radius;
+
+/* list */
+$list-padding: $default-padding;
+$list-background: $background-color;
+
+$list-border-radius: $default-border-radius;
+$list-border: $default-border;
+$list-border-color: $default-border-color;
+
+/* pagination */
+$pagination-border-radius: $default-border-radius;
+$pagination-active-color: $reverse-font-color;
+$pagination-active-background: #353535;
+
+/* pre */
+$pre-background: $background-color;
+$pre-border-radius: $default-border-radius;
+$pre-border: $default-border;
+$pre-border-color: $default-border-color;
+$pre-padding: $default-padding;
+
+/* tag */
+$tag-border:  $default-border;
+$tag-border-color: $default-border-color;
+$tag-color: $reverse-font-color;
+$tag-font-size: 0.7rem;

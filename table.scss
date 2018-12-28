@@ -19,33 +19,13 @@ table .sort-asc, table .sort-desc {
         color: #fff;
     }
 
-    &.red {
-        caption, thead {
-            background: #B8312F;
-        }
-    }
-
-    &.orange {
-        caption, thead {
-            background: #FBA026;
-        }
-    }
-
-    &.green {
-        caption, thead {
-            background: #41A85F;
-        }
-    }
-
-    &.blue {
-        caption, thead {
-            background: #2C82C9;
-        }
-    }
-
-    &.white {
-        caption, thead {
-            background: #fff;
+    @each $tuple in
+        'orange' #FBA026, 'red' #B8312F, 'green' #41A85F, 'white' #fff,
+        'blue' #2C82C9, 'purple' #553982, 'darkblue' #2969B0, 'purple' #553982 {
+        &.#{nth($tuple, 1)} {
+            caption, thead {
+                background: #{nth($tuple, 2)};
+            }
         }
     }
 }

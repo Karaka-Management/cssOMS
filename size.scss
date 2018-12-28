@@ -1,33 +1,9 @@
-.wf-100 {
-    width: 100%;
-}
-
-.wf-80 {
-    width: 80%;
-}
-
-.wf-20 {
-    width: 20%;
-}
-
-.wf-50 {
-    width: 50%;
-}
-
-.wf-33 {
-    width: 33.33%;
-}
-
-.wf-25 {
-    width: 25%;
-}
-
-.wf-75 {
-    width: 75%;
-}
-
-.wf-66 {
-    width: 66.66%;
+@each $tuple in
+    'wf-100' 100%, 'wf-80' 80%, 'wf-20' 20%, 'wf-66' 66.66%,
+    'wf-50' 50%, 'wf-33' 33.33%, 'wf-25' 25%, 'wf-75' 75% {
+    .#{nth($tuple, 1)} {
+        width: #{nth($tuple, 2)};
+    }
 }
 
 .spacer {

@@ -19,31 +19,16 @@
 
 section.box {
     @include box-shadow-bottom(#f1f1f1);
-    border: 1px solid $content-border-color;
-    background: #fff;
+    border: $content-box-border solid $content-box-border-color;
+    background: $content-box-background-color;
 
-    &.orange {
-        border-top: 3px solid #FBA026;
-    }
-
-    &.red {
-        border-top: 3px solid #B8312F;
-    }
-
-    &.green {
-        border-top: 3px solid #41A85F;
-    }
-
-    &.blue {
-        border-top: 3px solid #2C82C9;
-    }
-
-    &.purple {
-        border-top: 3px solid #553982;
-    }
-
-    &.darkblue {
-        border-top: 3px solid #2969B0;
+    @each $tuple in
+        'orange' #FBA026, 'red' #B8312F, 'green' #41A85F,
+        'blue' #2C82C9, 'purple' #553982, 'darkblue' #2969B0, 'purple' #553982 {
+        &.#{nth($tuple, 1)} {
+            background: #{nth($tuple, 2)};
+            border-top: 3px solid #{nth($tuple, 2)};
+        }
     }
 }
 
