@@ -3565,9 +3565,13 @@ img.frame-1 {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
   background-clip: padding-box; }
 img.frame-2 {
   border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  width: 100%;
   background: #f5f5ff; }
 img.frame-3 {
   padding: 5px;
@@ -3580,6 +3584,8 @@ img.frame-3 {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
+  box-sizing: border-box;
+  width: 100%;
   background-clip: padding-box; }
 
 @keyframes slidy {
@@ -4729,7 +4735,7 @@ section > h2 {
 /* Content box */
 /* Navigation */
 /* Colors */
-table:not([id]) .sort-asc, table:not([id]) .sort-desc {
+table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
   display: none; }
 
 table .sort-asc, table .sort-desc {

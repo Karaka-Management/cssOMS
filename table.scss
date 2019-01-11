@@ -1,6 +1,6 @@
 @import "_mixins", "_vars";
 
-table:not([id]) .sort-asc, table:not([id]) .sort-desc {
+table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
     display: none;
 }
 

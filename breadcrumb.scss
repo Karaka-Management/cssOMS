@@ -21,6 +21,7 @@
             @include border-left-radius($breadcrumb-border-radius);
         }
 
+        // todo: maybe replace .last with :last-child
         &:not(.last):after, &:before {
             content:" ";
             display: block;

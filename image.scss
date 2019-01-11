@@ -7,11 +7,15 @@ img {
         border: $img-border solid $img-border-color;
         @include box-shadow-out(#ffffff);
         @include border-radius($img-border-radius);
+        box-sizing: border-box;
+        width: 100%;
     }
 
     &.frame-2 {
         border: $img-border solid $img-border-color;
         background: $img-background;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     &.frame-3 {
@@ -20,6 +24,8 @@ img {
         border: $img-border solid $img-border-color;
         @include box-shadow-out(#ffffff);
         @include border-radius($img-border-radius);
+        box-sizing: border-box;
+        width: 100%;
     }
 }
 

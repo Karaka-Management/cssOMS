@@ -424,23 +424,28 @@
                             <div class="advancedInput" id="input1">
                                 <div class="inputOuter">
                                     <div class="inputbackground">
-                                        <input class="inputClass" id="inputId" type="text" emptyAfterSelect="true" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
+                                        <input autocomplete="off" class="inputClass" id="inputId" type="text" emptyAfterSelect="true" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
                                     </div>
                                 </div>
-                                <div class="dropdown" isActive="true">
+                                <div class="dropdown" data-active="true">
                                     <table>
-                                    <template id="rowElement" class="rowTemplate">
-                                        <tr>
-                                            <td data-tpl-value="/id" data-tpl-name="/id" data-value="">s</td>
-                                            <td data-tpl-value="/name/0" data-tpl-name="/name/0"></td>
-                                            <td data-tpl-value="/email" data-tpl-name="/eamil"></td>
-                                        </tr>
-                                    </template>
+                                        <tbody>
+                                            <template id="rowElement" class="rowTemplate">
+                                                <tr tabindex="-1">
+                                                    <td data-tpl-value="/id" data-tpl-name="/id" data-value="">s</td>
+                                                    <td data-tpl-value="/name/0" data-tpl-name="/name/0"></td>
+                                                    <td data-tpl-value="/email" data-tpl-name="/eamil"></td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
                                     </table>
                                 </div>
-                                <div class="tags" isActive="true">
-                                    <template id="tagElement">
-                                        <span data-tpl-value="/name/0" data-tpl-name="/name/0" class="badge"></span>
+                                <div class="tags" data-active="true">
+                                    <template id="tagElement" class="tagTemplate">
+                                        <span data-tpl-value="/name/0" class="badge">
+                                            <i data-tpl-name="/name/0"></i>
+                                            <i data-tpl-name="/email"></i>
+                                        </span>
                                     </template>
                                 </div>
                             </div>
