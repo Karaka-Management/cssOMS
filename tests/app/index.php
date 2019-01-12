@@ -161,7 +161,7 @@
                         <li><a href="?page=popups">Popups</a></li>
                         <li><a href="?page=notifications">Notifications</a></li>
                         <li><a href="?page=editor">Editor</a></li>
-                        <li><a href="?page=calender">Calendar</a></li>
+                        <li><a href="?page=calendar">Calendar</a></li>
                         <li><a href="?page=navigations">Navigations</a></li>
                     </ul>
                 </li>

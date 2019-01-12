@@ -3,6 +3,21 @@
 /* Content box */
 /* Navigation */
 /* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
 .box {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -26,7 +41,7 @@ section.box {
   -moz-box-shadow: 0px 1px 0px 0px #f1f1f1;
   -webkit-box-shadow: 0px 1px 0px 0px #f1f1f1;
   box-shadow: 0px 1px 0px 0px #f1f1f1;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #d6d6d6;
   background: #fff; }
   section.box.orange {
     border-top: 3px solid #FBA026; }
@@ -40,6 +55,8 @@ section.box {
     border-top: 3px solid #553982; }
   section.box.darkblue {
     border-top: 3px solid #2969B0; }
+  section.box.purple {
+    border-top: 3px solid #553982; }
 
 section header > h1 {
   margin: 10px 10px 0 10px;

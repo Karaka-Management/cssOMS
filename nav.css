@@ -3,6 +3,21 @@
 /* Content box */
 /* Navigation */
 /* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
 #nav-side {
   user-select: none;
   width: 175px;
@@ -14,7 +29,10 @@
   z-index: 0;
   overflow-y: auto;
   font-size: 0.8em;
-  background: #2F2F2F; }
+  background: #3b3b3b; }
+  #nav-side span {
+    width: 20px;
+    display: inline-block; }
   #nav-side input {
     display: none; }
     #nav-side input:checked + ul .max {
@@ -30,20 +48,21 @@
   #nav-side input + ul > li:nth-child(n+2) {
     display: none; }
   #nav-side > li li {
-    border-top: 1px solid #3f3f3f;
+    border-top: 1px solid #505050;
     border-bottom: 1px solid #252525;
     color: #fff; }
     #nav-side > li li:not(:first-child) {
-      background: #353535; }
+      background: #444; }
     #nav-side > li li:first-child {
-      border-bottom: 1px solid #1a1a1a; }
+      border-bottom: 1px solid #252525; }
     #nav-side > li li:first-child {
       padding: 7px 0 7px 7px; }
     #nav-side > li li a {
       display: block;
       padding: 7px 0 7px 7px; }
       #nav-side > li li a:hover {
-        background: #3F3F3F; }
+        color: #252525;
+        background: #FBA026; }
   #nav-side li:last-child li:last-child {
     border-bottom: none; }
   #nav-side .max, #nav-side .min {
@@ -78,20 +97,20 @@ label[for="nav-trigger"] {
   user-select: none;
   margin-top: 5px;
   display: block;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #b7b7b7;
-  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
-  box-shadow: inset 0px 1px 0px 0px #ffffff; }
+  -moz-box-shadow: inset 0px 1px 0px 0px #fff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
+  box-shadow: inset 0px 1px 0px 0px #fff; }
   .nav-top > li {
-    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
-    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
-    box-shadow: inset 0px 1px 0px 0px #ffffff;
-    text-shadow: 1px 1px 1px #ffffff; }
+    -moz-box-shadow: inset 0px 1px 0px 0px #fff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
+    box-shadow: inset 0px 1px 0px 0px #fff;
+    text-shadow: 1px 1px 1px #fff; }
     .nav-top > li:first-child {
-      -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
-      -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
-      box-shadow: inset 1px 1px 0px 0px #ffffff; }
+      -moz-box-shadow: inset 1px 1px 0px 0px #fff;
+      -webkit-box-shadow: inset 1px 1px 0px 0px #fff;
+      box-shadow: inset 1px 1px 0px 0px #fff; }
 
 .nav-top li {
   background: #fff;

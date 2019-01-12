@@ -3,10 +3,25 @@
 /* Content box */
 /* Navigation */
 /* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
 body {
-  background: #e7ebf3;
+  background: #fff;
   font-family: Open Sans, sans-serif;
-  font-size: 0.9em; }
+  font-size: 1rem; }
 
 .clear {
   clear: both; }
@@ -18,11 +33,13 @@ pre {
   -ms-border-radius: 3px;
   border-radius: 3px;
   background-clip: padding-box;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #d6d6d6;
   padding: 5px;
   overflow-x: scroll;
   counter-reset: line;
   width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   pre span {
     display: block; }
@@ -35,28 +52,5 @@ pre {
       margin-right: .5em;
       color: #888;
       width: 30px; }
-
-article {
-  background: #fff;
-  padding: 5px;
-  margin: 0; }
-  article p {
-    line-height: 1.5em; }
-  article ol, article ul {
-    margin-left: 30px; }
-  article ul {
-    list-style: disc; }
-  article blockquote {
-    margin: 10px 0 10px 0; }
-    article blockquote p:last-child {
-      margin-bottom: 0; }
-  article table {
-    border-collapse: collapse;
-    border: 1px solid #999; }
-    article table th, article table td {
-      padding: 5px;
-      border: 1px solid #999; }
-    article table tr:nth-child(2n) {
-      background: #eee; }
 
 /*# sourceMappingURL=default.css.map */

@@ -1,0 +1,85 @@
+.ok {
+  color: #5cff56; }
+
+.warning {
+  color: #ff4b41; }
+
+.favorite {
+  color: #d16059; }
+
+.green {
+  background: #61BD6D; }
+
+.red {
+  background: #D14841; }
+
+.blue {
+  background: #2C82C9; }
+
+.orange {
+  background: #FBA026; }
+
+.lightblue {
+  background: #54ACD2; }
+
+.yellow {
+  background: #FAC51C; }
+
+.purple {
+  background: #553982; }
+
+.pink {
+  background: #ffa6e3; }
+
+.grey {
+  background: #dcdcdc; }
+
+.darkred {
+  background: #B8312F; }
+
+.darkgreen {
+  background: #41A85F; }
+
+.darkblue {
+  background: #2969B0; }
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, nav, section, iframe, label {
+  margin: 0;
+  padding: 0; }
+
+a, img, button {
+  outline: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+input, select, textarea, .textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: none;
+  box-shadow: none; }
+  input:focus, select:focus, textarea:focus, .textarea:focus {
+    outline: none; }
+
+input[type=checkbox] {
+  margin-right: 5px; }
+
+button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=button]::-moz-focus-inner {
+  border: 0; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+i {
+  font-style: normal; }
+
+/*# sourceMappingURL=clean.css.map */

@@ -26,7 +26,6 @@ section.box {
         'orange' #FBA026, 'red' #B8312F, 'green' #41A85F,
         'blue' #2C82C9, 'purple' #553982, 'darkblue' #2969B0, 'purple' #553982 {
         &.#{nth($tuple, 1)} {
-            background: #{nth($tuple, 2)};
             border-top: 3px solid #{nth($tuple, 2)};
         }
     }

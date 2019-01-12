@@ -11,7 +11,7 @@
     z-index: 0;
     overflow-y: auto;
     font-size: 0.8em;
-    background: #2F2F2F;
+    background: #3b3b3b;
 
     span {
          width: 20px;
@@ -52,16 +52,16 @@
 
     > li {
         li {
-            border-top: 1px solid #3f3f3f;
+            border-top: 1px solid #505050;
             border-bottom: 1px solid #252525;
             color: #fff;
 
             &:not(:first-child) {
-                background: #353535;
+                background: #444;
             }
 
             &:first-child {
-                border-bottom: 1px solid #1a1a1a;
+                border-bottom: 1px solid #252525;
             }
 
             &:first-child {
@@ -73,7 +73,8 @@
                 padding: 7px 0 7px 7px;
 
                 &:hover {
-                    background: #3F3F3F;
+                    color: #252525;
+                    background: $default-highlighter;
                 }
             }
         }
@@ -131,17 +132,17 @@ label[for="nav-trigger"] {
     user-select: none;
     margin-top: 5px;
     display: block;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid $content-border-color;
 
-    @include box-shadow-top(#ffffff);
+    @include box-shadow-top(#fff);
 
     > li {
-        @include box-shadow-top(#ffffff);
-        text-shadow: 1px 1px 1px #ffffff;
+        @include box-shadow-top(#fff);
+        text-shadow: 1px 1px 1px #fff;
 
         &:first-child {
-            @include box-shadow-out(#ffffff);
+            @include box-shadow-out(#fff);
         }
     }
 }

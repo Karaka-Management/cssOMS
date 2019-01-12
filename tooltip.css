@@ -1,0 +1,60 @@
+/* Global */
+/* Content Container */
+/* Content box */
+/* Navigation */
+/* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  display: inline-block; }
+  .tooltip > i {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    text-align: center;
+    font-size: 0.7em;
+    color: #fff;
+    line-height: 1.0em;
+    background: #000000;
+    position: absolute;
+    padding: 5px;
+    bottom: 100%;
+    left: -50%;
+    margin-bottom: 10px;
+    visibility: hidden;
+    opacity: 0;
+    white-space: pre; }
+  .tooltip > i:before, .tooltip > i:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px; }
+  .tooltip > i:after {
+    border-top: 10px solid #000000;
+    margin-top: 0;
+    z-index: 1; }
+  .tooltip:hover > i {
+    visibility: visible;
+    opacity: 1; }
+
+/*# sourceMappingURL=tooltip.css.map */

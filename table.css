@@ -3,22 +3,50 @@
 /* Content box */
 /* Navigation */
 /* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
+table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
+  display: none; }
+
+table .sort-asc, table .sort-desc {
+  padding-left: 5px;
+  cursor: pointer; }
+
 .table {
   background: none; }
   .table caption {
     color: #fff; }
   .table thead {
     color: #fff; }
-  .table.red caption, .table.red thead {
-    background: #B8312F; }
   .table.orange caption, .table.orange thead {
     background: #FBA026; }
+  .table.red caption, .table.red thead {
+    background: #B8312F; }
   .table.green caption, .table.green thead {
     background: #41A85F; }
-  .table.blue caption, .table.blue thead {
-    background: #2C82C9; }
   .table.white caption, .table.white thead {
     background: #fff; }
+  .table.blue caption, .table.blue thead {
+    background: #2C82C9; }
+  .table.purple caption, .table.purple thead {
+    background: #553982; }
+  .table.darkblue caption, .table.darkblue thead {
+    background: #2969B0; }
+  .table.purple caption, .table.purple thead {
+    background: #553982; }
 
 table.table {
   -moz-box-sizing: border-box;

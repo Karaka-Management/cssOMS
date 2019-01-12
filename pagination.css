@@ -1,0 +1,41 @@
+/* Global */
+/* Content Container */
+/* Content box */
+/* Navigation */
+/* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
+.pagination li {
+  display: inline; }
+.pagination a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
+  box-shadow: inset 1px 1px 0px 0px #ffffff;
+  background: #f5f5ff;
+  padding: 5px 10px 5px 10px; }
+.pagination .active, .pagination a:hover, .pagination a:active {
+  color: #fff;
+  background: #353535;
+  -moz-box-shadow: inset 1px 1px 0px 0px #e8e8e8;
+  -webkit-box-shadow: inset 1px 1px 0px 0px #e8e8e8;
+  box-shadow: inset 1px 1px 0px 0px #e8e8e8; }
+
+/*# sourceMappingURL=pagination.css.map */

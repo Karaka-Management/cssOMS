@@ -1,45 +1,23 @@
-.ok {
-  color: #5cff56; }
-
-.warning {
-  color: #ff4b41; }
-
-.green {
-  background: #c0ffb4; }
-
-.red {
-  background: #ff7c70; }
-
-.blue {
-  background: #c1c8ff; }
-
-.orange {
-  background: #ffbf7c; }
-
-.lightblue {
-  background: #b5ffff; }
-
-.yellow {
-  background: #fffe97; }
-
-.purple {
-  background: #bfa5ff; }
-
-.pink {
-  background: #ffa6e3; }
-
-.grey {
-  background: #dcdcdc; }
-
-.darkred {
-  background: #d16059; }
-
-.darkgreen {
-  background: #77d17c; }
-
-.darkblue {
-  background: #7ba9d1; }
-
+/* Global */
+/* Content Container */
+/* Content box */
+/* Navigation */
+/* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
 .tabular {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -48,26 +26,21 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 5px 0 4px 0; }
+    padding: 0.3rem 0 0 0.3rem; }
   .tabular .tab-links label {
     -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
     -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
     box-shadow: inset 1px 1px 0px 0px #ffffff;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    border-top-left-radius: 3px;
-    background-clip: padding-box;
     border-top: 1px solid #b7b7b7;
     border-left: 1px solid #b7b7b7;
     border-right: 1px solid #b7b7b7;
     background: #f5f5ff;
-    background: -moz-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #f5f5ff));
-    background: -webkit-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: -o-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: -ms-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-    background: linear-gradient(to bottom, #e0e3eb 0, #f5f5ff 100);
+    background: -moz-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #ffffff));
+    background: -webkit-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: -o-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: -ms-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+    background: linear-gradient(to bottom, #e0e3eb 0, #ffffff 100);
     padding: 5px 10px 5px 10px;
     text-shadow: 1px 1px 1px #ffffff;
     font-size: 0.9em;
@@ -89,19 +62,10 @@
     display: inline-block;
     margin: 0 5px 0 0; }
   .tabular .tab-content {
-    -webkit-border-bottom-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background-clip: padding-box;
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-clip: padding-box;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    background-clip: padding-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: #f5f5ff;
+    background: #ffffff;
     border: 1px solid #b7b7b7;
     padding: 10px; }
     .tabular .tab-content > input {
@@ -112,24 +76,19 @@
       display: inherit; }
 
 .tabular-2 .tab-links {
-  padding: 5px 0 0 0; }
+  padding: 0.3rem 0 0 0.3rem; }
 .tabular-2 .tab-links label {
   -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
   box-shadow: inset 1px 1px 0px 0px #ffffff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
   border: 1px solid #b7b7b7;
   background: #f5f5ff;
-  background: -moz-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #f5f5ff));
-  background: -webkit-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: -o-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: -ms-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
-  background: linear-gradient(to bottom, #e0e3eb 0, #f5f5ff 100);
+  background: -moz-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #ffffff));
+  background: -webkit-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: -o-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: -ms-linear-gradient(top, #e0e3eb 0, #ffffff 100);
+  background: linear-gradient(to bottom, #e0e3eb 0, #ffffff 100);
   padding: 5px 10px 5px 10px;
   text-shadow: 1px 1px 1px #ffffff;
   font-size: 0.9em;

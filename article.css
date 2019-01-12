@@ -1,0 +1,49 @@
+/* Global */
+/* Content Container */
+/* Content box */
+/* Navigation */
+/* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
+article {
+  background: #fff;
+  padding: 5px;
+  margin: 0; }
+  article a {
+    color: #8ea4ff;
+    border-bottom: 1px dotted #8ea4ff; }
+    article a:hover {
+      border-bottom: none; }
+  article p {
+    line-height: 1.5em; }
+  article ol, article ul {
+    margin-left: 30px; }
+  article ul {
+    list-style: disc; }
+  article blockquote {
+    margin: 10px 0 10px 0; }
+    article blockquote p:last-child {
+      margin-bottom: 0; }
+  article table {
+    border-collapse: collapse;
+    border: 1px solid #999; }
+    article table th, article table td {
+      padding: 5px;
+      border: 1px solid #999; }
+    article table tr:nth-child(2n) {
+      background: #eee; }
+
+/*# sourceMappingURL=article.css.map */

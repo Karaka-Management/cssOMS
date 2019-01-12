@@ -3,11 +3,26 @@
 /* Content box */
 /* Navigation */
 /* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
 .btn {
   cursor: pointer; }
 
 button, input[type="submit"], input[type="button"], a.button {
-  border: 1px solid #b7b7b7;
+  border: 1px solid #d6d6d6;
   cursor: pointer;
   text-shadow: 1px 1px 1px #ffffff;
   min-width: 70px;
@@ -96,9 +111,9 @@ ul.btns {
   font-size: 12px; }
   ul.btns li {
     background: #f5f5ff;
-    border-left: 1px solid #b7b7b7;
-    border-top: 1px solid #b7b7b7;
-    border-bottom: 1px solid #b7b7b7;
+    border-left: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
     float: left;
     text-shadow: -1px -1px 1px #ffffff;
     cursor: pointer;
@@ -106,9 +121,9 @@ ul.btns {
     -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
     box-shadow: inset 1px 1px 0px 0px #ffffff; }
     ul.btns li:last-child {
-      border-right: 1px solid #b7b7b7; }
+      border-right: 1px solid #d6d6d6; }
     ul.btns li:before {
-      border-left-color: #b7b7b7;
+      border-left-color: #d6d6d6;
       margin-left: 1px; }
   ul.btns a {
     display: block;
@@ -116,15 +131,15 @@ ul.btns {
   ul.btns .active {
     cursor: default; }
   ul.btns .active, ul.btns li:hover {
-    background: #ffffff; }
+    background: #fff; }
 
 button.simple {
-  background: #f5f5ff;
-  border: 1px solid #b7b7b7;
+  background: #f1f1f1;
+  border: 1px solid #d6d6d6;
   text-shadow: -1px -1px 1px #ffffff;
   padding: 5px;
   min-width: 40px; }
   button.simple:hover {
-    background: #ffffff; }
+    background: #f1f1f1; }
 
 /*# sourceMappingURL=button.css.map */

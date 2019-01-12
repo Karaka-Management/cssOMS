@@ -37,7 +37,7 @@
                         <tr>
                             <td colspan="2"><label>Special</label></td>
                         <tr>
-                            <td colspan="2"><span class="input"><button><i class="fa fa-pencil"></i></button><input type="text"></span></td>
+                            <td colspan="2"><span class="input"><button type="button"><i class="fa fa-pencil"></i></button><input type="text"></span></td>
 
                         <tr>
                             <td colspan="2"><label>Number</label></td>
@@ -131,25 +131,25 @@
                                     <div class="inputOuter">
                                         <div class="inputbackground">
                                             <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
+                                            <div id="input1-dropdown" class="dropdown" data-active="true">
+                                                <table id="a1" class="table red">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                    <tbody>
+                                                        <template id="input1-rowElement" class="rowTemplate">
+                                                            <tr tabindex="-1">
+                                                                <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
+                                                                <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
+                                                                <td data-tpl-text="/email"></td>
+                                                            </tr>
+                                                        </template>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="input1-dropdown" class="dropdown" data-active="true">
-                                        <table id="a1" class="table red">
-                                            <thead>
-                                                <tr>
-                                                    <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                    <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                    <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                            <tbody>
-                                                <template id="input1-rowElement" class="rowTemplate">
-                                                    <tr tabindex="-1">
-                                                        <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
-                                                        <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
-                                                        <td data-tpl-text="/email"></td>
-                                                    </tr>
-                                                </template>
-                                            </tbody>
-                                        </table>
                                     </div>
                                     <div id="input1-tags" class="tags" data-limit="1" data-active="true">
                                         <template id="input1-tagTemplate">
@@ -171,25 +171,25 @@
                                     <div class="inputOuter">
                                         <div class="inputbackground">
                                             <input autocomplete="off" class="input" id="inputId2" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId2}">
+                                            <div id="input2-dropdown" class="dropdown" data-active="true">
+                                                <table id="a1" class="table red">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                    <tbody>
+                                                        <template id="input2-rowElement" class="rowTemplate">
+                                                            <tr tabindex="-1">
+                                                                <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
+                                                                <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
+                                                                <td data-tpl-text="/email"></td>
+                                                            </tr>
+                                                        </template>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="input2-dropdown" class="dropdown" data-active="true">
-                                        <table id="a1" class="table red">
-                                            <thead>
-                                                <tr>
-                                                    <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                    <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                    <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                            <tbody>
-                                                <template id="input2-rowElement" class="rowTemplate">
-                                                    <tr tabindex="-1">
-                                                        <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
-                                                        <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
-                                                        <td data-tpl-text="/email"></td>
-                                                    </tr>
-                                                </template>
-                                            </tbody>
-                                        </table>
                                     </div>
                                     <table class="table red">
                                             <thead>
@@ -261,25 +261,25 @@
                                     <div class="inputOuter">
                                         <div class="inputbackground">
                                             <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
+                                            <div id="input3-dropdown" class="dropdown" data-active="true">
+                                                <table id="a1" class="table red">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                    <tbody>
+                                                        <template id="input3-rowElement" class="rowTemplate">
+                                                            <tr tabindex="-1">
+                                                                <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
+                                                                <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
+                                                                <td data-tpl-text="/email"></td>
+                                                            </tr>
+                                                        </template>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="input3-dropdown" class="dropdown" data-active="true">
-                                        <table id="a1" class="table red">
-                                            <thead>
-                                                <tr>
-                                                    <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                    <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                    <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                            <tbody>
-                                                <template id="input3-rowElement" class="rowTemplate">
-                                                    <tr tabindex="-1">
-                                                        <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
-                                                        <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
-                                                        <td data-tpl-text="/email"></td>
-                                                    </tr>
-                                                </template>
-                                            </tbody>
-                                        </table>
                                     </div>
                                     <div id="input3-tags" class="tags" data-limit="1" data-active="false"></div>
                                 </div>

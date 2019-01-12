@@ -1,0 +1,79 @@
+/* Global */
+/* Content Container */
+/* Content box */
+/* Navigation */
+/* Colors */
+/* Accordion */
+/* Log */
+/* Blockquote */
+/* Breadcrumbs */
+/* Input */
+/* Button */
+/* Canvas */
+/* Article */
+/* Form */
+/* Icon */
+/* Img */
+/* list */
+/* pagination */
+/* pre */
+/* tag */
+.ac-container {
+  margin: 10px auto 30px auto;
+  text-align: left; }
+  .ac-container > input {
+    display: none; }
+    .ac-container > input:checked + label {
+      background: #fff;
+      background: -moz-linear-gradient(top, #fff 0, #fff 100);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100, #fff));
+      background: -webkit-linear-gradient(top, #fff 0, #fff 100);
+      background: -o-linear-gradient(top, #fff 0, #fff 100);
+      background: -ms-linear-gradient(top, #fff 0, #fff 100);
+      background: linear-gradient(to bottom, #fff 0, #fff 100);
+      color: #000; }
+      .ac-container > input:checked + label + section {
+        display: inherit; }
+    .ac-container > input + label + section {
+      display: none; }
+  .ac-container label {
+    display: block;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    margin-top: -1px;
+    cursor: pointer;
+    color: #777;
+    font-size: 1rem;
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background: #f5f5ff;
+    background: -moz-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #f5f5ff));
+    background: -webkit-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
+    background: -o-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
+    background: -ms-linear-gradient(top, #e0e3eb 0, #f5f5ff 100);
+    background: linear-gradient(to bottom, #e0e3eb 0, #f5f5ff 100); }
+    .ac-container label:hover {
+      background: #fff;
+      background: -moz-linear-gradient(top, #fff 0, #fff 100);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100, #fff));
+      background: -webkit-linear-gradient(top, #fff 0, #fff 100);
+      background: -o-linear-gradient(top, #fff 0, #fff 100);
+      background: -ms-linear-gradient(top, #fff 0, #fff 100);
+      background: linear-gradient(to bottom, #fff 0, #fff 100); }
+  .ac-container > section {
+    background: #fff;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    padding: 10px; }
+
+/*# sourceMappingURL=accordion.css.map */

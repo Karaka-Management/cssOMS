@@ -34,13 +34,22 @@ input[type="datetime-local"] {
     transition: background 0.3s, border 0.3s;
     box-shadow: inset 1px 1px 4px -2px #c5c5c5;
 
-    &:focus {
-        border-color:#0c69d6;
+    &:focus, .active {
+        border-color: $default-highlighter;
     }
 
     &:disabled {
         background: #efefef;
     }
+}
+
+input ~ .dropdown {
+    position: absolute;
+    display: none;
+}
+
+input:focus ~ .dropdown, input.active ~ .dropdown {
+    display: inline-block;
 }
 
 select {
@@ -122,9 +131,9 @@ input[type="range"] {
         height: 2rem;
         font-size: $input-font-size;
         min-width: 40px;
-        border-left: solid $input-font-size $input-background;
-        border-top: solid $input-font-size $input-background;
-        border-bottom: solid $input-font-size $input-background;
+        border-left: solid $input-border $input-border-color;
+        border-top: solid $input-border $input-border-color;
+        border-bottom: solid $input-border $input-border-color;
         border-right: none;
         padding: 0;
 
