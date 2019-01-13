@@ -4883,21 +4883,21 @@ section > h2 {
 /* pagination */
 /* pre */
 /* tag */
-.tab .tab-links {
+.tabview .tab-links {
   padding: 0.3rem 0 0 0.3rem; }
-  .tab .tab-links label {
+  .tabview .tab-links label {
     text-shadow: 1px 1px 1px #fff;
     font-size: 0.9em;
     cursor: pointer; }
-  .tab .tab-links .active a {
+  .tabview .tab-links .active a {
     cursor: default; }
-  .tab .tab-links li {
+  .tabview .tab-links li {
     display: inline-block; }
-.tab .tab-content > input {
+.tabview .tab-content > input {
   display: none; }
-.tab .tab-content input + div {
+.tabview .tab-content input + div {
   display: none; }
-.tab .tab-content input:checked + div {
+.tabview .tab-content input:checked + div {
   display: inherit; }
 
 .tab-1 .tab-links {
@@ -4942,21 +4942,11 @@ section > h2 {
     border-top: 1px solid #b7b7b7; }
 
 .tab-2 .tab-links label {
-  padding: 5px 10px 5px 10px;
-  -moz-box-shadow: inset 1px 1px 0px 0px #fff;
-  -webkit-box-shadow: inset 1px 1px 0px 0px #fff;
-  box-shadow: inset 1px 1px 0px 0px #fff;
-  border: 1px solid #b7b7b7;
-  background: #f5f5ff;
-  background: -moz-linear-gradient(top, #e0e3eb 0, #fff 100);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #fff));
-  background: -webkit-linear-gradient(top, #e0e3eb 0, #fff 100);
-  background: -o-linear-gradient(top, #e0e3eb 0, #fff 100);
-  background: -ms-linear-gradient(top, #e0e3eb 0, #fff 100);
-  background: linear-gradient(to bottom, #e0e3eb 0, #fff 100); }
+  padding: 5px 10px 5px 10px; }
 .tab-2 .tab-links li {
   margin: 0 5px 15px 0; }
-.tab-2 .tab-links .active a, .tab-2 .tab-links label:hover {
+.tab-2 .tab-links .active a, .tab-2 .tab-links .active label {
+  border: 1px solid #b7b7b7;
   background: #fff;
   background: -moz-linear-gradient(top, #fff 0, #f5f5ff 100);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100, #f5f5ff));

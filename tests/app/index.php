@@ -167,11 +167,11 @@
                 <li><a href="?page=forms">Forms</a></li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             UI Elements
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -188,11 +188,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             Images
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -204,11 +204,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             Tables & Lists
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -219,11 +219,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             Layout
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -234,11 +234,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             Interaction
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -249,11 +249,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             Views
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -265,11 +265,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             JS Tests
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
@@ -280,11 +280,11 @@
                 </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
-                        <li><span class="centerText">
+                        <li><label for="nav-Help">
+                            <span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
                             Charts
-                            <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>

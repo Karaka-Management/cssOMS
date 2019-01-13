@@ -1,6 +1,6 @@
 @import "_mixins", "_vars";
 
-.tab {
+.tabview {
     .tab-links {
         padding: 0.3rem 0 0 0.3rem;
 
@@ -103,17 +103,15 @@
     .tab-links {
         label {
             padding: 5px 10px 5px 10px;
-            @include box-shadow-out(#fff);
-            border: 1px solid $content-border-color;
-            @include gradient-top-bottom(#e0e3eb, 0, #fff, 100, $content-background-color);
         }
-
+        
         li {
             margin: 0 5px 15px 0;
         }
-    }
-
-    .tab-links .active a, .tab-links label:hover {
-        @include gradient-top-bottom(#fff, 0, $content-background-color, 100, #fff);
+        
+        .active a, .active label {
+            border: 1px solid $content-border-color;
+            @include gradient-top-bottom(#fff, 0, $content-background-color, 100, #fff);
+        }
     }
 }
