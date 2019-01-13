@@ -18,102 +18,86 @@
 /* pagination */
 /* pre */
 /* tag */
-.tabular {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  .tabular .tab-links {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0.3rem 0 0 0.3rem; }
-  .tabular .tab-links label {
-    -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
-    -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
-    box-shadow: inset 1px 1px 0px 0px #ffffff;
-    border-top: 1px solid #b7b7b7;
-    border-left: 1px solid #b7b7b7;
-    border-right: 1px solid #b7b7b7;
-    background: #f5f5ff;
-    background: -moz-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #ffffff));
-    background: -webkit-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-    background: -o-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-    background: -ms-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-    background: linear-gradient(to bottom, #e0e3eb 0, #ffffff 100);
-    padding: 5px 10px 5px 10px;
-    text-shadow: 1px 1px 1px #ffffff;
+.tab .tab-links {
+  padding: 0.3rem 0 0 0.3rem; }
+  .tab .tab-links label {
+    text-shadow: 1px 1px 1px #fff;
     font-size: 0.9em;
     cursor: pointer; }
-  .tabular .tab-links .active a, .tabular .tab-links label:hover {
-    background: #ffffff;
-    background: -moz-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(100, #f5f5ff));
-    background: -webkit-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-    background: -o-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-    background: -ms-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-    background: linear-gradient(to bottom, #ffffff 0, #f5f5ff 100); }
-  .tabular .tab-links .active a {
+  .tab .tab-links .active a {
     cursor: default; }
-  .tabular .tab-links li {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 0 5px 0 0; }
-  .tabular .tab-content {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #ffffff;
-    border: 1px solid #b7b7b7;
-    padding: 10px; }
-    .tabular .tab-content > input {
-      display: none; }
-    .tabular .tab-content input + div {
-      display: none; }
-    .tabular .tab-content input:checked + div {
-      display: inherit; }
+  .tab .tab-links li {
+    display: inline-block; }
+.tab .tab-content > input {
+  display: none; }
+.tab .tab-content input + div {
+  display: none; }
+.tab .tab-content input:checked + div {
+  display: inherit; }
 
-.tabular-2 .tab-links {
-  padding: 0.3rem 0 0 0.3rem; }
-.tabular-2 .tab-links label {
-  -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
-  -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
-  box-shadow: inset 1px 1px 0px 0px #ffffff;
-  border: 1px solid #b7b7b7;
-  background: #f5f5ff;
-  background: -moz-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #ffffff));
-  background: -webkit-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-  background: -o-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-  background: -ms-linear-gradient(top, #e0e3eb 0, #ffffff 100);
-  background: linear-gradient(to bottom, #e0e3eb 0, #ffffff 100);
-  padding: 5px 10px 5px 10px;
-  text-shadow: 1px 1px 1px #ffffff;
-  font-size: 0.9em;
-  cursor: pointer; }
-.tabular-2 .tab-links .active a, .tabular-2 .tab-links label:hover {
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(100, #f5f5ff));
-  background: -webkit-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-  background: -o-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-  background: -ms-linear-gradient(top, #ffffff 0, #f5f5ff 100);
-  background: linear-gradient(to bottom, #ffffff 0, #f5f5ff 100); }
-.tabular-2 .tab-links .active a {
-  cursor: default; }
-.tabular-2 .tab-links li {
+.tab-1 .tab-links {
+  margin: 0;
+  border-bottom: 1px solid #b7b7b7; }
+  .tab-1 .tab-links label {
+    padding: 5px 10px 1px 10px;
+    background: none;
+    overflow: auto; }
+  .tab-1 .tab-links .active, .tab-1 .tab-links .active label {
+    background: #fff;
+    border-bottom: 1px solid #fff; }
+  .tab-1 .tab-links .active label {
+    border-top: 1px solid #b7b7b7;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7; }
+  .tab-1 .tab-links li {
+    margin: 0 5px 0 0; }
+.tab-1 .tab-content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
+  background: #fff;
+  border-left: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  padding: 10px; }
+.tab-1.left {
+  display: flex; }
+  .tab-1.left .tab-links {
+    margin: 0;
+    border: none; }
+    .tab-1.left .tab-links li {
+      display: block;
+      margin-bottom: 20px; }
+    .tab-1.left .tab-links label {
+      padding-bottom: 5px; }
+    .tab-1.left .tab-links .active label {
+      border-bottom: 1px solid #b7b7b7; }
+  .tab-1.left .tab-content {
+    width: 100%;
+    border-top: 1px solid #b7b7b7; }
+
+.tab-2 .tab-links label {
+  padding: 5px 10px 5px 10px;
+  -moz-box-shadow: inset 1px 1px 0px 0px #fff;
+  -webkit-box-shadow: inset 1px 1px 0px 0px #fff;
+  box-shadow: inset 1px 1px 0px 0px #fff;
+  border: 1px solid #b7b7b7;
+  background: #f5f5ff;
+  background: -moz-linear-gradient(top, #e0e3eb 0, #fff 100);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e3eb), color-stop(100, #fff));
+  background: -webkit-linear-gradient(top, #e0e3eb 0, #fff 100);
+  background: -o-linear-gradient(top, #e0e3eb 0, #fff 100);
+  background: -ms-linear-gradient(top, #e0e3eb 0, #fff 100);
+  background: linear-gradient(to bottom, #e0e3eb 0, #fff 100); }
+.tab-2 .tab-links li {
   margin: 0 5px 15px 0; }
-.tabular-2 .tab-content > input {
-  display: none; }
-.tabular-2 .tab-content input + div {
-  display: none; }
-.tabular-2 .tab-content input:checked + div {
-  display: inherit; }
+.tab-2 .tab-links .active a, .tab-2 .tab-links label:hover {
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0, #f5f5ff 100);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100, #f5f5ff));
+  background: -webkit-linear-gradient(top, #fff 0, #f5f5ff 100);
+  background: -o-linear-gradient(top, #fff 0, #f5f5ff 100);
+  background: -ms-linear-gradient(top, #fff 0, #f5f5ff 100);
+  background: linear-gradient(to bottom, #fff 0, #f5f5ff 100); }
 
 /*# sourceMappingURL=tab.css.map */

@@ -1,7 +1,7 @@
 @import "_mixins", "_vars";
 
 .meter {
-    height: 20px; /* Can be anything */
+    height: 15px; /* Can be anything */
     position: relative;
     background: none !important;
 
@@ -82,6 +82,10 @@
     background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
     background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+}
+
+.noanimation > span > span, .noanimation > span:after {
+    -webkit-animation: none;
 }
 
 .nostripes > span > span, .nostripes > span:after {
@@ -181,7 +185,6 @@
 }
 
 .progress-radial {
-    float: left;
     margin-right: 20px;
     position: relative;
     width: 70px;

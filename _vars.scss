@@ -1,6 +1,6 @@
 /* Global */
 $font-stack: arial, serif;
-$font-color: #000;
+$font-color: #676a6c;
 $reverse-font-color: #fff;
 $font-size: 1rem;
 $font-size-smaller: 0.9rem;
@@ -109,10 +109,10 @@ $blockquote-border-radius: $default-border-radius;
 
 /* Breadcrumbs */
 $breadcrumb-font-size: 12px;
-$breadcrumb-padding: 10px;
+$breadcrumb-padding: 10px 10px 10px 20px;
 
 $breadcrumb-border: $default-border;
-$breadcrumb-border-radius: $default-border-radius;
+$breadcrumb-border-radius: 3px;
 $breadcrumb-border-color: $default-border-color;
 
 $breadcrumb-inactive-background: $content-background-color;
@@ -195,4 +195,4 @@ $pre-padding: $default-padding;
 $tag-border:  $default-border;
 $tag-border-color: $default-border-color;
 $tag-color: $reverse-font-color;
-$tag-font-size: 0.7rem;
+$tag-font-size: 0.6rem;

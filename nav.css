@@ -47,22 +47,28 @@
     display: inherit; }
   #nav-side input + ul > li:nth-child(n+2) {
     display: none; }
-  #nav-side > li li {
-    border-top: 1px solid #505050;
-    border-bottom: 1px solid #252525;
+  #nav-side label {
+    display: block;
+    padding: 7px 0 7px 7px;
+    cursor: pointer; }
+  #nav-side > li {
     color: #fff; }
-    #nav-side > li li:not(:first-child) {
-      background: #444; }
-    #nav-side > li li:first-child {
-      border-bottom: 1px solid #252525; }
-    #nav-side > li li:first-child {
-      padding: 7px 0 7px 7px; }
-    #nav-side > li li a {
+    #nav-side > li a {
       display: block;
       padding: 7px 0 7px 7px; }
-      #nav-side > li li a:hover {
+      #nav-side > li a:hover {
         color: #252525;
         background: #FBA026; }
+    #nav-side > li li {
+      border-top: 1px solid #505050;
+      color: #fff;
+      border-bottom: 1px solid #252525; }
+      #nav-side > li li:not(:first-child) {
+        background: #444; }
+      #nav-side > li li:hover {
+        color: #252525;
+        background: #FBA026;
+        border-top: 1px solid #ffc06e; }
   #nav-side li:last-child li:last-child {
     border-bottom: none; }
   #nav-side .max, #nav-side .min {

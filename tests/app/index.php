@@ -89,6 +89,35 @@
         <script src="../../../Web/Backend/js/global/ResponseEvents.js"></script>
         <script src="../../../Web/Backend/js/global/TouchEvents.js"></script>
         <script src="../../../Web/Backend/js/global/VoiceEvents.js"></script>
+
+        <script src="../../../Resources/d3/d3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../../cssOMS/chart/chart.css">
+        <link rel="stylesheet" type="text/css" href="../../../cssOMS/chart/chart_line.css">
+        <link rel="stylesheet" type="text/css" href="../../../cssOMS/chart/chart_bar.css">
+        <script src="../../../jsOMS/Utils/oLib.js"></script>
+        <script src="../../../jsOMS/Asset/AssetManager.js"></script>
+        <script src="../../../jsOMS/Autoloader.js"></script>
+        <script src="../../../jsOMS/Chart/ChartAbstract.js"></script>
+        <script src="../../../jsOMS/Chart/LineChart.js"></script>
+        <script src="../../../jsOMS/Chart/AreaChart.js"></script>
+        <script src="../../../jsOMS/Chart/DiffAreaChart.js"></script>
+        <script src="../../../jsOMS/Chart/StackedAreaChart.js"></script>
+        <script src="../../../jsOMS/Chart/ColumnChart.js"></script>
+        <script src="../../../jsOMS/Chart/BarChart.js"></script>
+        <script src="../../../jsOMS/Chart/GroupedColumnChart.js"></script>
+        <script src="../../../jsOMS/Chart/GroupedBarChart.js"></script>
+        <script src="../../../jsOMS/Chart/StackedColumnChart.js"></script>
+        <script src="../../../jsOMS/Chart/StackedBarChart.js"></script>
+        <script src="../../../jsOMS/Chart/PieChart.js"></script>
+        <script src="../../../jsOMS/Chart/DonutChart.js"></script>
+        <script src="../../../jsOMS/Chart/WaterfallChart.js"></script>
+        <script src="../../../jsOMS/Chart/VWaterfallChart.js"></script>
+        <script src="../../../jsOMS/Chart/PyramidChart.js"></script>
+        <script src="../../../jsOMS/Chart/ScatterplotChart.js"></script>
+        <script src="../../../jsOMS/Chart/CalendarChart.js"></script>
+        <script src="../../../jsOMS/Chart/CandlestickChart.js"></script>
+        <script src="../../../jsOMS/Chart/OhlcChart.js"></script>
+
         <script src="../load.js"></script>
     </head>
     <body>
@@ -135,31 +164,100 @@
         </header>
         <div id="out">
             <ul id="nav-side" class="nav" role="navigation">
+                <li><a href="?page=forms">Forms</a></li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
                         <li><span class="centerText">
                                 <i class="fa fa-question-circle"></i>
                             </span>
-                            HTML Tests
+                            UI Elements
                             <label for="nav-Help">
                                 <i class="fa fa-chevron-down min"></i>
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
                         </li>
-                        <li><a href="?page=forms">Forms</a></li>
                         <li><a href="?page=article">Articles</a></li>
                         <li><a href="?page=buttons">Buttons</a></li>
                         <li><a href="?page=tags">Tags</a></li>
-                        <li><a href="?page=boxes">Boxes</a></li>
-                        <li><a href="?page=images">Images</a></li>
-                        <li><a href="?page=sliders">Sliders</a></li>
+                        <li><a href="?page=panels">Panels</a></li>
                         <li><a href="?page=loaders">Loaders</a></li>
-                        <li><a href="?page=grid">Grid</a></li>
                         <li><a href="?page=tabs">Tabs</a></li>
                         <li><a href="?page=breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="?page=progress">Progress</a></li>
+                    </ul>
+                </li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Images
+                            <label for="nav-Help">
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
+                        <li><a href="?page=images">Images</a></li>
+                        <li><a href="?page=sliders">Sliders</a></li>
+                        <li><a href="?page=lazyload">Lazyload</a></li>
+                    </ul>
+                </li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Tables & Lists
+                            <label for="nav-Help">
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
                         <li><a href="?page=tables">Tables</a></li>
+                        <li><a href="?page=lists">Lists</a></li>
+                    </ul>
+                </li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Layout
+                            <label for="nav-Help">
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
+                        <li><a href="?page=grid">Grid</a></li>
+                        <li><a href="?page=sizes">Sizes</a></li>
+                    </ul>
+                </li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Interaction
+                            <label for="nav-Help">
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
                         <li><a href="?page=popups">Popups</a></li>
                         <li><a href="?page=notifications">Notifications</a></li>
+                    </ul>
+                </li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Views
+                            <label for="nav-Help">
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
                         <li><a href="?page=editor">Editor</a></li>
                         <li><a href="?page=calendar">Calendar</a></li>
                         <li><a href="?page=navigations">Navigations</a></li>
@@ -176,10 +274,40 @@
                                 <i class="fa fa-chevron-up max"></i>
                             </label>
                         </li>
-                        <li><a href="?page=charts">Charts</a></li>
                         <li><a href="?page=3d">3D</a></li>
-                        <li><a href="?page=lazyload">Lazyload</a></li>
                         <li><a href="?page=actions">Actions</a></li>
+                    </ul>
+                </li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Charts
+                            <label for="nav-Help">
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
+                        <li><a href="?page=chart_line">Line Chart</a></li>
+                        <li><a href="?page=chart_area">Area Chart</a></li>
+                        <li><a href="?page=chart_bar">Bar Chart</a></li>
+                        <li><a href="?page=chart_column">Column Chart</a></li>
+                        <li><a href="?page=chart_waterfall">Waterfall Chart</a></li>
+                        <li><a href="?page=chart_pie">Pie Chart</a></li>
+                        <li><a href="?page=chart_radar">Radar Chart</a></li>
+                        <li><a href="?page=chart_pyramid">Pyramid Chart</a></li>
+                        <li><a href="?page=chart_gouge">Gouge Chart</a></li>
+                        <li><a href="?page=chart_scatterplot">Scatterplot Chart</a></li>
+                        <li><a href="?page=chart_boxplot">Boxplot Chart</a></li>
+                        <li><a href="?page=chart_candlestick">Candlestick Chart</a></li>
+                        <li><a href="?page=chart_ohlc">OHLC Chart</a></li>
+                        <li><a href="?page=chart_calendar">Calendar Chart</a></li>
+                        <li><a href="?page=chart_gantt">Gantt Chart</a></li>
+                        <li><a href="?page=chart_bubblemap">Bubblemap</a></li>
+                        <li><a href="?page=chart_tree">Tree Chart</a></li>
+                        <li><a href="?page=chart_bcg">BCG Chart</a></li>
+                        <li><a href="?page=chart_map">Map Chart</a></li>
                     </ul>
                 </li>
             </ul>

@@ -50,32 +50,40 @@
         }
     }
 
+    label {
+        display: block;
+        padding: 7px 0 7px 7px;
+        cursor: pointer;
+    }
+
     > li {
+        //border-bottom: 1px solid #252525;
+        color: #fff;
+
+        a {
+            display: block;
+            padding: 7px 0 7px 7px;
+
+            &:hover {
+                color: #252525;
+                background: $default-highlighter;
+            }
+        }
+
         li {
             border-top: 1px solid #505050;
-            border-bottom: 1px solid #252525;
             color: #fff;
 
             &:not(:first-child) {
                 background: #444;
             }
 
-            &:first-child {
-                border-bottom: 1px solid #252525;
-            }
+            border-bottom: 1px solid #252525;
 
-            &:first-child {
-                padding: 7px 0 7px 7px;
-            }
-
-            a {
-                display: block;
-                padding: 7px 0 7px 7px;
-
-                &:hover {
-                    color: #252525;
-                    background: $default-highlighter;
-                }
+            &:hover {
+                color: #252525;
+                background: $default-highlighter;
+                border-top: 1px solid rgb(255, 192, 110);
             }
         }
     }

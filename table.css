@@ -31,22 +31,30 @@ table .sort-asc, table .sort-desc {
     color: #fff; }
   .table thead {
     color: #fff; }
+  .table.green caption, .table.green thead {
+    background: #42bd41; }
+  .table.red caption, .table.red thead {
+    background: #d01715; }
+  .table.blue caption, .table.blue thead {
+    background: #5778fd; }
   .table.orange caption, .table.orange thead {
     background: #FBA026; }
-  .table.red caption, .table.red thead {
+  .table.lightblue caption, .table.lightblue thead {
+    background: #03a9f5; }
+  .table.yellow caption, .table.yellow thead {
+    background: #ffeb3c; }
+  .table.purple caption, .table.purple thead {
+    background: #673bb7; }
+  .table.pink caption, .table.pink thead {
+    background: #ffa6e3; }
+  .table.grey caption, .table.grey thead {
+    background: #dcdcdc; }
+  .table.darkred caption, .table.darkred thead {
     background: #B8312F; }
-  .table.green caption, .table.green thead {
-    background: #41A85F; }
-  .table.white caption, .table.white thead {
-    background: #fff; }
-  .table.blue caption, .table.blue thead {
-    background: #2C82C9; }
-  .table.purple caption, .table.purple thead {
-    background: #553982; }
+  .table.darkgreen caption, .table.darkgreen thead {
+    background: #009788; }
   .table.darkblue caption, .table.darkblue thead {
-    background: #2969B0; }
-  .table.purple caption, .table.purple thead {
-    background: #553982; }
+    background: #3f51b5; }
 
 table.table {
   -moz-box-sizing: border-box;

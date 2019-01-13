@@ -22,7 +22,6 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
   margin-top: 0.3rem;
   overflow-x: auto; }
   .box .inner {
@@ -43,20 +42,30 @@ section.box {
   box-shadow: 0px 1px 0px 0px #f1f1f1;
   border: 1px solid #d6d6d6;
   background: #fff; }
+  section.box.green {
+    border-top: 3px solid #42bd41; }
+  section.box.red {
+    border-top: 3px solid #d01715; }
+  section.box.blue {
+    border-top: 3px solid #5778fd; }
   section.box.orange {
     border-top: 3px solid #FBA026; }
-  section.box.red {
+  section.box.lightblue {
+    border-top: 3px solid #03a9f5; }
+  section.box.yellow {
+    border-top: 3px solid #ffeb3c; }
+  section.box.purple {
+    border-top: 3px solid #673bb7; }
+  section.box.pink {
+    border-top: 3px solid #ffa6e3; }
+  section.box.grey {
+    border-top: 3px solid #dcdcdc; }
+  section.box.darkred {
     border-top: 3px solid #B8312F; }
-  section.box.green {
-    border-top: 3px solid #41A85F; }
-  section.box.blue {
-    border-top: 3px solid #2C82C9; }
-  section.box.purple {
-    border-top: 3px solid #553982; }
+  section.box.darkgreen {
+    border-top: 3px solid #009788; }
   section.box.darkblue {
-    border-top: 3px solid #2969B0; }
-  section.box.purple {
-    border-top: 3px solid #553982; }
+    border-top: 3px solid #3f51b5; }
 
 section header > h1 {
   margin: 10px 10px 0 10px;

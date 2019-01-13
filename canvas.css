@@ -23,4 +23,7 @@ canvas {
   border: 1px solid #d6d6d6;
   user-select: none; }
 
+canvas.chart {
+  width: 100%; }
+
 /*# sourceMappingURL=canvas.css.map */

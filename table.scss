@@ -20,8 +20,9 @@ table .sort-asc, table .sort-desc {
     }
 
     @each $tuple in
-        'orange' #FBA026, 'red' #B8312F, 'green' #41A85F, 'white' #fff,
-        'blue' #2C82C9, 'purple' #553982, 'darkblue' #2969B0, 'purple' #553982 {
+        'green' #42bd41, 'red' #d01715, 'blue' #5778fd,
+        'orange' #FBA026, 'lightblue' #03a9f5, 'yellow' #ffeb3c, 'purple' #673bb7, 'pink' #ffa6e3, 'grey' #dcdcdc,
+        'darkred' #B8312F, 'darkgreen' #009788, 'darkblue' #3f51b5 {
         &.#{nth($tuple, 1)} {
             caption, thead {
                 background: #{nth($tuple, 2)};

@@ -1,11 +1,10 @@
 @import "_mixins", "_vars";
 
-.tag {
+span.tag {
     cursor: pointer;
-    border: $tag-border solid $tag-border-color;
-    padding: 5px 10px 5px 10px;
+    @include border-radius(4px);
+    padding: 4px 6px 4px 6px;
     font-size: $tag-font-size;
     color: $tag-color;
     display: inline-block;
-    line-height: 1rem;
 }

@@ -80,7 +80,6 @@
                         </tbody>
                     </table>
                 <h6>Headline6</h6>
-                <h7>Content</h7>
                 <p><span class="tooltip">Tooltip<i>My Tooltip asd a sd <br>asdfsdf adf asd</i></span> ipsum dolor sit amet,
                     consectetur adipiscing elit. Duis posuere, nulla eu condimentum eleifend, nulla magna viverra risus, ut
                     faucibus libero libero nec est. Nunc quis rhoncus est, ac sodales lorem. Suspendisse convallis, massa eu

@@ -1,46 +1,25 @@
 @import "_mixins", "_vars";
 
-.tabular {
-    @include box-sizing(border-box);
-
+.tab {
     .tab-links {
-        @include box-sizing(border-box);
         padding: 0.3rem 0 0 0.3rem;
-    }
 
-    .tab-links label {
-        @include box-shadow-out(#ffffff);
-        border-top: 1px solid $content-border-color;
-        border-left: 1px solid $content-border-color;
-        border-right: 1px solid $content-border-color;
-        @include gradient-top-bottom(#e0e3eb, 0, #ffffff, 100, $content-background-color);
-        padding: 5px 10px 5px 10px;
-        text-shadow: 1px 1px 1px #ffffff;
-        font-size: 0.9em;
-        cursor: pointer;
-    }
+        label {
+            text-shadow: 1px 1px 1px #fff;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
 
-    .tab-links .active a, .tab-links label:hover {
-        @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
-    }
+        .active a {
+            cursor: default;
+        }
 
-    .tab-links .active a {
-        cursor: default;
-    }
-
-    .tab-links li {
-        @include box-sizing(border-box);
-        display: inline-block;
-        margin: 0 5px 0 0;
+        li {
+            display: inline-block;
+        }
     }
 
     .tab-content {
-        @include box-sizing(border-box);
-        background: #ffffff;
-        border: 1px solid $content-border-color;
-
-        padding: 10px;
-
         > input {
             display: none;
         }
@@ -55,46 +34,86 @@
     }
 }
 
-.tabular-2 {
+.tab-1 {
     .tab-links {
-        padding: 0.3rem 0 0 0.3rem;
-    }
+        margin: 0;
+        border-bottom: 1px solid $content-border-color;
 
-    .tab-links label {
-        @include box-shadow-out(#ffffff);
-        border: 1px solid $content-border-color;
-        @include gradient-top-bottom(#e0e3eb, 0, #ffffff, 100, $content-background-color);
-        padding: 5px 10px 5px 10px;
-        text-shadow: 1px 1px 1px #ffffff;
-        font-size: 0.9em;
-        cursor: pointer;
-    }
+        label {
+            padding: 5px 10px 1px 10px;
+            background: none;
+            overflow: auto;
+        }
 
-    .tab-links .active a, .tab-links label:hover {
-        @include gradient-top-bottom(#ffffff, 0, $content-background-color, 100, #ffffff);
-    }
+        .active, .active label {
+            background: $content-box-background-color;
+            border-bottom: 1px solid $content-box-background-color;
+        }
 
-    .tab-links .active a {
-        cursor: default;
-    }
+        .active label {
+            border-top: 1px solid $content-border-color;
+            border-left: 1px solid $content-border-color;
+            border-right: 1px solid $content-border-color;
+        }
 
-    .tab-links li {
-        @include box-sizing(border-box);
-        display: inline-block;
-        margin: 0 5px 15px 0;
+        li {
+            margin: 0 5px 0 0;
+        }
     }
 
     .tab-content {
-        > input {
-            display: none;
+        @include box-sizing(border-box);
+        background: $content-box-background-color;
+        border-left: 1px solid $content-border-color;
+        border-right: 1px solid $content-border-color;
+        border-bottom: 1px solid $content-border-color;
+
+        padding: 10px;
+    }
+
+    &.left {
+        display: flex;
+
+        .tab-links {
+            margin: 0;
+            border: none;
+
+            li {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            label {
+                padding-bottom: 5px;
+            }
+
+            .active label {
+                border-bottom: 1px solid $content-border-color;
+            }
+        }
+        
+        .tab-content {
+            width: 100%;
+            border-top: 1px solid $content-border-color;
+        }
+    }
+}
+
+.tab-2 {
+    .tab-links {
+        label {
+            padding: 5px 10px 5px 10px;
+            @include box-shadow-out(#fff);
+            border: 1px solid $content-border-color;
+            @include gradient-top-bottom(#e0e3eb, 0, #fff, 100, $content-background-color);
         }
 
-        input + div {
-            display: none;
+        li {
+            margin: 0 5px 15px 0;
         }
+    }
 
-        input:checked + div {
-            display: inherit;
-        }
+    .tab-links .active a, .tab-links label:hover {
+        @include gradient-top-bottom(#fff, 0, $content-background-color, 100, #fff);
     }
 }

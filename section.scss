@@ -2,7 +2,7 @@
 
 .box {
     @include box-sizing(border-box);
-    display: inline-block;
+    //display: inline-block;
     margin-top: 0.3rem;
     overflow-x: auto;
 
@@ -23,8 +23,9 @@ section.box {
     background: $content-box-background-color;
 
     @each $tuple in
-        'orange' #FBA026, 'red' #B8312F, 'green' #41A85F,
-        'blue' #2C82C9, 'purple' #553982, 'darkblue' #2969B0, 'purple' #553982 {
+        'green' #42bd41, 'red' #d01715, 'blue' #5778fd,
+        'orange' #FBA026, 'lightblue' #03a9f5, 'yellow' #ffeb3c, 'purple' #673bb7, 'pink' #ffa6e3, 'grey' #dcdcdc,
+        'darkred' #B8312F, 'darkgreen' #009788, 'darkblue' #3f51b5 {
         &.#{nth($tuple, 1)} {
             border-top: 3px solid #{nth($tuple, 2)};
         }

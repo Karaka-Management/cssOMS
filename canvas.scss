@@ -5,3 +5,7 @@ canvas {
     border: $canvas-border solid $canvas-border-color;
     user-select: none;
 }
+
+canvas.chart {
+    width: 100%;
+}

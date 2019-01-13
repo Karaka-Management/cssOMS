@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <div class="tabular tabview">
+            <div class="tab tab-1">
                 <ul class="tab-links">
-                    <li><label for="c-tab-1">TAAAB</label></li>
-                    <li class="active"><label for="c-tab-2">TAAAB</label></li>
+                    <li class="active"><label for="c-tab-1">TAAAB</label></li>
+                    <li><label for="c-tab-2">TAAAB</label></li>
                 </ul>
                 <div class="tab-content">
                     <input type="radio" id="c-tab-1" name="tabular-1" checked>
@@ -22,9 +22,32 @@
 </div>
 
 <div class="row">
+    <div class="col-xs-6">
+        <div class="box wf-100">
+            <div class="tab tab-1 left">
+                <ul class="tab-links">
+                    <li class="active"><label for="c-tab-1-2">TAAAB</label></li>
+                    <li><label for="c-tab-2-3">TAAAB</label></li>
+                </ul>
+                <div class="tab-content">
+                    <input type="radio" id="c-tab-1-2" name="tabular-3" checked>
+                    <div class="tab">
+                        Test content
+                    </div>
+                    <input type="radio" id="c-tab-2-3" name="tabular-3">
+                    <div class="tab tab-2">
+                        <p>Test content 2</p><p>asdf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <div class="tabular-2 tabview">
+            <div class="tab tab-2">
                 <ul class="tab-links">
                     <li><label for="c-tab2-1">TAAAB</label></li>
                     <li class="active"><label for="c-tab2-2">TAAAB</label></li>
