@@ -1,5 +1,15 @@
 @import "_mixins", "_vars";
 
+table.fixed {
+    table-layout: fixed;
+
+    td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
 table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
     display: none;
 }

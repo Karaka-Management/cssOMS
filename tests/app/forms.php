@@ -37,8 +37,8 @@
                         <tr>
                             <td colspan="2"><label>Special</label></td>
                         <tr>
-                            <td colspan="2"><span class="input"><button type="button"><i class="fa fa-pencil"></i></button><input type="text"></span></td>
-
+                            <td colspan="2">
+                                <span class="input"><button type="button"><i class="fa fa-pencil"></i></button><input type="text"></span></td>
                         <tr>
                             <td colspan="2"><label>Number</label></td>
                         <tr>

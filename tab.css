@@ -19,7 +19,7 @@
 /* pre */
 /* tag */
 .tabview .tab-links {
-  padding: 0.3rem 0 0 0.3rem; }
+  padding: 0.3rem 0 0 0; }
   .tabview .tab-links label {
     text-shadow: 1px 1px 1px #fff;
     font-size: 0.9em;

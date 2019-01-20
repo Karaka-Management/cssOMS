@@ -122,6 +122,11 @@
 .nav-trigger {
     position: absolute;
     clip: rect(0, 0, 0, 0);
+
+    &:checked ~ main {
+        width: calc(100% - 175px);
+        left: 175px;
+    }
 }
 
 label[for="nav-trigger"] {
@@ -129,11 +134,6 @@ label[for="nav-trigger"] {
     height: 30px;
     width: 30px;
     cursor: pointer;
-}
-
-.nav-trigger:checked ~ main {
-    width: calc(100% - 175px);
-    left: 175px;
 }
 
 .nav-top {
@@ -147,59 +147,60 @@ label[for="nav-trigger"] {
 
     > li {
         @include box-shadow-top(#fff);
-        text-shadow: 1px 1px 1px #fff;
 
         &:first-child {
             @include box-shadow-out(#fff);
         }
+
+        > a {
+            display: inline-block;
+            padding: 10px 10px;
+        }
     }
-}
 
-.nav-top li {
-    background: #fff;
-    display: inline-block;
-    margin-right: -4px;
-    position: relative;
-    cursor: pointer;
-}
+    li {
+        background: #fff;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
 
-.nav-top > li > a {
-    display: inline-block;
-    padding: 10px 10px;
-}
+        &:hover {
+            background: $default-highlighter;
+            color: #252525;
 
-.nav-top li:hover {
-    background: #555;
-    color: #fff;
-    text-shadow: 0 -1px 0 #000;
-}
+            > ul {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
 
-.nav-top li > ul {
-    padding: 0;
-    position: absolute;
-    top: 36px;
-    left: 0;
-    width: 150px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-}
+        > ul {
+            padding: 0;
+            z-index: 5;
+            position: absolute;
+            top: 36px;
+            left: 0;
+            width: 150px;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            border-left: 1px solid $content-border-color;
+            border-bottom: 1px solid $content-border-color;
+            border-right: 1px solid $content-border-color;
 
-.nav-top li > ul li {
-    background: #555;
-    display: block;
-    color: #fff;
-    text-shadow: 0 -1px 0 #000;
-}
+            li {
+                display: block;
+                color: #000;
+                padding: 7px;
 
-.nav-top li > ul li:hover { background: #666; }
-.nav-top li:hover > ul {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+                &:hover {
+                    color: #252525;
+                    background: $default-highlighter;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {

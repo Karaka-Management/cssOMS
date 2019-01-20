@@ -2,7 +2,7 @@
 
 .tabview {
     .tab-links {
-        padding: 0.3rem 0 0 0.3rem;
+        padding: 0.3rem 0 0 0;
 
         label {
             text-shadow: 1px 1px 1px #fff;
@@ -91,7 +91,7 @@
                 border-bottom: 1px solid $content-border-color;
             }
         }
-        
+
         .tab-content {
             width: 100%;
             border-top: 1px solid $content-border-color;
@@ -104,11 +104,11 @@
         label {
             padding: 5px 10px 5px 10px;
         }
-        
+
         li {
             margin: 0 5px 15px 0;
         }
-        
+
         .active a, .active label {
             border: 1px solid $content-border-color;
             @include gradient-top-bottom(#fff, 0, $content-background-color, 100, #fff);

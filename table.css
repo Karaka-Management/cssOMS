@@ -18,6 +18,13 @@
 /* pagination */
 /* pre */
 /* tag */
+table.fixed {
+  table-layout: fixed; }
+  table.fixed td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
 table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
   display: none; }
 
