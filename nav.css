@@ -103,10 +103,7 @@ label[for="nav-trigger"] {
   margin-top: 5px;
   display: block;
   background: #fff;
-  border: 1px solid #b7b7b7;
-  -moz-box-shadow: inset 0px 1px 0px 0px #fff;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
-  box-shadow: inset 0px 1px 0px 0px #fff; }
+  border: 1px solid #b7b7b7; }
   .nav-top > li {
     -moz-box-shadow: inset 0px 1px 0px 0px #fff;
     -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
@@ -124,8 +121,15 @@ label[for="nav-trigger"] {
     position: relative;
     cursor: pointer; }
     .nav-top li:hover {
+      -moz-box-shadow: inset 0px 1px 0px 0px #FFC06E;
+      -webkit-box-shadow: inset 0px 1px 0px 0px #FFC06E;
+      box-shadow: inset 0px 1px 0px 0px #FFC06E;
       background: #FBA026;
       color: #252525; }
+      .nav-top li:hover:first-child {
+        -moz-box-shadow: inset 1px 1px 0px 0px #FFC06E;
+        -webkit-box-shadow: inset 1px 1px 0px 0px #FFC06E;
+        box-shadow: inset 1px 1px 0px 0px #FFC06E; }
       .nav-top li:hover > ul {
         display: block;
         opacity: 1;

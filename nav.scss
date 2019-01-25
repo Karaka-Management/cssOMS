@@ -143,8 +143,6 @@ label[for="nav-trigger"] {
     background: #fff;
     border: 1px solid $content-border-color;
 
-    @include box-shadow-top(#fff);
-
     > li {
         @include box-shadow-top(#fff);
 
@@ -165,6 +163,12 @@ label[for="nav-trigger"] {
         cursor: pointer;
 
         &:hover {
+            @include box-shadow-top(#FFC06E);
+
+            &:first-child {
+                @include box-shadow-out(#FFC06E);
+            }
+
             background: $default-highlighter;
             color: #252525;
 

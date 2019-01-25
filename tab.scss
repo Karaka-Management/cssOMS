@@ -103,6 +103,7 @@
     .tab-links {
         label {
             padding: 5px 10px 5px 10px;
+            border: 1px solid transparent; // fixes jumping text for active and non-active labels
         }
 
         li {
