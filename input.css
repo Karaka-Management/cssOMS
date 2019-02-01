@@ -90,7 +90,7 @@ input ~ .dropdown {
   position: absolute;
   display: none; }
 
-input:focus ~ .dropdown, input.active ~ .dropdown {
+input:focus ~ .dropdown, input ~ .dropdown.active {
   display: inline-block; }
 
 select {

@@ -157,6 +157,13 @@ pre {
       color: #888;
       width: 30px; }
 
+iframe {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+  height: 100%; }
+
 .ok {
   color: #5cff56; }
 
@@ -3805,7 +3812,7 @@ input ~ .dropdown {
   position: absolute;
   display: none; }
 
-input:focus ~ .dropdown, input.active ~ .dropdown {
+input:focus ~ .dropdown, input ~ .dropdown.active {
   display: inline-block; }
 
 select {
