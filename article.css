@@ -23,6 +23,13 @@ article {
   padding: 10px;
   margin: 0;
   font-size: 0.9rem; }
+  article del, article ins {
+    padding: 3px;
+    text-decoration: none; }
+  article del {
+    background: #ff9e9e; }
+  article ins {
+    background: #b0f3b0; }
   article h1, article h2, article h3, article h4, article h5, article h6 {
     font-weight: bold; }
   article h1 {

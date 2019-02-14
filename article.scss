@@ -6,6 +6,19 @@ article {
     margin: 0;
     font-size: 0.9rem;
 
+    del, ins {
+        padding: 3px;
+        text-decoration: none;
+    }
+
+    del {
+        background: #ff9e9e;
+    }
+
+    ins {
+        background: #b0f3b0;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         //padding-bottom: 1rem;
