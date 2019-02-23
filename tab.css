@@ -30,9 +30,9 @@
     display: inline-block; }
 .tabview .tab-content > input {
   display: none; }
-.tabview .tab-content input + div {
+.tabview .tab-content > input + div {
   display: none; }
-.tabview .tab-content input:checked + div {
+.tabview .tab-content > input:checked + div {
   display: inherit; }
 
 .tab-1 .tab-links {

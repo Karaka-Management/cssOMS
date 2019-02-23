@@ -24,11 +24,11 @@
             display: none;
         }
 
-        input + div {
+        > input + div {
             display: none;
         }
 
-        input:checked + div {
+        > input:checked + div {
             display: inherit;
         }
     }

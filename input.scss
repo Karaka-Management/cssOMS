@@ -46,6 +46,7 @@ input[type="datetime-local"] {
 input ~ .dropdown {
     position: absolute;
     display: none;
+    z-index: 3;
 }
 
 input:focus ~ .dropdown, input ~ .dropdown.active {

@@ -88,7 +88,8 @@ input[type="datetime-local"] {
 
 input ~ .dropdown {
   position: absolute;
-  display: none; }
+  display: none;
+  z-index: 3; }
 
 input:focus ~ .dropdown, input ~ .dropdown.active {
   display: inline-block; }
