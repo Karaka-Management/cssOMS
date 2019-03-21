@@ -77,6 +77,7 @@
         <script src="../../../jsOMS/Model/Action/Dom/Datalist/Append.js"></script>
         <script src="../../../jsOMS/Model/Action/Dom/Table/Clear.js"></script>
         <script src="../../../jsOMS/Model/Action/Dom/Table/Append.js"></script>
+        <script src="../../../jsOMS/Model/Action/Event/Prevent.js"></script>
         <script src="../../../jsOMS/Model/Action/Utils/Timer.js"></script>
         <script src="../../../jsOMS/Model/Action/Validate/Keypress.js"></script>
         <script src="../../../jsOMS/Model/Action/Dom/SetValue.js"></script>
@@ -164,7 +165,22 @@
         </header>
         <div id="out">
             <ul id="nav-side" class="nav" role="navigation">
-                <li><a href="?page=forms">Forms</a></li>
+                <li><input id="nav-help" type="checkbox" checked>
+                    <ul>
+                        <li><label for="nav-Help">
+                            <span class="centerText">
+                                <i class="fa fa-question-circle"></i>
+                            </span>
+                            Forms
+                                <i class="fa fa-chevron-down min"></i>
+                                <i class="fa fa-chevron-up max"></i>
+                            </label>
+                        </li>
+                        <li><a href="?page=forms">Form</a></li>
+                        <li><a href="?page=forms_input">Input</a></li>
+                        <li><a href="?page=forms_table">Table</a></li>
+                    </ul>
+                </li>
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
                         <li><label for="nav-Help">
