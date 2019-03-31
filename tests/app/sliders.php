@@ -44,3 +44,25 @@
         </section>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <section class="box">
+            <div class="slider-3">
+                <figure class="icon-cards">
+                    <div class="icon-cards-content">
+                        <div class="icon-cards-item">
+                            <img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" alt="">
+                        </div>
+                        <div class="icon-cards-item">
+                            <img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" alt="">
+                        </div>
+                        <div class="icon-cards-item">
+                            <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" alt="">
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </div>
+</div>

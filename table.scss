@@ -14,8 +14,8 @@ table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
     display: none;
 }
 
-table .sort-asc, table .sort-desc {
-    padding-left: 5px;
+table .sort-asc, table .sort-desc, table .filter {
+    padding: 0 5px 0 5px;
     cursor: pointer;
 }
 
