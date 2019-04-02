@@ -184,8 +184,10 @@
     </div>
 </div>
 
-<script>
-    const loginRequest = new jsOMS.Message.Request.Request('http://127.0.0.1/en/api/login', 'POST', 'json');
+<script type="module">
+    import { Request } from "../../../jsOMS/Message/Request/Request.js";
+
+    const loginRequest = new Request('http://127.0.0.1/en/api/login', 'POST', 'json');
     loginRequest.setData({user: 'admin', pass: 'orange'});
     loginRequest.send();
 </script>

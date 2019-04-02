@@ -524,10 +524,13 @@
     </section>
 </template>
 
-<script>
-    const loginRequest = new jsOMS.Message.Request.Request('http://127.0.0.1/en/api/login', 'POST', 'json');
+<script type="module">
+    import { Request } from '../../../jsOMS/Message/Request/Request.js';
+    import { Table } from '../../../jsOMS/UI/Component/Table.js';
+
+    const loginRequest = new Request('http://127.0.0.1/en/api/login', 'POST', 'json');
     loginRequest.setData({user: 'admin', pass: 'orange'});
     loginRequest.send();
 
-    jsOMS.UI.Component.Table.getRemoteData(document.getElementById('table3'));
+    Table.getRemoteData(document.getElementById('table3'));
 </script>

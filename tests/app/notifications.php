@@ -20,44 +20,45 @@
         </div>
     </template>
 </div>
-<script>
+<script type="module">
+    import {  } from '';
     document.getElementById('okButton').addEventListener('click', function() {
         window.omsApp.notifyManager.send(
-            new jsOMS.Message.Notification.NotificationMessage(
+            new NotificationMessage(
                 'ok',
                 'Some Title',
                 'This is a message content.'
-            ), jsOMS.Message.Notification.NotificationType.APP_NOTIFICATION
+            ), NotificationType.APP_NOTIFICATION
         );
     });
 
     document.getElementById('infoButton').addEventListener('click', function() {
         window.omsApp.notifyManager.send(
-            new jsOMS.Message.Notification.NotificationMessage(
+            new NotificationMessage(
                 'info',
                 'Some Title',
                 'This is a message content.'
-            ), jsOMS.Message.Notification.NotificationType.APP_NOTIFICATION
+            ), NotificationType.APP_NOTIFICATION
         );
     });
 
     document.getElementById('warningButton').addEventListener('click', function() {
         window.omsApp.notifyManager.send(
-            new jsOMS.Message.Notification.NotificationMessage(
+            new NotificationMessage(
                 'warning',
                 'Some Title',
                 'This is a message content.'
-            ), jsOMS.Message.Notification.NotificationType.APP_NOTIFICATION
+            ), NotificationType.APP_NOTIFICATION
         );
     });
 
     document.getElementById('errorButton').addEventListener('click', function() {
         window.omsApp.notifyManager.send(
-            new jsOMS.Message.Notification.NotificationMessage(
+            new NotificationMessage(
                 'error',
                 'Some Title',
                 'This is a message content.'
-            ), jsOMS.Message.Notification.NotificationType.APP_NOTIFICATION
+            ), NotificationType.APP_NOTIFICATION
         );
     });
 </script>
