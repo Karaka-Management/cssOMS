@@ -15,6 +15,7 @@ With Orange-Management you have one partner who can provide all the tools and so
     - [Setup](#setup)
   - [Philosophy](#philosophy)
   - [Development Status](#development-status)
+  - [Tests](#tests)
   - [Become a contributor](#become-a-contributor)
   - [Misc](#misc)
 
