@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/Orange-Management/Assets/master/art/logo.png" width="256" alt="Logo"></p>
 
-The Orange Management software is a modular web application for small to mid sized companies that need CRM, ERP, Intranet and/or CMS functionalities and much more.
+The cssOMS framework is primarily developed for the Orange Management application which is a modular web application for small to mid sized companies that need CRM, ERP, Intranet and/or CMS functionalities and much more. The framework is also used in some other tools and websites which compliment the Orange Management web application and provides the necessary basic CSS.
 
 With Orange-Management you have one partner who can provide all the tools and software solutions you are used to at fair and reasonable prices even for small organizations and companies/startups. Our solutions can be used independently from each other or fully integrated with other solutions we provide. By choosing Orange-Management as your partner you'll be able to adjust your software based on the changes in your requirements without worrying about integration and workflow optimization.
 
@@ -15,6 +15,7 @@ With Orange-Management you have one partner who can provide all the tools and so
     - [Setup](#setup)
   - [Philosophy](#philosophy)
   - [Development Status](#development-status)
+  - [Tests](#tests)
   - [Become a contributor](#become-a-contributor)
   - [Misc](#misc)
 
@@ -22,20 +23,11 @@ With Orange-Management you have one partner who can provide all the tools and so
 
 ### Requirements
 
-Some of the following requirements are only necessary for developers and not for end-users:
-
-* PHP 7.3
-* PHP extension: php7.3-cli php7.3-common php7.3-mysql php7.3-pgsql php7.3-xdebug php7.3-json php7.3-opcache php7.3-pdo php7.3-sqlite php7.3-mbstring php7.3-curl php7.3-imap php7.3-bcmath php7.3-zip php7.3-dom php7.3-xml php7.3-phar php7.3-gd php7.3-dev php-pear
-* apache2 (recommended) or nginx
-* mysql-server or postgresql postgresql-contrib
-* Make sure that url rewriting is active
-* Download the Orange-Management project or clone the Orange-Management repository (incl. submodules).
+In order to re-build the css from the scss files you need scss. The file which includes all necessary imports and should be built is called `styles.scss`.
 
 ### Setup
 
-After installing the requirements and configuring the webserver for the correct path navigate to https://your_url.com/Install and follow the installation process. Afterwards you will be redirected to the installed backend.
-
-For more detailed information please checkout the [Installation Guide](https://orange-management.org/dev/guide?page=setup/installation) for developers or the [Installation Guide](https://orange-management.org/info?page=setup/server) for end-users.
+You can either link the `styles.css` in the head of your output file or choose the single styles which you need for the respective application.
 
 ## Philosophy
 
@@ -45,11 +37,15 @@ Since we believe in our software and transparent business model you can live tes
 
 ## Development Status
 
-Currently Orange Management is still developing the first Alpha version. As soon as we have a running Beta version we are allowing external testers to use our software and a selected amount of inhouse developed modules.
+Currently Orange Management is still developing the first Alpha version. As soon as we have a running Beta version we are allowing external testers to use our software and a selected amount of inhouse developed modules. The cssOMS style framework is one of the least developed components and still requires many improvements in terms of visuals, missing styles and mobile support.
 
 General updates can be found in our info section at https://orange-management.org/info and developer updates can be found in our developer section at https://orange-management.org/dev. In our developer section you can also check out the automatically generated reports such as code coverage, code style, static analysis etc. as well as our code style guide lines and developer documentation.
 
 ![Preview](https://raw.githubusercontent.com/Orange-Management/Assets/master/art/preview.png)
+
+## Tests
+
+In order to see and test the styles by themselves you can clone the framework as well as the `jsOMS` repository and run the `cssOMS/tests/app/index.htm` file. Feel free to modify the scss files and test the results in this sandboxed page.
 
 ## Become a contributor
 
