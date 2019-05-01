@@ -129,11 +129,10 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table id="tRemovable" class="table darkred">
+            <table id="tRemovable" class="table darkred" data-ui-element="tr" data-tag="form">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
-                    <td></td>
                     <td></td>
                     <td>Col1 Title</td>
                     <td>Col2 Title</td>
@@ -143,32 +142,28 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><form id="fR1" method="NONE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
                     <td>Col1</td>
                     <td>Col2</td>
                     <td>Col3</td>
                     <td>Col4</td>
                 </tr>
                 <tr>
-                    <td><form id="fR2" method="NONE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
                     <td>Col2</td>
                     <td>Col2</td>
                     <td>Col3</td>
                     <td>Col4</td>
                 </tr>
                 <tr>
-                    <td><form id="fR3" method="NONE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
                     <td>Col3</td>
                     <td>Col2</td>
                     <td>Col3</td>
                     <td>Col4</td>
                 </tr>
                 <tr>
-                    <td><form id="fR4" method="NONE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
                     <td>Col4</td>
                     <td>Col2</td>
                     <td>Col3</td>
@@ -204,11 +199,10 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do">
+            <table class="table green" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do" data-ui-element="tr">
                 <caption>Remote Data</caption>
                 <thead>
                     <tr>
-                        <td>
                         <td>
                         <td data-name=""><i class="filter fa fa-filter"></i>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
                         <td data-name=""><i class="filter fa fa-filter"></i>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
@@ -216,8 +210,7 @@
                 <tbody>
                     <template id="input2-rowElement" class="rowTemplate">
                         <tr tabindex="-1">
-                            <td><form id="fRemove" method="NONE"><i class="fa fa-times btn remove"></i></form>
-                            <td><form id="fUpdate" method="NONE"><i class="fa fa-cogs btn update"></i></form>
+                            <td><i class="fa fa-times btn remove"></i>
                             <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
                             <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
                             <td data-tpl-text="/email"></td>

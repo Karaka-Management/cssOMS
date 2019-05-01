@@ -1,25 +1,25 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table1" data-table-form="fSample">
+            <table class="table green" id="table1" data-ui-content="tbody" data-ui-element="tr" data-tag="form" data-ui-form="fSample">
                 <caption>Form Add</caption>
                 <thead>
                 <tr>
                     <td>
                     <td>
-                    <td>Col1 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                    <td>Col2 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                    <td>Col3 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                    <td>Col4 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                    <td>Col5 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                    <td>Col6 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                    <td>Input<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                    <td>Select<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                    <td>Textarea<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                    <td>Date<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                    <td>Radio<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                    <td>Checkbox<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
                 </tr>
                 </thead>
                 <tbody>
                 <template>
                     <tr>
-                        <td><form id="fRemoveX" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                        <td><i class="fa fa-cogs btn update submit"></i>
+                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="fa fa-cogs btn update"></i>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value=""></td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value=""></td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value=""></td>
@@ -33,31 +33,31 @@
                     </tr>
                 </template>
                 <tr>
-                    <td><form id="fRemoveX1" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
-                    <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col2</td>
-                    <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
-                    <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col4</td>
+                    <td><i class="fa fa-times btn remove"></i>
+                    <td><i class="fa fa-cogs btn update"></i>
+                    <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input1</td>
+                    <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
+                    <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text1</td>
                     <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
                     <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
                     <td data-tpl-text="/checkbox/c" data-tpl-value="/checkbox/c" data-value="">Col6</td>
                 </tr>
                 <tr>
-                    <td><form id="fRemoveX2" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
-                    <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col4</td>
-                    <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
-                    <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col2</td>
+                    <td><i class="fa fa-times btn remove"></i>
+                    <td><i class="fa fa-cogs btn update"></i>
+                    <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input2</td>
+                    <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                    <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text2</td>
                     <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
                     <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
                     <td data-tpl-text="/checkbox/c" data-tpl-value="/checkbox/c" data-value="">Col6</td>
                 </tr>
                 <tr>
-                    <td><form id="fRemoveX3" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
-                    <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col1</td>
-                    <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col2</td>
-                    <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col3</td>
+                    <td><i class="fa fa-times btn remove"></i>
+                    <td><i class="fa fa-cogs btn update"></i>
+                    <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input3</td>
+                    <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
+                    <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text3</td>
                     <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col4</td>
                     <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
                     <td data-tpl-text="/checkbox/c" data-tpl-value="/checkbox/c" data-value="">Col6</td>
@@ -139,7 +139,7 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table2" data-table-add="addButton" data-table-form="fInside">
+            <table class="table green" id="table2" data-ui-content="tbody" data-ui-element="tr" data-tag="form">
                 <caption>Inline Add</caption>
                 <thead>
                 <tr>
@@ -156,8 +156,8 @@
                 <tbody>
                 <template>
                     <tr>
-                        <td><form id="fRemoveY" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                        <td><i class="fa fa-cogs btn update submit"></i>
+                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="fa fa-cogs btn update"></i>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value=""></td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value=""></td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value=""></td>
@@ -172,8 +172,8 @@
                 </template>
                 <template>
                     <tr>
-                        <td><form id="fRemoveYY" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                        <td><i class="fa fa-cogs btn update submit"></i>
+                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="fa fa-cogs btn update"></i>
                         <td><input data-form="fInside" data-tpl-text="/input" data-tpl-value="/input" data-value="" type="text"></td>
                         <td>
                             <select data-form="fInside" data-tpl-text="/select" data-tpl-value="/select" data-value="">
@@ -209,8 +209,8 @@
                     </tr>
                 </template>
                 <tr>
-                    <td><form id="fRemoveY1" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
+                    <td><i class="fa fa-cogs btn update"></i>
                     <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col2</td>
                     <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
                     <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col4</td>
@@ -219,8 +219,8 @@
                     <td data-tpl-text="/checkbox/c" data-tpl-value="/checkbox/c" data-value="">Col6</td>
                 </tr>
                 <tr>
-                    <td><form id="fRemoveY2" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
+                    <td><i class="fa fa-cogs btn update"></i>
                     <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col4</td>
                     <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
                     <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col2</td>
@@ -229,8 +229,8 @@
                     <td data-tpl-text="/checkbox/c" data-tpl-value="/checkbox/c" data-value="">Col6</td>
                 </tr>
                 <tr>
-                    <td><form id="fRemoveY3" method="DELETE"><i class="fa fa-times btn remove submit"></i></form>
-                    <td><i class="fa fa-cogs btn update submit"></i>
+                    <td><i class="fa fa-times btn remove"></i>
+                    <td><i class="fa fa-cogs btn update"></i>
                     <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col1</td>
                     <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col2</td>
                     <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col3</td>
@@ -257,7 +257,7 @@
                             <li>...</li>
                             <li><a href="#">20</a></li>
                         </ul>
-                        <button id="addButton">Add</button>
+                        <button id="addButton" class="add">Add</button>
                     </td>
                 </tr>
                 </tfoot>
@@ -265,3 +265,11 @@
         </div>
     </div>
 </div>
+
+<script type="module">
+    import { Request } from '../../../jsOMS/Message/Request/Request.js';
+
+    const loginRequest = new Request('http://127.0.0.1/en/api/login', 'POST', 'json');
+    loginRequest.setData({user: 'admin', pass: 'orange'});
+    loginRequest.send();
+</script>
