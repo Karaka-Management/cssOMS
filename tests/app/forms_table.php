@@ -1,7 +1,12 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table1" data-ui-content="tbody" data-ui-element="tr" data-tag="form" data-ui-form="fSample">
+            <table class="table green" id="table1"
+                data-ui-container="tbody"
+                data-ui-content="tbody"
+                data-ui-element="tr"
+                data-tag="form"
+                data-ui-form="fSample">
                 <caption>Form Add</caption>
                 <thead>
                 <tr>
