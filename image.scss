@@ -1,29 +1,25 @@
-@import "_mixins", "_vars";
+
 
 img {
     &.frame-1 {
-        padding: $img-padding;
-        background: $img-background;
-        border: $img-border solid $img-border-color;
-        @include box-shadow-out(#ffffff);
-        @include border-radius($img-border-radius);
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid var(--box-border);
         box-sizing: border-box;
         width: 100%;
     }
 
     &.frame-2 {
-        border: $img-border solid $img-border-color;
-        background: $img-background;
+        border: 1px solid var(--box-border);
+        background: #fff;
         box-sizing: border-box;
         width: 100%;
     }
 
     &.frame-3 {
-        padding: $img-padding;
-        background: $img-background;
-        border: $img-border solid $img-border-color;
-        @include box-shadow-out(#ffffff);
-        @include border-radius($img-border-radius);
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid var(--box-border);
         box-sizing: border-box;
         width: 100%;
     }

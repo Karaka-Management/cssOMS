@@ -1,10 +1,9 @@
-@import "_mixins", "_vars";
+
 
 ul.boxed {
-    background: $list-background;
-    padding: $list-padding;
-    @include border-radius($list-border-radius);
-    border: $list-border solid $list-border-color;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid var(--box-border);
 
     li {
         margin: 5px 0 5px 0;

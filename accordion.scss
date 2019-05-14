@@ -1,15 +1,15 @@
-@import "_mixins", "_vars";
+
 
 .ac-container{
-    margin: $accordion-margin-top-bottom auto $accordion-margin-left-right auto;
+    margin: 1rem auto 1rem auto;
     text-align: left;
 
     > input {
         display: none;
 
         &:checked + label {
-            @include gradient-top-bottom($accordion-active-color-start, 0, $accordion-active-color-end, 100, $accordion-active-background);
-            color: $accordion-active-foreground;
+            background: var(--button-colored-background);
+            color: var(--text-on-background-color-2);
 
             + section {
                 display: inherit;
@@ -23,30 +23,29 @@
 
     label {
         display: block;
-        padding: $accordion-padding-top-bottom $accordion-padding-left-right;
+        padding: 1rem 1rem;
         position: relative;
         z-index: 20;
         margin-top: -1px;
         cursor: pointer;
-        color: $accordion-inactive-foreground;
-        font-size: $accordion-font-size;
-        border: $accordion-border-size solid $accordion-border-color;
-        @include border-radius($accordion-border-radius);
-        @include gradient-top-bottom($accordion-inactive-color-start, 0, $accordion-inactive-color-end, 100, $accordion-inactive-background);
+        color: var(--text-on-background-color-2);
+        font-size: 1rem;
+        border: 1rem solid var(--box-border);
+        background: var(--box-border);
 
         &:hover {
-            @include gradient-top-bottom($accordion-hover-color-start, 0, $accordion-hover-color-end, 100, $accordion-hover-background);
+            background: var(--button-colored-background-hover);
         }
     }
 
     > section {
-        background: $content-box-background-color;
+        background: #fff;
         overflow: hidden;
         height: auto;
         position: relative;
         z-index: 10;
-        border-left: $accordion-border-size solid $accordion-border-color;
-        border-right: $accordion-border-size solid $accordion-border-color;
-        padding: $accordion-padding;
+        border-left: 1rem solid var(--box-border);
+        border-right: 1rem solid var(--box-border);
+        padding: 1rem;
     }
 }

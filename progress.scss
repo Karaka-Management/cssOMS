@@ -1,4 +1,4 @@
-@import "_mixins", "_vars";
+
 
 .meter {
     height: 15px; /* Can be anything */
@@ -8,7 +8,7 @@
     > span {
         display: block;
         height: 100%;
-        @include border-radius(3px);
+        border-radius: 3px;
         background-color: rgb(43,194,83);
         background-image: linear-gradient(
                         to left top,

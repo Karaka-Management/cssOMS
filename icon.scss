@@ -1,7 +1,7 @@
-@import "_mixins", "_vars";
+
 
 .infoIcon {
-    width: $icon-font-size;
+    width: var(--badge-size);
     text-align: center;
     vertical-align: middle;
     position: relative;
@@ -13,14 +13,15 @@
         position: absolute;
         right: -.55rem;
         top: -.45rem;
-        width: $icon-font-size;
-        height: $icon-font-size;
-        line-height: $icon-font-size;
+        width: .9rem;
+        height: var(--badge-size);
+        line-height: var(--badge-size);
         border-radius: 50%;
         text-align: center;
+        padding: .15rem;
 
-        color: $icon-font-color;
-        background: rgba(209, 96, 89, 1);
+        color: var(--badge-color);
+        background: var(--badge-background);
     }
 }
 

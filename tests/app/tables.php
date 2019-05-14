@@ -129,7 +129,7 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table id="tRemovable" class="table darkred" data-ui-element="tr" data-tag="form">
+            <table id="tRemovable" class="default" data-ui-element="tr" data-tag="form">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>

@@ -1,7 +1,7 @@
-@import "_mixins", "_vars";
+
 
 input, select, textarea, .textarea {
-    border: $input-border solid $input-border-color;
+    border: 1px solid var(--input-border);
 }
 
 progress {
@@ -21,25 +21,86 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
-    @include box-sizing(border-box);
-    color: $input-color;
-    background: $input-background;
+    box-sizing: border-box;
+    color: var(--input-color);
+    background: var(--input-background);
     width: 100%;
     height: 2rem;
     min-width: 70px;
     max-width: 100%;
     padding: 7px;
-    font-size: $input-font-size;
-    border: $input-border solid $input-border-color;
+    font-size: 1rem;
+    border: 1px solid var(--input-border);
     transition: background 0.3s, border 0.3s;
-    box-shadow: inset 1px 1px 4px -2px #c5c5c5;
 
     &:focus, .active {
-        border-color: $default-highlighter;
+        border-color: var(--input-background-active);
     }
 
     &:disabled {
         background: #efefef;
+    }
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: row;
+
+    .textWrapper+input[type=submit], .textWrapper+input[type=button], .textWrapper+button {
+        background: var(--button-colored-background);
+        color: var(--text-on-background-color-2);
+        margin: 0;
+        padding: 0;
+        flex: 0;
+        height: auto;
+        border: none;
+        box-shadow: none;
+
+        &:hover {
+            background: var(--button-colored-background-hover);
+        }
+    }
+
+    .textWrapper {
+        flex: 1;
+        position: relative;
+
+        input {
+            padding-left: 2rem;
+        }
+
+        .frontIcon, .endIcon {
+            color: var(--input-icon-color);
+            font-size: 1.1rem;
+            position: absolute;
+            top: 0;
+            padding: .6rem .6rem .6rem .4rem;
+        }
+
+        .frontIcon {
+            left: 0;
+        }
+
+        .endIcon {
+            right: 0;
+        }
+
+        input[type=text]:active, input[type=text]:focus,
+        input[type=password]:active, input[type=password]:focus {
+            border: 1px solid var(--input-border-active);
+        }
+
+        input[type=text]:active~.frontIcon, input[type=text]:focus~.frontIcon,
+        input[type=password]:active~.frontIcon, input[type=password]:focus~.frontIcon,
+        input[type=text]:active~.endIcon, input[type=text]:focus~.endIcon,
+        input[type=password]:active~.endIcon, input[type=password]:focus~.endIcon {
+            color: var(--input-icon-color-active);
+        }
+
+        input[type=text]~.endIcon, input[type=text]~.endIcon,
+        input[type=password]~.endIcon, input[type=password]~.endIcon {
+            cursor: pointer;
+        }
     }
 }
 
@@ -63,17 +124,17 @@ option {
 }
 
 input[type="file"] {
-    border: solid $input-font-size $input-background;
+    border: 1px solid var(--input-border-active);
     width: 100%;
     max-width: 100%;
-    color: $input-color;
+    color: var(--input-color);
     padding: 10px;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 }
 
 input::placeholder {
-        color: $input-placeholder-color;
-        opacity: 0.5;
+    color: var(--input-icon-color);
+    opacity: 0.5;
 }
 
 input::placeholder, textarea {
@@ -82,14 +143,14 @@ input::placeholder, textarea {
 
 input:invalid {
     transition: all 0.5s;
-    border-color: $input-invalid-border-color;
+    border-color: #f00;
 }
 
 textarea, .textarea {
     overflow: auto;
     resize: both;
     min-height: 100px;
-    @include box-sizing(border-box);
+   box-sizing: border-box;
 }
 
 span.checkbox, span.radio {
@@ -126,15 +187,15 @@ input[type="range"] {
     flex-wrap: nowrap;
 
     button {
-        @include box-sizing(border-box);
+        box-sizing: border-box;
         display: inline-block;
-        background: $input-background;
+        background: var(--input-border-active);
         height: 2rem;
-        font-size: $input-font-size;
+        font-size: 1rem;
         min-width: 40px;
-        border-left: solid $input-border $input-border-color;
-        border-top: solid $input-border $input-border-color;
-        border-bottom: solid $input-border $input-border-color;
+        border-left: solid 1px var(--input-border);
+        border-top: solid 1px var(--input-border);
+        border-bottom: solid 1px var(--input-border);
         border-right: none;
         padding: 0;
 
@@ -144,7 +205,7 @@ input[type="range"] {
         flex-shrink: 0;
 
         &:hover {
-            background: $input-background;
+            background: var(--input-border-active);
         }
     }
 
@@ -154,8 +215,8 @@ input[type="range"] {
     }
 
     input {
-        @include box-sizing(border-box);
-        font-size: $input-font-size;
+        box-sizing: border-box;
+        font-size: 1rem;
 
         position: relative;
         vertical-align: middle;
@@ -176,17 +237,4 @@ select.plain {
     appearance: none;
     cursor: pointer;
     box-shadow: none;
-}
-
-.tag-input {
-    input {
-        border: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .tag {
-        padding: 3px;
-        font-size: 0.8rem;
-    }
 }

@@ -1,9 +1,8 @@
-@import "_mixins", "_vars";
+
 
 blockquote {
-    border: $blockquote-border solid $blockquote-border-color;
-    background: $blockquote-background;
-    padding: $blockquote-padding;
-    @include box-sizing(border-box);
-    @include border-radius($blockquote-border-radius);
+    border: 1px solid var(--box-border);
+    background: #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
 }

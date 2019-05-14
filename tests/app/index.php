@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div id="bar-b">
-                <span class="vC" id="ham-trigger">
+                <span id="ham-trigger">
                     <label for="nav-trigger"><i class="fa fa-bars"></i></label>
                 </span>
                 <span class="vC" id="logo" itemscope itemtype="http://schema.org/Organization">

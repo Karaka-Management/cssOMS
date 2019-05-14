@@ -1,13 +1,21 @@
-@import "_mixins", "_vars";
-
 .tabview {
     .tab-links {
+        color: #000;
         padding: 0.3rem 0 0 0;
 
         label {
-            text-shadow: 1px 1px 1px #fff;
             font-size: 0.9em;
             cursor: pointer;
+
+            &:hover {
+                color: var(--text-on-background-color-2);
+                background: var(--button-colored-background-hover);
+            }
+        }
+
+        .active label:hover {
+            color: var(--text-on-background-color-2);
+            background: var(--button-colored-background-hover);
         }
 
         .active a {
@@ -37,7 +45,7 @@
 .tab-1 {
     .tab-links {
         margin: 0;
-        border-bottom: 1px solid $content-border-color;
+        border-bottom: 1px solid var(--box-border);
 
         label {
             padding: 5px 10px 1px 10px;
@@ -46,14 +54,14 @@
         }
 
         .active, .active label {
-            background: $content-box-background-color;
-            border-bottom: 1px solid $content-box-background-color;
+            background: var(--button-colored-background);
+            border-bottom: 1px solid var(--button-colored-background);
         }
 
         .active label {
-            border-top: 1px solid $content-border-color;
-            border-left: 1px solid $content-border-color;
-            border-right: 1px solid $content-border-color;
+            border-top: 1px solid var(--box-border);
+            border-left: 1px solid var(--box-border);
+            border-right: 1px solid var(--box-border);
         }
 
         li {
@@ -62,11 +70,11 @@
     }
 
     .tab-content {
-        @include box-sizing(border-box);
-        background: $content-box-background-color;
-        border-left: 1px solid $content-border-color;
-        border-right: 1px solid $content-border-color;
-        border-bottom: 1px solid $content-border-color;
+        box-sizing: border-box;
+        background: var(--button-colored-background);
+        border-left: 1px solid var(--box-border);
+        border-right: 1px solid var(--box-border);
+        border-bottom: 1px solid var(--box-border);
 
         padding: 10px;
     }
@@ -88,13 +96,13 @@
             }
 
             .active label {
-                border-bottom: 1px solid $content-border-color;
+                border-bottom: 1px solid var(--box-border);
             }
         }
 
         .tab-content {
             width: 100%;
-            border-top: 1px solid $content-border-color;
+            border-top: 1px solid var(--box-border);
         }
     }
 }
@@ -111,8 +119,9 @@
         }
 
         .active a, .active label {
-            border: 1px solid $content-border-color;
-            @include gradient-top-bottom(#fff, 0, $content-background-color, 100, #fff);
+            color: var(--text-on-background-color-2);
+            border: 1px solid var(--box-border);
+            background: var(--button-colored-background)
         }
     }
 }

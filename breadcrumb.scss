@@ -1,25 +1,18 @@
-@import "_mixins", "_vars";
+
 
 .crumbs-1 {
     list-style: none;
     overflow: hidden;
-    font-size: $breadcrumb-font-size;
+    font-size: 1rem;
 
     li {
-        background: $breadcrumb-inactive-background;
-        border: $breadcrumb-border solid $breadcrumb-border-color;
-        padding: $breadcrumb-padding;
+        background: #fff;
+        border: 1px solid var(--box-border);
+        padding: 10px 10px 10px 20px;
         position: relative;
         display: block;
         float: left;
-        text-shadow: -1px -1px 1px #ffffff;
         cursor: pointer;
-
-        @include box-shadow-out(#ffffff);
-
-        &:first-child {
-            @include border-left-radius($breadcrumb-border-radius);
-        }
 
         // todo: maybe replace .last with :last-child
         &:not(.last):after, &:before {
@@ -29,7 +22,7 @@
             height: 0;
             border-top: 18px solid transparent;
             border-bottom: 17px solid transparent;
-            border-left: 14px solid $content-background-color;
+            border-left: 14px solid var(--box-border);
             position: absolute;
             top: 50%;
             margin-top: -18px;
@@ -41,8 +34,8 @@
         }
 
         &:before {
-            border-left-color: $breadcrumb-border-color;
-            margin-left: $breadcrumb-border;
+            border-left-color: var(--box-border);
+            margin-left: 1px;
             z-index: 1;
         }
 
@@ -53,7 +46,6 @@
 
     .last {
         padding-right: 20px;
-        @include border-right-radius($breadcrumb-border-radius);
 
         &:before {
             border: none;
@@ -65,6 +57,6 @@
     }
 
     .active, li:hover {
-        background: $breadcrumb-active-background;
+        background: var(--button-colored-background-hover);
     }
 }

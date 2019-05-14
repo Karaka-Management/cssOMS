@@ -1,4 +1,4 @@
-@import "_mixins", "_vars";
+
 
 table.fixed {
     table-layout: fixed;
@@ -19,42 +19,31 @@ table .sort-asc, table .sort-desc, table .filter {
     cursor: pointer;
 }
 
-.table {
-    background: none;
-    caption {
-        color: #fff;
-    }
-
-    thead {
-        color: #fff;
-    }
-
-    @each $tuple in
-        'green' #42bd41, 'red' #d01715, 'blue' #5778fd,
-        'orange' #FBA026, 'lightblue' #03a9f5, 'yellow' #ffeb3c, 'purple' #673bb7, 'pink' #ffa6e3, 'grey' #dcdcdc,
-        'darkred' #B8312F, 'darkgreen' #009788, 'darkblue' #3f51b5 {
-        &.#{nth($tuple, 1)} {
-            caption, thead {
-                background: #{nth($tuple, 2)};
-            }
-        }
-    }
-}
-
-table.table {
-    @include box-sizing(border-box);
+table.default {
+    box-sizing: border-box;
     width: 100%;
     font-size: 0.9em;
     max-width: 100%;
     overflow: hidden;
 
     caption {
-        background: #fff;
-        border-right: 1px solid $content-border-color;
-        border-left: 1px solid $content-border-color;
-        border-top: 1px solid $content-border-color;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-bottom: 1px solid var(--box-border);
+        background: var(--table-caption-background);
+        padding: .5rem;
 
-        padding: 5px;
+        border-right: 1px solid var(--box-border);
+        border-left: 1px solid var(--box-border);
+        border-top: 1px solid var(--box-border);
+
+        text-align: left;
+
+        i {
+            font-size: .8rem;
+        }
+
+        height: 3rem;
     }
 
     td {
@@ -64,48 +53,48 @@ table.table {
 
     tbody {
         td:first-child {
-            border-left: 1px solid $content-border-color;
+            border-left: 1px solid var(--box-border);
         }
 
         td:last-child {
-            border-right: 1px solid $content-border-color;
-        }
-
-        td {
-            border-top: 1px solid $content-border-color;
-            @include box-shadow-top(#ffffff);
+            border-right: 1px solid var(--box-border);
         }
 
         tr {
-            height: 2rem;
+            height: 3rem;
 
             &:nth-of-type(2n) {
-                background: #f8f8f8;
+                background: var(--table-row-background);
             }
 
             &:nth-of-type(2n+1) {
-                background: #fff;
+                background: var(--table-row-background-alt);
             }
 
             &:hover {
-                background: #f0f0f0;
+                background: var(--table-row-background-hover);
             }
         }
 
-        tr:last-child td {
-            border-bottom: 1px solid $content-border-color;
+        tr td {
+            border-bottom: 1px solid var(--box-border);
         }
     }
 
     thead {
-        background: #fff;
+        height: 3rem;
+        background: var(--table-head-background);
 
         td:first-child {
-            border-left: 1px solid $content-border-color;
+            border-left: 1px solid var(--box-border);
         }
 
         td:last-child {
-            border-right: 1px solid $content-border-color;
+            border-right: 1px solid var(--box-border);
+        }
+
+        td {
+            border-bottom: 1px solid var(--box-border);
         }
     }
 
@@ -164,21 +153,21 @@ table.list {
                 margin-bottom: .625em;
 
                 td:last-child {
-                    border-bottom: 1px solid $content-border-color;
+                    border-bottom: 1px solid var(--box-border);
                 }
 
                 &:last-child td {
                     border-bottom: none;
 
                     &:last-child {
-                        border-bottom: 1px solid $content-border-color;
+                        border-bottom: 1px solid var(--box-border);
                     }
                 }
             }
 
             td {
-                border-left: 1px solid $content-border-color;
-                border-right: 1px solid $content-border-color;
+                border-left: 1px solid var(--box-border);
+                border-right: 1px solid var(--box-border);
                 display: block;
                 font-size: .8rem;
                 text-align: right;

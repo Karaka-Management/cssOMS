@@ -14,7 +14,7 @@
                                         <div class="inputbackground">
                                             <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
                                             <div id="input1-dropdown" class="dropdown" data-active="true">
-                                                <table id="a1" class="table darkred">
+                                                <table id="a1" class="default">
                                                     <thead>
                                                         <tr>
                                                             <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
@@ -54,7 +54,7 @@
                                         <div class="inputbackground">
                                             <input autocomplete="off" class="input" id="inputId2" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId2}">
                                             <div id="input2-dropdown" class="dropdown" data-active="true">
-                                                <table id="a1" class="table darkred">
+                                                <table id="a1" class="default">
                                                     <thead>
                                                         <tr>
                                                             <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
@@ -73,7 +73,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <table class="table darkred">
+                                    <table class="default">
                                             <thead>
                                                 <tr>
                                                     <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div id="input4-dropdown" class="dropdown" data-active="true">
-                                    <table id="a1" class="table darkred">
+                                    <table id="a1" class="default">
                                         <thead>
                                             <tr>
                                                 <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
@@ -120,7 +120,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <table class="table darkred">
+                                <table class="default">
                                     <thead>
                                         <tr>
                                             <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
@@ -144,7 +144,7 @@
                                         <div class="inputbackground">
                                             <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
                                             <div id="input3-dropdown" class="dropdown" data-active="true">
-                                                <table id="a1" class="table darkred">
+                                                <table id="a1" class="default">
                                                     <thead>
                                                         <tr>
                                                             <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>

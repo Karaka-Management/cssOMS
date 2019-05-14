@@ -1,7 +1,7 @@
-@import "_mixins", "_vars";
+
 
 article {
-    background: $article-background;
+    background: #fff;
     padding: 10px;
     margin: 0;
     font-size: 0.9rem;
@@ -54,8 +54,8 @@ article {
     }
 
     a {
-        color: $article-link-color;
-        border-bottom: 1px dotted $article-link-color;
+        color: var(--link-color);
+        border-bottom: 1px dotted var(--link-color);
 
         &:hover {
             border-bottom: none;
@@ -93,17 +93,17 @@ article {
 
     table {
         border-collapse: collapse;
-        border: $article-table-border solid $article-table-border-color;
+        border: 1px solid var(--box-border);
         margin: 0 auto;
         margin-bottom: 1rem;
 
         th, td {
             padding: 5px;
-            border: $article-table-border solid $article-table-border-color;
+            border: 1px solid var(--box-border);
         }
 
         tr:nth-child(2n) {
-            background: $article-even-background;
+            background: var(--table-row-background);
         }
     }
 }

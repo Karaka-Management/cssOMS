@@ -1,4 +1,4 @@
-@import "_mixins", "_vars";
+
 
 .pagination {
     li {
@@ -6,15 +6,13 @@
     }
 
     a {
-        @include border-radius(3px);
-        @include box-shadow-out(#ffffff);
-        background: $content-background-color;
+        border-radius: 3px;
+        background: #ccc;
         padding: 5px 10px 5px 10px;
     }
 
     .active, a:hover, a:active {
-        color: $pagination-active-color;
-        background: $pagination-active-background;
-        @include box-shadow-out(#e8e8e8);
+        color: #000;
+        background: #fff;
     }
 }
