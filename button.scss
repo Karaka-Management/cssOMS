@@ -12,7 +12,7 @@ button, input[type="submit"], input[type="button"], a.button {
     background: var(--button-colored-background);
     color: var(--text-on-background-color-2);
     margin: 0;
-    padding: 0;
+    padding: 0 1rem 0 1rem;
     flex: 0;
     height: 32px;
     border: none;
