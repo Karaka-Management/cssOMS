@@ -33,8 +33,10 @@ input[type="datetime-local"] {
     border: 1px solid var(--input-border);
     transition: background 0.3s, border 0.3s;
 
-    &:focus, .active {
+    &:focus, .active, &:active {
         border-color: var(--input-background-active);
+        border: 1px solid var(--input-border-active);
+        color: var(--input-color-active);
     }
 
     &:disabled {

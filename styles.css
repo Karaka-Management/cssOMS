@@ -3535,28 +3535,40 @@ input[type="datetime-local"] {
   font-size: 1rem;
   border: 1px solid var(--input-border);
   transition: background 0.3s, border 0.3s; }
-  .textarea:focus, .textarea .active,
+  .textarea:focus, .textarea .active, .textarea:active,
   .tag-input:focus,
   .tag-input .active,
+  .tag-input:active,
   textarea:focus,
   textarea .active,
+  textarea:active,
   select:focus,
   select .active,
+  select:active,
   input[type="password"]:focus,
   input[type="password"] .active,
+  input[type="password"]:active,
   input[type="text"]:focus,
   input[type="text"] .active,
+  input[type="text"]:active,
   input[type="datetime"]:focus,
   input[type="datetime"] .active,
+  input[type="datetime"]:active,
   input[type="email"]:focus,
   input[type="email"] .active,
+  input[type="email"]:active,
   input[type="date"]:focus,
   input[type="date"] .active,
+  input[type="date"]:active,
   input[type="number"]:focus,
   input[type="number"] .active,
+  input[type="number"]:active,
   input[type="datetime-local"]:focus,
-  input[type="datetime-local"] .active {
-    border-color: var(--input-background-active); }
+  input[type="datetime-local"] .active,
+  input[type="datetime-local"]:active {
+    border-color: var(--input-background-active);
+    border: 1px solid var(--input-border-active);
+    color: var(--input-color-active); }
   .textarea:disabled,
   .tag-input:disabled,
   textarea:disabled,
@@ -3880,6 +3892,7 @@ body > nav {
   color: rgba(255, 255, 255, 0.8); }
 
 #nav-side {
+  flex: 0;
   display: flex;
   flex-flow: column;
   box-sizing: border-box; }
@@ -3969,14 +3982,17 @@ body > nav {
           background: var(--nav-content-hover); }
 
 @media only screen and (max-width: 800px) {
-  body > .nav-trigger:not(:checked) + nav {
+  #nav-trigger:not(:checked) + nav {
     width: 0%; }
 
-  body > .nav-trigger:checked + nav {
+  #nav-trigger:checked + nav {
     width: auto; } }
 @media only screen and (max-width: 500px) {
-  body > .nav-trigger:checked + nav {
-    width: 100%; } }
+  #nav-trigger:checked + nav {
+    width: 100%; }
+
+  #nav-trigger:checked ~ main {
+    display: none; } }
 .pagination li {
   display: inline; }
 .pagination a {
