@@ -106,6 +106,10 @@ input[type="datetime-local"] {
     }
 }
 
+.advancedInput {
+    position: relative;
+}
+
 input ~ .dropdown {
     position: absolute;
     display: none;

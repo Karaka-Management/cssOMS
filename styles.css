@@ -3623,6 +3623,9 @@ input[type="datetime-local"] {
     .inputWrapper .textWrapper input[type=password] ~ .endIcon, .inputWrapper .textWrapper input[type=password] ~ .endIcon {
       cursor: pointer; }
 
+.advancedInput {
+  position: relative; }
+
 input ~ .dropdown {
   position: absolute;
   display: none;
