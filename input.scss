@@ -195,7 +195,7 @@ input[type="range"] {
     button {
         box-sizing: border-box;
         display: inline-block;
-        background: var(--input-border-active);
+        background: var(--button-colored-background);
         height: 2rem;
         font-size: 1rem;
         min-width: 40px;
@@ -211,7 +211,7 @@ input[type="range"] {
         flex-shrink: 0;
 
         &:hover {
-            background: var(--input-border-active);
+            background: var(--button-colored-background-hover);
         }
     }
 

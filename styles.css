@@ -3694,7 +3694,7 @@ input[type="range"] {
   .input button {
     box-sizing: border-box;
     display: inline-block;
-    background: var(--input-border-active);
+    background: var(--button-colored-background);
     height: 2rem;
     font-size: 1rem;
     min-width: 40px;
@@ -3708,7 +3708,7 @@ input[type="range"] {
     flex-grow: 0;
     flex-shrink: 0; }
     .input button:hover {
-      background: var(--input-border-active); }
+      background: var(--button-colored-background-hover); }
   .input i {
     position: relative;
     vertical-align: middle; }
