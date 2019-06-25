@@ -6,55 +6,23 @@
         <title>Style Test</title>
         <link rel="stylesheet" type="text/css" href="../../styles.css">
         <link rel="stylesheet" type="text/css" href="../../../Web/Backend/css/backend-small.css">
-        <link rel="stylesheet" type="text/css" href="../../../Web/Backend/css/backend.css">
         <link rel="stylesheet" type="text/css" href="../../../Resources/fontawesome/css/font-awesome.min.css">
         <script src="../../../jsOMS/Utils/oLib.js"></script>
         <script src="../load.js" type="module"></script>
     </head>
     <body>
-        <header>
-            <div id="bar-s">
-                <ul id="t-nav" role="navigation">
-                    <li>
-                        <a href="/en/backend/calendar/dashboard?id=Admin">
-                            <i class="fa fa-calendar infoIcon"></i> Calendar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/backend/task/dashboard?id=Admin">
-                            <i class="fa fa-bolt infoIcon"><span class="badge">99</span></i> Tasks
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/en/api/logout?id=Admin">
-                            <i class="fa fa-power-off infoIcon"></i> Logout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="bar-b">
-                <span id="ham-trigger">
-                    <label for="nav-trigger"><i class="fa fa-bars"></i></label>
-                </span>
-                <span class="vC" id="logo" itemscope itemtype="http://schema.org/Organization">
-                    <select class="plain" id="unit-selector" name="unit" data-action='[{"listener": "change", "action": [{"key": 1, "type": "redirect", "uri": "{%}&u={#unit-selector}", "target": "self"}]}]' title="Unit selector">
-                        <option value="" selected>Organization Name</option>
-                    </select>
-                </span>
-                <span class="vC" id="s-bar" role="search">
-                    <span><input id="iSearchBox" name="search" type="text" autofocus="autofocus"></span>
-                    <input type="submit" id="iSearchButton" name="searchButton" value="Search">
-                </span>
-                <span class="vC" id="u-box">
-                    <a href="">
-                        <span>AccountName</span>
-                        <img alt="" data-lazyload="../../../Web/Backend/img/user_default_6.png">
-                    </a>
-                </span>
-            </div>
-        </header>
-        <div id="out">
-            <ul id="nav-side" class="nav" role="navigation">
+    <input type="checkbox" id="nav-trigger" name="nav-hamburger" class="nav-trigger">
+    <nav>
+        <span id="u-box">
+            <a href="">
+                <img alt="" data-lazyload="../../../Web/Backend/img/user_default_6.png">
+            </a>
+            <span id="logo">
+                <span>AccountName</span>
+            </span>
+        </span>
+
+        <ul id="nav-side" class="nav" role="navigation">
                 <li><input id="nav-help" type="checkbox" checked>
                     <ul>
                         <li><label for="nav-Help">
@@ -217,10 +185,41 @@
                     </ul>
                 </li>
             </ul>
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" checked>
-            <main>
+    </nav>
+    <main>
+        <header>
+        <form id="s-bar" method="GET" action="">
+                <label class="ham-trigger" for="nav-trigger"><i class="fa fa-bars p"></i></label>
+                <span role="search" class="inputWrapper">
+                    <span class="textWrapper">
+                        <input id="iSearchBox" name="search" type="text" autofocus="autofocus">
+                        <i class="frontIcon fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+                        <i class="endIcon fa fa-times fa-lg fa-fw" aria-hidden="true"></i>
+                    </span>
+                    <input type="submit" id="iSearchButton" name="searchButton" value="Search">
+                </span>
+            </form>
+                <ul id="t-nav" role="navigation">
+                    <li>
+                        <a href="/en/backend/calendar/dashboard?id=Admin">
+                            <i class="fa fa-calendar infoIcon"></i> Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/en/backend/task/dashboard?id=Admin">
+                            <i class="fa fa-bolt infoIcon"><span class="badge">99</span></i> Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/en/api/logout?id=Admin">
+                            <i class="fa fa-power-off infoIcon"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+        </header>
+            <div id="content" class="container-fluid" role="main">
                 <?php include __DIR__ . '/' . \str_replace('.', '', ($_GET['page'] ?? 'welcome')) . '.php'; ?>
-            </main>
-        </div>
+            </div>
+        </main>
     </body>
 </html>
