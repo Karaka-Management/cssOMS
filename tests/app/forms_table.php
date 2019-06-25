@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table1"
+            <table class="default" id="table1"
                 data-ui-container="tbody"
                 data-ui-content="tbody"
                 data-ui-element="tr"
@@ -144,7 +144,7 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table2" data-ui-content="tbody" data-ui-element="tr" data-tag="form">
+            <table class="default" id="table2" data-ui-content="tbody" data-ui-element="tr" data-tag="form">
                 <caption>Inline Add</caption>
                 <thead>
                 <tr>

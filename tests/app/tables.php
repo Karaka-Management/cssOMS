@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <table class="table green" id="table1">
+            <table class="default" id="table1">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
@@ -64,7 +64,7 @@
 
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <table class="table blue" id="table2">
+            <table class="default" id="table2">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
@@ -199,7 +199,7 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="box wf-100">
-            <table class="table green" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do" data-ui-element="tr">
+            <table class="default" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do" data-ui-element="tr">
                 <caption>Remote Data</caption>
                 <thead>
                     <tr>
@@ -225,7 +225,7 @@
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <table class="table darkgreen" id="table5">
+            <table class="default" id="table5">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
@@ -288,7 +288,7 @@
 
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <table class="table darkblue" id="table6">
+            <table class="default" id="table6">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
@@ -353,7 +353,7 @@
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <table class="table orange" id="table7">
+            <table class="default" id="table7">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
@@ -416,7 +416,7 @@
 
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <table class="table yellow" id="table8">
+            <table class="default" id="table8">
                 <caption>Table Title</caption>
                 <thead>
                 <tr>
