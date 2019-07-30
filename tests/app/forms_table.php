@@ -2,7 +2,6 @@
     <div class="col-xs-12">
         <div class="box wf-100">
             <table class="default" id="table1"
-                data-ui-container="tbody"
                 data-ui-content="tbody"
                 data-ui-element="tr"
                 data-tag="form"
