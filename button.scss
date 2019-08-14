@@ -7,7 +7,6 @@
 button, input[type="submit"], input[type="button"], a.button {
     cursor: pointer;
     min-width: 70px;
-    height: 2rem;
 
     background: var(--button-colored-background);
     color: var(--text-on-background-color-2);
@@ -15,8 +14,11 @@ button, input[type="submit"], input[type="button"], a.button {
     padding: 0 1rem 0 1rem;
     flex: 0;
     height: 32px;
+    line-height: 32px;
     border: none;
     box-shadow: none;
+    display: inline-block;
+    text-align: center;
 
     &:hover {
         background: var(--button-colored-background-hover);
