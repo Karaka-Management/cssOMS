@@ -107,7 +107,7 @@ input[type="datetime-local"] {
 }
 
 .advancedInput {
-    position: relative;
+    /* position: relative; uncomment! otherwise the drop down inside would not be able to overflow and add a scroll bar to the container which is not desired in this case! */
 }
 
 input ~ .dropdown {
