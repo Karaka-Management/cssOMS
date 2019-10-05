@@ -1,20 +1,20 @@
-@keyframes blink { 
-   0% { 
+@keyframes blink {
+   0% {
        border: 3px solid red;
-   } 
+   }
 }
 
 *[style] {
     animation: blink .5s step-end infinite alternate;
 }
 
-[data-action]:not([id]), [data-action]:not([id=""]) {
+[data-action]:not([id]), [data-action][id=""] {
     animation: blink .5s step-end infinite alternate;
 }
 
 a:not([href]),
-a:[href="#"],  
-a:[href=""],  
+a[href="#"],
+a[href=""],
 a[href*="javascript:void(0)"],
 a:empty
 a:empty[title=""],
@@ -28,7 +28,7 @@ a:blank:not([title]):not([aria-label]):not([aria-labelledby]) {
     animation: blink .5s step-end infinite alternate;
 }
 
-img:not([alt]), 
+img:not([alt]),
 img[alt=""],
 img[alt=" "],
 [role="img"]:not([aria-label]):not([aria-labelledby]),
@@ -38,11 +38,11 @@ img[src=" "],
 img[src="#"],
 img[src="/"], {
     animation: blink .5s step-end infinite alternate;
-} 
+}
 
 html:not([lang]),
 html[lang=" "],
-html[lang=""] { 
+html[lang=""] {
     animation: blink .5s step-end infinite alternate;
  }
 
@@ -51,15 +51,15 @@ html[lang=""] {
     animation: blink .5s step-end infinite alternate;
  }
 
-meta[name="viewport"][content*="user-scalable=no"],  
-meta[name="viewport"][content*="maximum-scale"],  
+meta[name="viewport"][content*="user-scalable=no"],
+meta[name="viewport"][content*="maximum-scale"],
 meta[name="viewport"][content*="minimum-scale"] {
     animation: blink .5s step-end infinite alternate;
-} 
+}
 
-input:not([id]),  
-input[type=""], 
-select:not([id]),  
+input:not([id]),
+input[type=""],
+select:not([id]),
 textarea:not([id]) {
     animation: blink .5s step-end infinite alternate;
 }
@@ -70,13 +70,13 @@ label[for=" "] {
     animation: blink .5s step-end infinite alternate;
 }
 
-input:not([name]),  
-select:not([name]),  
+input:not([name]),
+select:not([name]),
 textarea:not([name]) {
     animation: blink .5s step-end infinite alternate;
 }
 
-form:not([id]), form:not([id=""]),
+form:not([id]), form[id=""],
 form:not([name]):not([id]),
 form:not([action]),
 form[action=" "],
@@ -85,16 +85,16 @@ form[action=""] {
 }
 
 button:empty,
-button:empty:not([aria-label]):not([aria-labelledby]):not([title]), 
+button:empty:not([aria-label]):not([aria-labelledby]):not([title]),
 button:blank:not([aria-label]):not([aria-labelledby]):not([title]),
-button[aria-label=""], 
-button[aria-labelledby=""], 
+button[aria-label=""],
+button[aria-labelledby=""],
 button[title=""],
 button:not([type]):not([form]):not([formaction]):not([formtarget]) {
     animation: blink .5s step-end infinite alternate;
 }
 
-script[type="text/javascript"],  
+script[type="text/javascript"],
 link[rel="stylesheet"][type="text/css"] {
     animation: blink .5s step-end infinite alternate;
 }
