@@ -4190,6 +4190,7 @@ section > h2 {
   padding: 0.3rem 0 0 0; }
   .tabview .tab-links label {
     font-size: 0.9em;
+    user-select: none;
     cursor: pointer; }
     .tabview .tab-links label:hover {
       color: var(--text-on-background-color-2);
