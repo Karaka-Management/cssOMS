@@ -19,8 +19,9 @@
 /* pre */
 /* tag */
 .pagination li {
-  display: inline; }
+  display: inline-block; }
 .pagination a {
+  display: inline-block;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
