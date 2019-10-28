@@ -4277,6 +4277,10 @@ table .sort-asc, table .sort-desc, table .filter {
   padding: 0 5px 0 5px;
   cursor: pointer; }
 
+  table.default tbody th {
+    background: var(--table-head-background);
+}
+
 table.default {
   box-sizing: border-box;
   width: 100%;
@@ -4299,9 +4303,9 @@ table.default {
   table.default td {
     padding: 5px 10px 5px 10px;
     white-space: nowrap; }
-  table.default tbody td:first-child {
+  table.default tbody td:first-child, table.default tbody th:first-child {
     border-left: 1px solid var(--box-border); }
-  table.default tbody td:last-child {
+  table.default tbody td:last-child, table.default tbody th:last-child {
     border-right: 1px solid var(--box-border); }
   table.default tbody tr {
     height: 3rem; }
@@ -4311,7 +4315,7 @@ table.default {
       background: var(--table-row-background-alt); }
     table.default tbody tr:hover {
       background: var(--table-row-background-hover); }
-  table.default tbody tr td {
+  table.default tbody tr td, table.default tbody tr th {
     border-bottom: 1px solid var(--box-border); }
   table.default thead {
     height: 3rem;

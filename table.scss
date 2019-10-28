@@ -52,11 +52,11 @@ table.default {
     }
 
     tbody {
-        td:first-child {
+        td:first-child, th:first-child {
             border-left: 1px solid var(--box-border);
         }
 
-        td:last-child {
+        td:last-child, th:last-child {
             border-right: 1px solid var(--box-border);
         }
 
@@ -74,10 +74,14 @@ table.default {
             &:hover {
                 background: var(--table-row-background-hover);
             }
+
+            td, th {
+                border-bottom: 1px solid var(--box-border);
+            }
         }
 
-        tr td {
-            border-bottom: 1px solid var(--box-border);
+        th {
+            background: var(--table-head-background);
         }
     }
 
