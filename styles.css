@@ -3820,12 +3820,12 @@ blockquote {
       display: block;
       width: 0;
       height: 0;
-      border-top: 18px solid transparent;
-      border-bottom: 17px solid transparent;
-      border-left: 14px solid var(--box-border);
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 14px solid #fff;
       position: absolute;
       top: 50%;
-      margin-top: -18px;
+      margin-top: -20px;
       left: 100%; }
     .crumbs-1 li:not(.last):after {
       z-index: 2; }
@@ -3834,7 +3834,7 @@ blockquote {
       margin-left: 1px;
       z-index: 1; }
     .crumbs-1 li.active:not(.last):after, .crumbs-1 li:hover:not(.last):after {
-      border-left: 14px solid #ffffff; }
+      border-left: 14px solid var(--button-colored-background-hover); }
   .crumbs-1 .last {
     padding-right: 20px; }
     .crumbs-1 .last:before {

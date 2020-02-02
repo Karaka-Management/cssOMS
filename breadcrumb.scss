@@ -17,12 +17,12 @@
             display: block;
             width: 0;
             height: 0;
-            border-top: 18px solid transparent;
-            border-bottom: 17px solid transparent;
-            border-left: 14px solid var(--box-border);
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 14px solid #fff;
             position: absolute;
             top: 50%;
-            margin-top: -18px;
+            margin-top: -20px;
             left: 100%;
         }
 
@@ -37,7 +37,7 @@
         }
 
         &.active:not(:last-child):after, &:hover:not(:last-child):after  {
-            border-left: 14px solid #ffffff;
+            border-left: 14px solid var(--button-colored-background-hover);
         }
     }
 
