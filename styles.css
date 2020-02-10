@@ -3522,6 +3522,7 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
   box-sizing: border-box;
   color: var(--input-color);
   background: var(--input-background);
@@ -3651,7 +3652,7 @@ input::placeholder {
   color: var(--input-icon-color);
   opacity: 0.5; }
 
-input::placeholder, textarea {
+input::placeholder {
   font-family: 'FontAwesome', serif; }
 
 input:invalid {
