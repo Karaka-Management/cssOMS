@@ -47,7 +47,7 @@ pre {
   counter-reset: line;
   width: 100%;
   box-sizing: border-box;
-  white-space:pre-wrap; }
+  white-space: pre-wrap; }
   pre span {
     display: block; }
     pre span:before {
@@ -3503,6 +3503,16 @@ div.slider-1 {
     transform: translateZ(-35vw) rotateY(-240deg); }
   82.5%, 100% {
     transform: translateZ(-35vw) rotateY(-360deg); } }
+/**
+ * @todo Orange-Management/cssOMS#4
+ *  Nicer visual input validation
+ *
+ * @todo Orange-Management/cssOMS#14
+ *  Create drop down with search field
+ *
+ * @todo Orange-Management/cssOMS#12
+ *  Create slider element
+ */
 input, select, textarea, .textarea {
   border: 1px solid var(--input-border); }
 
@@ -3622,7 +3632,8 @@ input[type="datetime-local"] {
     .inputWrapper .textWrapper input[type=password] ~ .endIcon, .inputWrapper .textWrapper input[type=password] ~ .endIcon {
       cursor: pointer; }
 
-.advancedInput {}
+.advancedInput {
+  /* position: relative; uncomment! otherwise the drop down inside would not be able to overflow and add a scroll bar to the container which is not desired in this case! */ }
 
 input ~ .dropdown {
   position: absolute;
@@ -3817,7 +3828,7 @@ blockquote {
     display: block;
     float: left;
     cursor: pointer; }
-    .crumbs-1 li:not(.last):after, .crumbs-1 li:before {
+    .crumbs-1 li:not(:last-child):after, .crumbs-1 li:before {
       content: " ";
       display: block;
       width: 0;
@@ -3829,17 +3840,17 @@ blockquote {
       top: 50%;
       margin-top: -20px;
       left: 100%; }
-    .crumbs-1 li:not(.last):after {
+    .crumbs-1 li:not(:last-child):after {
       z-index: 2; }
     .crumbs-1 li:before {
       border-left-color: var(--box-border);
       margin-left: 1px;
       z-index: 1; }
-    .crumbs-1 li.active:not(.last):after, .crumbs-1 li:hover:not(.last):after {
+    .crumbs-1 li.active:not(:last-child):after, .crumbs-1 li:hover:not(:last-child):after {
       border-left: 14px solid var(--button-colored-background-hover); }
-  .crumbs-1 .last {
+  .crumbs-1 :last-child {
     padding-right: 20px; }
-    .crumbs-1 .last:before {
+    .crumbs-1 :last-child:before {
       border: none; }
   .crumbs-1 .active {
     cursor: default; }
@@ -3997,11 +4008,9 @@ body > nav {
   #nav-trigger:checked ~ main {
     display: none; } }
 .pagination li {
-  display: inline-block;
-}
-.pagination li+li {
-  margin-left: .5rem;
-}
+  display: inline-block; }
+  .pagination li + li {
+    margin-left: .5rem; }
 .pagination a {
   display: inline-block;
   border-radius: 3px;
@@ -4279,10 +4288,6 @@ table .sort-asc, table .sort-desc, table .filter {
   padding: 0 5px 0 5px;
   cursor: pointer; }
 
-  table.default tbody th {
-    background: var(--table-head-background);
-}
-
 table.default {
   box-sizing: border-box;
   width: 100%;
@@ -4317,8 +4322,10 @@ table.default {
       background: var(--table-row-background-alt); }
     table.default tbody tr:hover {
       background: var(--table-row-background-hover); }
-  table.default tbody tr td, table.default tbody tr th {
-    border-bottom: 1px solid var(--box-border); }
+    table.default tbody tr td, table.default tbody tr th {
+      border-bottom: 1px solid var(--box-border); }
+  table.default tbody th {
+    background: var(--table-head-background); }
   table.default thead {
     height: 3rem;
     background: var(--table-head-background); }
@@ -4398,5 +4405,3 @@ span.tag {
   color: var(--text-on-background-color-2);
   background: var(--button-colored-background);
   display: inline-block; }
-
-/*# sourceMappingURL=styles.css.map */
