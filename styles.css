@@ -182,6 +182,10 @@ iframe {
 .floatRight {
   float: right; }
 
+  .overflowfix {
+    overflow: auto;
+}
+
 .pAlignTable {
   display: table;
   width: 100%; }
