@@ -4004,7 +4004,7 @@ body > nav {
     width: 0%; }
 
   #nav-trigger:checked + nav {
-    width: auto; } }
+    width: auto; min-width: 250px; } }
 @media only screen and (max-width: 500px) {
   #nav-trigger:checked + nav {
     width: 100%; }
