@@ -1,10 +1,14 @@
-
+.portlet-body > article {
+    padding: 0;
+}
 
 article {
     background: #fff;
     padding: 10px;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: .9rem;
+    color: #48465b;
+    line-height: 2rem;
 
     del, ins {
         padding: 3px;
@@ -20,12 +24,12 @@ article {
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
+        font-weight: 500;
         //padding-bottom: 1rem;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     h2 {
@@ -42,15 +46,23 @@ article {
 
     pre {
         margin: 1rem 0 1rem 0;
+        border: 1px solid #ddd;
+        border-left: 3px solid var(--button-colored-background);
+        background: #f4f4f4;
+        line-height: 1.5rem;
+        font-size: .8rem;
 
         code {
             background: none;
+            color: #000;
         }
     }
 
     code {
         padding: 3px;
-        background: #f1f1f1;
+        color: var(--link-hover);
+        font-style: italic;
+        font-family: monospace;
     }
 
     a {
@@ -68,6 +80,7 @@ article {
 
     ol, ul {
         margin: 0.5rem 0 0.5rem 3rem;
+        line-height: 1rem;
     }
 
     ul {

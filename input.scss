@@ -29,7 +29,6 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     box-sizing: border-box;
     color: var(--input-color);
     background: var(--input-background);
@@ -165,7 +164,8 @@ textarea, .textarea {
     overflow: auto;
     resize: both;
     min-height: 100px;
-   box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 span.checkbox, span.radio {

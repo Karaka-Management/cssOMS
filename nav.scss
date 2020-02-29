@@ -15,20 +15,17 @@ body > nav {
     box-sizing: border-box;
 
     span {
-         width: 20px;
-         display: inline-block;
+         flex-grow: 1;
     }
 
     input {
         display: none;
 
         &:checked + ul {
-            .max {
+            .expand {
+                transition: all .3s ease;
                 display: inherit;
-            }
-
-            .min {
-                display: none;
+                transform: rotateZ(90deg);
             }
 
             > li:nth-child(n+2) {
@@ -38,17 +35,11 @@ body > nav {
     }
 
     input + ul {
-        .min, .max {
+        .expand {
+            font-size: .6rem;
+            transition: all .3s ease;
             margin-left: 1rem;
-            float: right;
-        }
-
-        .max {
-            display: none;
-        }
-
-        .min {
-            display: inherit;
+            transform: rotateZ(0deg);
         }
 
         > li:nth-child(n+2) {
@@ -57,7 +48,8 @@ body > nav {
     }
 
     label {
-        display: block;
+        display: flex;
+        align-items: center;
         padding: .5rem 1rem .5rem 1rem;
         cursor: pointer;
     }
@@ -85,12 +77,9 @@ body > nav {
         }
     }
 
-    .max, .min {
-        float: right;
-    }
-
     i {
         margin-right: 5px;
+        flex-grow: 0;
     }
 }
 
@@ -107,10 +96,11 @@ body > nav {
     user-select: none;
     margin-top: 1rem;
     display: block;
-    background: #fff;
-    border: 1px solid var(--box-border);
 
     > li {
+        box-shadow: 0 0 10px 3px rgba(90, 71, 114, 0.1);
+        margin-right: .5rem;
+
         > a {
             display: inline-block;
             padding: 10px 10px;

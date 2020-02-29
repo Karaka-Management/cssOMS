@@ -1,0 +1,29 @@
+.portlet {
+    box-shadow: 0 0 10px 3px rgba(90, 71, 114, 0.1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    overflow-x: auto;
+
+    .portlet-head {
+        background: #fff;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom: 1px solid #ebedf2;
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    .portlet-foot {
+        background: #fff;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top: 1px solid #ebedf2;
+        padding: 1rem;
+    }
+}
+
+.portlet-body {
+    background: #fff;
+    padding: 1rem;
+}
