@@ -4304,20 +4304,20 @@ table .sort-asc, table .sort-desc, table .filter {
   cursor: pointer; }
 
 table.default {
-  box-sizing: border-box;
+  border-radius: 4px;
   width: 100%;
-  font-size: 0.9em;
   max-width: 100%;
-  overflow: hidden; }
+  font-size: 0.9em;
+  box-sizing: border-box;
+  overflow-x: auto; }
   table.default caption {
     font-size: 1.5rem;
     font-weight: 400;
     border-bottom: 1px solid var(--box-border);
     background: var(--table-caption-background);
     padding: .5rem;
-    border-right: 1px solid var(--box-border);
-    border-left: 1px solid var(--box-border);
-    border-top: 1px solid var(--box-border);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     text-align: left;
     height: 3rem; }
     table.default caption i {
@@ -4325,29 +4325,23 @@ table.default {
   table.default td {
     padding: 5px 10px 5px 10px;
     white-space: nowrap; }
-  table.default tbody td:first-child, table.default tbody th:first-child {
-    border-left: 1px solid var(--box-border); }
-  table.default tbody td:last-child, table.default tbody th:last-child {
-    border-right: 1px solid var(--box-border); }
   table.default tbody tr {
     height: 3rem; }
-    table.default tbody tr:nth-of-type(2n) {
+    table.default tbody tr:nth-of-type(2n) td {
       background: var(--table-row-background); }
-    table.default tbody tr:nth-of-type(2n+1) {
+    table.default tbody tr:nth-of-type(2n+1) td {
       background: var(--table-row-background-alt); }
-    table.default tbody tr:hover {
+    table.default tbody tr:hover td {
       background: var(--table-row-background-hover); }
     table.default tbody tr td, table.default tbody tr th {
       border-bottom: 1px solid var(--box-border); }
+    table.default tbody tr:last-child td, table.default tbody tr:last-child th {
+      border: none; }
   table.default tbody th {
     background: var(--table-head-background); }
   table.default thead {
     height: 3rem;
     background: var(--table-head-background); }
-    table.default thead td:first-child {
-      border-left: 1px solid var(--box-border); }
-    table.default thead td:last-child {
-      border-right: 1px solid var(--box-border); }
     table.default thead td {
       border-bottom: 1px solid var(--box-border); }
   table.default .empty {

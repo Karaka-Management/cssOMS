@@ -20,11 +20,12 @@ table .sort-asc, table .sort-desc, table .filter {
 }
 
 table.default {
-    box-sizing: border-box;
+    border-radius: 4px;
     width: 100%;
-    font-size: 0.9em;
     max-width: 100%;
-    overflow: hidden;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    overflow-x: auto;
 
     caption {
         font-size: 1.5rem;
@@ -33,9 +34,8 @@ table.default {
         background: var(--table-caption-background);
         padding: .5rem;
 
-        border-right: 1px solid var(--box-border);
-        border-left: 1px solid var(--box-border);
-        border-top: 1px solid var(--box-border);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
 
         text-align: left;
 
@@ -52,31 +52,27 @@ table.default {
     }
 
     tbody {
-        td:first-child, th:first-child {
-            border-left: 1px solid var(--box-border);
-        }
-
-        td:last-child, th:last-child {
-            border-right: 1px solid var(--box-border);
-        }
-
         tr {
             height: 3rem;
 
-            &:nth-of-type(2n) {
+            &:nth-of-type(2n) td {
                 background: var(--table-row-background);
             }
 
-            &:nth-of-type(2n+1) {
+            &:nth-of-type(2n+1) td {
                 background: var(--table-row-background-alt);
             }
 
-            &:hover {
+            &:hover td {
                 background: var(--table-row-background-hover);
             }
 
             td, th {
                 border-bottom: 1px solid var(--box-border);
+            }
+
+            &:last-child td, &:last-child th {
+                border: none;
             }
         }
 
@@ -88,14 +84,6 @@ table.default {
     thead {
         height: 3rem;
         background: var(--table-head-background);
-
-        td:first-child {
-            border-left: 1px solid var(--box-border);
-        }
-
-        td:last-child {
-            border-right: 1px solid var(--box-border);
-        }
 
         td {
             border-bottom: 1px solid var(--box-border);
