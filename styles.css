@@ -3408,6 +3408,11 @@ img.frame-3 {
   border: 1px solid var(--box-border);
   box-sizing: border-box;
   width: 100%; }
+img.rounded {
+  border-radius: 50%;
+  background: #fff; }
+img.bordered {
+  border: 1px solid var(--box-border); }
 
 @keyframes slidy {
   0% {

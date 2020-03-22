@@ -23,6 +23,15 @@ img {
         box-sizing: border-box;
         width: 100%;
     }
+
+    &.rounded {
+        border-radius: 50%;
+        background: #fff;
+    }
+
+    &.bordered {
+        border: 1px solid var(--box-border);;
+    }
 }
 
 @keyframes slidy {
