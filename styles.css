@@ -3177,7 +3177,6 @@ article {
       background: none;
       color: #000; }
   article code {
-    padding: 3px;
     color: var(--link-hover);
     font-style: italic;
     font-family: monospace; }
