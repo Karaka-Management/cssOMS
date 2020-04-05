@@ -23,6 +23,12 @@
     }
 }
 
+.plain-portlet {
+    box-sizing: border-box;
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
 .portlet-body {
     background: #fff;
     padding: 1rem;
