@@ -2,10 +2,10 @@
     <div class="col-xs-12">
         <div class="box wf-100">
             <table class="default" id="table1"
-                data-ui-content="tbody"
-                data-ui-element="tr"
+                data-update-content="tbody"
+                data-update-element="tr"
                 data-tag="form"
-                data-ui-form="fSample">
+                data-update-form="fSample">
                 <caption>Form Add</caption>
                 <thead>
                 <tr>
