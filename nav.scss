@@ -4,7 +4,7 @@ body > nav {
     width: 250px;
     overflow-y: auto;
     font-size: 0.8em;
-    background: linear-gradient(135deg, var(--nav-category-background-highlight), var(--nav-category-background));
+    background: var(--nav-category-background);
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -13,6 +13,7 @@ body > nav {
     display: flex;
     flex-flow: column;
     box-sizing: border-box;
+    border-top: 1px solid #4b5055;
 
     span {
          flex-grow: 1;
@@ -60,20 +61,37 @@ body > nav {
         a {
             display: block;
             padding: .5rem 1rem .5rem 1rem;
+            border-left: 3px solid transparent;
 
             &:hover {
                 background: var(--nav-sub-background-hover);
+                border-left: 3px solid var(--nav-sub-background-highlight);
             }
         }
 
         li {
             &:not(:first-child) {
-                background: linear-gradient(to right, var(--nav-sub-background-highlight), var(--nav-sub-background));
+                background: var(--nav-sub-background);
             }
 
             &:hover, &.active {
                 background: var(--nav-category-background-hover);
             }
+        }
+
+
+        li:first-child {
+            border-bottom: 1px solid #212628;
+        }
+
+        li:first-child {
+            border-top: 1px solid #4b5055;
+        }
+    }
+
+    > li:first-child {
+        li:first-child {
+            border-top: none;
         }
     }
 

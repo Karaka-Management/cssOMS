@@ -1,4 +1,4 @@
-.crumbs-1 {
+.crumbs-1, .crumbs-2 {
     list-style: none;
     overflow: hidden;
     font-size: 1rem;
@@ -12,6 +12,46 @@
         float: left;
         cursor: pointer;
 
+        &:after, &:before {
+            content:" ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 14px solid #fff;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            left: 100%;
+        }
+
+        &:after {
+            z-index: 2;
+        }
+
+        &:before {
+            border-left-color: var(--box-border);
+            margin-left: 1px;
+            z-index: 1;
+        }
+
+        &.active:after, &:hover:after  {
+            border-left: 14px solid var(--button-colored-background-hover);
+        }
+    }
+
+    .active {
+        cursor: default;
+    }
+
+    .active, li:hover {
+        background: var(--button-colored-background-hover);
+    }
+}
+
+.crumbs-1 {
+    li {
         &:not(:last-child):after, &:before {
             content:" ";
             display: block;
@@ -26,16 +66,6 @@
             left: 100%;
         }
 
-        &:not(:last-child):after {
-            z-index: 2;
-        }
-
-        &:before {
-            border-left-color: var(--box-border);
-            margin-left: 1px;
-            z-index: 1;
-        }
-
         &.active:not(:last-child):after, &:hover:not(:last-child):after  {
             border-left: 14px solid var(--button-colored-background-hover);
         }
@@ -45,13 +75,5 @@
         &:before {
             border: none;
         }
-    }
-
-    .active {
-        cursor: default;
-    }
-
-    .active, li:hover {
-        background: var(--button-colored-background-hover);
     }
 }

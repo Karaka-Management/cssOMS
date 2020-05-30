@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin-top: 1rem;
     overflow-x: auto;
+    border-top: 3px solid var(--box-highlight);
 
     .portlet-head {
         background: #fff;

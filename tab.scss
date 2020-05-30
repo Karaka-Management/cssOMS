@@ -112,7 +112,6 @@
     .tab-links {
         label {
             padding: 5px 10px 5px 10px;
-            border: 1px solid transparent; // fixes jumping text for active and non-active labels
         }
 
         li {
@@ -121,7 +120,6 @@
 
         .active a, .active label {
             color: var(--text-on-background-color-2);
-            border: 1px solid var(--box-border);
             background: var(--button-colored-background)
         }
     }
