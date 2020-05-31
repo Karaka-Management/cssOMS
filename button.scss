@@ -19,7 +19,7 @@ button, input[type="submit"], input[type="button"], a.button {
     justify-content: center;
     align-items: center;
 
-    &:hover {
+    &:hover, &:focus {
         background: var(--button-colored-background-hover);
     }
 }

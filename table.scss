@@ -63,7 +63,7 @@ table.default {
                 background: var(--table-row-background-alt);
             }
 
-            &:hover td {
+            &:hover td, &:focus td {
                 background: var(--table-row-background-hover);
             }
 
@@ -73,6 +73,10 @@ table.default {
 
             &:last-child td, &:last-child th {
                 border: none;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
 

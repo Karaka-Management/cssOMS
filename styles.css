@@ -3622,7 +3622,7 @@ input[type="datetime-local"] {
     height: auto;
     border: none;
     box-shadow: none; }
-    .inputWrapper .textWrapper + input[type=submit]:hover, .inputWrapper .textWrapper + input[type=button]:hover, .inputWrapper .textWrapper + button:hover {
+    .inputWrapper .textWrapper + input[type=submit]:hover, .inputWrapper .textWrapper + input[type=submit]:focus, .inputWrapper .textWrapper + input[type=button]:hover, .inputWrapper .textWrapper + input[type=button]:focus, .inputWrapper .textWrapper + button:hover, .inputWrapper .textWrapper + button:focus {
       background: var(--button-colored-background-hover); }
   .inputWrapper .textWrapper {
     flex: 1;
@@ -3739,7 +3739,7 @@ input[type="range"] {
     vertical-align: middle;
     flex-grow: 0;
     flex-shrink: 0; }
-    .input button:hover {
+    .input button:hover, .input button:focus {
       background: var(--button-colored-background-hover); }
   .input input {
     box-sizing: border-box;
@@ -3904,7 +3904,7 @@ button, input[type="submit"], input[type="button"], a.button {
   box-shadow: none;
   justify-content: center;
   align-items: center; }
-  button:hover, input[type="submit"]:hover, input[type="button"]:hover, a.button:hover {
+  button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, input[type="button"]:focus, a.button:hover, a.button:focus {
     background: var(--button-colored-background-hover); }
 
 .unseen {
@@ -3969,12 +3969,12 @@ body > nav {
       display: block;
       padding: .5rem 1rem .5rem 1rem;
       border-left: 3px solid transparent; }
-      #nav-side > li a:hover {
+      #nav-side > li a:hover, #nav-side > li a:focus {
         background: var(--nav-sub-background-hover);
         border-left: 3px solid var(--nav-sub-background-highlight); }
     #nav-side > li li:not(:first-child) {
       background: var(--nav-sub-background); }
-    #nav-side > li li:hover, #nav-side > li li.active {
+    #nav-side > li li a:hover, #nav-side > li li a.active, #nav-side > li li a:focus {
       background: var(--nav-category-background-hover); }
     #nav-side > li li:first-child {
       border-bottom: 1px solid #212628; }
@@ -3996,41 +3996,41 @@ body > nav {
   user-select: none;
   margin-top: 1rem;
   display: block; }
-  .nav-top > li {
+  .nav-top > li > a {
     box-shadow: 0 0 10px 3px rgba(90, 71, 114, 0.1);
-    margin-right: .5rem; }
-    .nav-top > li > a {
-      display: inline-block;
-      padding: 10px 10px; }
-  .nav-top li {
-    background: #fff;
+    margin-right: .5rem;
     display: inline-block;
-    position: relative;
-    cursor: pointer; }
-    .nav-top li:hover, .nav-top li.active {
-      background: var(--nav-content-hover);
-      color: var(--text-on-background-color-2); }
-      .nav-top li:hover > ul, .nav-top li.active > ul {
-        display: block;
-        opacity: 1;
-        visibility: visible; }
-    .nav-top li > ul {
-      padding: 0;
-      z-index: 5;
-      position: absolute;
-      top: 36px;
-      left: 0;
-      width: 150px;
-      display: none;
-      opacity: 0;
-      visibility: hidden; }
-      .nav-top li > ul li {
-        display: block;
-        color: #000;
-        padding: 7px; }
-        .nav-top li > ul li:hover {
-          color: #252525;
-          background: var(--nav-content-hover); }
+    padding: 10px 10px; }
+  .nav-top li {
+    display: inline-block; }
+    .nav-top li a {
+      background: #fff;
+      position: relative;
+      cursor: pointer; }
+      .nav-top li a:hover, .nav-top li a.active, .nav-top li a:focus {
+        background: var(--nav-content-hover);
+        color: var(--text-on-background-color-2); }
+        .nav-top li a:hover > ul, .nav-top li a.active > ul, .nav-top li a:focus > ul {
+          display: block;
+          opacity: 1;
+          visibility: visible; }
+      .nav-top li a > ul {
+        padding: 0;
+        z-index: 5;
+        position: absolute;
+        top: 36px;
+        left: 0;
+        width: 150px;
+        display: none;
+        opacity: 0;
+        visibility: hidden; }
+        .nav-top li a > ul li {
+          display: block;
+          color: #000;
+          padding: 7px; }
+          .nav-top li a > ul li:hover, .nav-top li a > ul li:focus {
+            color: #252525;
+            background: var(--nav-content-hover); }
 
 @media only screen and (max-width: 800px) {
   #nav-trigger:not(:checked) + nav {
@@ -4247,12 +4247,14 @@ section > h2 {
     font-size: 0.9em;
     user-select: none;
     cursor: pointer; }
-    .tabview .tab-links label:hover {
+    .tabview .tab-links label:hover, .tabview .tab-links label:focus {
       color: var(--text-on-background-color-2);
-      background: var(--button-colored-background-hover); }
-  .tabview .tab-links .active label:hover {
+      background: var(--button-colored-background-hover);
+      outline: none; }
+  .tabview .tab-links .active label:hover, .tabview .tab-links .active label:focus {
     color: var(--text-on-background-color-2);
-    background: var(--button-colored-background-hover); }
+    background: var(--button-colored-background-hover);
+    outline: none; }
   .tabview .tab-links .active a {
     cursor: default; }
   .tabview .tab-links li {
@@ -4353,12 +4355,14 @@ table.default {
       background: var(--table-row-background); }
     table.default tbody tr:nth-of-type(2n+1) td {
       background: var(--table-row-background-alt); }
-    table.default tbody tr:hover td {
+    table.default tbody tr:hover td, table.default tbody tr:focus td {
       background: var(--table-row-background-hover); }
     table.default tbody tr td, table.default tbody tr th {
       border-bottom: 1px solid var(--box-border); }
     table.default tbody tr:last-child td, table.default tbody tr:last-child th {
       border: none; }
+    table.default tbody tr:focus {
+      outline: none; }
   table.default tbody th {
     background: var(--table-head-background); }
   table.default thead {

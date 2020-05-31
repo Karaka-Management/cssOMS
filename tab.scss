@@ -8,15 +8,17 @@
             user-select: none;
             cursor: pointer;
 
-            &:hover {
+            &:hover, &:focus {
                 color: var(--text-on-background-color-2);
                 background: var(--button-colored-background-hover);
+                outline: none;
             }
         }
 
-        .active label:hover {
+        .active label:hover, .active label:focus {
             color: var(--text-on-background-color-2);
             background: var(--button-colored-background-hover);
+            outline: none;
         }
 
         .active a {
