@@ -6,6 +6,7 @@ body > nav {
     font-size: 0.8em;
     background: var(--nav-category-background);
     color: rgba(255, 255, 255, 0.8);
+    flex-shrink: 0;
 }
 
 #nav-side {
