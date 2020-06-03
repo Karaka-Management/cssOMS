@@ -20,21 +20,25 @@ ul {
     list-style: none;
 }
 
-input, select, textarea, .textarea {
+input, select, textarea, .textarea, button {
     box-sizing: border-box;
-    appearance: none;
     box-shadow: none;
 
     &:focus {
         outline: none;
     }
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
 }
 
 input[type=checkbox] {
     margin-right: 5px;
 }
 
-button, input[type=submit], input[type=button] {
+button {
     &::-moz-focus-inner {
         border: 0;
     }
@@ -44,6 +48,7 @@ table {
     border-collapse: separate;
     border-spacing: 0;
 }
+
 i {
     font-style: normal;
 }
