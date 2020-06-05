@@ -31,8 +31,8 @@ jobs:
     - name: Push changes
       if: steps.git-check.outputs.modified == 'true'
       run: |
-        git config --global user.name 'Formatter Bot'
-        git config --global user.email 'formatter.bot@orange-management.email'
+        git config --global user.name 'Build Bot'
+        git config --global user.email 'build.bot@orange-management.email'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git commit -am "Automated formatting changes"
         git push
