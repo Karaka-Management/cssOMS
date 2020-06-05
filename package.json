@@ -7,6 +7,8 @@
     "node-sass": "^4.14.1"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+    "scss": "node-sass styles.scss > styles.css"
+  },
   "author": "Dennis Eichhorn"
 }
