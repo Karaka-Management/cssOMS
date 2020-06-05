@@ -37,6 +37,14 @@
         }
 
         &.active:after, &:hover:after  {
+            color: var(--text-on-background-color-2);
+        }
+        
+        &.active:after  {
+            border-left: 14px solid var(--button-colored-background);
+        }
+        
+        &:hover:after  {
             border-left: 14px solid var(--button-colored-background-hover);
         }
     }
@@ -46,6 +54,14 @@
     }
 
     .active, li:hover {
+        color: var(--text-on-background-color-2);
+    }
+    
+    .active {
+        background: var(--button-colored-background);
+    }
+    
+    li:hover {
         background: var(--button-colored-background-hover);
     }
 }
@@ -67,6 +83,14 @@
         }
 
         &.active:not(:last-child):after, &:hover:not(:last-child):after  {
+            color: var(--text-on-background-color-2);
+        }
+        
+        &.active:not(:last-child):after {
+            border-left: 14px solid var(--button-colored-background);
+        }
+        
+        &:hover:not(:last-child):after  {
             border-left: 14px solid var(--button-colored-background-hover);
         }
     }
