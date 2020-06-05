@@ -168,23 +168,60 @@ textarea, .textarea {
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-span.checkbox, span.radio {
+span.radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    -webkit-user-select: none;
     user-select: none;
 
     label {
+        order: 3;
         cursor: pointer;
     }
-}
 
-span.checkbox input[type="checkbox"], span.radio input[type="radio"] {
-    position: relative;
-    vertical-align: middle;
-    bottom: 1px;
-    margin-right: 5px;
-    cursor: pointer;
+    input {
+        order: 1;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .checkmark {
+            background-color: var(--button-colored-background);
+        }
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+
+    .checkmark {
+        position: relative;
+        order: 2;
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+        background-color: #eee;
+        border-radius: 50%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 5px;
+            left: 5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+
+    &:hover input ~ .checkmark {
+        background-color: var(--input-icon-color);
+        cursor: pointer;
+    }
 }
 
 input[type="range"] {
