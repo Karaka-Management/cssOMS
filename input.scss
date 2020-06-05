@@ -168,7 +168,7 @@ textarea, .textarea {
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-span.radio {
+label.radio, label.checkbox {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -176,14 +176,10 @@ span.radio {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
-    label {
-        order: 3;
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     input {
-        order: 1;
+        margin: 0;
         opacity: 0;
         cursor: pointer;
 
@@ -198,12 +194,11 @@ span.radio {
 
     .checkmark {
         position: relative;
-        order: 2;
         height: 15px;
         width: 15px;
         margin-right: 10px;
         background-color: #eee;
-        border-radius: 50%;
+        border: 1px solid var(--input-border-active);
 
         &:after {
             content: "";
@@ -213,14 +208,47 @@ span.radio {
             left: 5px;
             width: 5px;
             height: 5px;
-            border-radius: 50%;
-            background: #fff;
         }
     }
 
     &:hover input ~ .checkmark {
         background-color: var(--input-icon-color);
         cursor: pointer;
+    }
+}
+
+label.radio {
+    .checkmark {
+        border-radius: 50%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+}
+
+label.checkbox {
+    .checkmark {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            width: 4px;
+            height: 6px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
     }
 }
 
