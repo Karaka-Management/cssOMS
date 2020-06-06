@@ -19,6 +19,8 @@ button, input[type="submit"], input[type="button"], a.button {
     justify-content: center;
     align-items: center;
     outline: 0;
+    font-family: inherit;
+    font-size: .9rem;
 
     &::-moz-focus-inner {
         border: 0;

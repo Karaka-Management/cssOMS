@@ -3957,7 +3957,9 @@ button, input[type="submit"], input[type="button"], a.button {
   box-shadow: none;
   justify-content: center;
   align-items: center;
-  outline: 0; }
+  outline: 0;
+  font-family: inherit;
+  font-size: .9rem; }
   button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, a.button::-moz-focus-inner {
     border: 0; }
   button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, input[type="button"]:focus, a.button:hover, a.button:focus {
