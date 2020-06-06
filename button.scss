@@ -18,6 +18,11 @@ button, input[type="submit"], input[type="button"], a.button {
     box-shadow: none;
     justify-content: center;
     align-items: center;
+    outline: 0;
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
 
     &:hover, &:focus {
         background: var(--button-colored-background-hover);

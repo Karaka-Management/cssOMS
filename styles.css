@@ -3726,11 +3726,7 @@ label.radio, label.checkbox {
     label.radio .checkmark:after, label.checkbox .checkmark:after {
       content: "";
       position: absolute;
-      display: none;
-      top: 5px;
-      left: 5px;
-      width: 5px;
-      height: 5px; }
+      display: none; }
   label.radio:hover input ~ .checkmark, label.checkbox:hover input ~ .checkmark {
     background-color: var(--input-icon-color);
     cursor: pointer; }
@@ -3738,8 +3734,6 @@ label.radio, label.checkbox {
 label.radio .checkmark {
   border-radius: 50%; }
   label.radio .checkmark:after {
-    content: "";
-    position: absolute;
     top: 5px;
     left: 5px;
     width: 5px;
@@ -3748,8 +3742,6 @@ label.radio .checkmark {
     background: #fff; }
 
 label.checkbox .checkmark:after {
-  content: "";
-  position: absolute;
   top: 2px;
   left: 4px;
   width: 4px;
@@ -3964,7 +3956,10 @@ button, input[type="submit"], input[type="button"], a.button {
   border: none;
   box-shadow: none;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  outline: 0; }
+  button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, a.button::-moz-focus-inner {
+    border: 0; }
   button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, input[type="button"]:focus, a.button:hover, a.button:focus {
     background: var(--button-colored-background-hover); }
 
