@@ -20,6 +20,16 @@
     margin-left: var(--gutter-compensation, -0.5rem);
 }
 
+.col-xs-0 {
+  box-sizing: border-box;
+  flex-grow: 0;
+  padding-right: 1rem;
+}
+
+.plain-grid {
+  padding: 0 !important;
+}
+
 .row.reverse {
   flex-direction: row-reverse;
 }
