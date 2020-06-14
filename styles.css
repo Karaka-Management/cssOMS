@@ -3888,7 +3888,9 @@ blockquote {
   font-size: 1rem; }
   .crumbs-1 li, .crumbs-2 li {
     background: #fff;
-    border: 1px solid var(--box-border);
+    border-left: 1px solid var(--box-border);
+    border-top: 1px solid var(--box-border);
+    border-bottom: 1px solid var(--box-border);
     padding: 10px 10px 10px 20px;
     position: relative;
     display: block;
@@ -3907,7 +3909,7 @@ blockquote {
       margin-top: -20px;
       left: 100%; }
     .crumbs-1 li:after, .crumbs-2 li:after {
-      z-index: 2; }
+      z-index: 1; }
     .crumbs-1 li:before, .crumbs-2 li:before {
       border-left-color: var(--box-border);
       margin-left: 1px;
@@ -3922,8 +3924,7 @@ blockquote {
     cursor: default;
     background: var(--button-colored-background); }
   .crumbs-1 .active, .crumbs-1 li:hover, .crumbs-2 .active, .crumbs-2 li:hover {
-    color: var(--text-on-background-color-2);
-    border-right: none; }
+    color: var(--text-on-background-color-2); }
   .crumbs-1 li:hover, .crumbs-2 li:hover {
     background: var(--button-colored-background-hover); }
 
