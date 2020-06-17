@@ -3,7 +3,7 @@
     color: var(--box-highlight);
     font-size: .9rem;
 
-    &:hover {
+    &:hover, &:active, &:focus {
         position: relative;
 
         &:after, &:before {
