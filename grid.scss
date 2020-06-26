@@ -20,6 +20,10 @@
     margin-left: var(--gutter-compensation, -0.5rem);
 }
 
+.xs-col-table, .md-col-table, .lg-col-table {
+      display: none;
+  }
+
 .col-xs-0 {
   box-sizing: border-box;
   flex-grow: 0;
@@ -251,6 +255,10 @@
     width: 46rem;
   }
 
+  .xs-col-table {
+      display: inherit;
+  }
+
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -465,6 +473,10 @@
     width: 61rem;
   }
 
+  .md-col-table {
+      display: inherit;
+  }
+
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -677,6 +689,10 @@
 @media only screen and (min-width: 75em) {
   .container {
     width: 71rem;
+  }
+
+  .lg-col-table {
+      display: inherit;
   }
 
   .col-lg,
