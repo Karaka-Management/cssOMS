@@ -3297,32 +3297,26 @@ p {
   p + p {
     margin-top: 5px; }
 
-.tooltip > i {
-  font-size: 0.85rem;
-  position: relative;
-  z-index: 2;
-  cursor: pointer; }
-  .tooltip > i:before, .tooltip > i:after {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none; }
-  .tooltip > i:before {
-    white-space: nowrap;
-    position: absolute;
-    bottom: 150%;
-    margin-bottom: 5px;
-    padding: 7px;
-    border-radius: 3px;
-    background-color: #000;
-    background-color: rgba(51, 51, 51, 0.9);
-    color: #fff;
-    content: attr(data-tooltip);
-    text-align: center; }
-
-.tooltip:hover > i:before,
-.tooltip:hover > i:after {
-  visibility: visible;
-  opacity: 1; }
+.tooltip {
+  cursor: pointer;
+  color: var(--box-highlight);
+  font-size: .9rem; }
+  .tooltip:hover, .tooltip:active, .tooltip:focus {
+    position: relative; }
+    .tooltip:hover:after, .tooltip:hover:before, .tooltip:active:after, .tooltip:active:before, .tooltip:focus:after, .tooltip:focus:before {
+      font-size: .9rem;
+      display: block;
+      position: absolute;
+      white-space: nowrap;
+      bottom: 100%;
+      margin-bottom: 5px;
+      padding: 7px;
+      border-radius: 3px;
+      background-color: #474747;
+      color: #fff;
+      content: attr(data-tooltip);
+      text-align: center;
+      transform: translate(-50%, 0); }
 
 .spinner-1 {
   width: 40px;
@@ -4600,7 +4594,6 @@ span.tag {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 1rem;
-  overflow-x: auto;
   border-top: 3px solid var(--box-highlight); }
   .portlet .portlet-head {
     background: #fff;
@@ -4624,3 +4617,27 @@ span.tag {
 .portlet-body {
   background: #fff;
   padding: 1rem; }
+
+.portlet.highlight-1 {
+  border-top: 0; }
+  .portlet.highlight-1 .portlet-body {
+    background: var(--color-red);
+    color: #fff; }
+
+.portlet.highlight-2 {
+  border-top: 0; }
+  .portlet.highlight-2 .portlet-body {
+    background: var(--color-green);
+    color: #fff; }
+
+.portlet.highlight-3 {
+  border-top: 0; }
+  .portlet.highlight-3 .portlet-body {
+    background: var(--color-blue);
+    color: #fff; }
+
+.portlet.highlight-4 {
+  border-top: 0; }
+  .portlet.highlight-4 .portlet-body {
+    background: var(--color-yellow);
+    color: #fff; }

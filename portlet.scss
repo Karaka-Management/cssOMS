@@ -3,7 +3,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 1rem;
-    overflow-x: auto;
+    //overflow-x: auto; removed in order to prevent scroll bars for tooltips which are longer than the portlet (test in general settings view)
     border-top: 3px solid var(--box-highlight);
 
     .portlet-head {
@@ -33,4 +33,40 @@
 .portlet-body {
     background: #fff;
     padding: 1rem;
+}
+
+.portlet.highlight-1 {
+    border-top: 0;
+
+    .portlet-body {
+        background: var(--color-red);
+        color: #fff;
+    }
+}
+
+.portlet.highlight-2 {
+    border-top: 0;
+
+    .portlet-body {
+        background: var(--color-green);
+        color: #fff;
+    }
+}
+
+.portlet.highlight-3 {
+    border-top: 0;
+
+    .portlet-body {
+        background: var(--color-blue);
+        color: #fff;
+    }
+}
+
+.portlet.highlight-4 {
+    border-top: 0;
+
+    .portlet-body {
+        background: var(--color-yellow);
+        color: #fff;
+    }
 }
