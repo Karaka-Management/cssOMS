@@ -10,6 +10,19 @@
  */
 input, select, textarea, .textarea {
     border: 1px solid var(--input-border);
+
+    &.undecorated {
+        border: none;
+        background: transparent;
+        resize: none;
+    }
+
+    &:active.undecorated, &:focus.undecorated {
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        border-style: none;
+    }
 }
 
 progress {
