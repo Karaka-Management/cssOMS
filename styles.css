@@ -3616,6 +3616,15 @@ div.slider-1 {
  */
 input, select, textarea, .textarea {
   border: 1px solid var(--input-border); }
+  input.undecorated, select.undecorated, textarea.undecorated, .textarea.undecorated {
+    border: none;
+    background: transparent;
+    resize: none; }
+  input:active.undecorated, input:focus.undecorated, select:active.undecorated, select:focus.undecorated, textarea:active.undecorated, textarea:focus.undecorated, .textarea:active.undecorated, .textarea:focus.undecorated {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border-style: none; }
 
 progress {
   height: 20px;
