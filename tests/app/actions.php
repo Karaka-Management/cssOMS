@@ -7,7 +7,7 @@
                     {
                         "listener": "change", "action": [
                             {
-                                "key": 1, "type": "redirect", "uri": "{%}&u={#t-selector}", "target": "self"
+                                "key": 1, "type": "redirect", "uri": "{%}&u={!#t-selector}", "target": "self"
                             }
                         ]
                     }

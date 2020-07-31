@@ -12,7 +12,7 @@
                                 <div class="advancedInput" id="input1">
                                     <div class="inputOuter">
                                         <div class="inputbackground">
-                                            <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
+                                            <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={!#inputId}">
                                             <div id="input1-dropdown" class="dropdown" data-active="true">
                                                 <table id="a1" class="default">
                                                     <thead>
@@ -52,7 +52,7 @@
                                 <div class="advancedInput" id="input2">
                                     <div class="inputOuter">
                                         <div class="inputbackground">
-                                            <input autocomplete="off" class="input" id="inputId2" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId2}">
+                                            <input autocomplete="off" class="input" id="inputId2" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={!#inputId2}">
                                             <div id="input2-dropdown" class="dropdown" data-active="true">
                                                 <table id="a1" class="default">
                                                     <thead>
@@ -98,7 +98,7 @@
                                 <div class="advancedInput" id="input4">
                                     <div class="inputOuter">
                                         <div class="inputbackground">
-                                            <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
+                                            <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={!#inputId}">
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@
                                 <div class="advancedInput" id="input3">
                                     <div class="inputOuter">
                                         <div class="inputbackground">
-                                            <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={#inputId}">
+                                            <input autocomplete="off" class="input" id="inputId" type="text" emptyAfterSelect="true" data-autocomplete="true" data-value="/name/0" data-src="http://127.0.0.1/en/api/admin/find/account?search={!#inputId}">
                                             <div id="input3-dropdown" class="dropdown" data-active="true">
                                                 <table id="a1" class="default">
                                                     <thead>
