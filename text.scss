@@ -11,3 +11,8 @@ p {
         margin-top: 5px;
     }
 }
+
+.blurry-text {
+    text-shadow: 0 0 .9rem #000;
+    color: transparent;
+}
