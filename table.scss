@@ -92,6 +92,14 @@ table.default {
         td {
             border-bottom: 1px solid var(--box-border);
         }
+
+        input[type=radio] {
+            display: none;
+
+            &:checked + label i {
+                color: var(--box-highlight);;
+            }
+        }
     }
 
     .empty {

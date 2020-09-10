@@ -4471,6 +4471,10 @@ table.default {
     background: var(--table-head-background); }
     table.default thead td {
       border-bottom: 1px solid var(--box-border); }
+    table.default thead input[type=radio] {
+      display: none; }
+      table.default thead input[type=radio]:checked + label i {
+        color: var(--box-highlight); }
   table.default .empty {
     text-align: center;
     color: #d8d8d8; }
