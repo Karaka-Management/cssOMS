@@ -96,7 +96,7 @@ table.default {
         input[type=radio] {
             display: none;
 
-            &:checked + label i {
+            &:checked + label {
                 color: var(--box-highlight);;
             }
         }
