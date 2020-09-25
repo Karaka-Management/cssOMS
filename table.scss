@@ -27,6 +27,10 @@ table.default {
     box-sizing: border-box;
     overflow-x: auto;
 
+    .fa {
+        color: var(--button-colored-background);
+    }
+
     caption {
         font-size: 1.5rem;
         font-weight: 400;
