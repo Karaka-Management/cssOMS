@@ -3240,7 +3240,7 @@ article {
     border: 1px solid #ddd;
     border-left: 3px solid var(--button-colored-background);
     background: #f4f4f4;
-    line-height: 1.5rem;
+    line-height: 1rem;
     font-size: .8rem; }
     article pre code {
       background: none;
