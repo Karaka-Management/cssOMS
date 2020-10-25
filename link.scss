@@ -5,3 +5,12 @@
 [data-href] {
     cursor: pointer;
 }
+
+.portlet-body a {
+    color: var(--link-color);
+    border-bottom: 1px dotted var(--link-color);
+
+    &:hover {
+        border-bottom: none;
+    }
+}
