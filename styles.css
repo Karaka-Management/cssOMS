@@ -4024,10 +4024,10 @@ button, input[type="submit"], input[type="button"], a.button {
 [data-href] {
   cursor: pointer; }
 
-.portlet-body a {
+.portlet-body a:not(.button) {
   color: var(--link-color);
   border-bottom: 1px dotted var(--link-color); }
-  .portlet-body a:hover {
+  .portlet-body a:not(.button):hover {
     border-bottom: none; }
 
 ul.boxed {
