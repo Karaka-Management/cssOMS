@@ -37,3 +37,14 @@ section {
         margin-bottom: 5px;
     }
 }
+
+.pagebreak {
+    display: none;
+}
+
+@media print {
+    .pagebreak {
+        page-break-after: always;
+        display: block;
+    }
+}

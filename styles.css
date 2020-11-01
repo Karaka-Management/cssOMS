@@ -4372,6 +4372,13 @@ section > h2 {
   font-size: 1.2em;
   margin-bottom: 5px; }
 
+.pagebreak {
+  display: none; }
+
+@media print {
+  .pagebreak {
+    page-break-after: always;
+    display: block; } }
 .tabview .tab-links {
   color: #000;
   padding: 0.3rem 0 0 0; }
