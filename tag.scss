@@ -1,11 +1,18 @@
 
 
-span.tag {
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 4px 6px 4px 6px;
-    font-size: .8rem;
-    color: var(--text-on-background-color-2);
-    background: var(--button-colored-background);
-    display: inline-block;
+span {
+	&.tag {
+	    cursor: pointer;
+	    border-radius: 4px;
+	    padding: 4px 6px 4px 6px;
+	    font-size: .8rem;
+	    color: var(--text-on-background-color-2);
+	    background: var(--button-colored-background);
+	    display: inline-block;
+
+	    i {
+	    	color: var(--text-on-background-color-2);
+			margin-right: .5rem;
+		}
+	}
 }

@@ -15,7 +15,7 @@
     <nav>
         <span id="u-box">
             <a href="">
-                <img alt="" data-lazyload="../../../Web/Backend/img/user_default_6.png">
+                <img alt="" loading="lazy" src="../../../Web/Backend/img/user_default_6.png">
             </a>
             <span id="logo">
                 <span>AccountName</span>

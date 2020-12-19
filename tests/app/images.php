@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <div class="box wf-100">
-            <img data-lazyload="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg">
+            <img loading="lazy" src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg">
         </div>
     </div>
 
