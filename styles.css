@@ -3747,7 +3747,6 @@ input:invalid {
 textarea, .textarea {
   overflow: auto;
   resize: both;
-  min-height: 100px;
   box-sizing: border-box;
   font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace; }
 
