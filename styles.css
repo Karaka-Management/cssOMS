@@ -4461,6 +4461,9 @@ table.fixed {
 table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
   display: none; }
 
+table .order-up, table .order-down {
+  cursor: pointer; }
+
 table .sort-asc, table .sort-desc, table .filter {
   padding: 0 5px 0 5px;
   cursor: pointer; }
