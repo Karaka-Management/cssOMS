@@ -7,6 +7,7 @@
             font-size: 0.9em;
             user-select: none;
             cursor: pointer;
+            border: 1px solid var(--button-colored-background-hover);
 
             &:hover, &:focus {
                 color: var(--text-on-background-color-2);

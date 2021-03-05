@@ -1,10 +1,9 @@
 .portlet {
-    box-shadow: 0 0 5px 1px rgba(72, 71, 114, 0.2);
-    border-radius: 4px;
+    box-shadow: 0 0 3px 1px rgba(72, 71, 114, 0.3);
     box-sizing: border-box;
     margin-top: 1rem;
     //overflow-x: auto; removed in order to prevent scroll bars for tooltips which are longer than the portlet (test in general settings view)
-    border-top: 3px solid var(--box-highlight);
+    //border-top: 2px solid var(--box-highlight);
 
     .portlet-head {
         background: #fff;

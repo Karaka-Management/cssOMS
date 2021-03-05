@@ -2,12 +2,6 @@
 
 table.fixed {
     table-layout: fixed;
-
-    td {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
 }
 
 table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
@@ -21,6 +15,14 @@ table .order-up, table .order-down {
 table .sort-asc, table .sort-desc, table .filter {
     padding: 0 5px 0 5px;
     cursor: pointer;
+}
+
+@for $i from 1 through 10 {
+    .fixed-#{$i} td:nth-child(#{$i}) {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
 
 table.default {
