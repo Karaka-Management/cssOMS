@@ -12,6 +12,20 @@ table .order-up, table .order-down {
     cursor: pointer;
 }
 
+table thead input[type=radio] {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+table thead i.fa {
+    color: #888;
+}
+
+table input[type=radio]:checked + i {
+    color: var(--button-colored-background);
+}
+
 table .sort-asc, table .sort-desc, table .filter {
     padding: 0 5px 0 5px;
     cursor: pointer;
@@ -33,8 +47,10 @@ table.default {
     box-sizing: border-box;
     overflow-x: auto;
 
-    :not(.tag) > .fa {
-        color: var(--button-colored-background);
+    tbody {
+        :not(.tag) > .fa {
+            color: var(--button-colored-background);
+        }
     }
 
     caption {
