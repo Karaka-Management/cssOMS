@@ -58,6 +58,7 @@ meta[name="viewport"][content*="minimum-scale"] {
 }
 
 input:not([id]),
+input[type="text"]:not([autocomplete]),
 input[type=""],
 select:not([id]),
 textarea:not([id]) {

@@ -4,7 +4,7 @@
     cursor: pointer;
 }
 
-button, input[type="submit"], input[type="button"], a.button {
+button, input[type="submit"], input[type="button"], label.button, a.button {
     cursor: pointer;
     display: inline-flex;
     min-width: 70px;
@@ -36,7 +36,11 @@ button.save, .button.save {
 }
 
 button.cancel, .button.cancel {
+    background: #ee5649;
 
+    &:hover, &:focus {
+        background: #ff7d79;
+    }
 }
 
 button.delete, .button.delete {

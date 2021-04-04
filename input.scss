@@ -127,17 +127,108 @@ input[type="datetime-local"] {
     }
 }
 
-.advancedInput {
+.advancedInput, .clickPopup {
+    position: relative;
     /* position: relative; uncomment! otherwise the drop down inside would not be able to overflow and add a scroll bar to the container which is not desired in this case! */
 }
 
-input ~ .dropdown {
-    position: absolute;
+.clickPopup {
+    label + input {
+        display: none;
+    }
+
+    .popup {
+        box-sizing: border-box;
+        padding: .5rem 1rem .5rem 1rem;
+        background: #fff;
+        box-shadow: 0 0 3px 1px rgba(72, 71, 114, 0.3);
+        position: absolute;
+        right: 0;
+
+        ul {
+            width: 100%;
+        }
+
+        > ul {
+            display: flex;
+            flex-direction: column;
+
+            & > li {
+                display: flex;
+                align-items: center;
+                margin: .5rem 0 .5rem 0;
+                white-space: nowrap;
+
+            }
+        }
+
+        .button {
+            margin-right: 1rem;
+        }
+
+        span {
+            flex-grow: 1;
+        }
+
+        input {
+            display: none;
+
+            &:checked + ul {
+                .expand {
+                    transition: all .3s ease;
+                    display: inherit;
+                    transform: rotateZ(90deg);
+                }
+
+                > li:nth-child(n+2) {
+                    display: inherit;
+                }
+            }
+        }
+
+        input + ul {
+            .expand {
+                font-size: .9rem;
+                transition: all .3s ease;
+                transform: rotateZ(0deg);
+            }
+
+            > li:nth-child(n+2) {
+                display: none;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        > li {
+            display: block;
+
+            a {
+                display: block;
+
+                &:hover, &:focus {
+                }
+            }
+        }
+
+        i {
+            flex-grow: 0;
+        }
+    }
+}
+
+input + .popup {
+    position: absolute; /* All other options e.g. static, relative resize the container which is bad */
     display: none;
     z-index: 3;
 }
 
-input:focus ~ .dropdown, input ~ .dropdown.active {
+/* In the past we also used input:focus ~ .popup this is a problem because clicking on something e.g. close button will not close the popup since it is still focused. */
+input:checked ~ .popup, input ~ .popup.active {
     display: inline-block;
 }
 
