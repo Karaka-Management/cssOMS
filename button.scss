@@ -2,6 +2,7 @@
 
 .btn {
     cursor: pointer;
+    user-select: none;
 }
 
 button, input[type="submit"], input[type="button"], label.button, a.button {
@@ -21,6 +22,7 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     outline: 0;
     font-family: inherit;
     font-size: .9rem;
+    user-select: none;
 
     &::-moz-focus-inner {
         border: 0;

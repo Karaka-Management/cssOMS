@@ -7,6 +7,7 @@ span {
 	    color: var(--text-on-background-color-2);
 	    background: var(--button-colored-background);
 	    display: inline-block;
+	    user-select: none;
 
 	    i {
 	    	color: var(--text-on-background-color-2);

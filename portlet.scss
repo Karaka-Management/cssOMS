@@ -21,6 +21,10 @@
         border-top: 1px solid #ebedf2;
         padding: 1rem;
     }
+
+    .portlet-body > h2 {
+        border-bottom: 1px solid #ebedf2;
+    }
 }
 
 .plain-portlet {

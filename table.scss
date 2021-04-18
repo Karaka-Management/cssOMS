@@ -39,6 +39,19 @@ table .sort-asc, table .sort-desc, table .filter {
     }
 }
 
+table.default.sticky {
+    position: relative;
+
+    thead {
+        th, td {
+            background: var(--table-head-background);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+    }
+}
+
 table.default {
     border-radius: 4px;
     width: 100%;
@@ -101,8 +114,10 @@ table.default {
                 border: none;
             }
 
-            &:focus {
+            &:focus, &:hover {
                 outline: none;
+                transform: scale(1);
+                box-shadow: 0 0 5px rgba(90, 71, 114, 0.3);
             }
         }
 
@@ -112,8 +127,11 @@ table.default {
     }
 
     thead {
-        height: 3rem;
         background: var(--table-head-background);
+
+        tr {
+            height: 3rem;
+        }
 
         td {
             border-bottom: 1px solid var(--box-border);
