@@ -5,6 +5,11 @@
     //overflow-x: auto; removed in order to prevent scroll bars for tooltips which are longer than the portlet (test in general settings view)
     //border-top: 2px solid var(--box-highlight);
 
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
     .portlet-head {
         background: #fff;
         border-top-left-radius: 4px;
@@ -36,40 +41,57 @@
 .portlet-body {
     background: #fff;
     padding: 1rem;
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .portlet.highlight-1 {
     border-top: 0;
 
-    .portlet-body {
+    background: var(--color-red);
+    color: #fff;
+
+    .portlet-body, .portlet-head {
         background: var(--color-red);
-        color: #fff;
+        border: 0;
     }
 }
 
 .portlet.highlight-2 {
     border-top: 0;
 
-    .portlet-body {
+    background: var(--color-green);
+    color: #fff;
+
+    .portlet-body, .portlet-head {
         background: var(--color-green);
-        color: #fff;
+        border: 0;
     }
 }
 
 .portlet.highlight-3 {
     border-top: 0;
 
-    .portlet-body {
+    background: var(--color-blue);
+    color: #fff;
+
+    .portlet-body, .portlet-head {
         background: var(--color-blue);
-        color: #fff;
+        border: 0;
     }
 }
 
 .portlet.highlight-4 {
     border-top: 0;
 
-    .portlet-body {
+    background: var(--color-yellow);
+    color: #fff;
+
+    .portlet-body, .portlet-head {
         background: var(--color-yellow);
-        color: #fff;
+        border: 0;
     }
 }
