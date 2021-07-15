@@ -127,45 +127,6 @@ body > nav {
     }
 }
 
-#nav-side-settings {
-    margin: 1rem;
-
-    label {
-        color: rgba(255, 255, 255, 0.8);
-        cursor: pointer;
-
-        .fa-volume-up {
-            display: none;
-        }
-
-        .fa-volume-down {
-            display: inherit;
-        }
-    }
-
-    i {
-        font-size: 1rem;
-    }
-
-    input {
-        display: none;
-
-        &:checked {
-            & + label {
-                color: var(--nav-sub-background-highlight);
-
-                .fa-volume-up {
-                    display: inherit;
-                }
-
-                .fa-volume-down {
-                    display: none;
-                }
-            }
-        }
-    }
-}
-
 .nav-trigger {
     position: absolute;
     clip: rect(0, 0, 0, 0);
