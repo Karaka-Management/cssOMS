@@ -3910,6 +3910,11 @@ input[type="range"] {
     flex-shrink: 0; }
     .input button:hover, .input button:focus {
       background: var(--button-colored-background-hover); }
+    .input button.inactive {
+      background: #ccc;
+      cursor: default; }
+      .input button.inactive:hover, .input button.inactive:focus {
+        background: #ccc; }
   .input input {
     box-sizing: border-box;
     font-size: 1rem;
@@ -4459,6 +4464,19 @@ body > nav {
     text-align: center;
     line-height: 60px;
     font-size: 9px; }
+
+.emptyPage {
+  width: 80%;
+  font-size: 15rem;
+  margin: 0 auto;
+  margin: 5rem;
+  padding: 3rem;
+  text-align: center;
+  border: 1rem solid rgba(0, 0, 0, 0.1); }
+  .emptyPage:before {
+    font-family: 'FontAwesome', serif;
+    content: '\f03a';
+    color: rgba(0, 0, 0, 0.1); }
 
 .box {
   box-sizing: border-box;

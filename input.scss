@@ -385,6 +385,15 @@ input[type="range"] {
         &:hover, &:focus {
             background: var(--button-colored-background-hover);
         }
+
+        &.inactive {
+            background: #ccc;
+            cursor: default;
+
+            &:hover, &:focus {
+                background: #ccc;
+            }
+        }
     }
 
     input {

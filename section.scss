@@ -1,4 +1,19 @@
 
+.emptyPage {
+    width: 80%;
+    font-size: 15rem;
+    margin: 0 auto;
+    margin: 5rem;
+    padding: 3rem;
+    text-align: center;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+
+    &:before {
+        font-family: 'FontAwesome', serif;
+        content: '\f03a';
+        color: rgba(0, 0, 0, 0.1);
+    }
+}
 
 .box {
     box-sizing: border-box;
