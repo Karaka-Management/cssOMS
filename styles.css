@@ -3216,7 +3216,8 @@ article {
   article ul {
     list-style: disc; }
   article li {
-    margin: 0.3rem 0 0.3rem 0; }
+    margin: 0.3rem 0 0.3rem 0;
+    line-height: 1.5em; }
   article blockquote {
     margin: 10px 0 10px 0; }
     article blockquote p:last-child {
