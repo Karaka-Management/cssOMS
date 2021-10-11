@@ -35,5 +35,5 @@ jobs:
         git config --global user.email 'build.bot@orange-management.email'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git add *.css
-        git commit -m "Automatic css build"
-        git push
+        git commit -m "Automatic css build" || true
+        git push || true
