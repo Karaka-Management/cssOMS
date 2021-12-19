@@ -31,10 +31,19 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     &:hover, &:focus {
         background: var(--button-colored-background-hover);
     }
+
+    i {
+        margin: 0 .5rem 0 0;
+    }
 }
 
 button.save, .button.save {
+    color: rgba(0, 0, 0, 0.75);
+    background: #8fff79;
 
+    &:hover, &:focus {
+        background: #a1ffa1;
+    }
 }
 
 button.cancel, .button.cancel {
@@ -45,10 +54,21 @@ button.cancel, .button.cancel {
     }
 }
 
-button.delete, .button.delete {
+button.close, .button.close {
+    color: rgba(0, 0, 0, 0.75);
+    background: #f1ff70;
 
+    &:hover, &:focus {
+        background: #faffa1;
+    }
 }
 
-button.ok, .button.ok {
+button.disabled, .button.disabled {
+    color: rgba(0, 0, 0, 0.5);
+    background: #e1e1e1;
+    cursor: not-allowed;
 
+    &:hover, &:focus {
+        background: #e1e1e1;
+    }
 }

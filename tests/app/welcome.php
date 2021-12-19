@@ -1,1 +1,1 @@
-Test welcome page
+<div class="emptyPage"></div>

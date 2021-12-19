@@ -11,7 +11,7 @@ article {
     line-height: 2rem;
     white-space: normal;
 
-    del, ins {
+    del, ins, mark {
         padding: 3px;
         text-decoration: none;
     }
@@ -22,6 +22,10 @@ article {
 
     ins {
         background: #b0f3b0;
+    }
+
+    mark {
+        background: #f9ffa1;
     }
 
     h1, h2, h3, h4, h5, h6 {

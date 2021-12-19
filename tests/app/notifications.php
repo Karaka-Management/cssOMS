@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-xs-12">
-        <section class="box wf-100">
-            <header><h1>App Notifications</h1></header>
-            <div class="inner">
+        <section class="portlet">
+            <div class="portlet-head">App Notifications</div>
+            <div class="portlet-body">
                 <button id="okButton">OK Message</button>
                 <button id="infoButton">Info Message</button>
                 <button id="warningButton">Warning Message</button>
@@ -12,16 +12,22 @@
     </div>
 </div>
 
-<div id="app-message-container" style="position: absolute; margin: 0 auto; right: 1%; top: 1%;">
-    <template id="app-message-tpl">
-        <div class="log-msg" style="z-index: 11; position: relative; margin: 0 auto; right: 0; top: 0; margin-bottom: 10px;">
-            <h1 class="log-msg-title"></h1>
-            <div class="log-msg-content"></div>
-        </div>
-    </template>
+<div class="row">
+    <div class="col-xs-12">
+        <section class="portlet">
+            <div class="portlet-head">Special</div>
+            <div class="portlet-body">
+                <button id="vibrateButton">Vibrate Message</button>
+                <button id="stickyButton">Sticky Message</button>
+            </div>
+        </section>
+    </div>
 </div>
+
 <script type="module">
-    import {  } from '';
+import { NotificationMessage } from '../../../jsOMS/Message/Notification/NotificationMessage.js';
+import { NotificationType } from '../../../jsOMS/Message/Notification/NotificationType.js';
+
     document.getElementById('okButton').addEventListener('click', function() {
         window.omsApp.notifyManager.send(
             new NotificationMessage(
@@ -58,6 +64,29 @@
                 'error',
                 'Some Title',
                 'This is a message content.'
+            ), NotificationType.APP_NOTIFICATION
+        );
+    });
+
+    document.getElementById('vibrateButton').addEventListener('click', function() {
+        window.omsApp.notifyManager.send(
+            new NotificationMessage(
+                'ok',
+                'Vibrate',
+                'This is a message content.',
+                500
+            ), NotificationType.APP_NOTIFICATION
+        );
+    });
+
+    document.getElementById('stickyButton').addEventListener('click', function() {
+        window.omsApp.notifyManager.send(
+            new NotificationMessage(
+                'ok',
+                'Sticky',
+                'This is a message content.',
+                false,
+                true
             ), NotificationType.APP_NOTIFICATION
         );
     });

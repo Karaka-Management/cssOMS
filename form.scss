@@ -62,6 +62,10 @@ form {
             margin-left: 1rem;
         }
     }
+
+    textarea {
+        height: 8rem;
+    }
 }
 
 * + .form-group {

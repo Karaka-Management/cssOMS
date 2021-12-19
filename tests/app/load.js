@@ -1,26 +1,25 @@
-import { AssetManager } from '../../jsOMS/Asset/AssetManager.js';
-import { Logger } from '../../jsOMS/Log/Logger.js';
-import { CacheManager } from '../../jsOMS/DataStorage/CacheManager.js';
-import { StorageManager } from '../../jsOMS/DataStorage/StorageManager.js';
-import { EventManager } from '../../jsOMS/Event/EventManager.js';
-import { ResponseManager } from '../../jsOMS/Message/Response/ResponseManager.js';
-import { Dispatcher } from '../../jsOMS/Dispatcher/Dispatcher.js';
-import { AccountManager } from '../../jsOMS/Account/AccountManager.js';
-import { UIManager } from '../../jsOMS/UI/UIManager.js';
-import { InputManager } from '../../jsOMS/UI/Input/InputManager.js';
-import { ModuleManager } from '../../jsOMS/Module/ModuleManager.js';
-import { ReadManager } from '../../jsOMS/UI/Input/Voice/ReadManager.js';
-import { VoiceManager } from '../../jsOMS/UI/Input/Voice/VoiceManager.js';
-import { NotificationManager } from '../../jsOMS/Message/Notification/NotificationManager.js';
-import { HttpUri } from '../../jsOMS/Uri/HttpUri.js';
-import { UriFactory } from '../../jsOMS/Uri/UriFactory.js';
-
-import { ACTION_EVENTS } from '../../Web/Backend/js/global/ActionEvents.js';
-import { KEYBOARD_EVENTS } from '../../Web/Backend/js/global/KeyboardEvents.js';
-import { MOUSE_EVENTS } from '../../Web/Backend/js/global/MouseEvents.js';
-import { RESPONSE_EVENTS } from '../../Web/Backend/js/global/ResponseEvents.js';
-import { TOUCH_EVENTS } from '../../Web/Backend/js/global/TouchEvents.js';
-import { VOICE_EVENTS } from '../../Web/Backend/js/global/VoiceEvents.js';
+import { AssetManager } from '../../../jsOMS/Asset/AssetManager.js';
+import { Logger } from '../../../jsOMS/Log/Logger.js';
+import { CacheManager } from '../../../jsOMS/DataStorage/CacheManager.js';
+import { StorageManager } from '../../../jsOMS/DataStorage/StorageManager.js';
+import { EventManager } from '../../../jsOMS/Event/EventManager.js';
+import { ResponseManager } from '../../../jsOMS/Message/Response/ResponseManager.js';
+import { Dispatcher } from '../../../jsOMS/Dispatcher/Dispatcher.js';
+import { AccountManager } from '../../../jsOMS/Account/AccountManager.js';
+import { UIManager } from '../../../jsOMS/UI/UIManager.js';
+import { InputManager } from '../../../jsOMS/UI/Input/InputManager.js';
+import { ModuleManager } from '../../../jsOMS/Module/ModuleManager.js';
+import { ReadManager } from '../../../jsOMS/UI/Input/Voice/ReadManager.js';
+import { VoiceManager } from '../../../jsOMS/UI/Input/Voice/VoiceManager.js';
+import { NotificationManager } from '../../../jsOMS/Message/Notification/NotificationManager.js';
+import { HttpUri } from '../../../jsOMS/Uri/HttpUri.js';
+import { UriFactory } from '../../../jsOMS/Uri/UriFactory.js';
+import { ACTION_EVENTS } from '../../../Web/Backend/js/global/ActionEvents.js';
+import { KEYBOARD_EVENTS } from '../../../Web/Backend/js/global/KeyboardEvents.js';
+import { MOUSE_EVENTS } from '../../../Web/Backend/js/global/MouseEvents.js';
+import { RESPONSE_EVENTS } from '../../../Web/Backend/js/global/ResponseEvents.js';
+import { TOUCH_EVENTS } from '../../../Web/Backend/js/global/TouchEvents.js';
+import { VOICE_EVENTS } from '../../../Web/Backend/js/global/VoiceEvents.js';
 
 export class Application {
     constructor ()

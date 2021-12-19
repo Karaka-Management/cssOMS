@@ -7,11 +7,13 @@
             font-size: 0.9em;
             user-select: none;
             cursor: pointer;
-            border: 1px solid var(--button-colored-background-hover);
+            border: 1px solid var(--button-colored-background);
+            white-space: nowrap;
 
             &:hover, &:focus {
                 color: var(--text-on-background-color-2);
                 background: var(--button-colored-background-hover);
+                border: 1px solid var(--button-colored-background-hover);
                 outline: none;
             }
         }
@@ -19,11 +21,14 @@
         .active label:hover, .active label:focus {
             color: var(--text-on-background-color-2);
             background: var(--button-colored-background-hover);
+            border: 1px solid var(--button-colored-background-hover);
             outline: none;
         }
 
-        .active a {
-            cursor: default;
+        .active {
+            label {
+                cursor: default;
+            }
         }
 
         li {
@@ -48,25 +53,25 @@
 
 .tab-1 {
     .tab-links {
-        margin: 0;
-        border-bottom: 1px solid var(--box-border);
+        margin: 0 0 10px 1px;
 
         label {
-            padding: 5px 10px 1px 10px;
+            padding: 5px;
             background: none;
             overflow: auto;
+            background: #fff;
         }
 
         .active, .active label {
+            color: var(--text-on-background-color-2);
             background: var(--button-colored-background);
-            border-bottom: 1px solid var(--button-colored-background);
         }
 
+        /*
         .active label {
-            border-top: 1px solid var(--box-border);
-            border-left: 1px solid var(--box-border);
-            border-right: 1px solid var(--box-border);
+            border: 1px solid var(--box-border);
         }
+        */
 
         li {
             margin: 0 5px 0 0;
@@ -75,10 +80,8 @@
 
     .tab-content {
         box-sizing: border-box;
-        background: var(--button-colored-background);
-        border-left: 1px solid var(--box-border);
-        border-right: 1px solid var(--box-border);
-        border-bottom: 1px solid var(--box-border);
+        border: 1px solid var(--button-colored-background);
+        background: #fff;
 
         padding: 10px;
     }
@@ -95,18 +98,13 @@
                 margin-bottom: 20px;
             }
 
-            label {
-                padding-bottom: 5px;
-            }
-
             .active label {
-                border-bottom: 1px solid var(--box-border);
+                border: 1px solid var(--box-border);
             }
         }
 
         .tab-content {
             width: 100%;
-            border-top: 1px solid var(--box-border);
         }
     }
 }
@@ -124,6 +122,28 @@
         .active a, .active label {
             color: var(--text-on-background-color-2);
             background: var(--button-colored-background)
+        }
+    }
+
+    &.left {
+        display: flex;
+
+        .tab-links {
+            margin: 0;
+            border: none;
+
+            li {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .active label {
+                border: 1px solid var(--box-border);
+            }
+        }
+
+        .tab-content {
+            width: 100%;
         }
     }
 }

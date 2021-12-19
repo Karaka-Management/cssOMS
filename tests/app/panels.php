@@ -1,117 +1,18 @@
 <div class="row">
     <div class="col-xs-6">
-        <section class="box red wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
+        <section class="portlet">
+            <div class="portlet-head">Header</div>
+            <div class="portlet-body">
+                Duis posuere, nulla eu condimentum eleifend, nulla magna viverra risus, ut faucibus libero libero nec est. Nunc quis rhoncus est, ac sodales lorem. Suspendisse convallis, massa eu volutpat posuere, justo dolor porta dui, a ullamcorper ex ipsum eget arcu. Cras quis ante placerat, tempus orci vitae, semper nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis at sodales sapien. Morbi dolor risus, finibus ut ipsum non, pellentesque varius ex.
             </div>
-        </section>
-    </div>
-
-    <div class="col-xs-6">
-        <section class="box blue wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-6">
-        <section class="box green wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-
-    <div class="col-xs-6">
-        <section class="box darkblue wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-6">
-        <section class="box orange wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-
-    <div class="col-xs-6">
-        <section class="box purple wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-6">
-        <section class="box lightblue wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-
-    <div class="col-xs-6">
-        <section class="box yellow wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-6">
-        <section class="box darkred wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-
-    <div class="col-xs-6">
-        <section class="box darkgreen wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
-        </section>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-6">
-        <section class="box wf-100">
-            <header><h1>Header</h1></header>
-            <div class="inner">
-                &nbsp;
-            </div>
+            <div class="portlet-foot">Footer</div>
         </section>
     </div>
 
     <div class="col-xs-6">
         <section class="box wf-100">
             <div class="inner">
-                &nbsp;
+                Duis posuere, nulla eu condimentum eleifend, nulla magna viverra risus, ut faucibus libero libero nec est. Nunc quis rhoncus est, ac sodales lorem. Suspendisse convallis, massa eu volutpat posuere, justo dolor porta dui, a ullamcorper ex ipsum eget arcu. Cras quis ante placerat, tempus orci vitae, semper nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis at sodales sapien. Morbi dolor risus, finibus ut ipsum non, pellentesque varius ex.;
             </div>
         </section>
     </div>

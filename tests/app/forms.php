@@ -1,119 +1,170 @@
 <div class="row">
-    <div class="col-xs-12 col-md-6">
-        <section class="box wf-100">
-            <header><h1>Default</h1></header>
-            <div class="inner">
-                <form>
-                    <table class="layout wf-100">
-                        <tr>
-                            <td colspan="2"><label>Placeholder</label></td>
-                        <tr>
-                            <td colspan="2"><input type="text" placeholder="&#61447; User">
-                        <tr>
-                            <td colspan="2"><label>Input+Button+Required</label></td>
-                        <tr>
-                            <td colspan="2">
+    <div class="col-xs-12">
+        <section class="portlet">
+            <form>
+                <div class="portlet-head">Default</div>
+                <div class="portlet-body">
+                    <div class="form-group">
+                        <label>Placeholder</label>
+                        <input type="text" placeholder="&#61447; User">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Disabled</label>
+                        <input type="text" value="Some value" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Input+Button+Required</label>
+                        <div class="ipt-wrap">
+                            <div class="ipt-first"><input type="text" required></div>
+                            <div class="ipt-second"><input type="submit" value="Text"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Datalist</label>
+                        <input list="test" type="text">
+                        <datalist id="test">
+                            <option>Chrome</option>
+                            <option>IE</option>
+                            <option>Opera</option>
+                            <option>Safari</option>
+                            <option>Firefox</option>
+                        </datalist>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-control">
+                            <label>Special</label>
+                            <div>
                                 <div class="ipt-wrap">
-                                    <div class="ipt-first"><input type="text" required></div>
-                                    <div class="ipt-second"><input type="submit" value="Text"></div>
+                                    <div class="ipt-first">
+                                        <span class="input"><button type="button"><i class="fa fa-pencil"></i></button>
+                                        <input type="text"></span>
+                                    </div>
                                 </div>
-                        <tr>
-                            <td colspan="2"><label>Password</label></td>
-                        <tr>
-                            <td colspan="2"><input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}" placeholder="&#xf023; Pa55w0rd?">
-                        <tr>
-                            <td colspan="2"><label>Datalist</label></td>
-                        <tr>
-                            <td colspan="2"><input list="test" type="text">
-                                <datalist id="test">
-                                    <option>Chrome</option>
-                                    <option>IE</option>
-                                    <option>Opera</option>
-                                    <option>Safari</option>
-                                    <option>Firefox</option>
-                                </datalist>
-                            </td>
-                        <tr>
-                        <tr>
-                            <td colspan="2"><label>Special</label></td>
-                        <tr>
-                            <td colspan="2">
-                                <span class="input"><button type="button"><i class="fa fa-pencil"></i></button><input type="text"></span></td>
-                        <tr>
-                            <td colspan="2"><label>Number</label></td>
-                        <tr>
-                            <td colspan="2"><input type="number" step="any" min="0"></td>
-                        <tr>
-                            <td><label>Label1</label></td>
-                            <td><label>Pattern Validation</label>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text" pattern="[a-zA-Z]" required>
-                        <tr>
-                            <td colspan="2"><label>Localtime</label></td>
-                        <tr>
-                            <td colspan="2"><input type="datetime-local">
-                        <tr>
-                            <td><label>Localtime</label></td>
-                            <td><label>Localtime</label>
-                        <tr>
-                            <td><input type="datetime-local"></td>
-                            <td><input type="datetime-local">
-                        <tr>
-                            <td><label>Checkbox</label></td>
-                            <td><label>Radio</label></td>
-                        <tr>
-                            <td><span class="check"><input type="checkbox" checked>Check</span>
-                            <td><span class="radio"><input type="radio" name="test">Radio</span>
-                        <tr>
-                            <td><span class="check"><input type="checkbox">Check</span>
-                            <td><span class="radio"><input type="radio" name="test" checked>Radio</span>
-                        <tr>
-                            <td></td>
-                            <td><span class="radio"><input type="radio" name="test">Radio</span>
-                        <tr>
-                            <td><label>Option</label></td>
-                        <tr>
-                            <td colspan="2"><select>
+                            </div>
+                        </div>
+
+                        <div class="input-control">
+                            <label>Number</label>
+                            <input type="number" step="any" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-control">
+                            <label>Label1</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-control">
+                            <label>Pattern Validation</label>
+                            <input type="text" pattern="[a-zA-Z]" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-control">
+                            <label>Datetime</label>
+                            <input type="datetime">
+                        </div>
+
+                        <div class="input-control">
+                            <label>Localtime</label>
+                            <input type="datetime-local">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-control">
+                            <label>Checkbox</label>
+                            <div>
+                                <label class="checkbox" for="checkbox1">
+                                    <input id="checkbox1" type="checkbox" name="name1" value="1">
+                                    <span class="checkmark"></span>
+                                    Check1
+                                </label>
+
+                                <label class="checkbox" for="checkbox2">
+                                    <input id="checkbox2" type="checkbox" name="name2" value="2">
+                                    <span class="checkmark"></span>
+                                    Check2
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-control">
+                            <label>Radio</label>
+                            <div>
+                                <label class="radio" for="radio1">
+                                    <input id="radio1" type="radio" name="radioName" value="1">
+                                    <span class="checkmark"></span>
+                                    Radio1
+                                </label>
+
+                                <label class="radio" for="radio2">
+                                    <input id="radio2" type="radio" name="radioName" value="2">
+                                    <span class="checkmark"></span>
+                                    Radio2
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Option</label>
+                        <select>
+                            <option>Option1</option>
+                            <option>Option2</option>
+                            <option>Option3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Multiselect</label>
+                        <select multiple>
+                            <option>Option1</option>
+                            <option>Option2</option>
+                            <option>Option3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-control">
+                            <label>Option Default</label>
+                            <select>
+                                <option disabled selected>Select something</option>
                                 <option>Option1</option>
                                 <option>Option2</option>
                                 <option>Option3</option>
                             </select>
-                        <tr>
-                            <td><label multiple>Multiselect</label></td>
-                        <tr>
-                            <td colspan="2"><select multiple>
+                        </div>
+
+                        <div class="input-control">
+                            <label>Select Selected</label>
+                            <select>
                                 <option>Option1</option>
-                                <option>Option2</option>
+                                <option selected>Option2</option>
                                 <option>Option3</option>
                             </select>
-                        <tr>
-                            <td><label>Option Default</label></td>
-                            <td><label>Select Selected</label>
-                        <tr>
-                            <td>
-                                <select>
-                                    <option disabled selected>Select something</option>
-                                    <option>Option1</option>
-                                    <option>Option2</option>
-                                    <option>Option3</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select>
-                                    <option>Option1</option>
-                                    <option selected>Option2</option>
-                                    <option>Option3</option>
-                                </select>
-                        <tr>
-                            <td colspan="2"><label>Textarea</label></td>
-                        <tr>
-                            <td colspan="2"><textarea></textarea>
-                        <tr>
-                            <td colspan="2"><input type="submit" value="Submit"> <input type="submit" value="Cancel"> <button type="submit">SButton</button>
-                    </table>
-                </form>
-            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Textarea</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="portlet-foot">
+                    <input type="submit" value="Submit"> <input type="submit" value="Cancel"> <button type="submit">SButton</button>
+                </div>
+            </form>
         </section>
     </div>
 </div>

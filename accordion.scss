@@ -1,8 +1,6 @@
-
-
 .ac-container {
-    margin: 1rem auto 1rem auto;
     text-align: left;
+    border: 1px solid #c9c9c9;
 
     > input {
         display: none;
@@ -13,6 +11,10 @@
 
             + section {
                 display: inherit;
+            }
+
+            &:hover {
+                background: var(--button-colored-background-hover);
             }
         }
 
@@ -28,12 +30,12 @@
         z-index: 20;
         margin-top: -1px;
         cursor: pointer;
-        color: var(--text-on-background-color-2);
+        color: #000;
         font-size: 1rem;
-        border: 1rem solid var(--box-border);
         background: var(--box-border);
 
         &:hover {
+            color: var(--text-on-background-color-2);
             background: var(--button-colored-background-hover);
         }
     }
@@ -44,8 +46,6 @@
         height: auto;
         position: relative;
         z-index: 10;
-        border-left: 1px solid var(--box-border);
-        border-right: 1px solid var(--box-border);
         padding: 1rem;
     }
 }

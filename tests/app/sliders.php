@@ -1,6 +1,6 @@
 <div class="row">
-    <div class="col-xs-12 col-md-6">
-        <section class="box">
+    <div class="col-xs-12">
+        <div class="box">
             <div class="slider-1">
                 <figure>
                     <img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" alt="">
@@ -10,11 +10,13 @@
                     <img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" alt="">
                 </figure>
             </div>
-        </section>
+        </div>
     </div>
+</div>
 
-    <div class="col-xs-12 col-md-6">
-        <section class="box wf-100">
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box wf-100">
             <div class="slider-2">
                 <input type="radio" name="slide_switch" id="id1"/>
                 <label for="id1">
@@ -41,13 +43,13 @@
                 </label>
                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
             </div>
-        </section>
+        </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-12">
-        <section class="box">
+        <div class="box">
             <div class="slider-3">
                 <figure class="icon-cards">
                     <div class="icon-cards-content">
@@ -63,6 +65,6 @@
                     </div>
                 </figure>
             </div>
-        </section>
+        </div>
     </div>
 </div>

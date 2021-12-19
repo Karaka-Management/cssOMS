@@ -1,7 +1,9 @@
-
-
 table.fixed {
     table-layout: fixed;
+}
+
+table.default tbody tr.drag-placeholder td {
+    border: 2px dashed rgba(0, 0, 0, 0.5) !important;
 }
 
 table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
@@ -23,6 +25,11 @@ table thead i.fa {
 }
 
 table input[type=radio]:checked + i {
+    color: var(--button-colored-background);
+}
+
+// @todo: check!!!!
+table input[type=checkbox]:checked + label i {
     color: var(--button-colored-background);
 }
 
