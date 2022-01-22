@@ -1,3 +1,7 @@
 *[draggable] {
     cursor: move;
 }
+
+.drag-placeholder, .drag-placeholder td {
+    border: 2px dashed rgba(0, 0, 0, 0.5) !important;
+}

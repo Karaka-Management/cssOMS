@@ -44,9 +44,11 @@
                     </thead>
                     <tbody>
                     <template>
-                        <tr>
-                            <td><i class="fa fa-times btn remove"></i>
-                                <i class="fa fa-cogs btn update"></i>
+                        <tr draggable="true">
+                            <td><i class="fa fa-times btn remove-form"></i>
+                                <i class="fa fa-cogs btn update-form"></i>
+                                <i class="fa fa-chevron-up order-up"></i>
+                                <i class="fa fa-chevron-down order-down"></i>
                             <td><label class="checkbox" for="itable1--">
                                     <input type="checkbox" id="itable1--" name="itable1-select">
                                     <span class="checkmark"></span>
@@ -58,14 +60,12 @@
                             <td data-tpl-text="/radio" data-tpl-value="/radio" data-value=""></td>
                             <td>
                                 <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
                             </td>
                         </tr>
                     </template>
                     <tr draggable="true">
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
@@ -73,12 +73,12 @@
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text1</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2020-10-13</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r1">R1</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r1">Radio1</td>
                         <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="CREATE">Create</td>
                     </tr>
                     <tr draggable="true">
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
@@ -86,12 +86,12 @@
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="Hidden Text">Text2</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="1999-02-03">2021-12-22</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">R2</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="READ">Read</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="READ,CREATE">Read,Create</td>
                     </tr>
                     <tr draggable="true">
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
@@ -99,12 +99,12 @@
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text3</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">1989-04-28</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r3">R3</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r3">Radio3</td>
                         <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="MODIFY">Modify</td>
                     </tr>
                     <tr draggable="true">
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
@@ -112,7 +112,7 @@
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text4</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-04</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">R2</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
                         <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="CREATE,MODIFY">Create,Modify</td>
                     </tr>
                     </tbody>
@@ -125,11 +125,14 @@
 <div class="row">
     <div class="col-xs-12">
         <section class="portlet">
-            <form id="fSample" action="api/test" method="put">
+            <form id="fSample" action="api/test" method="put"
+                data-add-content="#table1 tbody"
+                data-add-element="tr"
+                data-add-tpl="#table1 tbody template">
                 <div class="portlet-body">
                     <div class="form-group">
                         <label for="iInput">Input</label>
-                        <input id="iInput" name="input" type="text" data-tpl-text="/input" data-tpl-value="/input">
+                        <input id="iInput" name="input" type="text" data-tpl-text="/input" data-tpl-value="/input" required>
                     </div>
 
                     <div class="form-group">
@@ -199,10 +202,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="portlet-foot">
+                    <input type="submit" class="add-form" value="Add">
+                    <input type="submit" class="save-form hidden button save" value="Update">
+                    <input type="submit" class="cancel-form hidden button close" value="Cancel">
+                </div>
             </form>
-            <div class="portlet-foot">
-                <input type="submit" value="Add">
-            </div>
         </section>
     </div>
 </div>
@@ -211,7 +216,7 @@
     <div class="col-xs-12">
         <div class="portlet">
             <div class="portlet-head">
-                Inline Eddit
+                Inline Edit
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
@@ -245,8 +250,8 @@
                     <tbody>
                     <template>
                         <tr>
-                            <td><i class="fa fa-times btn remove"></i>
-                                <i class="fa fa-cogs btn update"></i>
+                            <td><i class="fa fa-times btn remove-form"></i>
+                                <i class="fa fa-cogs btn update-form"></i>
                             <td><label class="checkbox" for="itable2--">
                                 <input type="checkbox" id="itable2--" name="itable2-select">
                                 <span class="checkmark"></span>
@@ -264,8 +269,8 @@
                     </template>
                     <template>
                         <tr>
-                            <td><i class="fa fa-times btn remove"></i>
-                                <i class="fa fa-cogs btn update"></i>
+                            <td><i class="fa fa-times btn remove-form"></i>
+                                <i class="fa fa-cogs btn update-form"></i>
                             <td><label class="checkbox" for="itable2--">
                                 <input type="checkbox" id="itable2--" name="itable2-select">
                                 <span class="checkmark"></span>
@@ -305,8 +310,8 @@
                         </tr>
                     </template>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
@@ -318,8 +323,8 @@
                         <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
                     </tr>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
@@ -331,8 +336,8 @@
                         <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
                     </tr>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
-                            <i class="fa fa-cogs btn update"></i>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>

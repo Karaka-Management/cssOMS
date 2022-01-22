@@ -199,7 +199,7 @@ iframe {
   overflow: auto; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -3256,6 +3256,9 @@ article {
 *[draggable] {
   cursor: move; }
 
+.drag-placeholder, .drag-placeholder td {
+  border: 2px dashed rgba(0, 0, 0, 0.5) !important; }
+
 p {
   margin: 0 0 10px 0;
   line-height: 1.4em; }
@@ -3482,16 +3485,6 @@ img.rounded {
 img.bordered {
   border: 1px solid var(--box-border); }
 
-/**
- * @todo Orange-Management/cssOMS#4
- *  Nicer visual input validation
- *
- * @todo Orange-Management/cssOMS#14
- *  Create drop down with search field
- *
- * @todo Orange-Management/cssOMS#12
- *  Create slider element
- */
 input, select, textarea, .textarea {
   border: 1px solid var(--input-border); }
   input.undecorated, select.undecorated, textarea.undecorated, .textarea.undecorated {
@@ -3733,7 +3726,7 @@ textarea, .textarea {
   font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace; }
 
 label.radio, label.checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4157,9 +4150,9 @@ button.cancel, .button.cancel {
 
 button.close, .button.close {
   color: rgba(0, 0, 0, 0.75);
-  background: #f1ff70; }
+  background: #fffc3e; }
   button.close:hover, button.close:focus, .button.close:hover, .button.close:focus {
-    background: #faffa1; }
+    background: #fffd7b; }
 
 button.disabled, .button.disabled {
   color: rgba(0, 0, 0, 0.5);
@@ -4630,9 +4623,6 @@ section > h2 {
 
 table.fixed {
   table-layout: fixed; }
-
-table.default tbody tr.drag-placeholder td {
-  border: 2px dashed rgba(0, 0, 0, 0.5) !important; }
 
 table:not([id]) > thead .sort-asc, table:not([id]) > thead .sort-desc {
   display: none; }

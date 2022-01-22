@@ -1,5 +1,3 @@
-
-
 .btn {
     cursor: pointer;
     user-select: none;
@@ -56,10 +54,10 @@ button.cancel, .button.cancel {
 
 button.close, .button.close {
     color: rgba(0, 0, 0, 0.75);
-    background: #f1ff70;
+    background: #fffc3e;
 
     &:hover, &:focus {
-        background: #faffa1;
+        background: #fffd7b;
     }
 }
 
