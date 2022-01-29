@@ -3,3 +3,4 @@
     <input type="checkbox" id="<?= $tableId ?>-check-<?= $tableCheckboxCounter ?>" name="<?= $tableId ?>-check">
     <span class="checkmark"></span>
 </label>
+<?php ++$tableCheckboxCounter; ?>

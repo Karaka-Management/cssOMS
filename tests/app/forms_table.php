@@ -355,6 +355,149 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-xs-6">
+        <div class="portlet">
+            <div class="portlet-head">
+                On Change Edit
+                <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
+                <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
+            </div>
+            <div class="slider">
+                <table class="default" id="onChange" data-ui-content="tbody" data-ui-element="tr" data-tag="form" data-on-change="true">
+                    <?php $tableId = 'onChange'; $tableCheckboxCounter = 0; $tableSortCounter = 0; ?>
+                    <thead>
+                    <tr>
+                        <td>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td>Col1 Title
+                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
+                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                        <td>Col2 Title
+                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
+                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                        <td>Col3 Title
+                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
+                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                        <td>Col4 Title
+                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
+                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                        <td>Col5 Title
+                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
+                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                        <td>Col6 Title
+                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
+                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <template>
+                        <tr>
+                            <td><i class="fa fa-times btn remove-form"></i>
+                                <i class="fa fa-cogs btn update-form"></i>
+                            <td><label class="checkbox" for="itable3--">
+                                <input type="checkbox" id="itable3--" name="itable3-select">
+                                <span class="checkmark"></span>
+                            <td data-tpl-text="/input" data-tpl-value="/input" data-value=""></td>
+                            <td data-tpl-text="/select" data-tpl-value="/select" data-value=""></td>
+                            <td data-tpl-text="/text" data-tpl-value="/text" data-value=""></td>
+                            <td data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
+                            <td data-tpl-text="/radio" data-tpl-value="/radio" data-value=""></td>
+                            <td>
+                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
+                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
+                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
+                            </td>
+                        </tr>
+                    </template>
+                    <template>
+                        <tr>
+                            <td><i class="fa fa-times btn remove-form"></i>
+                                <i class="fa fa-cogs btn update-form"></i>
+                            <td><label class="checkbox" for="itable3--">
+                                <input type="checkbox" id="itable3--" name="itable3-select">
+                                <span class="checkmark"></span>
+                            </label>
+                            <td><input data-form="fInside" data-tpl-text="/input" data-tpl-value="/input" data-value="" type="text"></td>
+                            <td>
+                                <select data-form="fInside" data-tpl-text="/select" data-tpl-value="/select" data-value="">
+                                    <option value="o1">Option1</option>
+                                    <option value="o2">Option2</option>
+                                    <option value="o3">Option3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <textarea data-form="fInside" data-tpl-text="/text" data-tpl-value="/text" data-value=""></textarea>
+                            </td>
+                            <td><input data-form="fInside" type="date" data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
+                            <td>
+                                <input data-form="fInside" type="radio" id="iRadio1" name="radio" value="r1"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio1">Radio1</label>
+                                <input data-form="fInside" type="radio" id="iRadio2" name="radio" value="r2"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio2">Radio2</label>
+                                <input data-form="fInside" type="radio" id="iRadio3" name="radio" value="r3"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio3">Radio3</label>
+                            </td>
+                            <td>
+                                <span class="checkbox">
+                                    <input data-form="fInside" id="iPermissionCreate" name="permissioncreate" type="checkbox" value="CREATE" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
+                                    <label for="iPermissionCreate">Create</label>
+                                </span>
+                                <span class="checkbox">
+                                    <input data-form="fInside" id="iPermissionRead" name="permissionread" type="checkbox" value="READ" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
+                                    <label for="iPermissionRead">Read</label>
+                                </span>
+                                <span class="checkbox">
+                                    <input data-form="fInside" id="iPermissionUpdate" name="permissionupdate" type="checkbox" value="MODIFY" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
+                                    <label for="iPermissionUpdate">Update</label>
+                                </span>
+                                <form id="fInside" action="api/test" method="post"><input id="addRowInline" type="submit" value="Add"></form>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col2</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col4</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
+                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col4</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col2</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
+                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-times btn remove-form"></i>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col1</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col3</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col4</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
+                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="module">
     import { Request } from '../../../jsOMS/Message/Request/Request.js';
 
