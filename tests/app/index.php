@@ -6,7 +6,7 @@
         <title>Style Test</title>
         <link rel="stylesheet" type="text/css" href="../../styles.css">
         <link rel="stylesheet" type="text/css" href="../../../Install/Application/Backend/Themes/Default/css/backend-small.css">
-        <link rel="stylesheet" type="text/css" href="../../../Resources/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../Resources/fonts/fontawesome/css/font-awesome.min.css">
         <script src="../../../jsOMS/Utils/oLib.js"></script>
         <script src="load.js" type="module"></script>
     </head>

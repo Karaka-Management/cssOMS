@@ -2,3 +2,4 @@
 *.scssc
 *.cache
 node_modules
+.directory
