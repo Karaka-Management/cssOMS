@@ -1,14 +1,14 @@
-# Orange-Management
+# Karaka
 
-<p align="center"><img src="https://raw.githubusercontent.com/Orange-Management/Assets/master/art/logo.png" width="256" alt="Logo"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Karaka-Management/Assets/master/art/logo.png" width="256" alt="Logo"></p>
 
 The cssOMS framework is primarily developed for the Karaka application which is a modular web application for small to mid sized companies that need CRM, ERP, Intranet and/or CMS functionalities and much more. The framework is also used in some other tools and websites which compliment the Karaka web application and provides the necessary basic CSS.
 
-With Orange-Management you have one partner who can provide all the tools and software solutions you are used to at fair and reasonable prices even for small organizations and companies/startups. Our solutions can be used independently from each other or fully integrated with other solutions we provide. By choosing Orange-Management as your partner you'll be able to adjust your software based on the changes in your requirements without worrying about integration and workflow optimization.
+With Karaka you have one partner who can provide all the tools and software solutions you are used to at fair and reasonable prices even for small organizations and companies/startups. Our solutions can be used independently from each other or fully integrated with other solutions we provide. By choosing Karaka as your partner you'll be able to adjust your software based on the changes in your requirements without worrying about integration and workflow optimization.
 
 ## Table of content
 
-- [Orange-Management](#karaka)
+- [Karaka](#karaka)
   - [Table of content](#table-of-content)
   - [Installation](#installation)
     - [Requirements](#requirements)
@@ -41,7 +41,7 @@ Currently Karaka is still developing the first Alpha version. As soon as we have
 
 General updates can be found in our info section at https://karaka.app/info and developer updates can be found in our developer section at https://karaka.app/dev. In our developer section you can also check out the automatically generated reports such as code coverage, code style, static analysis etc. as well as our code style guide lines and developer documentation.
 
-![Preview](https://raw.githubusercontent.com/Orange-Management/Assets/master/art/preview.png)
+![Preview](https://raw.githubusercontent.com/Karaka-Management/Assets/master/art/preview.png)
 
 ## Tests
 
@@ -49,7 +49,7 @@ In order to see and test the styles by themselves you can clone the framework as
 
 ## Become a contributor
 
-Orange-Management has a very open culture and we always welcome new people who share our philosophy in providing create solutions which just work. Please contact us if you are interested in working together on our application.
+Karaka has a very open culture and we always welcome new people who share our philosophy in providing create solutions which just work. Please contact us if you are interested in working together on our application.
 
 * PHP Developer
 * JS Developer
