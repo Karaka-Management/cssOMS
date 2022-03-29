@@ -10,7 +10,7 @@ a {
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
+  font-weight: 300; }
 
 ul {
   list-style: none; }
@@ -3229,7 +3229,7 @@ article {
   article mark {
     background: #f9ffa1; }
   article h1, article h2, article h3, article h4, article h5, article h6 {
-    font-weight: 500; }
+    font-weight: 300; }
   article h1 {
     font-size: 1.4rem; }
   article h2 {
@@ -3238,6 +3238,9 @@ article {
     font-size: 1.1rem; }
   article h4, article h5, article h6 {
     font-size: 1rem; }
+  article strong {
+    font-weight: 500;
+  }
   article pre {
     margin: 1rem 0 1rem 0;
     border: 1px solid #ddd;
@@ -3314,7 +3317,9 @@ p {
     padding: 0; }
   p + p {
     margin-top: 5px; }
-
+    th {
+      font-weight: 300;
+  }
 .blurry-text {
   text-shadow: 0 0 .9rem #000;
   color: transparent; }
@@ -4959,7 +4964,7 @@ span.tag {
     border-top-right-radius: 4px;
     border-bottom: 1px solid #ebedf2;
     padding: 1rem;
-    font-weight: 500; }
+    font-weight: 300; }
   .portlet .portlet-foot {
     background: #fff;
     border-bottom-left-radius: 4px;
