@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <base href="http://127.0.0.1/cssOMS/tests/app/">
+        <base href="/cssOMS/tests/app/">
         <title>Style Test</title>
         <link rel="stylesheet" type="text/css" href="../../styles.css">
         <link rel="stylesheet" type="text/css" href="../../../Install/Application/Backend/Themes/Default/css/backend-small.css">
