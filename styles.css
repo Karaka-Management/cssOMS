@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   list-style: none; }
 
+th {
+  font-weight: 300; }
+
 input, select, textarea, .textarea, button {
   box-sizing: border-box;
   box-shadow: none;
@@ -3239,8 +3242,7 @@ article {
   article h4, article h5, article h6 {
     font-size: 1rem; }
   article strong {
-    font-weight: 500;
-  }
+    font-weight: 500; }
   article pre {
     margin: 1rem 0 1rem 0;
     border: 1px solid #ddd;
@@ -3317,9 +3319,7 @@ p {
     padding: 0; }
   p + p {
     margin-top: 5px; }
-    th {
-      font-weight: 300;
-  }
+
 .blurry-text {
   text-shadow: 0 0 .9rem #000;
   color: transparent; }
