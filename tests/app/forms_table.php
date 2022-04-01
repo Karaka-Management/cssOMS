@@ -11,6 +11,7 @@
                     data-update-content="tbody"
                     data-update-element="tr"
                     data-tag="form"
+                    data-ui-element="tr"
                     data-update-form="fSample"><?php $tableId = 'table1'; ?>
                     <thead>
                     <tr>
@@ -42,7 +43,7 @@
                         </td>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="dragcontainer ordercontainer">
                     <template>
                         <tr draggable="true">
                             <td><i class="fa fa-times btn remove-form"></i>
@@ -59,7 +60,9 @@
                             <td data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
                             <td data-tpl-text="/radio" data-tpl-value="/radio" data-value=""></td>
                             <td>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
+                                <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value=""></span>
+                                <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                                <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
                             </td>
                         </tr>
                     </template>
@@ -74,7 +77,11 @@
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text1</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2020-10-13</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r1">Radio1</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="CREATE">Create</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
+                        </td>
                     </tr>
                     <tr draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
@@ -87,7 +94,11 @@
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="Hidden Text">Text2</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="1999-02-03">2021-12-22</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="READ,CREATE">Read,Create</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value="READ">Read</span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
+                        </td>
                     </tr>
                     <tr draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
@@ -100,7 +111,11 @@
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text3</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">1989-04-28</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r3">Radio3</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="MODIFY">Modify</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value=""></span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
                     </tr>
                     <tr draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
@@ -113,7 +128,11 @@
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text4</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-04</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="CREATE,MODIFY">Create,Modify</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -182,19 +201,19 @@
                             <label for="iCheckbox">Checkbox</label>
                             <div>
                                 <label class="checkbox" for="checkbox1">
-                                    <input id="checkbox1" name="permissioncreate" type="checkbox" value="CREATE" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
+                                    <input id="checkbox1" name="permissioncreate" type="checkbox" value="CREATE" data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create">
                                     <span class="checkmark"></span>
                                     Create
                                 </label>
 
                                 <label class="checkbox" for="checkbox2">
-                                    <input id="checkbox2" name="permissionread" type="checkbox" value="READ" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
+                                    <input id="checkbox2" name="permissionread" type="checkbox" value="READ" data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read">
                                     <span class="checkmark"></span>
                                     Read
                                 </label>
 
                                 <label class="checkbox" for="checkbox3">
-                                    <input id="checkbox3" name="permissionupdate" type="checkbox" value="MODIFY" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
+                                    <input id="checkbox3" name="permissionupdate" type="checkbox" value="MODIFY" data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update">
                                     <span class="checkmark"></span>
                                     Update
                                 </label>
@@ -501,7 +520,7 @@
 <script type="module">
     import { Request } from '../../../jsOMS/Message/Request/Request.js';
 
-    const loginRequest = new Request('http://127.0.0.1/en/api/login', 'POST', 'json');
+    const loginRequest = new Request('/en/api/login', 'POST', 'json');
     loginRequest.setData({user: 'admin', pass: 'orange'});
     loginRequest.send();
 </script>

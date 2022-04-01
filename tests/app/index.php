@@ -71,6 +71,7 @@
                             <li><a href="?page=tabs">Tabs</a></li>
                             <li><a href="?page=breadcrumbs">Breadcrumbs</a></li>
                             <li><a href="?page=progress">Progress</a></li>
+                            <li><a href="?page=drag">Drag</a></li>
                         </ul>
                     </li>
                     <li><input id="nav-help" type="checkbox" checked>
