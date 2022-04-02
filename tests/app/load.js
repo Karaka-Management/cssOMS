@@ -4,7 +4,6 @@ import { CacheManager } from '../../../jsOMS/DataStorage/CacheManager.js';
 import { StorageManager } from '../../../jsOMS/DataStorage/StorageManager.js';
 import { EventManager } from '../../../jsOMS/Event/EventManager.js';
 import { ResponseManager } from '../../../jsOMS/Message/Response/ResponseManager.js';
-import { Dispatcher } from '../../../jsOMS/Dispatcher/Dispatcher.js';
 import { AccountManager } from '../../../jsOMS/Account/AccountManager.js';
 import { UIManager } from '../../../jsOMS/UI/UIManager.js';
 import { InputManager } from '../../../jsOMS/UI/Input/InputManager.js';
@@ -31,7 +30,6 @@ export class Application {
         this.storageManager  = new StorageManager();
         this.eventManager    = new EventManager();
         this.responseManager = new ResponseManager();
-        this.dispatcher      = new Dispatcher();
         this.assetManager    = new AssetManager();
         this.acountManager   = new AccountManager();
         this.uiManager       = new UIManager(this);
