@@ -8,10 +8,9 @@
             </div>
             <div class="slider">
                 <table class="default sticky" id="table1"
-                    data-update-content="tbody"
-                    data-update-element="tr"
                     data-tag="form"
                     data-ui-element="tr"
+                    data-add-tpl=".oms-add-tpl"
                     data-update-form="fSample"><?php $tableId = 'table1'; ?>
                     <thead>
                     <tr>
@@ -43,9 +42,9 @@
                         </td>
                     </tr>
                     </thead>
-                    <tbody class="dragcontainer ordercontainer">
-                    <template>
-                        <tr draggable="true">
+                    <tbody class="oms-dragcontainer oms-ordercontainer">
+                    <template class="oms-add-tpl">
+                        <tr data-id="" draggable="true">
                             <td><i class="fa fa-times btn remove-form"></i>
                                 <i class="fa fa-cogs btn update-form"></i>
                                 <i class="fa fa-chevron-up order-up"></i>
@@ -66,7 +65,7 @@
                             </td>
                         </tr>
                     </template>
-                    <tr draggable="true">
+                    <tr data-id="1" draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
@@ -83,7 +82,7 @@
                             <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
                         </td>
                     </tr>
-                    <tr draggable="true">
+                    <tr data-id="2" draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
@@ -100,7 +99,7 @@
                             <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
                         </td>
                     </tr>
-                    <tr draggable="true">
+                    <tr data-id="3" draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
@@ -117,7 +116,7 @@
                             <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
                         </td>
                     </tr>
-                    <tr draggable="true">
+                    <tr data-id="4" draggable="true">
                         <td><i class="fa fa-times btn remove-form"></i>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
@@ -145,9 +144,8 @@
     <div class="col-xs-12">
         <section class="portlet">
             <form id="fSample" action="api/test" method="put"
-                data-add-content="#table1 tbody"
-                data-add-element="tr"
-                data-add-tpl="#table1 tbody template">
+                data-ui-container="#table1 tbody"
+                data-add-tpl="#table1 tbody .oms-add-tpl">
                 <div class="portlet-body">
                     <div class="form-group">
                         <label for="iInput">Input</label>
@@ -240,7 +238,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default" id="table2" data-ui-content="tbody" data-ui-element="tr" data-tag="form">
+                <table class="default" id="table2" data-ui-container="tbody" data-ui-element="tr" data-tag="form">
                     <?php $tableId = 'table2'; $tableCheckboxCounter = 0; $tableSortCounter = 0; ?>
                     <thead>
                     <tr>
