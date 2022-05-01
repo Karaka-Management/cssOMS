@@ -10,7 +10,7 @@
                 <table class="default sticky" id="table1"
                     data-tag="form"
                     data-ui-element="tr"
-                    data-add-tpl=".oms-add-tpl"
+                    data-add-tpl=".oms-add-tpl-1"
                     data-update-form="fSample"><?php $tableId = 'table1'; ?>
                     <thead>
                     <tr>
@@ -18,37 +18,65 @@
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td>Input
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                            <?php $filterType = 'text'; include __DIR__ . '/helper/filter.tpl.php'; ?>
                         </td>
                         <td>Select
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                            <?php
+                                $filterType = 'select';
+                                $filterOptions = [
+                                    'o1' => 'Option1',
+                                    'o2' => 'Option2',
+                                    'o3' => 'Option3',
+                                ];
+
+                                include __DIR__ . '/helper/filter.tpl.php';
+                            ?>
                         </td>
                         <td>Textarea
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                            <?php $filterType = 'text'; include __DIR__ . '/helper/filter.tpl.php'; ?>
                         </td>
                         <td>Date
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                            <?php $filterType = 'date'; include __DIR__ . '/helper/filter.tpl.php'; ?>
                         </td>
                         <td>Radio
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                            <?php
+                                $filterType = 'select';
+                                $filterOptions = [
+                                    'r1' => 'Radio1',
+                                    'r2' => 'Radio2',
+                                    'r3' => 'Radio3',
+                                ];
+
+                                include __DIR__ . '/helper/filter.tpl.php';
+                            ?>
                         </td>
                         <td>Checkbox
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                            <?php
+                                $filterType = 'select';
+                                $filterOptions = [
+                                    'CREATE' => 'Create',
+                                    'READ' => 'Read',
+                                    'MODIFY' => 'Modify',
+                                ];
+
+                                include __DIR__ . '/helper/filter.tpl.php';
+                            ?>
                         </td>
                     </tr>
                     </thead>
                     <tbody class="oms-dragcontainer oms-ordercontainer">
-                    <template class="oms-add-tpl">
+                    <template class="oms-add-tpl-1">
                         <tr data-id="" draggable="true">
-                            <td><i class="fa fa-times btn remove-form"></i>
+                            <td>
                                 <i class="fa fa-cogs btn update-form"></i>
                                 <i class="fa fa-chevron-up order-up"></i>
                                 <i class="fa fa-chevron-down order-down"></i>
+                                <i class="fa fa-times btn remove-form"></i>
                             <td><label class="checkbox" for="itable1--">
                                     <input type="checkbox" id="itable1--" name="itable1-select">
                                     <span class="checkmark"></span>
@@ -66,10 +94,11 @@
                         </tr>
                     </template>
                     <tr data-id="1" draggable="true">
-                        <td><i class="fa fa-times btn remove-form"></i>
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input1</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
@@ -83,10 +112,11 @@
                         </td>
                     </tr>
                     <tr data-id="2" draggable="true">
-                        <td><i class="fa fa-times btn remove-form"></i>
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="Hidden Input">Input2</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -100,10 +130,11 @@
                         </td>
                     </tr>
                     <tr data-id="3" draggable="true">
-                        <td><i class="fa fa-times btn remove-form"></i>
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input3</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
@@ -117,15 +148,88 @@
                         </td>
                     </tr>
                     <tr data-id="4" draggable="true">
-                        <td><i class="fa fa-times btn remove-form"></i>
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input4</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
                         <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text4</td>
                         <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-04</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
+                    </tr>
+                    <tr data-id="5" draggable="true">
+                        <td>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input5</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text5</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-05</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
+                    </tr>
+                    <tr data-id="6" draggable="true">
+                        <td>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input6</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text6</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-06</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
+                    </tr>
+                    <tr data-id="7" draggable="true">
+                        <td>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input7</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text7</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-07</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
+                    </tr>
+                    <tr data-id="8" draggable="true">
+                        <td>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input8</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text8</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-08</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
                         <td>
                             <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
@@ -145,7 +249,8 @@
         <section class="portlet">
             <form id="fSample" action="api/test" method="put"
                 data-ui-container="#table1 tbody"
-                data-add-tpl="#table1 tbody .oms-add-tpl">
+                data-add-form="fSample"
+                data-add-tpl="#table1 tbody .oms-add-tpl-1">
                 <div class="portlet-body">
                     <div class="form-group">
                         <label for="iInput">Input</label>
@@ -238,281 +343,213 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default" id="table2" data-ui-container="tbody" data-ui-element="tr" data-tag="form">
+                <table class="default" id="table2"
+                    data-tag="form"
+                    data-ui-container="tbody"
+                    data-ui-element="tr"
+                    data-add-tpl=".oms-add-tpl-2"
+                    data-update-tpl="#table2 tbody .oms-update-tpl">
                     <?php $tableId = 'table2'; $tableCheckboxCounter = 0; $tableSortCounter = 0; ?>
                     <thead>
                     <tr>
                         <td>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td>Col1 Title
+                        <td>Input
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col2 Title
+                        </td>
+                        <td>Select
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col3 Title
+                        </td>
+                        <td>Textarea
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col4 Title
+                        </td>
+                        <td>Date
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col5 Title
+                        </td>
+                        <td>Radio
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col6 Title
+                        </td>
+                        <td>Checkbox
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
+                        </td>
                     </tr>
                     </thead>
-                    <tbody>
-                    <template>
-                        <tr>
-                            <td><i class="fa fa-times btn remove-form"></i>
-                                <i class="fa fa-cogs btn update-form"></i>
-                            <td><label class="checkbox" for="itable2--">
-                                <input type="checkbox" id="itable2--" name="itable2-select">
-                                <span class="checkmark"></span>
-                            <td data-tpl-text="/input" data-tpl-value="/input" data-value=""></td>
-                            <td data-tpl-text="/select" data-tpl-value="/select" data-value=""></td>
-                            <td data-tpl-text="/text" data-tpl-value="/text" data-value=""></td>
-                            <td data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
-                            <td data-tpl-text="/radio" data-tpl-value="/radio" data-value=""></td>
+                    <tbody class="oms-dragcontainer oms-ordercontainer">
+                    <template class="oms-update-tpl">
+                        <tr data-id="" draggable="true">
                             <td>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
+                                <i class="fa fa-check btn save-form"></i>
+                                <i class="fa fa-chevron-up order-up"></i>
+                                <i class="fa fa-chevron-down order-down"></i>
+                                <i class="fa fa-times btn cancel-form"></i>
+                            <td><label class="checkbox" for="itable1--">
+                                    <input type="checkbox" id="itable1--" name="itable1-select">
+                                    <span class="checkmark"></span>
+                                </label>
+                            <td>
+                                <input id="iInput" name="input" type="text" data-tpl-text="/input" data-tpl-value="/input" required>
                             </td>
-                        </tr>
-                    </template>
-                    <template>
-                        <tr>
-                            <td><i class="fa fa-times btn remove-form"></i>
-                                <i class="fa fa-cogs btn update-form"></i>
-                            <td><label class="checkbox" for="itable2--">
-                                <input type="checkbox" id="itable2--" name="itable2-select">
-                                <span class="checkmark"></span>
-                            </label>
-                            <td><input data-form="fInside" data-tpl-text="/input" data-tpl-value="/input" data-value="" type="text"></td>
                             <td>
-                                <select data-form="fInside" data-tpl-text="/select" data-tpl-value="/select" data-value="">
-                                    <option value="o1">Option1</option>
-                                    <option value="o2">Option2</option>
-                                    <option value="o3">Option3</option>
+                                <select id="iSelect" name="select" type="text" data-tpl-text="/select" data-tpl-value="/select">
+                                    <option value="o1">Options1</option>
+                                    <option value="o2">Options2</option>
+                                    <option value="o3">Options3</option>
                                 </select>
                             </td>
                             <td>
-                                <textarea data-form="fInside" data-tpl-text="/text" data-tpl-value="/text" data-value=""></textarea>
-                            </td>
-                            <td><input data-form="fInside" type="date" data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
-                            <td>
-                                <input data-form="fInside" type="radio" id="iRadio1" name="radio" value="r1"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio1">Radio1</label>
-                                <input data-form="fInside" type="radio" id="iRadio2" name="radio" value="r2"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio2">Radio2</label>
-                                <input data-form="fInside" type="radio" id="iRadio3" name="radio" value="r3"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio3">Radio3</label>
+                                <textarea id="iText" name="text" type="text" data-tpl-text="/text" data-tpl-value="/text"></textarea>
                             </td>
                             <td>
-                                <span class="checkbox">
-                                    <input data-form="fInside" id="iPermissionCreate" name="permissioncreate" type="checkbox" value="CREATE" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
-                                    <label for="iPermissionCreate">Create</label>
-                                </span>
-                                <span class="checkbox">
-                                    <input data-form="fInside" id="iPermissionRead" name="permissionread" type="checkbox" value="READ" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
-                                    <label for="iPermissionRead">Read</label>
-                                </span>
-                                <span class="checkbox">
-                                    <input data-form="fInside" id="iPermissionUpdate" name="permissionupdate" type="checkbox" value="MODIFY" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
-                                    <label for="iPermissionUpdate">Update</label>
-                                </span>
-                                <form id="fInside" action="api/test" method="post"><input id="addRowInline" type="submit" value="Add"></form>
+                                <input id="iDate" name="date" type="date" data-tpl-text="/date" data-tpl-value="/date">
                             </td>
-                        </tr>
-                    </template>
-                    <tr>
-                        <td><i class="fa fa-times btn remove-form"></i>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col2</td>
-                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col4</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa fa-times btn remove-form"></i>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col4</td>
-                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col2</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa fa-times btn remove-form"></i>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col1</td>
-                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col2</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col3</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col4</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
+                            <td>
+                                <label class="radio" for="iRadio1-2">
+                                    <input type="radio" id="iRadio1-2" name="radio-2" value="r1"  data-tpl-text="/radio" data-tpl-value="/radio">
+                                    <span class="checkmark"></span>
+                                    Radio1
+                                </label>
 
-<div class="row">
-    <div class="col-xs-6">
-        <div class="portlet">
-            <div class="portlet-head">
-                On Change Edit
-                <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
-                <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
-            </div>
-            <div class="slider">
-                <table class="default" id="onChange" data-ui-content="tbody" data-ui-element="tr" data-tag="form" data-on-change="true">
-                    <?php $tableId = 'onChange'; $tableCheckboxCounter = 0; $tableSortCounter = 0; ?>
-                    <thead>
-                    <tr>
-                        <td>
-                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td>Col1 Title
-                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col2 Title
-                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col3 Title
-                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col4 Title
-                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col5 Title
-                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                        <td>Col6 Title
-                            <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
-                            <?php include __DIR__ . '/helper/filter.tpl.php'; ?>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <template>
-                        <tr>
-                            <td><i class="fa fa-times btn remove-form"></i>
+                                <label class="radio" for="iRadio2-2">
+                                    <input type="radio" id="iRadio2-2" name="radio-2" value="r2"  data-tpl-text="/radio" data-tpl-value="/radio">
+                                    <span class="checkmark"></span>
+                                    Radio2
+                                </label>
+
+                                <label class="radio" for="iRadio3-2">
+                                    <input type="radio" id="iRadio3-2" name="radio-2" value="r3"  data-tpl-text="/radio" data-tpl-value="/radio">
+                                    <span class="checkmark"></span>
+                                    Radio3
+                                </label>
+                            </td>
+                            <td>
+                                <label class="checkbox" for="checkbox1-2">
+                                    <input id="checkbox1-2" name="permissioncreate-2" type="checkbox" value="CREATE" data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create">
+                                    <span class="checkmark"></span>
+                                    Create
+                                </label>
+
+                                <label class="checkbox" for="checkbox2-2">
+                                    <input id="checkbox2-2" name="permissionread-2" type="checkbox" value="READ" data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read">
+                                    <span class="checkmark"></span>
+                                    Read
+                                </label>
+
+                                <label class="checkbox" for="checkbox3-2">
+                                    <input id="checkbox3-2" name="permissionupdate-2" type="checkbox" value="MODIFY" data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update">
+                                    <span class="checkmark"></span>
+                                    Update
+                                </label>
+                            </td>
+                        </tr>
+                    </template>
+                    <template class="oms-add-tpl-2">
+                        <tr data-id="" draggable="true">
+                            <td>
                                 <i class="fa fa-cogs btn update-form"></i>
-                            <td><label class="checkbox" for="itable3--">
-                                <input type="checkbox" id="itable3--" name="itable3-select">
-                                <span class="checkmark"></span>
+                                <i class="fa fa-chevron-up order-up"></i>
+                                <i class="fa fa-chevron-down order-down"></i>
+                                <i class="fa fa-times btn remove-form"></i>
+                            <td><label class="checkbox" for="itable1--">
+                                    <input type="checkbox" id="itable1--" name="itable1-select">
+                                    <span class="checkmark"></span>
+                                </label>
                             <td data-tpl-text="/input" data-tpl-value="/input" data-value=""></td>
                             <td data-tpl-text="/select" data-tpl-value="/select" data-value=""></td>
                             <td data-tpl-text="/text" data-tpl-value="/text" data-value=""></td>
                             <td data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
                             <td data-tpl-text="/radio" data-tpl-value="/radio" data-value=""></td>
                             <td>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
-                                <span data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value=""><span>
+                                <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value=""></span>
+                                <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                                <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
                             </td>
                         </tr>
                     </template>
-                    <template>
-                        <tr>
-                            <td><i class="fa fa-times btn remove-form"></i>
-                                <i class="fa fa-cogs btn update-form"></i>
-                            <td><label class="checkbox" for="itable3--">
-                                <input type="checkbox" id="itable3--" name="itable3-select">
-                                <span class="checkmark"></span>
-                            </label>
-                            <td><input data-form="fInside" data-tpl-text="/input" data-tpl-value="/input" data-value="" type="text"></td>
-                            <td>
-                                <select data-form="fInside" data-tpl-text="/select" data-tpl-value="/select" data-value="">
-                                    <option value="o1">Option1</option>
-                                    <option value="o2">Option2</option>
-                                    <option value="o3">Option3</option>
-                                </select>
-                            </td>
-                            <td>
-                                <textarea data-form="fInside" data-tpl-text="/text" data-tpl-value="/text" data-value=""></textarea>
-                            </td>
-                            <td><input data-form="fInside" type="date" data-tpl-text="/date" data-tpl-value="/date" data-value=""></td>
-                            <td>
-                                <input data-form="fInside" type="radio" id="iRadio1" name="radio" value="r1"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio1">Radio1</label>
-                                <input data-form="fInside" type="radio" id="iRadio2" name="radio" value="r2"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio2">Radio2</label>
-                                <input data-form="fInside" type="radio" id="iRadio3" name="radio" value="r3"  data-tpl-text="/radio" data-tpl-value="/radio"><label for="iRadio3">Radio3</label>
-                            </td>
-                            <td>
-                                <span class="checkbox">
-                                    <input data-form="fInside" id="iPermissionCreate" name="permissioncreate" type="checkbox" value="CREATE" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
-                                    <label for="iPermissionCreate">Create</label>
-                                </span>
-                                <span class="checkbox">
-                                    <input data-form="fInside" id="iPermissionRead" name="permissionread" type="checkbox" value="READ" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
-                                    <label for="iPermissionRead">Read</label>
-                                </span>
-                                <span class="checkbox">
-                                    <input data-form="fInside" id="iPermissionUpdate" name="permissionupdate" type="checkbox" value="MODIFY" data-tpl-text="/checkbox" data-tpl-value="/checkbox">
-                                    <label for="iPermissionUpdate">Update</label>
-                                </span>
-                                <form id="fInside" action="api/test" method="post"><input id="addRowInline" type="submit" value="Add"></form>
-                            </td>
-                        </tr>
-                    </template>
-                    <tr>
-                        <td><i class="fa fa-times btn remove-form"></i>
+                    <tr data-id="1" draggable="true">
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col2</td>
-                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col4</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input1</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text1</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2020-10-13</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r1">Radio1</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
+                        </td>
                     </tr>
-                    <tr>
-                        <td><i class="fa fa-times btn remove-form"></i>
+                    <tr data-id="2" draggable="true">
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col4</td>
-                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col1</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col2</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col3</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="Hidden Input">Input2</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="Hidden Text">Text2</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="1999-02-03">2021-12-22</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value="READ">Read</span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
+                        </td>
                     </tr>
-                    <tr>
-                        <td><i class="fa fa-times btn remove-form"></i>
+                    <tr data-id="3" draggable="true">
+                        <td>
                             <i class="fa fa-cogs btn update-form"></i>
                             <i class="fa fa-chevron-up order-up"></i>
                             <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Col1</td>
-                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="">Col2</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Col3</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">Col4</td>
-                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="">Col5</td>
-                        <td data-tpl-text="/checkbox" data-tpl-value="/checkbox" data-value="">Col6</td>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input3</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text3</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">1989-04-28</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r3">Radio3</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value=""></span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
+                    </tr>
+                    <tr data-id="4" draggable="true">
+                        <td>
+                            <i class="fa fa-cogs btn update-form"></i>
+                            <i class="fa fa-chevron-up order-up"></i>
+                            <i class="fa fa-chevron-down order-down"></i>
+                            <i class="fa fa-times btn remove-form"></i>
+                        <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
+                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input4</td>
+                        <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text4</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-04</td>
+                        <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
+                        <td>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+
+    <input type="submit" class="add-form" value="Add" form="table2">
 </div>
 
 <script type="module">

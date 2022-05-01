@@ -50,6 +50,10 @@ table.default.sticky {
             position: sticky;
             top: 0;
             z-index: 2;
+
+            & > * {
+                vertical-align : middle;
+            }
         }
     }
 }
@@ -84,17 +88,17 @@ table.default {
             font-size: .8rem;
         }
 
-        height: 3rem;
+        height: 2.5rem;
     }
 
     td {
-        padding: 5px 10px 5px 10px;
+        padding: 3px 10px 3px 10px;
         white-space: nowrap;
     }
 
     tbody {
         tr {
-            height: 3rem;
+            height: 2.5rem;
 
             &:nth-of-type(2n) td {
                 background: var(--table-row-background);
@@ -132,7 +136,7 @@ table.default {
         background: var(--table-head-background);
 
         tr {
-            height: 3rem;
+            height: 2.5rem;
         }
 
         td {
