@@ -1,6 +1,157 @@
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <section class="portlet">
+            <div class="portlet-head">Dropdown+Remote</div>
+            <div class="portlet-body">
+                <form>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Dropdown+Local</div>
+            <div class="portlet-body">
+                <label for="iDropdown1" class="dropdown" data-src="http://">
+                    <div class="dropdown-closed">
+                        <input id="e1" name="dropdown" type="radio" checked>
+                        <label for="iDropdown1">Please select</label>
+
+                        <input id="e2" name="dropdown" type="radio">
+                        <label for="iDropdown1"><i class="fa fa-home"></i> Content</label>
+
+                        <input id="e3" name="dropdown" type="radio">
+                        <label for="iDropdown1">Content2</label>
+
+                        <input id="e4" name="dropdown" type="radio">
+                        <label for="iDropdown1">Content3</label>
+                    </div>
+                    <input id="iDropdown1" type="checkbox">
+                    <div class="dropdown-container">
+                        <div class="dropdown-search"></div>
+                        <div class="dropdown-content">
+                            <label for="e2"><i class="fa fa-home"></i> Content</label>
+                            <label for="e3">Content2</label>
+                            <label for="e4">Content3</label>
+                            <label for="iDropdown1">Close</label>
+                        <div>
+                    <div>
+                </label>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Multi-Dropdown+Remote</div>
+            <div class="portlet-body">
+                <form>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Multi-Dropdown+Local</div>
+            <div class="portlet-body">
+            <div class="dropdown-search"></div>
+                    <div class="dropdown-content">
+                        <input type="checkbox" value="" checked>
+                        <label>Please select</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content2</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content3</label>
+                    <div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Autocomplete+Dropdown+Remote</div>
+            <div class="portlet-body">
+                <form>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Autocomplete+Dropdown+Local</div>
+            <div class="portlet-body">
+                <div class="dropdown" data-src="http://">
+                    <div class="dropdown-search"></div>
+                    <div class="dropdown-content">
+                        <input type="radio" value="" checked>
+                        <label>Please select</label>
+
+                        <input type="radio" value="">
+                        <label>Content</label>
+
+                        <input type="radio" value="">
+                        <label>Content2</label>
+
+                        <input type="radio" value="">
+                        <label>Content3</label>
+                    <div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Autocomplete+Multi-Dropdown+Remote</div>
+            <div class="portlet-body">
+                <form>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Autocomplete+Multi-Dropdown+Local</div>
+            <div class="portlet-body">
+            <div class="dropdown-search"></div>
+                    <div class="dropdown-content">
+                        <input type="checkbox" value="" checked>
+                        <label>Please select</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content2</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content3</label>
+                    <div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
             <div class="portlet-head">Input+Autocomplete+Dropdown+Remote</div>
             <div class="portlet-body">
                 <form>
@@ -13,9 +164,57 @@
         <section class="portlet">
             <div class="portlet-head">Input+Autocomplete+Dropdown+Local</div>
             <div class="portlet-body">
-                <form>
+                <div class="dropdown" data-src="http://">
+                    <div class="dropdown-search"></div>
+                    <div class="dropdown-content">
+                        <input type="radio" value="" checked>
+                        <label>Please select</label>
 
+                        <input type="radio" value="">
+                        <label>Content</label>
+
+                        <input type="radio" value="">
+                        <label>Content2</label>
+
+                        <input type="radio" value="">
+                        <label>Content3</label>
+                    <div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Input+Autocomplete+Multi-Dropdown+Remote</div>
+            <div class="portlet-body">
+                <form>
                 </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+        <section class="portlet">
+            <div class="portlet-head">Input+Autocomplete+Multi-Dropdown+Local</div>
+            <div class="portlet-body">
+            <div class="dropdown-search"></div>
+                    <div class="dropdown-content">
+                        <input type="checkbox" value="" checked>
+                        <label>Please select</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content2</label>
+
+                        <input type="checkbox" value="">
+                        <label>Content3</label>
+                    <div>
+                </div>
             </div>
         </section>
     </div>

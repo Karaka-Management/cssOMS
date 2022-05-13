@@ -358,6 +358,8 @@ input[type="range"] {
     border: none;
     width: 100%;
     min-width: 150px;
+    height: 5px;
+    background: var(--button-colored-background);
     cursor: pointer;
 }
 
@@ -423,4 +425,70 @@ select.plain {
     appearance: none;
     cursor: pointer;
     box-shadow: none;
+}
+
+// * fix height definition (should be automatic)
+// * fix close automatic if radio, if checkbox = multiple, don't close automatic
+// * fix opening drop down when clicken on text instead of end of text area
+.dropdown {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #000;
+    position: relative;
+
+    &:hover {
+        background: #f00;
+    }
+
+    label {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .dropdown-closed {
+        input {
+            display: none;
+
+            &:checked+label {
+                display: block;
+            }
+        }
+
+        label {
+            display: none;
+        }
+    }
+
+    & > input {
+        display: none;
+
+        &:checked + .dropdown-container {
+            background: #fff;
+            border: 1px solid #000;
+            position: absolute;
+
+            label {
+                display: block;
+
+                &:hover {
+                    background: #f00;
+                }
+            }
+        }
+    }
+
+    .dropdown-content {
+        & > input {
+            display: none;
+
+            &:checked+label {
+                display: block;
+            }
+        }
+
+        label {
+            display: none;
+            padding: 0 1rem 0 1rem;
+        }
+    }
 }
