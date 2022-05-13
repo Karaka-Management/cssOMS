@@ -459,10 +459,15 @@ select.plain {
         }
     }
 
+    .dropdown-container {
+        display: none;
+    }
+
     & > input {
         display: none;
 
         &:checked + .dropdown-container {
+            display: block;
             background: #fff;
             border: 1px solid #000;
             position: absolute;
@@ -474,21 +479,6 @@ select.plain {
                     background: #f00;
                 }
             }
-        }
-    }
-
-    .dropdown-content {
-        & > input {
-            display: none;
-
-            &:checked+label {
-                display: block;
-            }
-        }
-
-        label {
-            display: none;
-            padding: 0 1rem 0 1rem;
         }
     }
 }

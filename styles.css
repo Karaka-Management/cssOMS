@@ -3862,9 +3862,12 @@ select.plain {
       display: block; }
   .dropdown .dropdown-closed label {
     display: none; }
+  .dropdown .dropdown-container {
+    display: none; }
   .dropdown > input {
     display: none; }
     .dropdown > input:checked + .dropdown-container {
+      display: block;
       background: #fff;
       border: 1px solid #000;
       position: absolute; }
@@ -3872,13 +3875,6 @@ select.plain {
         display: block; }
         .dropdown > input:checked + .dropdown-container label:hover {
           background: #f00; }
-  .dropdown .dropdown-content > input {
-    display: none; }
-    .dropdown .dropdown-content > input:checked + label {
-      display: block; }
-  .dropdown .dropdown-content label {
-    display: none;
-    padding: 0 1rem 0 1rem; }
 
 .ac-container {
   text-align: left;
