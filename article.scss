@@ -7,7 +7,7 @@ article {
     padding: 10px;
     margin: 0;
     font-size: .9rem;
-    color: #48465b;
+    color: #23222d;
     line-height: 2rem;
     white-space: normal;
 
@@ -56,7 +56,7 @@ article {
     pre {
         margin: 1rem 0 1rem 0;
         border: 1px solid #ddd;
-        border-left: 3px solid var(--button-colored-background);
+        border-left: 3px solid #25acff;
         background: #f4f4f4;
         line-height: 1rem;
         font-size: .8rem;
@@ -67,10 +67,25 @@ article {
         }
     }
 
+    blockquote {
+        color: #fff;
+        background: #25acff;
+        border: 1px solid #0480ce;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1.5rem;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     code {
-        color: var(--link-hover);
-        font-style: italic;
-        font-family: monospace;
+        font-size: 0.8rem;
+        color: #23222d;
+        padding: .1rem;
+        background: #f4f4f4;
+        border-radius: 3px;
     }
 
     a {
@@ -100,14 +115,6 @@ article {
         line-height: 1.5em;
     }
 
-    blockquote {
-        margin: 10px 0 10px 0;
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-    }
-
     img {
         display: block;
         margin: 0 auto;
@@ -120,13 +127,18 @@ article {
         border: 1px solid var(--box-border);
         margin: 0 auto;
         margin-bottom: 1rem;
+        min-width: 90%;
 
         th, td {
             padding: 5px;
             border: 1px solid var(--box-border);
         }
 
-        tr:nth-child(2n) {
+        th {
+            background: var(--table-head-background);
+        }
+
+        tr:nth-child(2n) td {
             background: var(--table-row-background);
         }
     }

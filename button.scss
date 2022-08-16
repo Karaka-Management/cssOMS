@@ -13,7 +13,8 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     padding: 0 1rem 0 1rem;
     flex-grow: 0;
     height: 32px;
-    border: none;
+    //border: none;
+    border: 1px solid var(--box-border);
     box-shadow: none;
     justify-content: center;
     align-items: center;
@@ -21,6 +22,7 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     font-family: inherit;
     font-size: .9rem;
     user-select: none;
+    font-weight: 100;
 
     &::-moz-focus-inner {
         border: 0;

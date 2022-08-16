@@ -59,7 +59,7 @@ table.default.sticky {
 }
 
 table.default {
-    border-radius: 4px;
+    //border-radius: 4px;
     width: 100%;
     max-width: 100%;
     font-size: 0.9em;
@@ -79,8 +79,8 @@ table.default {
         background: var(--table-caption-background);
         padding: .5rem;
 
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        //border-top-left-radius: 4px;
+        //border-top-right-radius: 4px;
 
         text-align: left;
 
@@ -113,7 +113,7 @@ table.default {
             }
 
             td, th {
-                border-bottom: 1px solid var(--box-border);
+                border-bottom: 1px solid #ebedf2;
             }
 
             &:last-child td, &:last-child th {
@@ -123,7 +123,7 @@ table.default {
             &:focus, &:hover {
                 outline: none;
                 transform: scale(1);
-                box-shadow: 0 0 5px rgba(90, 71, 114, 0.3);
+                box-shadow: 0 0 5px var(--box-border);
             }
         }
 
@@ -140,7 +140,7 @@ table.default {
         }
 
         td {
-            border-bottom: 1px solid var(--box-border);
+            border-bottom: 1px solid #ebedf2;
         }
 
         input[type=radio] {

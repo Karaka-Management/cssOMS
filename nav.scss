@@ -129,7 +129,6 @@ body > nav {
 
 .nav-trigger {
     position: absolute;
-    clip: rect(0, 0, 0, 0);
 
     &:checked + nav {
         width: 0%;
@@ -143,7 +142,8 @@ body > nav {
 
     > li {
         > a {
-            box-shadow: 0 0 3px 1px rgba(90, 71, 114, 0.3);
+            //box-shadow: 0 0 3px 1px rgba(90, 71, 114, 0.3);
+            border: 1px solid var(--box-border);
             margin-right: .5rem;
             display: inline-block;
             padding: 10px 10px;

@@ -38,7 +38,7 @@ input[type="datetime-local"] {
     width: 100%;
     min-width: 70px;
     max-width: 100%;
-    font-size: 1rem;
+    font-size: .9rem;
     border: 1px solid var(--input-border);
     transition: background 0.3s, border 0.3s;
 
@@ -69,29 +69,31 @@ input[type="datetime-local"] {
 }
 
 .inputWrapper {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 
     .textWrapper+input[type=submit], .textWrapper+input[type=button], .textWrapper+button {
-        background: var(--button-colored-background);
-        color: var(--text-on-background-color-2);
+//        background: var(--button-colored-background);
+//        color: var(--text-on-background-color-2);
         margin: 0;
         padding: 0;
         flex: 0;
         height: auto;
-        border: none;
+//        border: none;
         box-shadow: none;
 
+        /*
         &:hover, &:focus {
             background: var(--button-colored-background-hover);
         }
+        */
     }
 
     .textWrapper {
         flex: 1;
         position: relative;
 
-        input {
+        i+input {
             padding-left: 2rem;
         }
 
@@ -105,10 +107,12 @@ input[type="datetime-local"] {
 
         .frontIcon {
             left: 0;
+            font-size: .8rem;
         }
 
         .endIcon {
             right: 0;
+            font-size: .8rem;
         }
 
         input[type=text]:active, input[type=text]:focus,
@@ -431,10 +435,17 @@ select.plain {
 // * fix close automatic if radio, if checkbox = multiple, don't close automatic
 // * fix opening drop down when clicken on text instead of end of text area
 .dropdown {
+    cursor: pointer;
     display: inline-block;
     width: 100%;
     border: 1px solid #000;
     position: relative;
+    box-shadow: none;
+    outline: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: .9rem;
+    user-select: none;
 
     &:hover {
         background: #f00;
@@ -446,6 +457,14 @@ select.plain {
     }
 
     .dropdown-closed {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        label {
+            display: none;
+        }
+
         input {
             display: none;
 
@@ -453,14 +472,15 @@ select.plain {
                 display: block;
             }
         }
-
-        label {
-            display: none;
-        }
     }
 
     .dropdown-container {
         display: none;
+        z-index: 2;
+
+        label {
+            padding: .5rem;
+        }
     }
 
     & > input {

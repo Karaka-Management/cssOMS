@@ -35,8 +35,8 @@
                             <label for="e3">Content2</label>
                             <label for="e4">Content3</label>
                             <label for="iDropdown1">Close</label>
-                        <div>
-                    <div>
+                        </div>
+                    </div>
                 </label>
             </div>
         </section>
