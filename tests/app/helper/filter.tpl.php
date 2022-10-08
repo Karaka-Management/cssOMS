@@ -7,7 +7,7 @@
             <li>Filter
             <?php if ($filterType === 'text') : ?>
             <li>
-                <input type="text">
+                <input type="text" name="<?= $tableId; ?>-filterDropdown-text">
             <?php elseif ($filterType === 'select') : ?>
             <li>
                 <select multiple>
@@ -25,9 +25,9 @@
                     <option><
                 </select>
                 <?php if ($filterType === 'number') : ?>
-                    <input type="text">
+                    <input type="text" name="<?= $tableId; ?>-filterDropdown-number1">
                 <?php else : ?>
-                    <input type="date">
+                    <input type="date" name="<?= $tableId; ?>-filterDropdown-date1">
                 <?php endif; ?>
             <li>AND
             <li>
@@ -39,9 +39,9 @@
                     <option><
                 </select>
                 <?php if ($filterType === 'number') : ?>
-                    <input type="text">
+                    <input type="text" name="<?= $tableId; ?>-filterDropdown-number2">
                 <?php else : ?>
-                    <input type="date">
+                    <input type="date" name="<?= $tableId; ?>-filterDropdown-date2">
                 <?php endif; ?>
             <?php endif; ?>
             <li><label class="button close" for="<?= $tableId; ?>-filterDropdown-<?= $tableFilterCounter; ?>">Cancel</label>
