@@ -1,6 +1,6 @@
-name: CI/CD
+name: CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build_css:
@@ -51,8 +51,9 @@ jobs:
         submodules: recursive
         token: ${{ secrets.GH_PAT }}
     - name: Lint Code Base
-      uses: github/super-linter@v4
+      uses: github/super-linter/slim@v4
       env:
         VALIDATE_ALL_CODEBASE: false
+        VALIDATE_CSS : true
         DEFAULT_BRANCH: develop
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
