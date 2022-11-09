@@ -194,6 +194,10 @@ body > nav {
     }
 }
 
+#nav-trigger {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
     #nav-trigger:not(:checked) + nav {
         width: 0%;
