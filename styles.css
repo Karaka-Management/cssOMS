@@ -3247,7 +3247,7 @@ article {
     border: 1px solid #ddd;
     border-left: 3px solid #25acff;
     background: #f4f4f4;
-    line-height: 1rem;
+    line-height: 1.2rem;
     font-size: .8rem; }
     article pre code {
       background: none;
@@ -4460,6 +4460,9 @@ body > nav {
           .nav-top li a > ul li:hover, .nav-top li a > ul li:focus {
             color: #252525;
             background: var(--nav-content-hover); }
+
+#nav-trigger {
+  display: none; }
 
 @media only screen and (max-width: 800px) {
   #nav-trigger:not(:checked) + nav {
