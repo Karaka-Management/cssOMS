@@ -322,7 +322,7 @@ label.radio, label.checkbox {
     }
 
     &:hover input ~ .checkmark {
-        background-color: var(--input-icon-color);
+        background-color: var(--input-icon-color-active);
         cursor: pointer;
     }
 }

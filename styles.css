@@ -3843,7 +3843,7 @@ label.radio, label.checkbox {
       position: absolute;
       display: none; }
   label.radio:hover input ~ .checkmark, label.checkbox:hover input ~ .checkmark {
-    background-color: var(--input-icon-color);
+    background-color: var(--input-icon-color-active);
     cursor: pointer; }
 
 label.radio .checkmark {
