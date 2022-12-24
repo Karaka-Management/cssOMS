@@ -4290,24 +4290,24 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
   button i, input[type="submit"] i, input[type="button"] i, label.button i, a.button i {
     margin: 0 .5rem 0 0; }
 
-button.save, .button.save {
+button.save, .button.save, input[type="submit"].save {
   color: rgba(0, 0, 0, 0.75);
   background: #8fff79; }
   button.save:hover, button.save:focus, .button.save:hover, .button.save:focus {
     background: #a1ffa1; }
 
-button.cancel, .button.cancel {
+button.cancel, .button.cancel, input[type="submit"].cancel {
   background: #ee5649; }
   button.cancel:hover, button.cancel:focus, .button.cancel:hover, .button.cancel:focus {
     background: #ff7d79; }
 
-button.close, .button.close {
+button.close, .button.close, input[type="submit"].close {
   color: rgba(0, 0, 0, 0.75);
   background: #fffc3e; }
   button.close:hover, button.close:focus, .button.close:hover, .button.close:focus {
     background: #fffd7b; }
 
-button.disabled, .button.disabled {
+button.disabled, .button.disabled, input[type="submit"].disabled {
   color: rgba(0, 0, 0, 0.5);
   background: #e1e1e1;
   cursor: not-allowed; }

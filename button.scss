@@ -37,7 +37,7 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     }
 }
 
-button.save, .button.save {
+button.save, .button.save, input[type="submit"].save {
     color: rgba(0, 0, 0, 0.75);
     background: #8fff79;
 
@@ -46,7 +46,7 @@ button.save, .button.save {
     }
 }
 
-button.cancel, .button.cancel {
+button.cancel, .button.cancel, input[type="submit"].cancel {
     background: #ee5649;
 
     &:hover, &:focus {
@@ -54,7 +54,7 @@ button.cancel, .button.cancel {
     }
 }
 
-button.close, .button.close {
+button.close, .button.close, input[type="submit"].close {
     color: rgba(0, 0, 0, 0.75);
     background: #fffc3e;
 
@@ -63,7 +63,7 @@ button.close, .button.close {
     }
 }
 
-button.disabled, .button.disabled {
+button.disabled, .button.disabled, input[type="submit"].disabled {
     color: rgba(0, 0, 0, 0.5);
     background: #e1e1e1;
     cursor: not-allowed;
