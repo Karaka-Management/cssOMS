@@ -45,8 +45,9 @@ i {
   clear: both; }
 
 pre {
-  background: #cfcfcf;
-  border: 1px solid #ccc;
+  font-family: var(--font-family);
+  background: #f4f4f4;
+  border: 1px solid #ddd;
   padding: 1rem;
   overflow-x: auto;
   counter-reset: line;
@@ -3116,6 +3117,11 @@ article {
     margin: 1.5rem; }
     article blockquote p:last-child {
       margin-bottom: 0; }
+    article blockquote code {
+      color: inherit;
+      background: inherit; }
+    article blockquote a {
+      color: inherit; }
   article code {
     font-family: var(--font-family);
     font-size: 0.8rem;
@@ -3130,6 +3136,7 @@ article {
   article p {
     line-height: 1.5em; }
   article ol, article ul {
+    list-style-position: outside;
     margin: 0.5rem 0 0.5rem 3rem;
     line-height: 1rem; }
   article ul {
@@ -3176,10 +3183,11 @@ article {
     flex: 1; }
     .flex-line div:nth-child(n+1) {
       padding-left: 5px; }
+
 .sticky {
-    position: sticky;
-    top: 1rem;
-}
+  position: sticky;
+  top: 1rem; }
+
 .inline {
   display: inline; }
 
@@ -3430,6 +3438,33 @@ img.rounded {
 
 img.bordered {
   border: 1px solid var(--box-border); }
+
+.image-comparison {
+  margin-left: 3rem;
+  position: relative;
+  display: inline-block;
+  line-height: 0; }
+  .image-comparison img {
+    user-select: none; }
+  .image-comparison > div {
+    position: absolute;
+    width: 50%;
+    max-width: 100%;
+    overflow: hidden;
+    resize: horizontal;
+    border-right: 1px solid #000; }
+    .image-comparison > div:before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 13px;
+      overflow: hidden;
+      position: absolute;
+      resize: horizontal;
+      right: 0;
+      bottom: 0;
+      background-clip: content-box;
+      background: linear-gradient(-45deg, red 50%, transparent 0); }
 
 input, select, textarea, .textarea {
   border: 1px solid var(--input-border); }
@@ -4035,9 +4070,8 @@ div.slider-1 {
     transform: translateZ(-35vw) rotateY(-360deg); } }
 
 pre {
-  font-family: var(--font-family);
-  background: #f4f4f4;
-    border: 1px solid #ddd;
+  border: 1px solid var(--box-border);
+  background: #ccc;
   padding: 1rem;
   box-sizing: border-box; }
 
