@@ -3117,9 +3117,9 @@ article {
     article blockquote p:last-child {
       margin-bottom: 0; }
   article code {
+    font-family: var(--font-family);
     font-size: 0.8rem;
     color: #23222d;
-    padding: .1rem;
     background: #f4f4f4;
     border-radius: 3px; }
   article a {
@@ -3176,7 +3176,10 @@ article {
     flex: 1; }
     .flex-line div:nth-child(n+1) {
       padding-left: 5px; }
-
+.sticky {
+    position: sticky;
+    top: 1rem;
+}
 .inline {
   display: inline; }
 
@@ -4032,8 +4035,9 @@ div.slider-1 {
     transform: translateZ(-35vw) rotateY(-360deg); } }
 
 pre {
-  border: 1px solid var(--box-border);
-  background: #ccc;
+  font-family: var(--font-family);
+  background: #f4f4f4;
+    border: 1px solid #ddd;
   padding: 1rem;
   box-sizing: border-box; }
 
@@ -4905,7 +4909,6 @@ span.tag {
   padding: .7rem 1rem .7rem 1rem; }
 
 .portlet.highlight-1 {
-  border-top: 0;
   background: var(--color-red);
   color: #fff; }
   .portlet.highlight-1 .portlet-body, .portlet.highlight-1 .portlet-head {
@@ -4913,7 +4916,6 @@ span.tag {
     border: 0; }
 
 .portlet.highlight-2 {
-  border-top: 0;
   background: var(--color-green);
   color: #fff; }
   .portlet.highlight-2 .portlet-body, .portlet.highlight-2 .portlet-head {
@@ -4921,7 +4923,6 @@ span.tag {
     border: 0; }
 
 .portlet.highlight-3 {
-  border-top: 0;
   background: var(--color-blue);
   color: #fff; }
   .portlet.highlight-3 .portlet-body, .portlet.highlight-3 .portlet-head {
@@ -4929,7 +4930,6 @@ span.tag {
     border: 0; }
 
 .portlet.highlight-4 {
-  border-top: 0;
   background: var(--color-yellow);
   color: #fff; }
   .portlet.highlight-4 .portlet-body, .portlet.highlight-4 .portlet-head {

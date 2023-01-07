@@ -25,3 +25,37 @@ img {
         border: 1px solid var(--box-border);;
     }
 }
+
+.image-comparison {
+    margin-left: 3rem;
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+
+    img {
+        user-select: none;
+    }
+
+    > div {
+        position: absolute;
+        width: 50%;
+        max-width: 100%;
+        overflow: hidden;
+        resize: horizontal;
+        border-right: 1px solid #000;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 13px;
+            overflow: hidden;
+            position: absolute;
+            resize: horizontal;
+            right: 0;
+            bottom: 0;
+            background-clip: content-box;
+            background: linear-gradient(-45deg, red 50%, transparent 0);
+        }
+    }
+}

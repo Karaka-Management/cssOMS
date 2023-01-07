@@ -78,12 +78,21 @@ article {
         p:last-child {
             margin-bottom: 0;
         }
+
+        code {
+            color: inherit;
+            background: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
     }
 
     code {
+        font-family: var(--font-family);
         font-size: 0.8rem;
         color: #23222d;
-        padding: .1rem;
         background: #f4f4f4;
         border-radius: 3px;
     }
@@ -102,6 +111,7 @@ article {
     }
 
     ol, ul {
+        list-style-position: outside;
         margin: 0.5rem 0 0.5rem 3rem;
         line-height: 1rem;
     }
