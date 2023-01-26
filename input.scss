@@ -66,6 +66,7 @@ input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
     height: 2rem;
+    padding-left: .5rem;
 }
 
 .inputWrapper {
@@ -274,6 +275,24 @@ input::placeholder {
 input:invalid {
     transition: all 0.5s;
     border-color: #f00;
+
+    & ~ i.ok {
+        display: none;
+    }
+
+    & ~ i.error {
+        display: inline-block;
+    }
+}
+
+input:valid {
+    & ~ i.ok {
+        display: inline-block;
+    }
+
+    & ~ i.error {
+        display: none;
+    }
 }
 
 textarea, .textarea {

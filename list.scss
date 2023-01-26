@@ -20,3 +20,43 @@ ul.h-list li {
     display: inline-block;
     margin: 5px 10px 5px 10px;
 }
+
+ul.foldable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .caret {
+        cursor: pointer;
+        user-select: none;
+
+        &::before {
+            content: "\25B6";
+            color: black;
+            display: inline-block;
+            margin-right: 6px;
+        }
+    }
+
+    .nested {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked {
+        &~.nested {
+            display: block;
+        }
+
+        &~.caret::before {
+            transform: rotate(90deg);
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
