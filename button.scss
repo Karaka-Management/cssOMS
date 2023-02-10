@@ -31,10 +31,6 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     &:hover, &:focus {
         background: var(--button-colored-background-hover);
     }
-
-    i {
-        margin: 0 .5rem 0 0;
-    }
 }
 
 button.save, .button.save, input[type="submit"].save {

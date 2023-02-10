@@ -4,7 +4,7 @@
             <div class="portlet-body">
                 <span class="tag">Test Tag</span>
                 <span class="tag"><i class="fa fa-lightbulb-o"></i>Test Tag</span>
-                <span class="tag"><i class="fa fa-times"></i><i class="fa fa-lightbulb-o"></i>Test Tag</span>
+                <span class="tag"><i class="fa fa-times close"></i><i class="fa fa-lightbulb-o"></i>Test Tag</span>
             </div>
         </section>
     </div>

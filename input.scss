@@ -1,7 +1,13 @@
+input, select, textarea, .textarea, option {
+    font-family: var(--font-family);
+    font-weight: 300;
+}
+
 input, select, textarea, .textarea {
     border: 1px solid var(--input-border);
 
     &.undecorated {
+        padding: 0;
         border: none;
         background: transparent;
         resize: none;
@@ -264,15 +270,12 @@ input[type="file"] {
 }
 
 input::placeholder {
+    font-family: 'FontAwesome', serif;
     color: var(--input-icon-color);
     opacity: 0.5;
 }
 
-input::placeholder {
-    font-family: 'FontAwesome', serif;
-}
-
-input:invalid {
+textarea:invalid, input:invalid {
     transition: all 0.5s;
     border-color: #f00;
 

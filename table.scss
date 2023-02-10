@@ -67,7 +67,7 @@ table.default {
     overflow-x: auto;
 
     tbody {
-        :not(.tag) > .fa {
+        .order-up, .order-down, .remove-form, .update-form, .save-form {
             color: var(--button-colored-background);
         }
     }
