@@ -30,6 +30,7 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
 
     &:hover, &:focus {
         background: var(--button-colored-background-hover);
+        color: var(--text-on-background-color-2);
     }
 }
 

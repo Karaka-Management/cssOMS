@@ -192,9 +192,7 @@ table.list {
 @media screen and (max-width: 600px) {
     table.table {
         display: table;
-        table-layout: fixed;
         width: 100%;
-        border: 0;
 
         thead {
             display: none;
@@ -205,27 +203,11 @@ table.list {
                 height: auto;
                 display: block;
                 margin-bottom: .625em;
-
-                td:last-child {
-                    border-bottom: 1px solid var(--box-border);
-                }
-
-                &:last-child td {
-                    border-bottom: none;
-
-                    &:last-child {
-                        border-bottom: 1px solid var(--box-border);
-                    }
-                }
             }
 
             td {
-                border-left: 1px solid var(--box-border);
-                border-right: 1px solid var(--box-border);
-                display: block;
+                display: flex;
                 font-size: .8rem;
-                text-align: right;
-                position: relative;
                 height: 2rem;
                 line-height: 2rem;
                 text-overflow: ellipsis;
@@ -234,7 +216,6 @@ table.list {
 
                 &:before {
                     content: attr(data-label);
-                    float: left;
                     margin-right: 10px;
                     font-weight: bold;
                 }
