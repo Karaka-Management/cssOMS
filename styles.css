@@ -3740,12 +3740,8 @@ textarea:invalid, input:invalid {
     display: inline-block !important; }
 
 input:valid ~ i.ok {
-<<<<<<< HEAD
-  display: inline-block; }
-
-=======
   display: inline-block !important; }
->>>>>>> error
+
 input:valid ~ i.error {
   display: none !important; }
 
