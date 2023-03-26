@@ -276,25 +276,25 @@ input::placeholder {
 }
 
 textarea:invalid, input:invalid {
-    transition: all 0.5s;
-    border-color: #f00;
+    transition: all 0.5s !important;
+    border-color: #f00 !important;
 
     & ~ i.ok {
-        display: none;
+        display: none !important;
     }
 
     & ~ i.error {
-        display: inline-block;
+        display: inline-block !important;
     }
 }
 
 input:valid {
     & ~ i.ok {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     & ~ i.error {
-        display: none;
+        display: none !important;
     }
 }
 

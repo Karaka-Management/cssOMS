@@ -3732,18 +3732,22 @@ input::placeholder {
   opacity: 0.5; }
 
 textarea:invalid, input:invalid {
-  transition: all 0.5s;
-  border-color: #f00; }
+  transition: all 0.5s !important;
+  border-color: #f00 !important; }
   textarea:invalid ~ i.ok, input:invalid ~ i.ok {
-    display: none; }
+    display: none !important; }
   textarea:invalid ~ i.error, input:invalid ~ i.error {
-    display: inline-block; }
+    display: inline-block !important; }
 
 input:valid ~ i.ok {
+<<<<<<< HEAD
   display: inline-block; }
 
+=======
+  display: inline-block !important; }
+>>>>>>> error
 input:valid ~ i.error {
-  display: none; }
+  display: none !important; }
 
 textarea, .textarea {
   overflow: auto;
