@@ -1,0 +1,84 @@
+/* It's supposed to look like a tree diagram */
+.tree, .tree ul, .tree li {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.tree {
+    display: table;
+    text-align: center;
+
+    .tree {
+        border-top: 1px solid #666;
+    }
+
+    .box {
+        margin: 0;
+        padding: 1rem;
+        border: 0;
+    }
+
+    ul {
+        width: 100%;
+        display: table;
+    }
+
+    ul:not(.tree) li:before {
+        border: 1px solid #666;
+    }
+
+    li {
+        display: table-cell;
+        padding: .5em 0;
+        vertical-align: top;
+
+        &:before {
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        &:first-child:before {
+            left: 50%;
+        }
+
+        &:last-child:before {
+            right: 50%;
+        }
+
+        > span {
+            text-align: left;
+            border: solid .1em #666;
+            display: inline-block;
+            margin: 0 .2em .5em;
+            position: relative;
+        }
+    }
+
+    ul:not(.tree):before, span:before {
+        border: solid 1px #666;
+        content: "";
+        height: .45em;
+        left: 50%;
+        position: absolute;
+    }
+
+    ul:before {
+        top: -.5rem;
+    }
+
+    span:before {
+        top: -.5rem;
+    }
+
+    > li {
+        &:before,
+        &:after,
+        > span:before {
+            border: none;
+        }
+    }
+}
