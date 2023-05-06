@@ -21,6 +21,10 @@
     }
 }
 
+.fill-all {
+    flex: 1 1 auto;
+}
+
 .col {
     box-sizing: border-box;
     display: flex;
