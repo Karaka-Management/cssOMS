@@ -319,8 +319,12 @@ label.radio, label.checkbox {
         opacity: 0;
         cursor: pointer;
 
-        &:checked ~ .checkmark {
+        &:not(:required):checked ~ .checkmark {
             background-color: var(--button-colored-background);
+        }
+
+        &:required ~ .checkmark, &:disabled ~ .checkmark {
+            background-color: #adadad;
         }
 
         &:checked ~ .checkmark:after {
@@ -344,7 +348,6 @@ label.radio, label.checkbox {
     }
 
     &:hover input ~ .checkmark {
-        background-color: var(--input-icon-color-active);
         cursor: pointer;
     }
 }
