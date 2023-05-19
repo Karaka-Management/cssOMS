@@ -41,6 +41,14 @@
     display: none;
 }
 
+.xs-hidden,
+.sm-hidden,
+.md-hidden,
+.lg-hidden
+{
+    display: hidden;
+}
+
 .col-xs-0 {
     box-sizing: border-box;
     flex-grow: 0;
@@ -231,6 +239,10 @@
 }
 
 @media only screen and (min-width: 48em) {
+    .sm-hidden {
+        display: inherit;
+    }
+
     .container {
         width: 46rem;
     }
@@ -412,6 +424,10 @@
 }
 
 @media only screen and (min-width: 62em) {
+    .md-hidden {
+        display: inherit;
+    }
+
     .container {
         width: 61rem;
     }
@@ -593,6 +609,10 @@
 }
 
 @media only screen and (min-width: 75em) {
+    .lg-hidden {
+        display: inherit;
+    }
+
     .container {
         width: 71rem;
     }
