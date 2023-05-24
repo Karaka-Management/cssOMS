@@ -1,4 +1,4 @@
-.btn {
+.btn, .link {
     cursor: pointer;
     user-select: none;
 }
@@ -36,6 +36,15 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
 
 button.save, .button.save, input[type="submit"].save {
     color: rgba(0, 0, 0, 0.75);
+    background: var(--button-colored-background);
+
+    &:hover, &:focus {
+        background: var(--button-colored-background);
+    }
+}
+
+button.save, .button.save, input[type="submit"].save {
+    color: rgba(0, 0, 0, 0.75);
     background: #8fff79;
 
     &:hover, &:focus {
@@ -68,4 +77,20 @@ button.disabled, .button.disabled, input[type="submit"].disabled {
     &:hover, &:focus {
         background: #e1e1e1;
     }
+}
+
+.link.default {
+    color: var(--button-colored-background);
+}
+.link.save {
+    color: #8fff79;
+}
+.link.cancel {
+    color: #ee5649;
+}
+.link.close {
+    color: #fffc3e;
+}
+.link.disabled {
+    color: #e1e1e1;
 }

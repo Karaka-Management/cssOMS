@@ -58,6 +58,10 @@ table.default.sticky {
     }
 }
 
+.order-up, .order-down, .remove-form, .update-form, .save-form, .form-action {
+    color: var(--button-colored-background);
+}
+
 table.default {
     //border-radius: 4px;
     width: 100%;
@@ -65,12 +69,6 @@ table.default {
     font-size: 0.9em;
     box-sizing: border-box;
     overflow-x: auto;
-
-    tbody {
-        .order-up, .order-down, .remove-form, .update-form, .save-form {
-            color: var(--button-colored-background);
-        }
-    }
 
     caption {
         font-size: 1.5rem;

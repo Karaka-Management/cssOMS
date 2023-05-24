@@ -3,6 +3,22 @@ input, select, textarea, .textarea, option {
     font-weight: 300;
 }
 
+input[type=checkbox] ~ .checked-visibility {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .checked-visibility {
+    display: inline-block;
+}
+
+input[type=checkbox] ~ .checked-visibility-alt {
+    display: inline-block;
+}
+
+input[type=checkbox]:checked ~ .checked-visibility-alt {
+    display: none;
+}
+
 input, select, textarea, .textarea {
     border: 1px solid var(--input-border);
 

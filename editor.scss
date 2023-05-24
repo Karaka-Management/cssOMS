@@ -1,4 +1,5 @@
-code[contenteditable] {
+code[contenteditable], .contenteditable {
     display: block;
     outline: none;
+    white-space: pre-wrap;
 }
