@@ -37,3 +37,63 @@ div.sticky, section.sticky {
 .inline {
     display: inline;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > *:not(label) {
+        flex: 1;
+    }
+
+    & + * {
+        margin-top: .75rem;
+    }
+
+    label {
+        flex: 0 0 100%;
+    }
+
+    .input-control {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & +.input-control {
+            margin-left: 1rem;
+        }
+    }
+
+    textarea, .contenteditable {
+        height: 8rem;
+    }
+}
+
+* + .form-group {
+    margin-top: .75rem;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+@each $tuple in
+    'wf-100' 100%, 'wf-80' 80%, 'wf-20' 20%, 'wf-66' 66.66%,
+    'wf-50' 50%, 'wf-33' 33.33%, 'wf-25' 25%, 'wf-75' 75% {
+    .#{nth($tuple, 1)} {
+        width: #{nth($tuple, 2)};
+    }
+}
+
+.spacer {
+    padding: 5px;
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
+}

@@ -9,7 +9,6 @@ button, input[type="submit"], input[type="button"], label.button, a.button {
     min-width: 70px;
     background: var(--button-colored-background);
     color: var(--text-on-background-color-2);
-    margin: 0;
     padding: 0 1rem 0 1rem;
     flex-grow: 0;
     height: 32px;
@@ -82,15 +81,19 @@ button.disabled, .button.disabled, input[type="submit"].disabled {
 .link.default {
     color: var(--button-colored-background);
 }
+
 .link.save {
     color: #8fff79;
 }
+
 .link.cancel {
     color: #ee5649;
 }
+
 .link.close {
     color: #fffc3e;
 }
+
 .link.disabled {
     color: #e1e1e1;
 }

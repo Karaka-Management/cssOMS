@@ -1,3 +1,7 @@
+.nobreak, .nowrap {
+    white-space: nowrap;
+}
+
 .center {
     margin: 0 auto;
 }
@@ -34,8 +38,4 @@
 
 .overflowfix {
     overflow: auto;
-}
-
-.nowrap {
-    white-space: nowrap;
 }

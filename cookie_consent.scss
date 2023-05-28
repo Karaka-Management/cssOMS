@@ -40,14 +40,14 @@
     .consent_element {
         margin-top: 1rem;
     }
-}
 
-#cookieConsentForm form {
-    background : #fff;
-    border: 1px solid var(--box-border);
-    display: inline-block;
-    padding: 1rem;
-    border-radius: 3px;
+    form {
+        background : #fff;
+        border: 1px solid var(--box-border);
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 3px;
+    }
 }
 
 #cookieConsentForm_defaultbuttons,

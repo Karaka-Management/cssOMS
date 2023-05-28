@@ -368,33 +368,35 @@ label.radio, label.checkbox {
     }
 }
 
-label.radio {
-    .checkmark {
-        border-radius: 50%;
-
-        &:after {
-            top: 5px;
-            left: 5px;
-            width: 5px;
-            height: 5px;
+label {
+    &.radio {
+        .checkmark {
             border-radius: 50%;
-            background: #fff;
+
+            &:after {
+                top: 5px;
+                left: 5px;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: #fff;
+            }
         }
     }
-}
 
-label.checkbox {
-    .checkmark {
-        &:after {
-            top: 2px;
-            left: 4px;
-            width: 4px;
-            height: 6px;
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    &.checkbox {
+        .checkmark {
+            &:after {
+                top: 2px;
+                left: 4px;
+                width: 4px;
+                height: 6px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
         }
     }
 }
@@ -472,9 +474,6 @@ select.plain {
     box-shadow: none;
 }
 
-// * fix height definition (should be automatic)
-// * fix close automatic if radio, if checkbox = multiple, don't close automatic
-// * fix opening drop down when clicken on text instead of end of text area
 .dropdown {
     cursor: pointer;
     display: inline-block;

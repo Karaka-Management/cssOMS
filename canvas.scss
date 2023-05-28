@@ -1,10 +1,8 @@
-
-
 canvas {
     background: #fff;
     user-select: none;
-}
 
-canvas.chart {
-    width: 100%;
+    &.chart {
+        width: 100%;
+    }
 }
