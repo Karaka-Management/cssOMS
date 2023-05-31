@@ -1,4 +1,4 @@
-<span class="clickPopup floatRight">
+<span class="clickPopup end-xs">
     <input id="functionDropdown" name="functionDropdown" type="checkbox">
     <label for="functionDropdown"><i class="fa more-functions fa-ellipsis-v btn"></i></label>
     <div class="popup">

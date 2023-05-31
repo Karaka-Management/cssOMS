@@ -1,4 +1,4 @@
-<span class="clickPopup floatRight">
+<span class="clickPopup end-xs">
     <input id="exportDropdown" name="exportDropdown" type="checkbox">
     <label for="exportDropdown"><i class="fa fa-download download btn"></i></label>
     <div class="popup">
