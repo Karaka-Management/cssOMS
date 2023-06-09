@@ -15,9 +15,15 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    flex-grow: 1;
 
     .row {
         flex: 1 1 auto;
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        flex-basis: 0;
     }
 }
 
@@ -81,7 +87,6 @@
 .col-xs-11,
 .col-xs-12 {
     box-sizing: border-box;
-    flex: 0 0 auto;
     padding-right: 1rem;
 }
 
@@ -242,6 +247,7 @@
     order: 1;
 }
 
+// is >= sm
 @media only screen and (min-width: 48em) {
     .sm-hidden {
         display: block;
@@ -427,7 +433,18 @@
     }
 }
 
+// is >= md
 @media only screen and (min-width: 62em) {
+    .col-simple {
+        .row {
+            flex-direction: row;
+        }
+
+        .col-xs-12 {
+            flex-basis: 100%;
+        }
+    }
+
     .md-hidden {
         display: block;
     }
@@ -612,6 +629,7 @@
     }
 }
 
+// is >= lg
 @media only screen and (min-width: 75em) {
     .lg-hidden {
         display: block;

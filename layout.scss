@@ -44,7 +44,7 @@ div.sticky, section.sticky {
     flex-wrap: wrap;
 
     > *:not(label) {
-        flex: 1;
+        flex: 0 1 auto;
     }
 
     & + * {
@@ -52,6 +52,7 @@ div.sticky, section.sticky {
     }
 
     label {
+        font-size: .9rem;
         flex: 0 0 100%;
     }
 

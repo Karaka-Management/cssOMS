@@ -87,7 +87,7 @@ input[type="email"],
 input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
-    height: 2rem;
+    height: 30px;
     padding-left: .5rem;
 }
 
@@ -318,7 +318,7 @@ textarea, .textarea {
     overflow: auto;
     resize: both;
     box-sizing: border-box;
-    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    padding: .3rem .3rem .3rem .5rem;
 }
 
 label.radio, label.checkbox {
@@ -421,7 +421,7 @@ input[type="range"] {
         box-sizing: border-box;
         display: inline-block;
         background: var(--button-colored-background);
-        height: 2rem;
+        height: 30px;
         font-size: 1rem;
         min-width: 40px;
         border-left: solid 1px var(--input-border);
@@ -451,7 +451,6 @@ input[type="range"] {
 
     input {
         box-sizing: border-box;
-        font-size: 1rem;
 
         position: relative;
         vertical-align: middle;
