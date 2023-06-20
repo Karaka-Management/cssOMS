@@ -68,6 +68,36 @@
             border: 0;
         }
     }
+
+    &.highlight-5 {
+        background: var(--color-purple);
+        color: #fff;
+
+        .portlet-body, .portlet-head {
+            background: var(--color-purple);
+            border: 0;
+        }
+    }
+
+    &.highlight-6 {
+        background: var(--color-pink);
+        color: #fff;
+
+        .portlet-body, .portlet-head {
+            background: var(--color-pink);
+            border: 0;
+        }
+    }
+
+    &.highlight-7 {
+        background: var(--color-orange);
+        color: #fff;
+
+        .portlet-body, .portlet-head {
+            background: var(--color-orange);
+            border: 0;
+        }
+    }
 }
 
 .plain-portlet {
