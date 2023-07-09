@@ -12,9 +12,16 @@
 }
 
 .col-simple {
+    flex-direction: column;
+}
+
+.row-simple {
+    flex-direction: row;
+}
+
+.col-simple, .row-simple {
     display: flex;
     flex: 1;
-    flex-direction: column;
     flex-grow: 1;
 
     .row {

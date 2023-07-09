@@ -31,6 +31,7 @@ img {
     position: relative;
     display: inline-block;
     line-height: 0;
+    overflow: auto;
 
     img {
         user-select: none;
