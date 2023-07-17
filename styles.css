@@ -3450,7 +3450,21 @@ img.bordered {
 
 .gallery {
   max-width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  position: relative; }
+  .gallery input + .enlarged {
+    display: none; }
+  .gallery input:checked + .enlarged {
+    display: block; }
+  .gallery .enlarged {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .gallery .enlarged img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; }
   .gallery input {
     display: none; }
     .gallery input + img {
@@ -4658,7 +4672,7 @@ section > h2 {
     display: block; } }
 .tabview .tab-links {
   color: #000;
-  padding: 0.3rem 0 0 0; }
+  padding: 5px 0 0 0; }
   .tabview .tab-links label {
     font-size: 0.9em;
     user-select: none;
@@ -4690,6 +4704,8 @@ section > h2 {
     display: flex;
     flex: 1;
     flex-direction: column; }
+.tabview.right > .box {
+  order: 2; }
 
 .tab-1 .tab-links {
   margin: 0 0 10px 1px; }
@@ -4708,17 +4724,17 @@ section > h2 {
   border: 1px solid var(--button-colored-background);
   background: #fff;
   padding: 10px; }
-.tab-1.left {
+.tab-1.left, .tab-1.right {
   display: flex; }
-  .tab-1.left .tab-links {
+  .tab-1.left .tab-links, .tab-1.right .tab-links {
     margin: 0;
     border: none; }
-    .tab-1.left .tab-links li {
+    .tab-1.left .tab-links li, .tab-1.right .tab-links li {
       display: block;
       margin-bottom: 20px; }
-    .tab-1.left .tab-links .active label {
+    .tab-1.left .tab-links .active label, .tab-1.right .tab-links .active label {
       border: 1px solid var(--box-border); }
-  .tab-1.left .tab-content {
+  .tab-1.left .tab-content, .tab-1.right .tab-content {
     width: 100%; }
 
 .tab-2 {
@@ -4732,17 +4748,17 @@ section > h2 {
   .tab-2 .tab-links .active a, .tab-2 .tab-links .active label {
     color: var(--text-on-background-color-2);
     background: var(--button-colored-background); }
-  .tab-2.left {
-    display: flex; }
-    .tab-2.left .tab-links {
+  .tab-2.left, .tab-2.right {
+    flex-direction: row; }
+    .tab-2.left .tab-links, .tab-2.right .tab-links {
       margin: 0;
       border: none; }
-      .tab-2.left .tab-links li {
+      .tab-2.left .tab-links li, .tab-2.right .tab-links li {
         display: block;
         margin-bottom: 20px; }
-      .tab-2.left .tab-links .active label {
+      .tab-2.left .tab-links .active label, .tab-2.right .tab-links .active label {
         border: 1px solid var(--box-border); }
-    .tab-2.left .tab-content {
+    .tab-2.left .tab-content, .tab-2.right .tab-content {
       width: 100%; }
 
 .order-up, .order-down, .remove-form, .update-form, .save-form, .form-action {

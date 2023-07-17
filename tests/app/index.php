@@ -196,8 +196,8 @@
                 <label class="ham-trigger" for="nav-trigger"><i class="fa fa-bars p"></i></label>
                 <span role="search" class="inputWrapper">
                     <span class="textWrapper">
-                        <input id="iSearchBox" name="search" type="text" autofocus="autofocus">
                         <i class="frontIcon fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+                        <input id="iSearchBox" name="search" type="text" autofocus="autofocus">
                         <i class="endIcon fa fa-times fa-lg fa-fw" aria-hidden="true"></i>
                     </span>
                     <input type="submit" id="iSearchButton" name="searchButton" value="Search">
