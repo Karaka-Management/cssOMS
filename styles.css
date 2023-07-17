@@ -4783,6 +4783,7 @@ section > h2 {
     display: flex;
     flex: 1;
     flex-direction: column; }
+
 .tabview.right > .box {
   order: 2; }
 
@@ -4804,6 +4805,7 @@ section > h2 {
   border: 1px solid var(--button-colored-background);
   background: #fff;
   padding: 10px; }
+
 .tab-1.left, .tab-1.right {
   display: flex; }
   .tab-1.left .tab-links, .tab-1.right .tab-links {
