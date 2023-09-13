@@ -4705,6 +4705,8 @@ section > h2 {
     display: flex;
     flex: 1;
     flex-direction: column; }
+.tabview .tab {
+  max-width: 100%; }
 .tabview.right > .box {
   order: 2; }
 
@@ -4720,6 +4722,8 @@ section > h2 {
     background: var(--button-colored-background); }
   .tab-1 .tab-links li {
     margin: 0 5px 0 0; }
+.tab-1 .tab {
+  max-width: 100%; }
 .tab-1 .tab-content {
   box-sizing: border-box;
   border: 1px solid var(--button-colored-background);
@@ -4742,6 +4746,8 @@ section > h2 {
   display: flex;
   flex: 1;
   flex-direction: column; }
+  .tab-2 .tab {
+    max-width: 100%; }
   .tab-2 .tab-links label {
     padding: 5px 10px 5px 10px; }
   .tab-2 .tab-links li {
