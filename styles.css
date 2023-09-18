@@ -3170,6 +3170,8 @@ div.sticky, section.sticky {
   .form-group label {
     font-size: .9rem;
     flex: 0 0 100%; }
+  .form-group span.checkbox + span.checkbox {
+    margin-left: 1.5rem; }
   .form-group .input-control {
     flex: 1;
     display: flex;
@@ -3787,7 +3789,7 @@ label.radio, label.checkbox {
     position: relative;
     height: 15px;
     width: 15px;
-    margin-right: 10px;
+    margin-right: 5px;
     background-color: #eee;
     border: 1px solid var(--input-border-active); }
     label.radio .checkmark:after, label.checkbox .checkmark:after {

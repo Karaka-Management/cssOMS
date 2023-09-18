@@ -56,6 +56,10 @@ div.sticky, section.sticky {
         flex: 0 0 100%;
     }
 
+    span.checkbox+span.checkbox {
+        margin-left: 1.5rem;
+    }
+
     .input-control {
         flex: 1;
         display: flex;
