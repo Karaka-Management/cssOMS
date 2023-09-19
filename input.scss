@@ -70,7 +70,7 @@ input[type="datetime-local"] {
         color: var(--input-color-active);
     }
 
-    &:disabled {
+    &:disabled, &:readonly {
         cursor: not-allowed;
         background: #efefef;
     }
@@ -339,7 +339,7 @@ label.radio, label.checkbox {
             background-color: var(--button-colored-background);
         }
 
-        &:required ~ .checkmark, &:disabled ~ .checkmark {
+        &:required ~ .checkmark, &:disabled ~ .checkmark, &:readonly ~ .checkmark {
             background-color: #adadad;
         }
 
