@@ -3649,17 +3649,27 @@ input[type="datetime-local"] {
     border-color: var(--input-background-active);
     border: 1px solid var(--input-border-active);
     color: var(--input-color-active); }
-  .textarea:disabled,
+  .textarea:disabled, .textarea:readonly,
   .tag-input:disabled,
+  .tag-input:readonly,
   textarea:disabled,
+  textarea:readonly,
   select:disabled,
+  select:readonly,
   input[type="password"]:disabled,
+  input[type="password"]:readonly,
   input[type="text"]:disabled,
+  input[type="text"]:readonly,
   input[type="datetime"]:disabled,
+  input[type="datetime"]:readonly,
   input[type="email"]:disabled,
+  input[type="email"]:readonly,
   input[type="date"]:disabled,
+  input[type="date"]:readonly,
   input[type="number"]:disabled,
-  input[type="datetime-local"]:disabled {
+  input[type="number"]:readonly,
+  input[type="datetime-local"]:disabled,
+  input[type="datetime-local"]:readonly {
     cursor: not-allowed;
     background: #efefef; }
 
@@ -3843,7 +3853,7 @@ label.radio, label.checkbox {
     cursor: pointer; }
     label.radio input:not(:required):checked ~ .checkmark, label.checkbox input:not(:required):checked ~ .checkmark {
       background-color: var(--button-colored-background); }
-    label.radio input:required ~ .checkmark, label.radio input:disabled ~ .checkmark, label.checkbox input:required ~ .checkmark, label.checkbox input:disabled ~ .checkmark {
+    label.radio input:required ~ .checkmark, label.radio input:disabled ~ .checkmark, label.radio input:readonly ~ .checkmark, label.checkbox input:required ~ .checkmark, label.checkbox input:disabled ~ .checkmark, label.checkbox input:readonly ~ .checkmark {
       background-color: #adadad; }
     label.radio input:checked ~ .checkmark:after, label.checkbox input:checked ~ .checkmark:after {
       display: block; }
