@@ -3,3 +3,15 @@
 *.cache
 node_modules
 .directory
+.directory
+Vagrantfile
+vendor
+bower_components
+*.log
+.vagrant
+.vscode
+.sass-cache
+cache
+Cache
+Libraries
+.idea
