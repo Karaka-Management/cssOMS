@@ -3135,6 +3135,7 @@ article {
       color: inherit; }
   article code {
     font-family: var(--font-family);
+    font-display: swap;
     font-size: 0.8rem;
     color: #23222d;
     background: #f4f4f4;

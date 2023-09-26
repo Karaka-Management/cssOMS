@@ -40,7 +40,7 @@
             <label class="ham-trigger" for="nav-trigger"><i class="fa fa-bars p"></i></label>
         </span>
         <div id="nav-side-outer">
-            <ul id="nav-side-inner" class="nav" role="navigation">
+            <ul id="nav-side-inner" class="nav" role="list">
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
@@ -203,7 +203,7 @@
                     <input type="submit" id="iSearchButton" name="searchButton" value="Search">
                 </span>
             </form>
-                <ul id="t-nav" role="navigation">
+                <ul id="t-nav" role="list">
                     <li>
                         <a href="/en/backend/calendar/dashboard?id=Admin">
                             <i class="fa fa-calendar infoIcon"></i> Calendar

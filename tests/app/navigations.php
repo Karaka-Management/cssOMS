@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12">
-        <ul class="nav-top" role="navigation">
+        <ul class="nav-top" role="list">
             <li><a>About</a></li>
             <li>
                 <a>Portfolio</a>
