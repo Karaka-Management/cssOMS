@@ -3,7 +3,7 @@
     user-select: none;
 }
 
-button, input[type="submit"], input[type="button"], label.button, a.button {
+button, input[type="submit"], input[type="reset"], input[type="button"], label.button, a.button {
     cursor: pointer;
     display: inline-flex;
     min-width: 70px;
@@ -59,7 +59,7 @@ button.cancel, .button.cancel, input[type="submit"].cancel {
     }
 }
 
-button.close, .button.close, input[type="submit"].close {
+button.close, .button.close, input[type="submit"].close, input[type="reset"].close {
     color: rgba(0, 0, 0, 0.75);
     background: #fffc3e;
 
@@ -96,4 +96,9 @@ button.disabled, .button.disabled, input[type="submit"].disabled {
 
 .link.disabled {
     color: #e1e1e1;
+}
+
+i.favorite {
+    color: #ffd700;
+    text-shadow: 0 0 1px #000;
 }

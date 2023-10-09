@@ -81,11 +81,11 @@ table {
             tr {
                 height: 2.5rem;
 
-                &:nth-of-type(2n) td {
+                &:nth-of-type(2n) {
                     background: var(--table-row-background);
                 }
 
-                &:nth-of-type(2n+1) td {
+                &:nth-of-type(2n+1) {
                     background: var(--table-row-background-alt);
                 }
 

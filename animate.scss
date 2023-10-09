@@ -1588,11 +1588,11 @@
 
 @keyframes greenFade {
   from {
-    background-color: transparent;
+    background: transparent;
   }
 
   to {
-    background-color: #81e27d;
+    background: #81e27d;
   }
 }
 
@@ -1602,11 +1602,11 @@
 
 @keyframes redFade {
   from {
-    background-color: transparent;
+    background: transparent;
   }
 
   to {
-    background-color: #ee5649;
+    background: #ee5649;
   }
 }
 
@@ -1616,32 +1616,32 @@
 
 @keyframes redCircleFade {
   0% {
-    background-color: transparent;
+    background: transparent;
   }
 
   50% {
-    background-color: #ee5649;
+    background: #ee5649;
   }
 
   100% {
-    background-color: transparent;
+    background: transparent;
   }
 }
 
-.greenCircleFade {
+.greenCircleFade, .greenCircleFade td {
   animation-name: greenCircleFade;
 }
 
 @keyframes greenCircleFade {
   0% {
-    background-color: transparent;
+    background: transparent;
   }
 
   50% {
-    background-color: #81e27d;
+    background: #81e27d;
   }
 
   100% {
-    background-color: transparent;
+    background: transparent;
   }
 }
