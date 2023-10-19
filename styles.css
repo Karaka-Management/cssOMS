@@ -3848,6 +3848,8 @@ span.tag {
       align-items: center; }
       .portlet .portlet-head > span > a {
         display: inherit; }
+    .portlet .portlet-head form {
+      margin-left: 1rem; }
   .portlet .portlet-foot {
     background: #fff;
     border-top: 1px solid #ebedf2;
