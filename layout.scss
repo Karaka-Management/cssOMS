@@ -54,6 +54,12 @@ div.sticky, section.sticky {
     label {
         font-size: .9rem;
         flex: 0 0 100%;
+        display: inline-flex;
+        align-items: center;
+
+        &> i {
+            margin-right: .5rem;
+        }
     }
 
     span.checkbox+span.checkbox {

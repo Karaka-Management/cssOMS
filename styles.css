@@ -1953,7 +1953,11 @@ div.sticky, section.sticky {
     margin-top: .75rem; }
   .form-group label {
     font-size: .9rem;
-    flex: 0 0 100%; }
+    flex: 0 0 100%;
+    display: inline-flex;
+    align-items: center; }
+    .form-group label > i {
+      margin-right: .5rem; }
   .form-group span.checkbox + span.checkbox {
     margin-left: 1.5rem; }
   .form-group .input-control {
@@ -3610,6 +3614,8 @@ table.default {
   table.default td {
     padding: 3px 10px 3px 10px;
     white-space: nowrap; }
+  table.default tbody td, table.default tbody th {
+    border-bottom: 1px solid #ebedf2; }
   table.default tbody tr {
     height: 2.5rem; }
     table.default tbody tr:nth-of-type(2n) {
@@ -3618,8 +3624,6 @@ table.default {
       background: var(--table-row-background-alt); }
     table.default tbody tr:hover td, table.default tbody tr:focus td {
       background: var(--table-row-background-hover); }
-    table.default tbody tr td, table.default tbody tr th {
-      border-bottom: 1px solid #ebedf2; }
     table.default tbody tr:last-child td, table.default tbody tr:last-child th {
       border: none; }
     table.default tbody tr:focus, table.default tbody tr:hover {
@@ -3628,6 +3632,11 @@ table.default {
       box-shadow: 0 0 5px var(--box-border); }
   table.default tbody th {
     background: var(--table-head-background); }
+  table.default tbody a {
+    display: inline-flex;
+    align-items: center; }
+    table.default tbody a i {
+      margin-right: .5rem; }
   table.default thead {
     background: var(--table-head-background); }
     table.default thead tr {

@@ -78,6 +78,10 @@ table {
         }
 
         tbody {
+            td, th {
+                border-bottom: 1px solid #ebedf2;
+            }
+
             tr {
                 height: 2.5rem;
 
@@ -93,10 +97,6 @@ table {
                     background: var(--table-row-background-hover);
                 }
 
-                td, th {
-                    border-bottom: 1px solid #ebedf2;
-                }
-
                 &:last-child td, &:last-child th {
                     border: none;
                 }
@@ -110,6 +110,15 @@ table {
 
             th {
                 background: var(--table-head-background);
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+
+                i {
+                    margin-right: .5rem;
+                }
             }
         }
 
