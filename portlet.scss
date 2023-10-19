@@ -9,6 +9,15 @@
         padding: .7rem 1rem .7rem 1rem;
         font-weight: 300;
         display: flex;
+
+        &> span {
+            display: inline-flex;
+            align-items: center;
+
+            > a {
+                display: inherit;
+            }
+        }
     }
 
     .portlet-foot {

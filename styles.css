@@ -3843,6 +3843,11 @@ span.tag {
     padding: .7rem 1rem .7rem 1rem;
     font-weight: 300;
     display: flex; }
+    .portlet .portlet-head > span {
+      display: inline-flex;
+      align-items: center; }
+      .portlet .portlet-head > span > a {
+        display: inherit; }
   .portlet .portlet-foot {
     background: #fff;
     border-top: 1px solid #ebedf2;
