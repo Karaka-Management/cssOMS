@@ -10,10 +10,10 @@
                 <table class="default" id="table1">
                     <thead>
                     <tr>
-                        <td><i class="filter fa fa-filter" data-filter=""></i>Col1 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                        <td><i class="filter fa fa-filter"></i>Col2 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                        <td><i class="filter fa fa-filter"></i>Col3 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                        <td><i class="filter fa fa-filter"></i>Col4 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                        <td><i class="filter g-icon" data-filter="">filter_alt</i>Col1 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                        <td><i class="filter g-icon">filter_alt</i>Col2 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                        <td><i class="filter g-icon">filter_alt</i>Col3 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                        <td><i class="filter g-icon">filter_alt</i>Col4 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
                     </tr>
                     </thead>
                     <tbody>
@@ -62,10 +62,10 @@
                 <table class="default" id="table2">
                     <thead>
                     <tr>
-                        <td>Col1 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                        <td>Col2 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                        <td>Col3 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                        <td>Col4 Title<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                        <td>Col1 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                        <td>Col2 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                        <td>Col3 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                        <td>Col4 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
                     </tr>
                     </thead>
                     <tbody>
@@ -121,28 +121,28 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="g-icon btn remove">close</i>
                         <td>Col1</td>
                         <td>Col2</td>
                         <td>Col3</td>
                         <td>Col4</td>
                     </tr>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="g-icon btn remove">close</i>
                         <td>Col2</td>
                         <td>Col2</td>
                         <td>Col3</td>
                         <td>Col4</td>
                     </tr>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="g-icon btn remove">close</i>
                         <td>Col3</td>
                         <td>Col2</td>
                         <td>Col3</td>
                         <td>Col4</td>
                     </tr>
                     <tr>
-                        <td><i class="fa fa-times btn remove"></i>
+                        <td><i class="g-icon btn remove">close</i>
                         <td>Col4</td>
                         <td>Col2</td>
                         <td>Col3</td>
@@ -180,13 +180,13 @@
                     <thead>
                         <tr>
                             <td>
-                            <td data-name=""><i class="filter fa fa-filter"></i>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                            <td data-name=""><i class="filter fa fa-filter"></i>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
-                            <td data-name=""><i class="filter fa fa-filter"></i>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i></td>
+                            <td data-name=""><i class="filter g-icon">filter_alt</i>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                            <td data-name=""><i class="filter g-icon">filter_alt</i>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
+                            <td data-name=""><i class="filter g-icon">filter_alt</i>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
                     <tbody>
                         <template id="input2-rowElement" class="rowTemplate">
                             <tr tabindex="-1">
-                                <td><i class="fa fa-times btn remove"></i>
+                                <td><i class="g-icon btn remove">close</i>
                                 <td data-tpl-text="/id" data-tpl-value="/id" data-value="">s</td>
                                 <td data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></td>
                                 <td data-tpl-text="/email"></td>

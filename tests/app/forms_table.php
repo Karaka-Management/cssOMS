@@ -73,10 +73,10 @@
                     <template class="oms-add-tpl-1">
                         <tr data-id="" draggable="true">
                             <td>
-                                <i class="fa fa-cogs btn update-form"></i>
-                                <i class="fa fa-chevron-up order-up"></i>
-                                <i class="fa fa-chevron-down order-down"></i>
-                                <i class="fa fa-times btn remove-form"></i>
+                                <i class="g-icon btn update-form">settings</i>
+                                <i class="g-icon order-up">expand_less</i>
+                                <i class="g-icon order-down">expand_more</i>
+                                <i class="g-icon btn remove-form">close</i>
                             <td><label class="checkbox" for="itable1--">
                                     <input type="checkbox" id="itable1--" name="itable1-select">
                                     <span class="checkmark"></span>
@@ -95,10 +95,10 @@
                     </template>
                     <tr data-id="1" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input1</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
@@ -113,10 +113,10 @@
                     </tr>
                     <tr data-id="2" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="Hidden Input">Input2</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -131,10 +131,10 @@
                     </tr>
                     <tr data-id="3" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input3</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
@@ -149,10 +149,10 @@
                     </tr>
                     <tr data-id="4" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input4</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -167,10 +167,10 @@
                     </tr>
                     <tr data-id="5" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input5</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -185,10 +185,10 @@
                     </tr>
                     <tr data-id="6" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input6</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -203,10 +203,10 @@
                     </tr>
                     <tr data-id="7" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input7</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -221,10 +221,10 @@
                     </tr>
                     <tr data-id="8" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input8</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -384,10 +384,10 @@
                     <template class="oms-update-tpl">
                         <tr data-id="" draggable="true">
                             <td>
-                                <i class="fa fa-check btn save-form"></i>
-                                <i class="fa fa-chevron-up order-up"></i>
-                                <i class="fa fa-chevron-down order-down"></i>
-                                <i class="fa fa-times btn cancel-form"></i>
+                                <i class="g-icon btn save-form">check</i>
+                                <i class="g-icon order-up">expand_less</i>
+                                <i class="g-icon order-down">expand_more</i>
+                                <i class="g-icon btn cancel-form">close</i>
                             <td><label class="checkbox" for="itable1--">
                                     <input type="checkbox" id="itable1--" name="itable1-select">
                                     <span class="checkmark"></span>
@@ -451,10 +451,10 @@
                     <template class="oms-add-tpl-2">
                         <tr data-id="" draggable="true">
                             <td>
-                                <i class="fa fa-cogs btn update-form"></i>
-                                <i class="fa fa-chevron-up order-up"></i>
-                                <i class="fa fa-chevron-down order-down"></i>
-                                <i class="fa fa-times btn remove-form"></i>
+                                <i class="g-icon btn update-form">settings</i>
+                                <i class="g-icon order-up">expand_less</i>
+                                <i class="g-icon order-down">expand_more</i>
+                                <i class="g-icon btn remove-form">close</i>
                             <td><label class="checkbox" for="itable1--">
                                     <input type="checkbox" id="itable1--" name="itable1-select">
                                     <span class="checkmark"></span>
@@ -473,10 +473,10 @@
                     </template>
                     <tr data-id="1" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input1</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
@@ -491,10 +491,10 @@
                     </tr>
                     <tr data-id="2" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="Hidden Input">Input2</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
@@ -509,10 +509,10 @@
                     </tr>
                     <tr data-id="3" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input3</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
@@ -527,10 +527,10 @@
                     </tr>
                     <tr data-id="4" draggable="true">
                         <td>
-                            <i class="fa fa-cogs btn update-form"></i>
-                            <i class="fa fa-chevron-up order-up"></i>
-                            <i class="fa fa-chevron-down order-down"></i>
-                            <i class="fa fa-times btn remove-form"></i>
+                            <i class="g-icon btn update-form">settings</i>
+                            <i class="g-icon order-up">expand_less</i>
+                            <i class="g-icon order-down">expand_more</i>
+                            <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
                         <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input4</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>

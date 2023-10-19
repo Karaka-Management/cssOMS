@@ -1,7 +1,7 @@
 <?php $tableFilterCounter = !isset($tableFilterCounter) ? 0 : $tableFilterCounter; ?>
 <span class="clickPopup">
     <input id="<?= $tableId; ?>-filterDropdown-<?= ++$tableFilterCounter; ?>" name="<?= $tableId; ?>-filterDropdown-<?= $tableFilterCounter; ?>" type="checkbox">
-    <label for="<?= $tableId; ?>-filterDropdown-<?= $tableFilterCounter; ?>"><i class="filter fa fa-filter btn"></i></label>
+    <label for="<?= $tableId; ?>-filterDropdown-<?= $tableFilterCounter; ?>"><i class="filter g-icon btn">filter_alt</i></label>
     <div class="popup">
         <ul>
             <li>Filter

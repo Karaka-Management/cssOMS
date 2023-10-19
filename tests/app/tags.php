@@ -3,8 +3,8 @@
         <section class="portlet">
             <div class="portlet-body">
                 <span class="tag">Test Tag</span>
-                <span class="tag"><i class="fa fa-lightbulb-o"></i>Test Tag</span>
-                <span class="tag"><i class="fa fa-times close"></i><i class="fa fa-lightbulb-o"></i>Test Tag</span>
+                <span class="tag"><i class="g-icon">lightbulb</i>Test Tag</span>
+                <span class="tag"><i class="g-icon close">close</i><i class="g-icon">lightbulb</i>Test Tag</span>
             </div>
         </section>
     </div>

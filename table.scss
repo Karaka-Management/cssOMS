@@ -20,7 +20,7 @@ table {
     }
 
     .sort-asc, .sort-desc, .filter {
-        padding: 0 2px 0 2px;
+        padding: 0;
         cursor: pointer;
     }
 
@@ -180,6 +180,16 @@ thead {
 
     i.fa {
         color: #888;
+    }
+
+    label, span {
+        display: inline-flex;
+        align-items: center;
+
+        & > a {
+            display: inline-flex;
+            align-items: center;
+        }
     }
 }
 

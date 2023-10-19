@@ -19,7 +19,7 @@
                         <label for="iDropdown1">Please select</label>
 
                         <input id="e2" name="dropdown" type="radio">
-                        <label for="iDropdown1"><i class="fa fa-home"></i> Content</label>
+                        <label for="iDropdown1"><i class="g-icon">home</i> Content</label>
 
                         <input id="e3" name="dropdown" type="radio">
                         <label for="iDropdown1">Content2</label>
@@ -31,7 +31,7 @@
                     <div class="dropdown-container">
                         <div class="dropdown-search"></div>
                         <div class="dropdown-content">
-                            <label for="e2"><i class="fa fa-home"></i> Content</label>
+                            <label for="e2"><i class="g-icon">home</i> Content</label>
                             <label for="e3">Content2</label>
                             <label for="e4">Content3</label>
                             <label for="iDropdown1">Close</label>
@@ -242,7 +242,7 @@
                                                     {"key": 5, "type": "dom.table.append", "id": "grp-table", "aniIn": "fadeIn", "data": [], "bindings": {"id": "id", "name": "name/0"}, "position": -1}
                                                 ]
                                             }
-                                        ]' formaction=""><i class="fa fa-book"></i></button>
+                                        ]' formaction=""><i class="g-icon">book</i></button>
                                         <div class="advancedInput wf-100" id="input5">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input5"
                                                 data-emptyAfter="true"
@@ -253,10 +253,10 @@
                                                 <table class="default">
                                                     <thead>
                                                         <tr>
-                                                            <td>Type<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
                                                     <tbody>
                                                         <template id="input5-rowElement" class="rowTemplate">
                                                             <tr tabindex="-1">
@@ -277,7 +277,7 @@
                             <div class="box" id="input5-tags" data-limit="0" data-active="true">
                                 <template id="input5-tagTemplate">
                                     <span class="tag red" data-tpl-value="/id" data-value="" data-uuid="" data-name="input5-tagname">
-                                        <i class="fa fa-times"></i>
+                                        <i class="g-icon">close</i>
                                         <span style="display: none;" data-name="type_prefix" data-tpl-value="/type_prefix" data-value=""></span>
                                         <span data-tpl-text="/id" data-name="id" data-tpl-value="/id" data-value=""></span>
                                         <span data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></span>
@@ -303,7 +303,7 @@
                                                     {"key": 5, "type": "dom.table.append", "id": "grp-table", "aniIn": "fadeIn", "data": [], "bindings": {"id": "id", "name": "name/0"}, "position": -1}
                                                 ]
                                             }
-                                        ]' formaction=""><i class="fa fa-book"></i></button>
+                                        ]' formaction=""><i class="g-icon">book</i></button>
                                         <div class="advancedInput wf-100" id="input6">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input6"
                                                 data-emptyAfter="true"
@@ -314,10 +314,10 @@
                                                 <table class="default">
                                                     <thead>
                                                         <tr>
-                                                            <td>Type<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
                                                     <tbody>
                                                         <template id="input6-rowElement" class="rowTemplate">
                                                             <tr tabindex="-1">
@@ -338,7 +338,7 @@
                             <div class="box" id="input6-tags" data-limit="0" data-active="true">
                                 <template id="input6-tagTemplate">
                                     <span class="tag red" data-tpl-value="/id" data-value="" data-uuid="" data-name="input6-tagname">
-                                        <i class="fa fa-times"></i>
+                                        <i class="g-icon">close</i>
                                         <span style="display: none;" data-name="type_prefix" data-tpl-value="/type_prefix" data-value=""></span>
                                         <span data-tpl-text="/id" data-name="id" data-tpl-value="/id" data-value=""></span>
                                         <span data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></span>
@@ -364,7 +364,7 @@
                                                     {"key": 5, "type": "dom.table.append", "id": "grp-table", "aniIn": "fadeIn", "data": [], "bindings": {"id": "id", "name": "name/0"}, "position": -1}
                                                 ]
                                             }
-                                        ]' formaction=""><i class="fa fa-book"></i></button>
+                                        ]' formaction=""><i class="g-icon">book</i></button>
                                         <div class="advancedInput wf-100" id="input7">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input7"
                                                 data-emptyAfter="true"
@@ -375,10 +375,10 @@
                                                 <table class="default">
                                                     <thead>
                                                         <tr>
-                                                            <td>Type<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
                                                     <tbody>
                                                         <template id="input7-rowElement" class="rowTemplate">
                                                             <tr tabindex="-1">
@@ -399,7 +399,7 @@
                             <div class="box" id="input7-tags" data-limit="0" data-active="true">
                                 <template id="input7-tagTemplate">
                                     <span class="tag red" data-tpl-value="/id" data-value="" data-uuid="" data-name="input7-tagname">
-                                        <i class="fa fa-times"></i>
+                                        <i class="g-icon">close</i>
                                         <span style="display: none;" data-name="type_prefix" data-tpl-value="/type_prefix" data-value=""></span>
                                         <span data-tpl-text="/id" data-name="id" data-tpl-value="/id" data-value=""></span>
                                         <span data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></span>
@@ -446,7 +446,7 @@
                                                     {"key": 5, "type": "dom.table.append", "id": "grp-table", "aniIn": "fadeIn", "data": [], "bindings": {"id": "id", "name": "name/0"}, "position": -1}
                                                 ]
                                             }
-                                        ]' formaction=""><i class="fa fa-book"></i></button>
+                                        ]' formaction=""><i class="g-icon">book</i></button>
                                         <div class="advancedInput wf-100" id="input11">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input11"
                                                 data-emptyAfter="true"
@@ -457,10 +457,10 @@
                                                 <table class="default">
                                                     <thead>
                                                         <tr>
-                                                            <td>Type<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
                                                     <tbody>
                                                         <template id="input11-rowElement" class="rowTemplate">
                                                             <tr tabindex="-1">
@@ -492,7 +492,7 @@
                         <tbody id="input11-tags" data-limit="0" data-active="true">
                             <template id="input11-tagTemplate">
                                 <tr data-tpl-value="/id" data-value="" data-uuid="" data-name="input11-tagname">
-                                    <td><i class="fa fa-times"></i>
+                                    <td><i class="g-icon">close</i>
                                     <td><span data-tpl-text="/type_name" data-name="type_prefix" data-tpl-value="/type_prefix" data-value=""></span>
                                     <td><span data-tpl-text="/id" data-name="id" data-tpl-value="/id" data-value=""></span>
                                     <td><span data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></span>
@@ -517,7 +517,7 @@
                                                     {"key": 5, "type": "dom.table.append", "id": "grp-table", "aniIn": "fadeIn", "data": [], "bindings": {"id": "id", "name": "name/0"}, "position": -1}
                                                 ]
                                             }
-                                        ]' formaction=""><i class="fa fa-book"></i></button>
+                                        ]' formaction=""><i class="g-icon">book</i></button>
                                         <div class="advancedInput wf-100" id="input12">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input12"
                                                 data-emptyAfter="true"
@@ -528,10 +528,10 @@
                                                 <table class="default">
                                                     <thead>
                                                         <tr>
-                                                            <td>Type<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
                                                     <tbody>
                                                         <template id="input12-rowElement" class="rowTemplate">
                                                             <tr tabindex="-1">
@@ -563,7 +563,7 @@
                         <tbody id="input12-tags" data-limit="0" data-active="true">
                             <template id="input12-tagTemplate">
                                 <tr data-tpl-value="/id" data-value="" data-uuid="" data-name="input12-tagname">
-                                    <td><i class="fa fa-times"></i>
+                                    <td><i class="g-icon">close</i>
                                     <td><span data-tpl-text="/type_name" data-name="type_prefix" data-tpl-value="/type_prefix" data-value=""></span>
                                     <td><span data-tpl-text="/id" data-name="id" data-tpl-value="/id" data-value=""></span>
                                     <td><span data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></span>
@@ -588,7 +588,7 @@
                                                     {"key": 5, "type": "dom.table.append", "id": "grp-table", "aniIn": "fadeIn", "data": [], "bindings": {"id": "id", "name": "name/0"}, "position": -1}
                                                 ]
                                             }
-                                        ]' formaction=""><i class="fa fa-book"></i></button>
+                                        ]' formaction=""><i class="g-icon">book</i></button>
                                         <div class="advancedInput wf-100" id="input13">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input13"
                                                 data-emptyAfter="true"
@@ -599,10 +599,10 @@
                                                 <table class="default">
                                                     <thead>
                                                         <tr>
-                                                            <td>Type<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>ID<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Name<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
-                                                            <td>Email<i class="sort-asc fa fa-chevron-up"></i><i class="sort-desc fa fa-chevron-down"></i>
+                                                            <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>ID<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Name<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
+                                                            <td>Email<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
                                                     <tbody>
                                                         <template id="input13-rowElement" class="rowTemplate">
                                                             <tr tabindex="-1">
@@ -634,7 +634,7 @@
                         <tbody id="input13-tags" data-limit="0" data-active="true">
                             <template id="input13-tagTemplate">
                                 <tr data-tpl-value="/id" data-value="" data-uuid="" data-name="input13-tagname">
-                                    <td><i class="fa fa-times"></i>
+                                    <td><i class="g-icon">close</i>
                                     <td><span data-tpl-text="/type_name" data-name="type_prefix" data-tpl-value="/type_prefix" data-value=""></span>
                                     <td><span data-tpl-text="/id" data-name="id" data-tpl-value="/id" data-value=""></span>
                                     <td><span data-tpl-text="/name/0" data-tpl-value="/name/0" data-value=""></span>

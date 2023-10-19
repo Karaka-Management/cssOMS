@@ -45,7 +45,7 @@
                             <div>
                                 <div class="ipt-wrap">
                                     <div class="ipt-first">
-                                        <span class="input"><button type="button"><i class="fa fa-pencil"></i></button>
+                                        <span class="input"><button type="button"><i class="g-icon">edit</i></button>
                                         <input type="text"></span>
                                     </div>
                                 </div>

@@ -31,23 +31,23 @@
                 </select>
                 <div id="nav-side-settings">
                     <input id="audio-output" type="checkbox">
-                    <label for="audio-output"><i class="fa fa-volume-up"></i><i class="fa fa-volume-down"></i></label>
+                    <label for="audio-output"><i class="g-icon">volume_up</i><i class="g-icon">volume_down</i></label>
 
                     <input id="speech-recognition" type="checkbox">
-                    <label for="speech-recognition"><i class="fa fa-microphone"></i>
+                    <label for="speech-recognition"><i class="g-icon">mic</i>
                 </div>
             </span>
-            <label class="ham-trigger" for="nav-trigger"><i class="fa fa-bars p"></i></label>
+            <label class="ham-trigger" for="nav-trigger"><i class="g-icon p">menu</i></label>
         </span>
         <div id="nav-side-outer">
             <ul id="nav-side-inner" class="nav" role="list">
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Forms</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=forms">Form</a></li>
@@ -59,10 +59,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>UI Elements</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=alerts">Alerts</a></li>
@@ -80,10 +80,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Images</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=images">Images</a></li>
@@ -94,10 +94,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Tables & Lists</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=tables">Tables</a></li>
@@ -107,10 +107,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Layout</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=grid">Grid</a></li>
@@ -120,10 +120,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Interaction</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=popups">Popups</a></li>
@@ -133,10 +133,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Views</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=editor">Editor</a></li>
@@ -147,10 +147,10 @@
                     <li><input id="nav-help" type="checkbox" checked>
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>JS Tests</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=3d">3D</a></li>
@@ -160,10 +160,10 @@
                     <li><input id="nav-help" type="checkbox">
                         <ul>
                             <li><label for="nav-Help">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="g-icon">help</i>
                                     <span>Charts (disabled)</span>
-                                    <i class="fa fa-chevron-down min"></i>
-                                    <i class="fa fa-chevron-up max"></i>
+                                    <i class="g-icon min">expand_more</i>
+                                    <i class="g-icon max">expand_less</i>
                                 </label>
                             </li>
                             <li><a href="?page=chart_line">Line Chart</a></li>
@@ -193,12 +193,12 @@
     <main>
         <header>
         <form id="s-bar" method="GET" action="">
-                <label class="ham-trigger" for="nav-trigger"><i class="fa fa-bars p"></i></label>
+                <label class="ham-trigger" for="nav-trigger"><i class="g-icon p">menu</i></label>
                 <span role="search" class="inputWrapper">
                     <span class="textWrapper">
-                        <i class="frontIcon fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+                        <i class="frontIcon g-icon" aria-hidden="true">search</i>
                         <input id="iSearchBox" name="search" type="text" autofocus="autofocus">
-                        <i class="endIcon fa fa-times fa-lg fa-fw" aria-hidden="true"></i>
+                        <i class="endIcon g-icon" aria-hidden="true">close</i>
                     </span>
                     <input type="submit" id="iSearchButton" name="searchButton" value="Search">
                 </span>
@@ -206,17 +206,17 @@
                 <ul id="t-nav" role="list">
                     <li>
                         <a href="/en/backend/calendar/dashboard?id=Admin">
-                            <i class="fa fa-calendar infoIcon"></i> Calendar
+                            <i class="g-icon infoIcon">calendar_month</i> Calendar
                         </a>
                     </li>
                     <li>
                         <a href="/en/backend/task/dashboard?id=Admin">
-                            <i class="fa fa-bolt infoIcon"><span class="badge">99</span></i> Tasks
+                            <i class="g-icon infoIcon">bolt<span class="badge">99</span></i> Tasks
                         </a>
                     </li>
                     <li>
                         <a href="/en/api/logout?id=Admin">
-                            <i class="fa fa-power-off infoIcon"></i> Logout
+                            <i class="g-icon infoIcon">power_settings_new</i> Logout
                         </a>
                     </li>
                 </ul>

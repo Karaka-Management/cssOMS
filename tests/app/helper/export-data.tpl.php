@@ -1,6 +1,6 @@
 <span class="clickPopup end-xs">
     <input id="exportDropdown" name="exportDropdown" type="checkbox">
-    <label for="exportDropdown"><i class="fa fa-download download btn"></i></label>
+    <label for="exportDropdown"><i class="g-icon download btn">download</i></label>
     <div class="popup">
         <ul>
             <li>
@@ -10,7 +10,7 @@
                         <label for="id1">
                             <a href="" class="button">Print</a>
                             <span></span>
-                            <i class="fa fa-chevron-right expand"></i>
+                            <i class="g-icon expand">chevron_right</i>
                         </label>
                     <li>Template1
                     <li>Template2 is a long name
@@ -25,7 +25,7 @@
                         <label for="id2">
                             <a href="" class="button">Excel</a>
                             <span></span>
-                            <i class="fa fa-chevron-right expand"></i>
+                            <i class="g-icon expand">chevron_right</i>
                         </label>
                     <li>Template2
                     <li>Template3

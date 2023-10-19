@@ -153,7 +153,7 @@
                     <input id="more-customer-region" type="checkbox">
                     <label for="more-customer-region">
                         <span>Click here!</span>
-                        <i class="fa fa-chevron-right expand"></i>
+                        <i class="g-icon expand">chevron_right</i>
                     </label>
                     <div>
                         <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell

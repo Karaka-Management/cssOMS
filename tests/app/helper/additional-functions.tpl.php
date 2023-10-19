@@ -1,6 +1,6 @@
 <span class="clickPopup end-xs">
     <input id="functionDropdown" name="functionDropdown" type="checkbox">
-    <label for="functionDropdown"><i class="fa more-functions fa-ellipsis-v btn"></i></label>
+    <label for="functionDropdown"><i class="more-functions g-icon btn">more_horiz</i></label>
     <div class="popup">
         <ul>
             <li>
@@ -10,7 +10,7 @@
                         <label for="id1">
                             <a href="" class="button">Print</a>
                             <span></span>
-                            <i class="fa fa-chevron-right expand"></i>
+                            <i class="g-icon expand">chevron_right</i>
                         </label>
                     <li>Template1
                     <li>Template2 is a long name
@@ -25,7 +25,7 @@
                         <label for="id2">
                             <a href="" class="button">Excel</a>
                             <span></span>
-                            <i class="fa fa-chevron-right expand"></i>
+                            <i class="g-icon expand">chevron_right</i>
                         </label>
                     <li>Template2
                     <li>Template3
