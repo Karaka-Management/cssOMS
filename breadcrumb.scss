@@ -9,10 +9,13 @@
         border-left: 1px solid var(--box-border);
         border-top: 1px solid var(--box-border);
         border-bottom: 1px solid var(--box-border);
-        padding: 10px 10px 10px 20px;
+        padding: 0 10px 0 20px;
+        height: 2.5rem;
         position: relative;
         display: block;
         float: left;
+        display: inline-flex;
+        align-items: center;
         cursor: pointer;
 
         &:after, &:before {
