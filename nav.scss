@@ -62,7 +62,6 @@ body > nav {
     input + ul {
         .expand {
             transition: all .3s ease;
-            margin-left: 1rem;
             transform: rotateZ(0deg);
         }
 
@@ -121,8 +120,11 @@ body > nav {
     }
 
     i {
-        margin-right: 5px;
         flex-grow: 0;
+
+        &+span {
+            margin-left: 5px;
+        }
     }
 }
 
