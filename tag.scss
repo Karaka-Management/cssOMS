@@ -6,7 +6,8 @@ span {
 	    font-size: .8rem;
 	    color: var(--text-on-background-color-2);
 	    background: var(--button-colored-background);
-	    display: inline-block;
+	    display: inline-flex;
+		align-items: center;
 	    user-select: none;
 
 	    i {
