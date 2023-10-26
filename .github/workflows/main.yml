@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Compile CSS
-      run: npm run scss
+      run: npm run scss --style=compressed styles.scss > styles.css
     - name: Check for modified files
       id: git-check
       run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD -- *.{scss,css}; then echo "false"; else echo "true"; fi)
