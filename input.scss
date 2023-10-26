@@ -371,7 +371,7 @@ label.radio, label.checkbox {
         opacity: 0;
         cursor: pointer;
 
-        &:not(:required):checked ~ .checkmark {
+        &:checked ~ .checkmark {
             background-color: var(--button-colored-background);
         }
 
