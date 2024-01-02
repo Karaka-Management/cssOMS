@@ -57,7 +57,7 @@ input[type="datetime-local"] {
     color: var(--input-color);
     background: var(--input-background);
     width: 100%;
-    min-width: 70px;
+    //min-width: 70px;
     max-width: 100%;
     font-size: .9rem;
     border: 1px solid var(--input-border);
@@ -445,7 +445,7 @@ input[type="range"] {
 
 .input {
     width: 100%;
-    min-width: 120px;
+    //min-width: 120px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

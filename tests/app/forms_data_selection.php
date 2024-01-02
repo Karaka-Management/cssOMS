@@ -250,7 +250,7 @@
                                                 data-src="http://127.0.0.1/cssOMS/tests/app/data/account.json?filter=some&limit=10">
                                                 <!-- Normally you put a search string here e.g. api/admin/find/accgrp?search={!#input5} -->
                                             <div id="input5-popup" class="popup" data-active="true">
-                                                <table class="default">
+                                                <table class="default sticky">
                                                     <thead>
                                                         <tr>
                                                             <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
@@ -311,7 +311,7 @@
                                                 data-src="http://127.0.0.1/cssOMS/tests/app/data/account.json?filter=some&limit=10">
                                                 <!-- Normally you put a search string here e.g. api/admin/find/accgrp?search={!#input6} -->
                                             <div id="input6-popup" class="popup" data-active="true">
-                                                <table class="default">
+                                                <table class="default sticky">
                                                     <thead>
                                                         <tr>
                                                             <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
@@ -372,7 +372,7 @@
                                                 data-src="http://127.0.0.1/cssOMS/tests/app/data/account.json?filter=some&limit=10">
                                                 <!-- Normally you put a search string here e.g. api/admin/find/accgrp?search={!#input7} -->
                                             <div id="input7-popup" class="popup" data-active="true">
-                                                <table class="default">
+                                                <table class="default sticky">
                                                     <thead>
                                                         <tr>
                                                             <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
@@ -454,7 +454,7 @@
                                                 data-src="http://127.0.0.1/cssOMS/tests/app/data/account.json?filter=some&limit=10">
                                                 <!-- Normally you put a search string here e.g. api/admin/find/accgrp?search={!#input11} -->
                                             <div id="input11-popup" class="popup" data-active="true">
-                                                <table class="default">
+                                                <table class="default sticky">
                                                     <thead>
                                                         <tr>
                                                             <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
@@ -481,7 +481,7 @@
                         </div>
                     </div>
 
-                    <table class="default">
+                    <table class="default sticky">
                         <thead>
                             <tr><td>
                                 <td>Type
@@ -525,7 +525,7 @@
                                                 data-src="http://127.0.0.1/cssOMS/tests/app/data/account.json?filter=some&limit=10">
                                                 <!-- Normally you put a search string here e.g. api/admin/find/accgrp?search={!#input12} -->
                                             <div id="input12-popup" class="popup" data-active="true">
-                                                <table class="default">
+                                                <table class="default sticky">
                                                     <thead>
                                                         <tr>
                                                             <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
@@ -552,7 +552,7 @@
                         </div>
                     </div>
 
-                    <table class="default">
+                    <table class="default sticky">
                         <thead>
                             <tr><td>
                                 <td>Type
@@ -596,7 +596,7 @@
                                                 data-src="http://127.0.0.1/cssOMS/tests/app/data/account.json?filter=some&limit=10">
                                                 <!-- Normally you put a search string here e.g. api/admin/find/accgrp?search={!#input13} -->
                                             <div id="input13-popup" class="popup" data-active="true">
-                                                <table class="default">
+                                                <table class="default sticky">
                                                     <thead>
                                                         <tr>
                                                             <td>Type<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i>
@@ -623,7 +623,7 @@
                         </div>
                     </div>
 
-                    <table class="default">
+                    <table class="default sticky">
                         <thead>
                             <tr><td>
                                 <td>Type

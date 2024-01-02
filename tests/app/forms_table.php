@@ -343,7 +343,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default" id="table2"
+                <table class="default sticky" id="table2"
                     data-tag="form"
                     data-ui-container="tbody"
                     data-ui-element="tr"

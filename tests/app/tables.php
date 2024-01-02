@@ -7,7 +7,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default" id="table1">
+                <table class="default sticky" id="table1">
                     <thead>
                     <tr>
                         <td><i class="filter g-icon" data-filter="">filter_alt</i>Col1 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
@@ -59,7 +59,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default" id="table2">
+                <table class="default sticky" id="table2">
                     <thead>
                     <tr>
                         <td>Col1 Title<i class="sort-asc g-icon">expand_less</i><i class="sort-desc g-icon">expand_more</i></td>
@@ -109,7 +109,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table id="tRemovable" class="default" data-ui-element="tr" data-tag="form">
+                <table id="tRemovable" class="default sticky" data-ui-element="tr" data-tag="form">
                     <thead>
                     <tr>
                         <td></td>
@@ -176,7 +176,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do" data-ui-element="tr">
+                <table class="default sticky" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do" data-ui-element="tr">
                     <thead>
                         <tr>
                             <td>

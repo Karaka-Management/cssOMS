@@ -22,6 +22,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"], label.b
     font-size: .9rem;
     user-select: none;
     font-weight: 100;
+    box-sizing: border-box; // very important otherwise a and input will have different heights because one will consider the border part of the height, the other wont
 
     &::-moz-focus-inner {
         border: 0;

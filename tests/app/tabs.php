@@ -4,8 +4,8 @@
             <h1>Horizontal tabs</h1>
             <div class="tabview tab-1">
                 <ul class="tab-links">
-                    <li class="active"><label for="c-tab-1">Tab 1</label></li>
-                    <li><label for="c-tab-2">Tab 2</label></li>
+                    <li class="active"><label for="c-tab-1">Tab 1</label>
+                    <li><label for="c-tab-2">Tab 2</label>
                 </ul>
                 <div class="tab-content">
                     <input type="radio" id="c-tab-1" name="tabular-1" checked>
@@ -28,8 +28,8 @@
             <h1>Vertical tabs</h1>
             <div class="tabview tab-1 left">
                 <ul class="tab-links">
-                    <li class="active"><label for="c-tab-1-2">Tab 1</label></li>
-                    <li><label for="c-tab-2-3">Tab 2</label></li>
+                    <li class="active"><label for="c-tab-1-2">Tab 1</label>
+                    <li><label for="c-tab-2-3">Tab 2</label>
                 </ul>
                 <div class="tab-content">
                     <input type="radio" id="c-tab-1-2" name="tabular-3" checked>
@@ -52,8 +52,8 @@
             <h1>Horizontal tabs2</h1>
             <div class="tabview tab-2">
                 <ul class="tab-links">
-                    <li><label for="c-tab2-1">Tab 1</label></li>
-                    <li class="active"><label for="c-tab2-2">Tab 2</label></li>
+                    <li><label for="c-tab2-1">Tab 1</label>
+                    <li class="active"><label for="c-tab2-2">Tab 2</label>
                 </ul>
                 <div class="tab-content">
                     <input type="radio" id="c-tab2-1" name="tabular-2" checked>
@@ -76,8 +76,8 @@
             <h1>Vertical tabs 2</h1>
             <div class="tabview tab-2 left">
                 <ul class="tab-links">
-                    <li class="active"><label for="c-tab-4-2">Tab 1</label></li>
-                    <li><label for="c-tab-4-3">Tab 2</label></li>
+                    <li class="active"><label for="c-tab-4-2">Tab 1</label>
+                    <li><label for="c-tab-4-3">Tab 2</label>
                 </ul>
                 <div class="tab-content">
                     <input type="radio" id="c-tab-4-2" name="tabular-4" checked>
