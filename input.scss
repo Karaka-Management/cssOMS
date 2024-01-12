@@ -452,7 +452,7 @@ input[type="range"] {
 
     button {
         box-sizing: border-box;
-        display: inline-block;
+        // display: inline-block; If I add this, icons in a button are no longer centered
         background: var(--button-colored-background);
         height: 30px;
         font-size: 1rem;

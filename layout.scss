@@ -10,7 +10,7 @@
     }
 
     .ipt-second {
-        padding-left: 5px;
+        padding-left: .75rem;
         display: table-cell;
         vertical-align: inherit;
     }
@@ -20,12 +20,21 @@
     display: flex;
     flex-direction: row;
 
-    div {
+    & + * {
+        margin-top: .75rem;
+    }
+
+    > div {
         flex: 1;
 
-        &:nth-child(n+1) {
-            padding-left: 5px;
+        &:nth-child(n+2) {
+            padding-left: .75rem;
         }
+    }
+
+    > div.fixed {
+        flex: 0;
+        flex-basis: auto;
     }
 }
 
@@ -82,12 +91,8 @@ div.sticky, section.sticky {
     }
 }
 
-* + .form-group {
-    margin-top: .75rem;
-}
-
 @media (max-width: 768px) {
-    .form-group {
+    .form-group, .flex-line {
         flex-direction: column;
     }
 }

@@ -1936,17 +1936,22 @@ article {
     display: table-cell;
     vertical-align: inherit; }
   .ipt-wrap .ipt-second {
-    padding-left: 5px;
+    padding-left: .75rem;
     display: table-cell;
     vertical-align: inherit; }
 
 .flex-line {
   display: flex;
   flex-direction: row; }
-  .flex-line div {
+  .flex-line + * {
+    margin-top: .75rem; }
+  .flex-line > div {
     flex: 1; }
-    .flex-line div:nth-child(n+1) {
-      padding-left: 5px; }
+    .flex-line > div:nth-child(n+2) {
+      padding-left: .75rem; }
+  .flex-line > div.fixed {
+    flex: 0;
+    flex-basis: auto; }
 
 div.sticky, section.sticky {
   position: sticky;
@@ -1982,11 +1987,8 @@ div.sticky, section.sticky {
   .form-group textarea, .form-group .contenteditable {
     height: 8rem; }
 
-* + .form-group {
-  margin-top: .75rem; }
-
 @media (max-width: 768px) {
-  .form-group {
+  .form-group, .flex-line {
     flex-direction: column; } }
 .wf-100 {
   width: 100%; }
@@ -2663,7 +2665,6 @@ input[type="range"] {
   flex-wrap: nowrap; }
   .input button {
     box-sizing: border-box;
-    display: inline-block;
     background: var(--button-colored-background);
     height: 30px;
     font-size: 1rem;
