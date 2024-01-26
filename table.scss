@@ -71,9 +71,17 @@ table {
             height: 2.5rem;
         }
 
-        td {
-            padding: 3px 10px 3px 10px;
+        td, th {
+            padding: 3px 5px 3px 5px;
             white-space: nowrap;
+
+            &:first-child {
+                padding-left: 10px;
+            }
+
+            &:last-child {
+                padding-right: 10px;
+            }
         }
 
         tbody {
@@ -82,7 +90,9 @@ table {
             }
 
             tr {
-                height: 2.5rem;
+                &:last-child td, &:last-child th {
+                    border: none;
+                }
 
                 &:nth-of-type(2n) {
                     background: var(--table-row-background);
@@ -96,19 +106,25 @@ table {
                     background: var(--table-row-background-hover);
                 }
 
-                &:last-child td, &:last-child th {
-                    border: none;
-                }
-
                 &:focus, &:hover {
                     outline: none;
                     transform: scale(1);
                     box-shadow: 0 0 5px var(--box-border);
                 }
             }
+        }
+
+        tbody, tfoot {
+            tr {
+                height: 2.5rem;
+            }
 
             th {
-                background: var(--table-head-background);
+                text-align: left;
+            }
+
+            th[colspan]:not([colspan="1"]) {
+                text-align: center;
             }
 
             a {
@@ -142,29 +158,13 @@ table {
             }
         }
 
-        .empty {
-            text-align: center;
+        .disabled {
             color: #d8d8d8;
         }
 
-        tfoot {
-            border: none;
-
-            label {
-                float: left;
-            }
-
-            select {
-                width: auto;
-                float: right;
-                margin: 0;
-                min-width: 0px;
-            }
-
-            td {
-                text-align: center;
-                padding-top: 10px;
-            }
+        .empty {
+            text-align: center;
+            color: #d8d8d8;
         }
     }
 
@@ -244,8 +244,8 @@ thead {
         }
 
         tfoot {
-            // if not hidden colspan will cause problems and reduce width based on cospan value
-            // 1/cospan_val
+            // if not hidden colspan will cause problems and reduce width based on colspan value
+            // 1/colspan_val
             display: none;
         }
     }

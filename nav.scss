@@ -73,7 +73,7 @@ body > nav {
     label {
         display: flex;
         align-items: center;
-        padding: .5rem 1rem .5rem 1rem;
+        padding: .3rem .5rem .3rem .5rem;
         cursor: pointer;
     }
 
@@ -82,7 +82,7 @@ body > nav {
 
         a {
             display: block;
-            padding: .5rem 1rem .5rem 1rem;
+            padding: .5rem .75rem .5rem .75rem;
             border-left: 3px solid transparent;
 
             &:hover, &:focus {
