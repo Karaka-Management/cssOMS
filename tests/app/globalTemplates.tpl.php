@@ -1,5 +1,5 @@
-<template id="table-context-menu-tpl">
-    <div id="table-context-menu" class="context-menu">
+<template id="table-ctx-menu-tpl">
+    <div id="table-ctx-menu" class="ctx-menu">
         <ul>
             <li class="context-line">
                 <label class="checkbox" for="itable1-visibile-">

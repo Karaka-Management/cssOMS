@@ -1,16 +1,14 @@
-
-
 img {
     &.frame-1 {
         padding: 1rem;
         background: #fff;
-        border: 1px solid var(--box-border);
+        border: 1px solid var(--bborder);
         box-sizing: border-box;
         width: 100%;
     }
 
     &.frame-2 {
-        border: 1px solid var(--box-border);
+        border: 1px solid var(--bborder);
         background: #fff;
         box-sizing: border-box;
         width: 100%;
@@ -22,11 +20,11 @@ img {
     }
 
     &.bordered {
-        border: 1px solid var(--box-border);;
+        border: 1px solid var(--bborder);;
     }
 }
 
-.image-comparison {
+.img-comp {
     margin-left: 3rem;
     position: relative;
     display: inline-block;

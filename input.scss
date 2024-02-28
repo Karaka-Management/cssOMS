@@ -1,26 +1,20 @@
 input, select, textarea, .textarea, option {
-    font-family: var(--font-family);
+    font-family: var(--ff);
     font-weight: 300;
 }
 
-input[type=checkbox] ~ .checked-visibility {
-    display: none;
-}
-
-input[type=checkbox]:checked ~ .checked-visibility {
-    display: inline-block;
-}
-
-input[type=checkbox] ~ .checked-visibility-alt {
-    display: inline-block;
-}
-
+input[type=checkbox] ~ .checked-visibility,
 input[type=checkbox]:checked ~ .checked-visibility-alt {
     display: none;
 }
 
+input[type=checkbox]:checked ~ .checked-visibility,
+input[type=checkbox] ~ .checked-visibility-alt {
+    display: inline-block;
+}
+
 input, select, textarea, .textarea {
-    border: 1px solid var(--input-border);
+    border: 1px solid var(--iborder);
 
     &.undecorated {
         padding: 0;
@@ -54,19 +48,19 @@ input[type="date"],
 input[type="number"],
 input[type="datetime-local"] {
     box-sizing: border-box;
-    color: var(--input-color);
-    background: var(--input-background);
+    color: var(--ipt-c);
+    background: var(--ipt-bg);
     width: 100%;
     //min-width: 70px;
     max-width: 100%;
     font-size: .9rem;
-    border: 1px solid var(--input-border);
+    border: 1px solid var(--iborder);
     transition: background 0.3s, border 0.3s;
 
     &:focus, .active, &:active {
-        border-color: var(--input-background-active);
-        border: 1px solid var(--input-border-active);
-        color: var(--input-color-active);
+        border-color: var(--ipt-bg-active);
+        border: 1px solid var(--iborder-active);
+        color: var(--ipt-c-active);
     }
 
     &:disabled, &:readonly {
@@ -93,43 +87,43 @@ input[type="datetime-local"] {
 .inputWithIcon {
     position: relative;
 
-    .frontIcon, .endIcon {
-        color: var(--input-icon-color);
+    .frontIco, .endIco {
+        color: var(--ipt-ico-c);
         font-size: 1rem;
         position: absolute;
         padding: .5rem;
         font-weight: 200;
     }
 
-    .frontIcon {
+    .frontIco {
         left: 0;
         top: 0;
     }
 
-    .endIcon {
+    .endIco {
         right: 0;
         top: 0;
     }
 
-    .frontIcon + input[type="text"], .frontIcon + input[type="password"] {
+    .frontIco + input[type="text"], .frontIco + input[type="password"] {
         padding-left: 2.5rem;
     }
 
     input[type=text]:active, input[type=text]:focus,
     input[type=password]:active, input[type=password]:focus {
-        border: 1px solid var(--input-border-active);
-        color: var(--text-on-background-color);
+        border: 1px solid var(--iborder-active);
+        color: var(--txt-on-bg-c);
     }
 
-    input[type=text]:active~.frontIcon, input[type=text]:focus~.frontIcon,
-    input[type=password]:active~.frontIcon, input[type=password]:focus~.frontIcon,
-    input[type=text]:active~.endIcon, input[type=text]:focus~.endIcon,
-    input[type=password]:active~.endIcon, input[type=password]:focus~.endIcon {
-        color: var(--input-icon-color-active);
+    input[type=text]:active~.frontIco, input[type=text]:focus~.frontIco,
+    input[type=password]:active~.frontIco, input[type=password]:focus~.frontIco,
+    input[type=text]:active~.endIco, input[type=text]:focus~.endIco,
+    input[type=password]:active~.endIco, input[type=password]:focus~.endIco {
+        color: var(--ipt-ico-c-active);
     }
 
-    input[type=text]~.endIcon, input[type=text]~.endIcon,
-    input[type=password]~.endIcon, input[type=password]~.endIcon {
+    input[type=text]~.endIco, input[type=text]~.endIco,
+    input[type=password]~.endIco, input[type=password]~.endIco {
         cursor: pointer;
     }
 }
@@ -138,14 +132,33 @@ input[type="datetime-local"] {
     display: inline-flex;
     flex-direction: row;
 
-    .textWrapper+input[type=submit], .textWrapper+input[type=button], .textWrapper+button {
+    .txtWrap+input[type=submit], .txtWrap+input[type=button], .txtWrap+button {
         margin: 0;
         padding: 0;
         flex: 0;
         box-shadow: none;
     }
 
-    .textWrapper {
+    .frontIco, .endIco {
+        color: var(--ipt-ico-c);
+        font-size: 1.1rem;
+        font-weight: 200;
+        position: absolute;
+        top: 0;
+        padding: .25rem .6rem .6rem .4rem;
+    }
+
+    .frontIco {
+        left: 0;
+        font-size: 1.5rem;
+    }
+
+    .endIco {
+        right: 0;
+        font-size: 1.5rem;
+    }
+
+    .txtWrap {
         flex: 1;
         position: relative;
 
@@ -153,45 +166,26 @@ input[type="datetime-local"] {
             padding-left: 2rem;
         }
 
-        .frontIcon, .endIcon {
-            color: var(--input-icon-color);
-            font-size: 1.1rem;
-            font-weight: 200;
-            position: absolute;
-            top: 0;
-            padding: .25rem .6rem .6rem .4rem;
-        }
-
-        .frontIcon {
-            left: 0;
-            font-size: 1.5rem;
-        }
-
-        .endIcon {
-            right: 0;
-            font-size: 1.5rem;
-        }
-
         input[type=text]:active, input[type=text]:focus,
         input[type=password]:active, input[type=password]:focus {
-            border: 1px solid var(--input-border-active);
+            border: 1px solid var(--iborder-active);
         }
 
-        input[type=text]:active~.frontIcon, input[type=text]:focus~.frontIcon,
-        input[type=password]:active~.frontIcon, input[type=password]:focus~.frontIcon,
-        input[type=text]:active~.endIcon, input[type=text]:focus~.endIcon,
-        input[type=password]:active~.endIcon, input[type=password]:focus~.endIcon {
-            color: var(--input-icon-color-active);
+        input[type=text]:active~.frontIco, input[type=text]:focus~.frontIco,
+        input[type=password]:active~.frontIco, input[type=password]:focus~.frontIco,
+        input[type=text]:active~.endIco, input[type=text]:focus~.endIco,
+        input[type=password]:active~.endIco, input[type=password]:focus~.endIco {
+            color: var(--ipt-ico-c-active);
         }
 
-        input[type=text]~.endIcon, input[type=text]~.endIcon,
-        input[type=password]~.endIcon, input[type=password]~.endIcon {
+        input[type=text]~.endIco, input[type=text]~.endIco,
+        input[type=password]~.endIco, input[type=password]~.endIco {
             cursor: pointer;
         }
     }
 }
 
-.advancedInput, .clickPopup {
+.advIpt, .clickPopup {
     //position: relative;
     /* position: relative; uncomment! otherwise the drop down inside would not be able to overflow and add a scroll bar to the container which is not desired in this case! */
 }
@@ -201,7 +195,7 @@ input[type="datetime-local"] {
         display: none;
     }
 
-    label + input {
+    label + input, input[type="checkbox"] {
         display: none;
     }
 
@@ -229,7 +223,6 @@ input[type="datetime-local"] {
                 align-items: center;
                 margin: .5rem 0 .5rem 0;
                 white-space: nowrap;
-
             }
         }
 
@@ -242,8 +235,6 @@ input[type="datetime-local"] {
         }
 
         input[type="checkbox"] {
-            display: none;
-
             &:checked + ul {
                 .expand {
                     transition: all .3s ease;
@@ -315,17 +306,17 @@ option {
 }
 
 input[type="file"] {
-    border: 1px solid var(--input-border-active);
+    border: 1px solid var(--iborder-active);
     width: 100%;
     max-width: 100%;
-    color: var(--input-color);
+    color: var(--ipt-c);
     padding: 10px;
     box-sizing: border-box;
 }
 
 input::placeholder {
     font-family: 'FontAwesome', serif;
-    color: var(--input-icon-color);
+    color: var(--ipt-ico-c);
     opacity: 0.5;
 }
 
@@ -371,7 +362,7 @@ label.radio, label.checkbox {
         cursor: pointer;
 
         &:checked ~ .checkmark {
-            background-color: var(--button-colored-background);
+            background-color: var(--btn-c-bg);
         }
 
         &:required ~ .checkmark, &:disabled ~ .checkmark, &:readonly ~ .checkmark {
@@ -389,7 +380,7 @@ label.radio, label.checkbox {
         width: 15px;
         margin-right: 5px;
         background-color: #eee;
-        border: 1px solid var(--input-border-active);
+        border: 1px solid var(--iborder-active);
 
         &:after {
             content: "";
@@ -439,7 +430,7 @@ input[type="range"] {
     width: 100%;
     min-width: 150px;
     height: 5px;
-    background: var(--button-colored-background);
+    background: var(--btn-c-bg);
     cursor: pointer;
 }
 
@@ -453,13 +444,13 @@ input[type="range"] {
     button {
         box-sizing: border-box;
         // display: inline-block; If I add this, icons in a button are no longer centered
-        background: var(--button-colored-background);
+        background: var(--btn-c-bg);
         height: 30px;
         font-size: 1rem;
         min-width: 40px;
-        border-left: solid 1px var(--input-border);
-        border-top: solid 1px var(--input-border);
-        border-bottom: solid 1px var(--input-border);
+        border-left: solid 1px var(--iborder);
+        border-top: solid 1px var(--iborder);
+        border-bottom: solid 1px var(--iborder);
         border-right: none;
         padding: 0;
 
@@ -469,7 +460,7 @@ input[type="range"] {
         flex-shrink: 0;
 
         &:hover, &:focus {
-            background: var(--button-colored-background-hover);
+            background: var(--btn-c-bg-hover);
         }
 
         &.inactive {
@@ -526,34 +517,6 @@ select.plain {
         user-select: none;
     }
 
-    .dropdown-closed {
-        display: flex;
-        height: 100%;
-        align-items: center;
-
-        label {
-            display: none;
-        }
-
-        input {
-            display: none;
-
-            &:checked+label {
-                display: flex;
-                align-items: center;
-            }
-        }
-    }
-
-    .dropdown-container {
-        display: none;
-        z-index: 2;
-
-        label {
-            padding: .5rem;
-        }
-    }
-
     & > input {
         display: none;
 
@@ -572,5 +535,33 @@ select.plain {
                 }
             }
         }
+    }
+}
+
+.dropdown-closed {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    label {
+        display: none;
+    }
+
+    input {
+        display: none;
+
+        &:checked+label {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.dropdown-container {
+    display: none;
+    z-index: 2;
+
+    label {
+        padding: .5rem;
     }
 }

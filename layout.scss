@@ -3,16 +3,17 @@
     vertical-align: top;
     box-sizing: border-box;
 
-    .ipt-first {
-        width: 100%;
+    .ipt-start, .ipt-second, .ipt-first {
         display: table-cell;
         vertical-align: inherit;
     }
 
+    .ipt-first {
+        width: 100%;
+    }
+
     .ipt-second {
         padding-left: .75rem;
-        display: table-cell;
-        vertical-align: inherit;
     }
 }
 
@@ -94,6 +95,11 @@ div.sticky, section.sticky {
 @media (max-width: 768px) {
     .form-group, .flex-line {
         flex-direction: column;
+    }
+
+    .form-group .input-control+.input-control {
+        margin-top: 1rem;
+        margin-left: 0;
     }
 }
 

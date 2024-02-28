@@ -1,6 +1,9 @@
-@import "clean", "default", "alignment", "visibility", "animate", "grid";
-@import "colors", "article", "layout", "draggable", "text", "tooltip", "spinner", "canvas", "form", "icon", "image", "input", "accordion", "alert", "slider", "blockquote", "breadcrumb", "button", "link", "list", "nav", "pagination", "progress", "section", "tab", "table", "tag", "tree";
-@import "media";
+@charset "UTF-8";
+
+// @todo cleanup the vars file and implement more vars.
+//      Additionally, create a default vars file in the "framework" which is used if the app doesn't define var values.
+@import "clean", "default", "grid";
+@import "colors", "article", "layout", "draggable", "text", "tooltip", "spinner", "canvas", "form", "image", "input", "accordion", "alert", "slider", "breadcrumb", "button", "link", "list", "nav", "pagination", "progress", "section", "tab", "table", "tag";
 @import "portlet", "menu";
 @import "editor", "cookie_consent";
 @import "develop";

@@ -29,12 +29,6 @@
     display: inline-block;
 }
 
-section.box {
-    background: #fff;
-    //box-shadow: 0 0 3px 1px rgba(90, 71, 114, 0.3);
-    border: 1px solid var(--box-border);
-}
-
 section {
     header {
         > h1 {
@@ -50,15 +44,14 @@ section {
         font-size: 1.2em;
         margin-bottom: 5px;
     }
+
+    &.box {
+        background: #fff;
+        //box-shadow: 0 0 3px 1px rgba(90, 71, 114, 0.3);
+        border: 1px solid var(--bborder);
+    }
 }
 
 .pagebreak {
     display: none;
-}
-
-@media print {
-    .pagebreak {
-        page-break-after: always;
-        display: block;
-    }
 }

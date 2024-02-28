@@ -257,7 +257,7 @@
 // is >= sm
 @media only screen and (min-width: 48em) {
     .sm-hidden {
-        display: block;
+        display: revert;
     }
 
     .container {
@@ -453,7 +453,7 @@
     }
 
     .md-hidden {
-        display: block;
+        display: revert;
     }
 
     .container {
@@ -639,7 +639,7 @@
 // is >= lg
 @media only screen and (min-width: 75em) {
     .lg-hidden {
-        display: block;
+        display: revert;
     }
 
     .container {

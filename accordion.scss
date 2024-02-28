@@ -6,15 +6,15 @@
         display: none;
 
         &:checked + label {
-            background: var(--button-colored-background);
-            color: var(--text-on-background-color-2);
+            background: var(--btn-c-bg);
+            color: var(--txt-on-bg-c-2);
 
             + section {
                 display: inherit;
             }
 
             &:hover {
-                background: var(--button-colored-background-hover);
+                background: var(--btn-c-bg-hover);
             }
         }
 
@@ -32,11 +32,11 @@
         cursor: pointer;
         color: #000;
         font-size: 1rem;
-        background: var(--box-border);
+        background: var(--bborder);
 
         &:hover {
-            color: var(--text-on-background-color-2);
-            background: var(--button-colored-background-hover);
+            color: var(--txt-on-bg-c-2);
+            background: var(--btn-c-bg-hover);
         }
     }
 
@@ -55,9 +55,9 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        border-bottom: 1px solid var(--box-border);
+        border-bottom: 1px solid var(--bborder);
         cursor: pointer;
-        color: var(--link-color);
+        color: var(--link-c);
         user-select: none;
 
         .expand {

@@ -21,7 +21,17 @@
                         Nulla facilisi. Nunc eu lobortis tellus.</p>
                     <blockquote>This is a blockquote</blockquote>
 
+                    <h2>Image</h2>
                     <img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" width="200">
+
+                    <h2>Enlarge (click)</h2>
+                    <p>
+                        <img tabindex="0" width="150px" src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" alt="">
+                        <img tabindex="0" width="150px" src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg" alt="">
+                        <img tabindex="0" width="150px" src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" alt="">
+                        <img tabindex="0" width="150px" src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" alt="">
+                        <img tabindex="0" width="150px" src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg" alt="">
+                    </p>
 
                     <h2>Ordered List</h2>
                     <ol>

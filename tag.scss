@@ -1,30 +1,40 @@
-span {
-	&.tag {
-	    cursor: pointer;
-	    border-radius: 4px;
-	    padding: 4px 6px 4px 6px;
-	    font-size: .8rem;
-	    color: var(--text-on-background-color-2);
-	    background: var(--button-colored-background);
-	    display: inline-flex;
-		align-items: center;
-	    user-select: none;
+span.tag {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+    font-size: .8rem;
+    color: var(--txt-on-bg-c-2);
+    background: var(--btn-c-bg);
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
 
-	    i {
-	    	color: var(--text-on-background-color-2);
-			margin-right: .5rem;
-		}
-	}
+    i {
+        color: var(--txt-on-bg-c-2);
+        margin-right: .5rem;
+    }
 }
 
-@each $tuple in
-    'ok' #aaffad #81e27d #459442,
-    'warning' #f8ffa8 #d6d949 #94972f,
-    'error' #ff7d79 #ee5649 #a5302a,
-    'info' #b6d2ff #85b0ee #4865a5 {
-    .tag.#{nth($tuple, 1)} {
-        background: #{nth($tuple, 2)};
-        border: 1px solid #{nth($tuple, 3)};
-        color: #{nth($tuple, 4)};
+.infoIcon {
+    width: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        font-size: .55rem;
+        display: block;
+        position: absolute;
+        right: -.55rem;
+        top: -.35rem;
+        width: 1rem;
+        height: .8rem;
+        line-height: .8rem;
+        border-radius: 50%;
+        text-align: center;
+        padding: .1rem .15rem .15rem .15rem;
+        color: var(--badge-c);
+        background: var(--badge-bg);
     }
 }

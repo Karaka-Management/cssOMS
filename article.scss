@@ -53,57 +53,9 @@ article {
         font-size: 1rem;
     }
 
-    strong {
-        font-weight: 500;
-    }
-
-    pre {
-        margin: 1rem 0 1rem 0;
-        border: 1px solid #ddd;
-        border-left: 3px solid #25acff;
-        background: #f4f4f4;
-        line-height: 1.2rem;
-        font-size: .8rem;
-
-        code {
-            background: none;
-            color: #000;
-        }
-    }
-
-    blockquote {
-        color: #fff;
-        background: #25acff;
-        border: 1px solid #0480ce;
-        padding: 1rem;
-        border-radius: 5px;
-        margin: 1.5rem;
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        code {
-            color: inherit;
-            background: inherit;
-        }
-
-        a {
-            color: inherit;
-        }
-    }
-
-    code {
-        font-family: var(--font-family);
-        font-size: 0.8rem;
-        color: #23222d;
-        background: #f4f4f4;
-        border-radius: 3px;
-    }
-
     a {
-        color: var(--link-color);
-        border-bottom: 1px dotted var(--link-color);
+        color: var(--link-c);
+        border-bottom: 1px dotted var(--link-c);
 
         &:hover {
             border-bottom: none;
@@ -153,23 +105,23 @@ article {
 
     table {
         border-collapse: collapse;
-        border: 1px solid var(--box-border);
+        border: 1px solid var(--bborder);
         margin: 0 auto;
         margin-bottom: 1rem;
         min-width: 90%;
 
         th, td {
             padding: 5px;
-            border: 1px solid var(--box-border);
+            border: 1px solid var(--bborder);
         }
 
         th {
-            background: var(--table-head-background);
-            color: var(--table-head-color);
+            background: var(--thead-bg);
+            color: var(--thead-c);
         }
 
         tr:nth-child(2n) td {
-            background: var(--table-row-background);
+            background: var(--trow-bg);
         }
     }
 }

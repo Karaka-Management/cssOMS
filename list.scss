@@ -1,62 +1,64 @@
-ul.boxed {
-    background: #fff;
-    padding: 5px;
-    border: 1px solid var(--box-border);
+ul {
+    &.boxed {
+        background: #fff;
+        padding: 5px;
+        border: 1px solid var(--bborder);
 
-    li {
-        margin: 5px 0 5px 0;
+        li {
+            margin: 5px 0 5px 0;
 
-        &:first-child {
-            margin-top: 0;
-        }
+            &:first-child {
+                margin-top: 0;
+            }
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-ul.h-list li {
-    display: inline-block;
-    margin: 5px 10px 5px 10px;
-}
-
-ul.foldable {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    input[type="checkbox"] {
-        display: none;
-    }
-
-    .caret {
-        cursor: pointer;
-        user-select: none;
-
-        &::before {
-            content: "\25B6";
-            color: black;
-            display: inline-block;
-            margin-right: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
-    .nested {
-        display: none;
+    &.h-list li {
+        display: inline-block;
+        margin: 5px 10px 5px 10px;
     }
 
-    input[type="checkbox"]:checked {
-        &~.nested {
-            display: block;
-        }
-
-        &~.caret::before {
-            transform: rotate(90deg);
-        }
-    }
-
-    ul {
+    &.foldable {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            margin-left: 1rem;
+        }
+
+        input[type="checkbox"], .nested {
+            display: none;
+        }
+
+        .caret {
+            cursor: pointer;
+            user-select: none;
+
+            &::before {
+                content: "\25B6";
+                color: black;
+                display: inline-block;
+                margin-right: 6px;
+            }
+        }
+
+        input[type="checkbox"]:checked {
+            &~.nested {
+                display: block;
+            }
+
+            &~.caret::before {
+                transform: rotate(90deg);
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
     }
 }

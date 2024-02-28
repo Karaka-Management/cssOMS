@@ -1,16 +1,13 @@
-
-
 .pagination {
-    li {
+    li, a {
         display: inline-block;
+    }
 
-        &+li {
-            margin-left: .5rem;
-        }
+    li+li {
+        margin-left: .5rem;
     }
 
     a {
-        display: inline-block;
         border-radius: 3px;
         background: #ccc;
         padding: 5px 10px 5px 10px;

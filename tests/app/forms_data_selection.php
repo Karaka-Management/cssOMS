@@ -243,7 +243,7 @@
                                                 ]
                                             }
                                         ]' formaction=""><i class="g-icon">book</i></button>
-                                        <div class="advancedInput wf-100" id="input5">
+                                        <div class="advIpt wf-100" id="input5">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input5"
                                                 data-emptyAfter="true"
                                                 data-autocomplete="off"
@@ -304,7 +304,7 @@
                                                 ]
                                             }
                                         ]' formaction=""><i class="g-icon">book</i></button>
-                                        <div class="advancedInput wf-100" id="input6">
+                                        <div class="advIpt wf-100" id="input6">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input6"
                                                 data-emptyAfter="true"
                                                 data-autocomplete="off"
@@ -365,7 +365,7 @@
                                                 ]
                                             }
                                         ]' formaction=""><i class="g-icon">book</i></button>
-                                        <div class="advancedInput wf-100" id="input7">
+                                        <div class="advIpt wf-100" id="input7">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input7"
                                                 data-emptyAfter="true"
                                                 data-autocomplete="off"
@@ -447,7 +447,7 @@
                                                 ]
                                             }
                                         ]' formaction=""><i class="g-icon">book</i></button>
-                                        <div class="advancedInput wf-100" id="input11">
+                                        <div class="advIpt wf-100" id="input11">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input11"
                                                 data-emptyAfter="true"
                                                 data-autocomplete="off"
@@ -518,7 +518,7 @@
                                                 ]
                                             }
                                         ]' formaction=""><i class="g-icon">book</i></button>
-                                        <div class="advancedInput wf-100" id="input12">
+                                        <div class="advIpt wf-100" id="input12">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input12"
                                                 data-emptyAfter="true"
                                                 data-autocomplete="off"
@@ -589,7 +589,7 @@
                                                 ]
                                             }
                                         ]' formaction=""><i class="g-icon">book</i></button>
-                                        <div class="advancedInput wf-100" id="input13">
+                                        <div class="advIpt wf-100" id="input13">
                                             <input autocomplete="off" spellcheck="false" class="input" type="text" id="input13"
                                                 data-emptyAfter="true"
                                                 data-autocomplete="off"

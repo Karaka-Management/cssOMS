@@ -1,67 +1,63 @@
 .tabview {
-    .tab-links {
-        color: #000;
-        padding: 5px 0 0 0;
-
-        label {
-            font-size: 0.9em;
-            user-select: none;
-            cursor: pointer;
-            border: 1px solid var(--button-colored-background);
-            white-space: nowrap;
-
-            &:hover, &:focus {
-                color: var(--text-on-background-color-2);
-                background: var(--button-colored-background-hover);
-                border: 1px solid var(--button-colored-background-hover);
-                outline: none;
-            }
-        }
-
-        .active label:hover, .active label:focus {
-            color: var(--text-on-background-color-2);
-            background: var(--button-colored-background-hover);
-            border: 1px solid var(--button-colored-background-hover);
-            outline: none;
-        }
-
-        .active {
-            label {
-                cursor: default;
-            }
-        }
-
-        li {
-            display: inline-block;
-        }
-    }
-
-    .tab-content {
-        display: flex;
-        flex: 1;
-
-        > input {
-            display: none;
-        }
-
-        > input + div {
-            display: none;
-        }
-
-        > input:checked + div {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-        }
-    }
-
-    .tab {
-        max-width: 100%;
-    }
-
     &.right > .box {
         order: 2;
     }
+}
+
+.tab-links {
+    color: #000;
+    padding: 5px 0 0 0;
+
+    label {
+        font-size: 0.9em;
+        user-select: none;
+        cursor: pointer;
+        border: 1px solid var(--btn-c-bg);
+        white-space: nowrap;
+
+        &:hover, &:focus {
+            color: var(--txt-on-bg-c-2);
+            background: var(--btn-c-bg-hover);
+            border: 1px solid var(--btn-c-bg-hover);
+            outline: none;
+        }
+    }
+
+    .active label:hover, .active label:focus {
+        color: var(--txt-on-bg-c-2);
+        background: var(--btn-c-bg-hover);
+        border: 1px solid var(--btn-c-bg-hover);
+        outline: none;
+    }
+
+    .active {
+        label {
+            cursor: default;
+        }
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+.tab-content {
+    display: flex;
+    flex: 1;
+
+    > input, > input + div {
+        display: none;
+    }
+
+    > input:checked + div {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+}
+
+.tab {
+    max-width: 100%;
 }
 
 .tab-1 {
@@ -76,8 +72,8 @@
         }
 
         .active, .active label {
-            color: var(--text-on-background-color-2);
-            background: var(--button-colored-background);
+            color: var(--txt-on-bg-c-2);
+            background: var(--btn-c-bg);
         }
 
         li {
@@ -91,9 +87,8 @@
 
     .tab-content {
         box-sizing: border-box;
-        border: 1px solid var(--button-colored-background);
+        border: 1px solid var(--btn-c-bg);
         background: #fff;
-
         padding: 10px;
     }
 
@@ -110,7 +105,7 @@
             }
 
             .active label {
-                border: 1px solid var(--box-border);
+                border: 1px solid var(--bborder);
             }
         }
 
@@ -139,8 +134,8 @@
         }
 
         .active a, .active label {
-            color: var(--text-on-background-color-2);
-            background: var(--button-colored-background)
+            color: var(--txt-on-bg-c-2);
+            background: var(--btn-c-bg)
         }
     }
 
@@ -157,7 +152,7 @@
             }
 
             .active label {
-                border: 1px solid var(--box-border);
+                border: 1px solid var(--bborder);
             }
         }
 

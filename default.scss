@@ -2,23 +2,73 @@
     clear: both;
 }
 
-pre {
-    font-family: var(--font-family);
+p {
+    margin: 0 0 10px 0;
+    line-height: 1.4em;
+
+    span {
+        margin: 0;
+        padding: 0;
+    }
+
+    +p {
+        margin-top: 5px;
+    }
+}
+
+blockquote {
+    color: #fff;
+    background: #25acff;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1.5rem;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    code {
+        color: inherit;
+        background: inherit;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+pre, code {
+    font-family: var(--ff);
+    font-size: .8rem;
     background: #f4f4f4;
+    color: #000;
+}
+
+code {
+    border-radius: 3px;
+    padding: .2rem .4rem .2rem .4rem;
+}
+
+pre {
+    margin: 1rem 0 1rem 0;
+    line-height: 1.2rem;
     border: 1px solid #ddd;
     padding: 1rem;
     overflow-x: auto;
-    counter-reset: line;
     width: 100%;
     box-sizing: border-box;
-    white-space:pre-wrap;
+    white-space: pre-wrap;
+    border-left: 3px solid #25acff;
 
-    span {
+    code {
+        padding: 0;
+    }
+
+    > span {
         display: block;
 
         &:before {
-            counter-increment: line;
-            content: counter(line);
             display: inline-block;
             border-right: 1px solid #ddd;
             padding: 0 .5em;
@@ -29,10 +79,15 @@ pre {
     }
 }
 
+strong {
+    font-weight: 500;
+    font-weight: bold;
+}
+
 iframe {
     padding: 0;
     margin: 0;
-    border:none;
+    border: none;
     width: 100%;
 }
 
@@ -46,6 +101,33 @@ iframe {
 
 .clean:focus {
     outline: 0;
+}
+
+.p,
+.max, .min, .close, .cancel, .filter, .ok, .search, .abort, .sort {
+    cursor: pointer;
+}
+
+.nobreak, .nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.pAlignTable {
+    display: table;
+    width: 100%;
+}
+
+.vCenterTable {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overflowfix {
+    overflow: auto;
 }
 
 .rp {
@@ -100,15 +182,6 @@ iframe {
 
 .vM {
     vertical-align: middle;
-}
-
-.n-wrap {
-    white-space: nowrap;
-}
-
-.p,
-.max, .min, .close, .cancel, .filter, .ok, .search, .abort, .sort {
-    cursor: pointer;
 }
 
 .vC {

@@ -1,22 +1,8 @@
-p {
-    margin: 0 0 10px 0;
-    line-height: 1.4em;
-
-    span {
-        margin: 0;
-        padding: 0;
-    }
-
-    +p {
-        margin-top: 5px;
-    }
-}
-
 .blurry-text {
     text-shadow: 0 0 .9rem #000;
     color: transparent;
 }
-
+/*
 .white-3d {
     color: #fff;
     font-weight: bold;
@@ -41,22 +27,45 @@ p {
     background-size: 200% 100%;
     animation: rainbow-gradient 3.5s linear infinite;
     backface-visibility: hidden;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     background-clip: text;
 }
 
 @keyframes rainbow-gradient {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: -100%;
-    }
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: -100%;
-    }
+    0% { background-position: 0; }
+    100% { background-position: -100%; }
+    0% { background-position: 0; }
+    100% { background-position: -100%; }
 }
+
+$speed: 16s;
+$wordCount: 7;
+
+.morphing {
+  position: relative;
+  font-size: 120px;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  filter: contrast(25) blur(1px);
+}
+
+.word {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  animation: word $speed infinite ease-in-out;
+
+  @for $i from 0 to $wordCount {
+    &:nth-child(#{$i + 1}) {
+      animation-delay: ($speed / ($wordCount + 1) * $i) - $speed;
+    }
+  }
+
+  @keyframes word {
+    0%, 5%, 100% { filter: blur(0px); opacity: 1; }
+    20%, 80% { filter: blur(1em); opacity: 0; }
+  }
+}
+*/

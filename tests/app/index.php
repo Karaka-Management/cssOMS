@@ -6,11 +6,12 @@
         <base href="/cssOMS/tests/app/">
         <title>Style Test</title>
         <link rel="stylesheet" type="text/css" href="../../styles.css">
+        <link rel="stylesheet" type="text/css" href="../../tree.css">
+        <link rel="stylesheet" type="text/css" href="../../timeline.css">
         <link rel="stylesheet" type="text/css" href="../../../Install/Application/Backend/Themes/Default/css/backend-small.css">
         <link rel="stylesheet" type="text/css" href="../../../Resources/fonts/fontawesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../../Resources/fonts/linearicons/css/style.css">
         <link rel="stylesheet" type="text/css" href="../../../Resources/fonts/lineicons/css/lineicons.css">
-        <script src="../../../jsOMS/Utils/oLib.js"></script>
         <script src="load.js" type="module"></script>
     </head>
     <body>
@@ -74,7 +75,9 @@
                             <li><a href="?page=tabs">Tabs</a></li>
                             <li><a href="?page=breadcrumbs">Breadcrumbs</a></li>
                             <li><a href="?page=progress">Progress</a></li>
+                            <li><a href="?page=timeline">Timeline</a></li>
                             <li><a href="?page=drag">Drag</a></li>
+                            <li><a href="?page=tree">Tree</a></li>
                         </ul>
                     </li>
                     <li><input id="nav-help" type="checkbox" checked>
@@ -88,6 +91,7 @@
                             </li>
                             <li><a href="?page=images">Images</a></li>
                             <li><a href="?page=sliders">Sliders</a></li>
+                            <li><a href="?page=gallery">Gallery</a></li>
                             <li><a href="?page=lazyload">Lazyload</a></li>
                         </ul>
                     </li>
@@ -195,10 +199,10 @@
         <form id="s-bar" method="GET" action="">
                 <label class="ham-trigger" for="nav-trigger"><i class="g-icon p">menu</i></label>
                 <span role="search" class="inputWrapper">
-                    <span class="textWrapper">
-                        <i class="frontIcon g-icon" aria-hidden="true">search</i>
+                    <span class="txtWrap">
+                        <i class="frontIco g-icon" aria-hidden="true">search</i>
                         <input id="iSearchBox" name="search" type="text" autofocus="autofocus">
-                        <i class="endIcon g-icon" aria-hidden="true">close</i>
+                        <i class="endIco g-icon" aria-hidden="true">close</i>
                     </span>
                     <input type="submit" id="iSearchButton" name="searchButton" value="Search">
                 </span>

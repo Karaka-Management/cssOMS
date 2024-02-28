@@ -2,13 +2,9 @@
     font-weight: bold;
 }
 
-[data-href] {
-    cursor: pointer;
-}
-
 .portlet-body a:not(.button), a.content, a .content {
-    color: var(--link-color);
-    border-bottom: 1px dotted var(--link-color);
+    color: var(--link-c);
+    border-bottom: 1px dotted var(--link-c);
 
     &:hover {
         border-bottom: 1px dotted transparent ;

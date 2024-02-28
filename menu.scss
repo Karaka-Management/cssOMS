@@ -1,4 +1,4 @@
-.context-menu {
+.ctx-menu {
     position: absolute;
     background: #fff;
     border: 1px solid #ccc;
@@ -8,9 +8,9 @@
         padding: .5rem;
         width: 100%;
         box-sizing: border-box;
-    }
 
-    label:hover {
-        background: var(--table-row-background-hover);
+        &:hover {
+            background: var(--trow-bg-hover);
+        }
     }
 }

@@ -1,19 +1,18 @@
-.btn, .link {
+.btn, .link, [data-href] {
     cursor: pointer;
-    user-select: none;
 }
 
 button, input[type="submit"], input[type="reset"], input[type="button"], label.button, a.button {
     cursor: pointer;
     display: inline-flex;
     min-width: 70px;
-    background: var(--button-colored-background);
-    color: var(--text-on-background-color-2);
+    background: var(--btn-c-bg);
+    color: var(--txt-on-bg-c-2);
     padding: 0 1rem 0 1rem;
     flex-grow: 0;
     height: 30px;
     //border: none;
-    border: 1px solid var(--box-border);
+    border: 1px solid var(--bborder);
     box-shadow: none;
     justify-content: center;
     align-items: center;
@@ -29,17 +28,8 @@ button, input[type="submit"], input[type="reset"], input[type="button"], label.b
     }
 
     &:hover {
-        background: var(--button-colored-background-hover);
-        color: var(--text-on-background-color-2);
-    }
-}
-
-button.save, .button.save, input[type="submit"].save {
-    color: rgba(0, 0, 0, 0.75);
-    background: var(--button-colored-background);
-
-    &:hover, &:focus {
-        background: var(--button-colored-background);
+        background: var(--btn-c-bg-hover);
+        color: var(--txt-on-bg-c-2);
     }
 }
 
@@ -62,10 +52,10 @@ button.cancel, .button.cancel, input[type="submit"].cancel {
 
 button.close, .button.close, input[type="submit"].close, input[type="reset"].close {
     color: rgba(0, 0, 0, 0.75);
-    background: #fffc3e;
+    background: #ffde5b;
 
     &:hover, &:focus {
-        background: #fffd7b;
+        background: #ffe682;
     }
 }
 
@@ -80,7 +70,7 @@ button.disabled, .button.disabled, input[type="submit"].disabled {
 }
 
 .link.default {
-    color: var(--button-colored-background);
+    color: var(--btn-c-bg);
 }
 
 .link.save {

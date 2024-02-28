@@ -6,14 +6,12 @@
 
     li {
         background: #fff;
-        border-left: 1px solid var(--box-border);
-        border-top: 1px solid var(--box-border);
-        border-bottom: 1px solid var(--box-border);
+        border-left: 1px solid var(--bborder);
+        border-top: 1px solid var(--bborder);
+        border-bottom: 1px solid var(--bborder);
         padding: 0 10px 0 20px;
         height: 2.5rem;
         position: relative;
-        display: block;
-        float: left;
         display: inline-flex;
         align-items: center;
         cursor: pointer;
@@ -37,35 +35,35 @@
         }
 
         &:before {
-            border-left-color: var(--box-border);
+            border-left-color: var(--bborder);
             margin-left: 1px;
             z-index: 1;
         }
 
         &.active:after, &:hover:after  {
-            color: var(--text-on-background-color-2);
+            color: var(--txt-on-bg-c-2);
         }
 
         &.active:after  {
-            border-left: 14px solid var(--button-colored-background);
+            border-left: 14px solid var(--btn-c-bg);
         }
 
         &:hover:after  {
-            border-left: 14px solid var(--button-colored-background-hover);
+            border-left: 14px solid var(--btn-c-bg-hover);
         }
     }
 
     .active {
         cursor: default;
-        background: var(--button-colored-background);
+        background: var(--btn-c-bg);
     }
 
     .active, li:hover {
-        color: var(--text-on-background-color-2);
+        color: var(--txt-on-bg-c-2);
     }
 
     li:hover {
-        background: var(--button-colored-background-hover);
+        background: var(--btn-c-bg-hover);
     }
 }
 
@@ -86,15 +84,15 @@
         }
 
         &.active:not(:last-child):after, &:hover:not(:last-child):after  {
-            color: var(--text-on-background-color-2);
+            color: var(--txt-on-bg-c-2);
         }
 
         &.active:not(:last-child):after {
-            border-left: 14px solid var(--button-colored-background);
+            border-left: 14px solid var(--btn-c-bg);
         }
 
         &:hover:not(:last-child):after  {
-            border-left: 14px solid var(--button-colored-background-hover);
+            border-left: 14px solid var(--btn-c-bg-hover);
         }
     }
 

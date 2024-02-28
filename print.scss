@@ -1,0 +1,54 @@
+body, main {
+    background: none !important;
+}
+
+body, #content, main {
+    overflow: revert !important;
+    height: auto;
+}
+
+main > header, #nav-side-outer, body > nav, .nav-top {
+    display: none !important;
+}
+
+h1, h2, h3, h4, h5, ul {
+    page-break-after: avoid;
+}
+
+img {
+    break-before: auto;
+    break-after: auto;
+    break-inside: avoid;
+    display: block;
+}
+
+code, ul, blockquote {
+    break-inside: avoid;
+}
+
+ul li {
+    page-break-before: avoid;
+    page-break-after: avoid;
+}
+
+p {
+    widows: 4;
+    orphans: 3;
+}
+
+.pH {
+    display: none;
+}
+
+.portlet {
+    border: none !important;
+}
+
+table, figure {
+    page-break-inside: auto;
+}
+
+.pagebreak {
+    page-break-after: always;
+    display: block;
+}
