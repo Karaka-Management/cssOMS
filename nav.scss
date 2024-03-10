@@ -16,7 +16,7 @@
     li {
         display: inline-block;
         a {
-            background: #fff;
+            background: var(--box-bg);
             position: relative;
             cursor: pointer;
 

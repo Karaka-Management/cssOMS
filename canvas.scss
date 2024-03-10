@@ -1,5 +1,5 @@
 canvas {
-    background: #fff;
+    background: var(--box-bg);
     user-select: none;
 
     &.chart {

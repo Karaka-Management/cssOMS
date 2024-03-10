@@ -57,15 +57,15 @@ input[type="datetime-local"] {
     border: 1px solid var(--iborder);
     transition: background 0.3s, border 0.3s;
 
-    &:focus, .active, &:active {
+    &:focus, &.active, &:active {
         border-color: var(--ipt-bg-active);
         border: 1px solid var(--iborder-active);
         color: var(--ipt-c-active);
     }
 
-    &:disabled, &:readonly {
+    &:disabled {
         cursor: not-allowed;
-        background: #efefef;
+        background: var(--disabled-bg);
     }
 }
 
@@ -362,11 +362,11 @@ label.radio, label.checkbox {
         cursor: pointer;
 
         &:checked ~ .checkmark {
-            background-color: var(--btn-c-bg);
+            background: var(--btn-bg);
         }
 
-        &:required ~ .checkmark, &:disabled ~ .checkmark, &:readonly ~ .checkmark {
-            background-color: #adadad;
+        &:required ~ .checkmark, &:disabled ~ .checkmark {
+            background: #adadad;
         }
 
         &:checked ~ .checkmark:after {
@@ -379,7 +379,7 @@ label.radio, label.checkbox {
         height: 15px;
         width: 15px;
         margin-right: 5px;
-        background-color: #eee;
+        background: var(--ipt-bg);
         border: 1px solid var(--iborder-active);
 
         &:after {
@@ -430,7 +430,7 @@ input[type="range"] {
     width: 100%;
     min-width: 150px;
     height: 5px;
-    background: var(--btn-c-bg);
+    background: var(--btn-bg);
     cursor: pointer;
 }
 
@@ -444,7 +444,7 @@ input[type="range"] {
     button {
         box-sizing: border-box;
         // display: inline-block; If I add this, icons in a button are no longer centered
-        background: var(--btn-c-bg);
+        background: var(--btn-bg);
         height: 30px;
         font-size: 1rem;
         min-width: 40px;
@@ -460,7 +460,7 @@ input[type="range"] {
         flex-shrink: 0;
 
         &:hover, &:focus {
-            background: var(--btn-c-bg-hover);
+            background: var(--btn-bg-hover);
         }
 
         &.inactive {

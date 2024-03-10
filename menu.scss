@@ -1,7 +1,7 @@
 .ctx-menu {
     position: absolute;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: var(--box-bg);
+    border: 1px solid var(--bborder);
     z-index: 1000; // Table headers are sticky which has a z-index of 999. The menu should be above
 
     label {

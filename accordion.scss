@@ -1,12 +1,12 @@
 .ac-container {
     text-align: left;
-    border: 1px solid #c9c9c9;
+    border: 1px solid var(--bborder);
 
     > input {
         display: none;
 
         &:checked + label {
-            background: var(--btn-c-bg);
+            background: var(--btn-bg);
             color: var(--txt-on-bg-c-2);
 
             + section {
@@ -14,7 +14,7 @@
             }
 
             &:hover {
-                background: var(--btn-c-bg-hover);
+                background: var(--btn-bg-hover);
             }
         }
 
@@ -30,18 +30,18 @@
         z-index: 20;
         margin-top: -1px;
         cursor: pointer;
-        color: #000;
+        color: var(--default-c);
         font-size: 1rem;
         background: var(--bborder);
 
         &:hover {
             color: var(--txt-on-bg-c-2);
-            background: var(--btn-c-bg-hover);
+            background: var(--btn-bg-hover);
         }
     }
 
     > section {
-        background: #fff;
+        background: var(--box-bg);
         overflow: hidden;
         height: auto;
         position: relative;

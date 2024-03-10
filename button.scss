@@ -6,7 +6,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"], label.b
     cursor: pointer;
     display: inline-flex;
     min-width: 70px;
-    background: var(--btn-c-bg);
+    background: var(--btn-bg);
     color: var(--txt-on-bg-c-2);
     padding: 0 1rem 0 1rem;
     flex-grow: 0;
@@ -28,68 +28,69 @@ button, input[type="submit"], input[type="reset"], input[type="button"], label.b
     }
 
     &:hover {
-        background: var(--btn-c-bg-hover);
+        background: var(--btn-bg-hover);
         color: var(--txt-on-bg-c-2);
     }
 }
 
 button.save, .button.save, input[type="submit"].save {
-    color: rgba(0, 0, 0, 0.75);
-    background: #8fff79;
+    color: var(--save-c);
+    background: var(--save-bg);
 
     &:hover, &:focus {
-        background: #a1ffa1;
+        background: var(--save-bg-hover);
     }
 }
 
 button.cancel, .button.cancel, input[type="submit"].cancel {
-    background: #ee5649;
+    color: var(--cancel-c);
+    background: var(--cancel-bg);
 
     &:hover, &:focus {
-        background: #ff7d79;
+        background: var(--cancel-bg-hover);
     }
 }
 
 button.close, .button.close, input[type="submit"].close, input[type="reset"].close {
-    color: rgba(0, 0, 0, 0.75);
-    background: #ffde5b;
+    color: var(--close-c);
+    background: var(--close-bg);
 
     &:hover, &:focus {
-        background: #ffe682;
+        background: var(--close-bg-hover);
     }
 }
 
 button.disabled, .button.disabled, input[type="submit"].disabled {
-    color: rgba(0, 0, 0, 0.5);
-    background: #e1e1e1;
+    color: var(--disabled-c);
+    background: var(--disabled-bg);
     cursor: not-allowed;
 
     &:hover, &:focus {
-        background: #e1e1e1;
+        background: var(--disabled-bg-hover);
     }
 }
 
 .link.default {
-    color: var(--btn-c-bg);
+    color: var(--btn-bg);
 }
 
 .link.save {
-    color: #8fff79;
+    color: var(--save-bg);
 }
 
 .link.cancel {
-    color: #ee5649;
+    color: var(--cancel-bg);
 }
 
 .link.close {
-    color: #fffc3e;
+    color: var(--close-bg);
 }
 
 .link.disabled {
-    color: #e1e1e1;
+    color: var(--disabled-bg);
 }
 
 i.favorite {
-    color: #ffd700;
-    text-shadow: 0 0 1px #000;
+    color: var(--fav-c);
+    text-shadow: 0 0 1px var(--text-shadow);
 }

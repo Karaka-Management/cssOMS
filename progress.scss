@@ -7,11 +7,11 @@
         display: block;
         height: 100%;
         border-radius: 3px;
-        background-color: #459442;
+        background-color: var(--green3-c);
         background-image: linear-gradient(
                         to left top,
-                        color-stop(0, #459442),
-                        color-stop(1, #81e27d));
+                        color-stop(0, var(--green3-c)),
+                        color-stop(1, var(--green2-c)));
         position: relative;
         overflow: hidden;
     }
@@ -22,13 +22,13 @@
     }
 
     &.blue > span {
-        background-color: #85b0ee;
-        background-image: linear-gradient(#85b0ee, #4865a5);
+        background-color: var(--blue1-c);
+        background-image: linear-gradient(var(--blue1-c), var(--blue3-c));
     }
 
     &.red > span {
-        background-color: #ee5649;
-        background-image: linear-gradient(#ee5649, #a5302a);
+        background-color: var(--red1-c);
+        background-image: linear-gradient(var(--red1-c), var(--red3-c));
     }
 
     > span:after, .animate > span > span {

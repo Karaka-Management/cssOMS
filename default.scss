@@ -17,9 +17,9 @@ p {
 }
 
 blockquote {
-    color: #fff;
-    background: #25acff;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: var(--bq-c);
+    background: var(--bq-bg);
+    border: 1px solid var(--bq-border);
     padding: 1rem;
     border-radius: 5px;
     margin: 1.5rem;
@@ -41,8 +41,8 @@ blockquote {
 pre, code {
     font-family: var(--ff);
     font-size: .8rem;
-    background: #f4f4f4;
-    color: #000;
+    background: var(--code-bg);
+    color: var(--code-c);
 }
 
 code {
@@ -53,13 +53,13 @@ code {
 pre {
     margin: 1rem 0 1rem 0;
     line-height: 1.2rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--bborder);
     padding: 1rem;
     overflow-x: auto;
     width: 100%;
     box-sizing: border-box;
     white-space: pre-wrap;
-    border-left: 3px solid #25acff;
+    border-left: 3px solid var(--bq-bg);
 
     code {
         padding: 0;
@@ -70,7 +70,7 @@ pre {
 
         &:before {
             display: inline-block;
-            border-right: 1px solid #ddd;
+            border-right: 1px solid var(--bborder);
             padding: 0 .5em;
             margin-right: .5em;
             color: #888;

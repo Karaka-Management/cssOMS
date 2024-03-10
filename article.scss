@@ -3,11 +3,11 @@
 }
 
 article {
-    background: #fff;
+    background: var(--article-bg);
     padding: 10px;
     margin: 0;
     font-size: .9rem;
-    color: #000;
+    color: var(--article-c);
     line-height: 2rem;
     white-space: normal;
 
@@ -21,15 +21,15 @@ article {
     }
 
     del {
-        background: #ff9e9e;
+        background: var(--red1-c);
     }
 
     ins {
-        background: #b0f3b0;
+        background: var(--green1-c);
     }
 
     mark {
-        background: #f9ffa1;
+        background: var(--yellow1-c);
     }
 
     h1, h2, h3, h4, h5, h6 {

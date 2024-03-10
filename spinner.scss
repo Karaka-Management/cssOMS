@@ -1,7 +1,7 @@
 .spinner-1 {
     width: 40px;
     height: 40px;
-    background-color: #333;
+    background-color: var(--default-c);
     margin: 50px auto;
     animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
@@ -24,7 +24,7 @@
     > div {
         width: 18px;
         height: 18px;
-        background-color: #333;
+        background-color: var(--default-c);
         border-radius: 100%;
         display: inline-block;
         animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -53,7 +53,7 @@
     width: 40px;
     height: 40px;
     margin: 50px auto;
-    background-color: #333;
+    background-color: var(--default-c);
 
     border-radius: 100%;
     animation: sk-scaleout 1.0s infinite ease-in-out;

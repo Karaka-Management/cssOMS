@@ -16,7 +16,7 @@
             margin-bottom: 5px;
             padding: 7px;
             border-radius: 3px;
-            background-color: rgb(71, 71, 71);
+            background: var(--btn-bg);
             color: #fff;
             content: attr(data-tooltip);
             text-align: center;

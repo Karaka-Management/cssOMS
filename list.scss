@@ -1,6 +1,6 @@
 ul {
     &.boxed {
-        background: #fff;
+        background: var(--box-bg);
         padding: 5px;
         border: 1px solid var(--bborder);
 

@@ -1,8 +1,8 @@
 @each $tuple in
-    'ok' #aaffad #81e27d #459442,
-    'warning' #f8ffa8 #d6d949 #94972f,
-    'error' #ff7d79 #ee5649 #a5302a,
-    'info' #b6d2ff #85b0ee #4865a5 {
+    'ok' var(--green1-c) var(--green2-c) var(--green3-c),
+    'warning' var(--yellow1-c) var(--yellow2-c) var(--yellow3-c),
+    'error' var(--red1-c) var(--red2-c) var(--red3-c),
+    'info' var(--blue1-c) var(--blue2-c) var(--blue3-c) {
     .log-lvl-#{nth($tuple, 1)} {
         background: #{nth($tuple, 2)};
         border: 1px solid #{nth($tuple, 3)};

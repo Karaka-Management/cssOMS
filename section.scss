@@ -5,7 +5,7 @@
     margin: 0 auto;
     margin-top: 3rem;
     text-align: center;
-    border: 5px solid rgba(92, 2, 2, 0.1);
+    border: 5px solid var(--bborder);
 
     &:before {
         font-family: 'Material Symbols Outlined', serif;
@@ -35,7 +35,7 @@ section {
             margin: 10px 10px 0 10px;
             padding-bottom: 5px;
             font-size: 1.1em;
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: 1px solid var(--bborder2);
         }
     }
 
@@ -46,7 +46,7 @@ section {
     }
 
     &.box {
-        background: #fff;
+        background: var(--box-bg);
         //box-shadow: 0 0 3px 1px rgba(90, 71, 114, 0.3);
         border: 1px solid var(--bborder);
     }

@@ -1,7 +1,7 @@
 img {
     &.frame-1 {
         padding: 1rem;
-        background: #fff;
+        background: var(--box-bg);
         border: 1px solid var(--bborder);
         box-sizing: border-box;
         width: 100%;
@@ -9,14 +9,14 @@ img {
 
     &.frame-2 {
         border: 1px solid var(--bborder);
-        background: #fff;
+        background: var(--box-bg);
         box-sizing: border-box;
         width: 100%;
     }
 
     &.rounded {
         border-radius: 50%;
-        background: #fff;
+        background: var(--box-bg);
     }
 
     &.bordered {
@@ -105,7 +105,7 @@ img {
         width: 100px;
         height: 100px;
         margin: .3rem;
-        border: 1px solid #ccc;
+        border: 1px solid var(--bborder);
     }
 
     label {
@@ -123,7 +123,7 @@ img {
         position: absolute;
         bottom: 0;
         right: 0;
-        background: #fff;
+        background: var(--box-bg);
         padding: 2px;
         font-size: .8rem;
     }

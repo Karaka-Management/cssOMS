@@ -3,9 +3,10 @@
     overflow: hidden;
     font-size: 1rem;
     user-select: none;
+    display: flex;
 
     li {
-        background: #fff;
+        background: var(--box-bg);
         border-left: 1px solid var(--bborder);
         border-top: 1px solid var(--bborder);
         border-bottom: 1px solid var(--bborder);
@@ -23,7 +24,7 @@
             height: 0;
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
-            border-left: 14px solid #fff;
+            border-left: 14px solid var(--box-bg);
             position: absolute;
             top: 50%;
             margin-top: -20px;
@@ -45,17 +46,17 @@
         }
 
         &.active:after  {
-            border-left: 14px solid var(--btn-c-bg);
+            border-left: 14px solid var(--btn-bg);
         }
 
         &:hover:after  {
-            border-left: 14px solid var(--btn-c-bg-hover);
+            border-left: 14px solid var(--btn-bg-hover);
         }
     }
 
     .active {
         cursor: default;
-        background: var(--btn-c-bg);
+        background: var(--btn-bg);
     }
 
     .active, li:hover {
@@ -63,7 +64,7 @@
     }
 
     li:hover {
-        background: var(--btn-c-bg-hover);
+        background: var(--btn-bg-hover);
     }
 }
 
@@ -76,7 +77,7 @@
             height: 0;
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
-            border-left: 14px solid #fff;
+            border-left: 14px solid var(--box-bg);
             position: absolute;
             top: 50%;
             margin-top: -20px;
@@ -88,11 +89,11 @@
         }
 
         &.active:not(:last-child):after {
-            border-left: 14px solid var(--btn-c-bg);
+            border-left: 14px solid var(--btn-bg);
         }
 
         &:hover:not(:last-child):after  {
-            border-left: 14px solid var(--btn-c-bg-hover);
+            border-left: 14px solid var(--btn-bg-hover);
         }
     }
 

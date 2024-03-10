@@ -1,5 +1,5 @@
 .order-up, .order-down, .remove-form, .update-form, .save-form, .form-action {
-    color: var(--btn-c-bg);
+    color: var(--btn-bg);
 }
 
 thead {
@@ -27,7 +27,7 @@ table {
 
     input[type=radio]:checked + i,
     input[type=checkbox]:checked + label i {
-        color: var(--btn-c-bg);
+        color: var(--btn-bg);
     }
 
     .order-up, .order-down {
@@ -52,7 +52,7 @@ table {
         //overflow-x: auto;
 
         .disabled, .empty {
-            color: #d8d8d8;
+            color: var(--disabled-bg);
         }
 
         .empty {
@@ -114,7 +114,7 @@ table {
 
         tbody {
             td, th {
-                border-bottom: 1px solid #ebedf2;
+                border-bottom: 1px solid var(--bborder2);
             }
 
             tr {
@@ -132,14 +132,14 @@ table {
 
                 &:hover td, &:focus td {
                     background: var(--trow-bg-hover);
-                    color: #000;
+                    color: var(--default-c);
                 }
 
                 &:focus, &:hover {
                     outline: none;
                     transform: scale(1);
                     box-shadow: 0 0 5px var(--bborder);
-                    color: #000;
+                    color: var(--default-c);
                 }
             }
         }
@@ -149,7 +149,7 @@ table {
             color: var(--thead-c);
 
             td {
-                border-bottom: 1px solid #ebedf2;
+                border-bottom: 1px solid var(--bborder2);
             }
 
             input[type=radio] {

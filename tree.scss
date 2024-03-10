@@ -10,7 +10,7 @@
     text-align: center;
 
     .tree {
-        border-top: 1px solid #666;
+        border-top: 1px solid var(--bborder);
     }
 
     .box {
@@ -25,7 +25,7 @@
     }
 
     ul:not(.tree) li:before {
-        border: 1px solid #666;
+        border: 1px solid var(--bborder);
     }
 
     li {
@@ -51,7 +51,7 @@
 
         > span {
             text-align: left;
-            border: solid .1em #666;
+            border: solid .1em var(--bborder);
             display: inline-block;
             margin: 0 .2em .5em;
             position: relative;
@@ -59,7 +59,7 @@
     }
 
     ul:not(.tree):before, span:before {
-        border: solid 1px #666;
+        border: solid 1px var(--bborder);
         content: "";
         height: .45em;
         left: 50%;

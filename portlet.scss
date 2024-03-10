@@ -2,7 +2,7 @@
     border: 1px solid var(--bborder);
     box-sizing: border-box;
     margin-top: 1rem;
-    background: #fff;
+    background: var(--box-bg);
 }
 
 .portlet-head, .portlet-foot {
@@ -38,11 +38,11 @@
 }
 
 .portlet-body > h2, .portlet-separator, .portlet-head  {
-    border-bottom: 1px solid #ebedf2;
+    border-bottom: 1px solid var(--bborder2);
 }
 
 .portlet-foot {
-    border-top: 1px solid #ebedf2;
+    border-top: 1px solid var(--bborder2);
     box-sizing: border-box;
     flex-wrap: wrap;
     column-gap: .5rem;
