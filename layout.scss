@@ -17,6 +17,13 @@
     }
 }
 
+.simple-flex {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
 .flex-line {
     display: flex;
     flex-direction: row;
