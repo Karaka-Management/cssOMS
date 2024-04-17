@@ -32,7 +32,7 @@ export class Application {
         this.eventManager    = new EventManager();
         this.responseManager = new ResponseManager();
         this.assetManager    = new AssetManager();
-        this.acountManager   = new AccountManager();
+        this.accountManager   = new AccountManager();
         this.uiManager       = new UIManager(this);
         this.inputManager    = new InputManager(this);
         this.moduleManager   = new ModuleManager(this);
