@@ -268,7 +268,7 @@
 
                     <div class="form-group">
                         <label for="iText">Text</label>
-                        <textarea id="iText" name="text" type="text" data-tpl-text="/text" data-tpl-value="/text"></textarea>
+                        <textarea id="iText" name="text" type="text" data-tpl-text="/text" data-tpl-value="/text" data-value=""></textarea>
                     </div>
 
                     <div class="form-group">
@@ -478,15 +478,15 @@
                             <i class="g-icon order-down">expand_more</i>
                             <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input1</td>
+                        <td data-tpl-text="/input" data-tpl-value="/input">Input1</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o1">Option1</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text1</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2020-10-13</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text">Text1</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date">2020-10-13</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r1">Radio1</td>
                         <td>
                             <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
-                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
-                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read"></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update"></span>
                         </td>
                     </tr>
                     <tr data-id="2" draggable="true">
@@ -504,7 +504,7 @@
                         <td>
                             <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
                             <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value="READ">Read</span>
-                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value=""></span>
+                            <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update"></span>
                         </td>
                     </tr>
                     <tr data-id="3" draggable="true">
@@ -514,14 +514,14 @@
                             <i class="g-icon order-down">expand_more</i>
                             <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input3</td>
+                        <td data-tpl-text="/input" data-tpl-value="/input">Input3</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o3">Option3</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text3</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">1989-04-28</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text">Text3</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date">1989-04-28</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r3">Radio3</td>
                         <td>
-                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value=""></span>
-                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create"></span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read"></span>
                             <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
                         </td>
                     </tr>
@@ -532,14 +532,14 @@
                             <i class="g-icon order-down">expand_more</i>
                             <i class="g-icon btn remove-form">close</i>
                         <td><?php include __DIR__ . '/helper/checkbox.tpl.php'; ?>
-                        <td data-tpl-text="/input" data-tpl-value="/input" data-value="">Input4</td>
+                        <td data-tpl-text="/input" data-tpl-value="/input">Input4</td>
                         <td data-tpl-text="/select" data-tpl-value="/select" data-value="o2">Option2</td>
-                        <td data-tpl-text="/text" data-tpl-value="/text" data-value="">Text4</td>
-                        <td data-tpl-text="/date" data-tpl-value="/date" data-value="">2025-07-04</td>
+                        <td data-tpl-text="/text" data-tpl-value="/text">Text4</td>
+                        <td data-tpl-text="/date" data-tpl-value="/date">2025-07-04</td>
                         <td data-tpl-text="/radio" data-tpl-value="/radio" data-value="r2">Radio2</td>
                         <td>
                             <span data-tpl-text="/checkbox/create" data-tpl-value="/checkbox/create" data-value="CREATE">Create</span>
-                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read" data-value=""></span>
+                            <span data-tpl-text="/checkbox/read" data-tpl-value="/checkbox/read"></span>
                             <span data-tpl-text="/checkbox/update" data-tpl-value="/checkbox/update" data-value="MODIFY">Modify</span>
                         </td>
                     </tr>

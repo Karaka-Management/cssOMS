@@ -86,3 +86,24 @@
         display: none !important;
     }
 }
+
+.content-side-nav {
+    h1, h2, a {
+        font-size: .9rem;
+    }
+
+    h1, h2 {
+        padding: .5rem 1rem .5rem 1rem;
+        background: var(--thead-bg);
+        color: var(--thead-c);
+    }
+
+    a {
+        padding: .5rem 1rem .5rem 2rem;
+        display: block;
+
+        &:hover {
+            color: var(--link-c);
+        }
+    }
+}

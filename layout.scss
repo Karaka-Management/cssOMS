@@ -1,3 +1,5 @@
+// @questions it seems stupid to have ipt-wrap, flex-line, simple-flex and input-control
+//      I have the feeling we maybe only need 1 or 2 of these (input-control has nice behavior)
 .ipt-wrap {
     display: table;
     vertical-align: top;
@@ -17,6 +19,14 @@
     }
 }
 
+.simple-flex {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+// @question consider to replace with input-control which has better behavior
 .flex-line {
     display: flex;
     flex-direction: row;
@@ -66,6 +76,7 @@ div.sticky, section.sticky {
         flex: 0 0 100%;
         display: inline-flex;
         align-items: center;
+        padding-bottom: 5px;
 
         &> i {
             margin-right: .5rem;
