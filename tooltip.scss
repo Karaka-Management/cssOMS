@@ -2,6 +2,7 @@
     cursor: pointer;
     color: var(--box-hl);
     font-size: .9rem;
+    display: inline-flex;
 
     &:hover, &:active, &:focus {
         position: relative;

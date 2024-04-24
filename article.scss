@@ -11,6 +11,10 @@ article {
     line-height: 2rem;
     white-space: normal;
 
+    .mermaid {
+        text-align: center;
+    }
+
     del, ins, mark {
         padding: 3px;
         text-decoration: none;
