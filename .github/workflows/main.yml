@@ -22,7 +22,7 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: ${{ runner.os }}-node
     - name: Install dependencies
-      run: npm ci
+      run: npm install
     - name: Compile CSS
       run: npm run scss --style=compressed styles.scss
     - name: Check for modified files
