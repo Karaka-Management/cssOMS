@@ -2,11 +2,11 @@
     font-weight: bold;
 }
 
-.portlet-body a:not(.button), a.content, a .content {
+a.content, a .content, article a {
     color: var(--link-c);
     border-bottom: 1px dotted var(--link-c);
 
     &:hover {
-        border-bottom: 1px dotted transparent ;
+        border-bottom: none;
     }
 }

@@ -50,6 +50,24 @@
     }
 }
 
+.spoiler {
+    > input {
+        display: none;
+
+        + span {
+            color: transparent;
+            opacity: 0;
+        }
+
+        &:checked {
+            + span {
+                color: inherit;
+                opacity: 1;
+            }
+        }
+    }
+}
+
 .more-container {
     > label {
         width: 100%;
@@ -76,9 +94,6 @@
 
     > input {
         display: none;
-    }
-
-    > input {
         &:checked {
             + label {
                 border-bottom: none;

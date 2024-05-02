@@ -163,6 +163,9 @@ table {
         }
     }
 
+    // @bug .sticky is broken for tables in a .slider
+    //      The .slider is important to avoid overflowing. However, this prevents .sticky from working
+    //      https://github.com/Karaka-Management/cssOMS/issues/28
     &.sticky thead {
         th, td {
             position: sticky;

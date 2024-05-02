@@ -10,7 +10,7 @@ input[type=checkbox]:checked ~ .checked-visibility-alt {
 
 input[type=checkbox]:checked ~ .checked-visibility,
 input[type=checkbox] ~ .checked-visibility-alt {
-    display: inline-block;
+    display: inline-flex;
 }
 
 input, select, textarea, .textarea {
@@ -46,7 +46,8 @@ input[type="datetime"],
 input[type="email"],
 input[type="date"],
 input[type="number"],
-input[type="datetime-local"] {
+input[type="datetime-local"],
+.smart-input-wrapper .input-div {
     box-sizing: border-box;
     color: var(--ipt-c);
     background: var(--ipt-bg);
@@ -79,7 +80,8 @@ input[type="datetime"],
 input[type="email"],
 input[type="date"],
 input[type="number"],
-input[type="datetime-local"] {
+input[type="datetime-local"],
+.smart-input-wrapper .input-div {
     height: 30px;
     padding-left: .5rem;
 }
@@ -320,7 +322,7 @@ input::placeholder {
     opacity: 0.5;
 }
 
-textarea:invalid, input:invalid {
+textarea:invalid, input:invalid, .invalid {
     transition: all 0.5s !important;
     border-color: #f00 !important;
 
@@ -563,5 +565,43 @@ select.plain {
 
     label {
         padding: .5rem;
+    }
+}
+
+.smart-input-wrapper {
+    width: 100%;
+    position: relative;
+    .input-div {
+        outline: none;
+        overflow: auto;
+        white-space: pre-wrap;
+        cursor: not-allowed;
+        background: var(--disabled-bg);
+        line-height: 30px;
+
+        &[contenteditable="true"] {
+            background: var(--ipt-bg);
+            cursor: text;
+        }
+
+        &:focus+.input-datalist {
+            display: block;
+        }
+    }
+
+    .input-datalist {
+        position: absolute;
+        background: var(--ipt-bg);
+        border: 1px solid var(--iborder);
+        z-index: 3;
+
+        > div {
+            padding: .5rem;
+            cursor: pointer;
+            &:hover, &:focus, &:active, &.active {
+                background: var(--thead-bg);
+                color: var(--thead-c);
+            }
+        }
     }
 }

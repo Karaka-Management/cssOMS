@@ -25,11 +25,12 @@ jobs:
       run: npm install
     - name: Compile CSS
       run: |
-        npx sass cssOMS/styles.scss cssOMS/styles.css --style=compressed
-        npx sass cssOMS/animate.scss cssOMS/animate.css --style=compressed
-        npx sass cssOMS/timeline.scss cssOMS/timeline.css --style=compressed
-        npx sass cssOMS/tree.scss cssOMS/tree.css --style=compressed
-        npx sass cssOMS/print.scss cssOMS/print.css --style=compressed
+        npx sass cssOMS/styles.scss cssOMS/styles.css --style=compressed --no-source-map
+        npx sass cssOMS/code_textarea.scss cssOMS/code_textarea.css --style=compressed --no-source-map
+        npx sass cssOMS/animate.scss cssOMS/animate.css --style=compressed --no-source-map
+        npx sass cssOMS/timeline.scss cssOMS/timeline.css --style=compressed --no-source-map
+        npx sass cssOMS/tree.scss cssOMS/tree.css --style=compressed --no-source-map
+        npx sass cssOMS/print.scss cssOMS/print.css --style=compressed --no-source-map
     - name: Check for modified files
       id: git-check
       run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD -- *.{scss,css}; then echo "false"; else echo "true"; fi)

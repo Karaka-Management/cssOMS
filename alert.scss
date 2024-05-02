@@ -21,6 +21,21 @@
     z-index: 5;
 }
 
+#hover-preview {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 800px;
+    height: 600px;
+    border: 3px solid var(--bborder); // 3px due to scale
+    background: var(--box-bg);
+    transform: scale(0.3333);
+    z-index: 5;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 #app-message-container {
     position: absolute;
     margin: 0 auto;
