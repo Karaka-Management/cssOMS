@@ -146,16 +146,16 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">More/detail area</div>
             <div class="portlet-body">
                 <div class="more-container">
-                    <input id="more-customer-region" type="checkbox">
-                    <label for="more-customer-region">
+                    <input id="more-customer-region" class="more" type="checkbox">
+                    <label class="more" for="more-customer-region">
                         <span>Click here!</span>
                         <i class="g-icon expand">chevron_right</i>
                     </label>
-                    <div>
+                    <div class="more">
                         <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell
                     everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in
                     the future when the spacecraft encounters a black hole does the computer call it an 'unknown
@@ -165,6 +165,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>

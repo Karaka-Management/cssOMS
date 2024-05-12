@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">
                 External Edit
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
@@ -240,7 +240,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 
@@ -336,7 +336,7 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">
                 Inline Edit
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
@@ -546,7 +546,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     </div>
 
     <input type="submit" class="add-form" value="Add" form="table2">

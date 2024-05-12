@@ -196,7 +196,7 @@
     </nav>
     <main>
         <header>
-        <form id="s-bar" method="GET" action="">
+            <form id="s-bar" method="GET" action="">
                 <label class="ham-trigger" for="nav-trigger"><i class="g-icon p">menu</i></label>
                 <span role="search" class="inputWrapper">
                     <span class="txtWrap">

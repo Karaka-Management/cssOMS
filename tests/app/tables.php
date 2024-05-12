@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12 col-md-6">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">
                 Table Title
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
@@ -48,11 +48,11 @@
                 <a class="button" href="#">Previous</a>
                 <a class="button" href="#">Next</a>
             </div>
-        </div>
+        </section>
     </div>
 
     <div class="col-xs-12 col-md-6">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">
                 Table Title
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
@@ -96,13 +96,13 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-12">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">
                 Table Title
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
@@ -163,13 +163,13 @@
                     </tfoot>
                 </table>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-12">
-        <div class="portlet">
+        <section class="portlet">
             <div class="portlet-head">
                 Remote Data
                 <?php include __DIR__ . '/helper/additional-functions.tpl.php'; ?>
@@ -195,7 +195,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 

@@ -8,7 +8,7 @@
     color: var(--default-c);
     padding: 5px 0 0 0;
 
-    label {
+    label, a {
         font-size: 0.9em;
         user-select: none;
         cursor: pointer;
@@ -125,7 +125,7 @@
     }
 
     .tab-links {
-        label {
+        label, a {
             padding: 5px 10px 5px 10px;
         }
 
