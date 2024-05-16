@@ -23,7 +23,7 @@
                         <td>Select
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php
-                                $filterType = 'select';
+                                $filterType    = 'select';
                                 $filterOptions = [
                                     'o1' => 'Option1',
                                     'o2' => 'Option2',
@@ -44,7 +44,7 @@
                         <td>Radio
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php
-                                $filterType = 'select';
+                                $filterType    = 'select';
                                 $filterOptions = [
                                     'r1' => 'Radio1',
                                     'r2' => 'Radio2',
@@ -57,10 +57,10 @@
                         <td>Checkbox
                             <?php include __DIR__ . '/helper/sort.tpl.php'; ?>
                             <?php
-                                $filterType = 'select';
+                                $filterType    = 'select';
                                 $filterOptions = [
                                     'CREATE' => 'Create',
-                                    'READ' => 'Read',
+                                    'READ'   => 'Read',
                                     'MODIFY' => 'Modify',
                                 ];
 
