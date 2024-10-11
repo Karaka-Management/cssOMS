@@ -176,7 +176,7 @@
                 <?php include __DIR__ . '/helper/export-data.tpl.php'; ?>
             </div>
             <div class="slider">
-                <table class="default sticky" id="table3" data-src="http://127.0.0.1/en/api/admin/find/account?search=do" data-ui-element="tr">
+                <table class="default sticky" id="table3" data-src="http://127.0.0.1/en/api/admin/account/find?search=do" data-ui-element="tr">
                     <thead>
                         <tr>
                             <td>

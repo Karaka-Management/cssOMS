@@ -3,6 +3,10 @@
     color: var(--btn-bg);
 }
 
+.remove-form.cancel {
+    margin-left: .5rem;
+}
+
 thead {
     input[type=radio] {
         padding: 0;

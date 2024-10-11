@@ -322,6 +322,10 @@ input::placeholder {
     opacity: 0.5;
 }
 
+div[data-required="1"]:empty {
+    border-color: #f00 !important;
+}
+
 textarea:invalid, input:invalid, .invalid {
     transition: all 0.5s !important;
     border-color: #f00 !important;
