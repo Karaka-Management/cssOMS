@@ -1,13 +1,14 @@
-@each $tuple in
-    'ok' var(--green1-c) var(--green2-c) var(--green3-c),
-    'warning' var(--yellow1-c) var(--yellow2-c) var(--yellow3-c),
-    'error' var(--red1-c) var(--red2-c) var(--red3-c),
-    'info' var(--blue1-c) var(--blue2-c) var(--blue3-c) {
-    .log-lvl-#{nth($tuple, 1)} {
-        background: #{nth($tuple, 2)};
-        border: 1px solid #{nth($tuple, 3)};
-        color: #{nth($tuple, 4)};
-    }
+@each $name, $bg, $border, $text in (
+  ('ok', var(--green1-c), var(--green2-c), var(--green3-c)),
+  ('warning', var(--yellow1-c), var(--yellow2-c), var(--yellow3-c)),
+  ('error', var(--red1-c), var(--red2-c), var(--red3-c)),
+  ('info', var(--blue1-c), var(--blue2-c), var(--blue3-c))
+) {
+  .log-lvl-#{$name} {
+    background: $bg;
+    border: 1px solid $border;
+    color: $text;
+  }
 }
 
 #dim {

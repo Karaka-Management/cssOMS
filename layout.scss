@@ -118,12 +118,18 @@ div.sticky, section.sticky {
     }
 }
 
-@each $tuple in
-    'wf-100' 100%, 'wf-80' 80%, 'wf-20' 20%, 'wf-66' 66.66%,
-    'wf-50' 50%, 'wf-33' 33.33%, 'wf-25' 25%, 'wf-75' 75% {
-    .#{nth($tuple, 1)} {
-        width: #{nth($tuple, 2)};
-    }
+@each $name, $width in
+  ('wf-100': 100%,
+   'wf-80': 80%,
+   'wf-20': 20%,
+   'wf-66': 66.66%,
+   'wf-50': 50%,
+   'wf-33': 33.33%,
+   'wf-25': 25%,
+   'wf-75': 75%) {
+  .#{$name} {
+    width: $width;
+  }
 }
 
 .spacer {

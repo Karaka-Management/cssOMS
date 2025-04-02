@@ -2,8 +2,36 @@
 
 // @todo cleanup the vars file and implement more vars.
 //      Additionally, create a default vars file in the "framework" which is used if the app doesn't define var values.
-@import "clean", "default", "grid";
-@import "colors", "article", "layout", "draggable", "text", "tooltip", "spinner", "canvas", "form", "image", "input", "accordion", "alert", "slider", "breadcrumb", "button", "link", "list", "nav", "pagination", "progress", "section", "tab", "table", "tag";
-@import "portlet", "menu";
-@import "editor", "cookie_consent";
-@import "develop";
+@use "clean";
+@use "default";
+@use "grid";
+@use "colors";
+@use "article";
+@use "layout";
+@use "draggable";
+@use "text";
+@use "tooltip";
+@use "spinner";
+@use "canvas";
+@use "form";
+@use "image";
+@use "input";
+@use "accordion";
+@use "alert";
+@use "slider";
+@use "breadcrumb";
+@use "button";
+@use "link";
+@use "list";
+@use "nav";
+@use "pagination";
+@use "progress";
+@use "section";
+@use "tab";
+@use "table";
+@use "tag";
+@use "portlet";
+@use "menu";
+@use "editor";
+@use "cookie_consent";
+@use "develop";
